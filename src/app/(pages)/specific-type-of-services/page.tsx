@@ -45,21 +45,21 @@ const SpecificTypeOfServicesPageData = [
   },
   {
     key: "s-6",
-    link: "/home-care-domiciliary-care-services-form",
+    link: "/gps-additional-form",
     icon: IconSpecificTypeOfServices6,
     title: "GPs Addtional Form",
   },
   {
     key: "s-7",
-    link: "/home-care-domiciliary-care-services-form",
+    link: "/services-for-autistic-people-with-learning-disability",
     icon: IconSpecificTypeOfServices7,
-    title: "GPs Addtional Form",
+    title: "Services for autistic People with learning Disability",
   },
   {
     key: "s-8",
-    link: "/home-care-domiciliary-care-services-form",
+    link: "/supported-living-additional-form",
     icon: IconSpecificTypeOfServices8,
-    title: "Services for autistic People with learning Disability",
+    title: "Supported living additional Form",
   },
 ];
 
