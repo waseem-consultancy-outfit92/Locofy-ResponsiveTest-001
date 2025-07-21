@@ -6,7 +6,17 @@ const assetsDir = path.join(__dirname, "src", "assets");
 const indexTsxPath = path.join(assetsDir, "index.tsx");
 
 const pages = [
-  { name: "Cross-Sector Inspections", backRoute: "/ Care Quality Commission" },
+  { name: "Introduction", backRoute: "/access-rulebook" },
+  { name: "Definition", backRoute: "/access-rulebook" },
+  { name: "Application Process", backRoute: "/access-rulebook" },
+  { name: "Eligibility For Admission", backRoute: "/access-rulebook" },
+  { name: "Continuing Obligations", backRoute: "/access-rulebook" },
+  { name: "Disclosure And Transparency Obligations", backRoute: "/access-rulebook" },
+  { name: "Suspending, Cancelling And Restoring Trading And Admission", backRoute: "/access-rulebook" },
+  { name: "Fast-Track", backRoute: "/access-rulebook" },
+  { name: "Investigations, Sanctions And Discipline", backRoute: "/access-rulebook" },
+  { name: "Admission Document (Appendix I)", backRoute: "/access-rulebook" },
+
 ];
 
 const toPascalCase = (str) =>
