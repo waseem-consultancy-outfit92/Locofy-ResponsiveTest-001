@@ -33,7 +33,7 @@ const ScopeOfRegistrationPage = () => {
     <MultiPathPage
       arrayData={ScopeOfRegistrationPageData}
       pageTitle="Scope of registration"
-      backRoute="/"
+      backRoute="/care-quality-commission"
     />
   );
 };

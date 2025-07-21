@@ -53,7 +53,7 @@ const CqcFeeStructureImageMap = () => {
                             },
                         }}
                     >
-                        <Typography variant="srOnly">Hospice Services</Typography>
+                        <Typography variant="h6">Hospice Services</Typography>
                     </Link>
 
                     {/* COMMUNITY HEALTH / NHS BLOOD & TRANSPLANT */}
@@ -73,7 +73,7 @@ const CqcFeeStructureImageMap = () => {
                             },
                         }}
                     >
-                        <Typography variant="srOnly">Community Health NHS Blood and Transplant</Typography>
+                        <Typography variant="h6">Community Health NHS Blood and Transplant</Typography>
                     </Link>
 
                     {/* SINGLE SPECIALTY HEALTHCARE */}
@@ -93,7 +93,7 @@ const CqcFeeStructureImageMap = () => {
                             },
                         }}
                     >
-                        <Typography variant="srOnly">Single Specialty Healthcare</Typography>
+                        <Typography variant="h6">Single Specialty Healthcare</Typography>
                     </Link>
 
                     {/* INDEPENDENT AMBULANCE SERVICES */}
@@ -113,7 +113,7 @@ const CqcFeeStructureImageMap = () => {
                             },
                         }}
                     >
-                        <Typography variant="srOnly">Independent Ambulance Services</Typography>
+                        <Typography variant="h6">Independent Ambulance Services</Typography>
                     </Link>
 
                     {/* Out-of-Hours/Walk-In */}
@@ -133,7 +133,7 @@ const CqcFeeStructureImageMap = () => {
                             },
                         }}
                     >
-                        <Typography variant="srOnly">Out of Hours Walk In</Typography>
+                        <Typography variant="h6">Out of Hours Walk In</Typography>
                     </Link>
 
                     {/* Single Location */}
@@ -155,7 +155,7 @@ const CqcFeeStructureImageMap = () => {
                             },
                         }}
                     >
-                        <Typography variant="srOnly">Dental Service</Typography>
+                        <Typography variant="h6">Dental Service</Typography>
                     </Link>
                     {/* </Box> */}
                     {/* Domiciliary Dental Only - Enabled */}
@@ -175,7 +175,7 @@ const CqcFeeStructureImageMap = () => {
                             },
                         }}
                     >
-                        <Typography variant="srOnly">Domiciliary Dental Only</Typography>
+                        <Typography variant="h6">Domiciliary Dental Only</Typography>
                     </Link>
 
                     {/* Residential Services - Enabled */}
@@ -195,7 +195,7 @@ const CqcFeeStructureImageMap = () => {
                             },
                         }}
                     >
-                        <Typography variant="srOnly">Residential Services</Typography>
+                        <Typography variant="h6">Residential Services</Typography>
                     </Link>
 
                     {/* Nursing Care Agencies - Enabled */}
@@ -215,7 +215,7 @@ const CqcFeeStructureImageMap = () => {
                             },
                         }}
                     >
-                        <Typography variant="srOnly">Nursing Care Agencies</Typography>
+                        <Typography variant="h6">Nursing Care Agencies</Typography>
                     </Link>
                 </Box>
             </Box>

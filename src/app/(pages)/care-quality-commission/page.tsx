@@ -21,7 +21,7 @@ const CareQualityCommissionPageData = [
   },
   {
     key: "care-2",
-    link: "/scope-of-registration-cqc",
+    link: "/scope-of-registration",
     icon: img2CareQualityCommissionImage,
     title: "Scope of Registration (CQC)",
   },
@@ -51,13 +51,13 @@ const CareQualityCommissionPageData = [
   },
   {
     key: "care-7",
-    link: "/regulated-activities",
+    link: "/care-quality-commission-regulated-services-14",
     icon: img7CareQualityCommissionImage,
     title: "Regulated Activities",
   },
   {
     key: "care-8",
-    link: "/fee-structure",
+    link: "/cqc-fee-structure",
     icon: img8CareQualityCommissionImage,
     title: "Fee Structure",
   }
@@ -68,7 +68,7 @@ const CareQualityCommissionPage = () => {
     <MultiPathPage
       arrayData={CareQualityCommissionPageData}
       pageTitle=" Care Quality Commission"
-      backRoute="/FCA Sequence Diagram"
+      backRoute="/"
     />
   );
 };
