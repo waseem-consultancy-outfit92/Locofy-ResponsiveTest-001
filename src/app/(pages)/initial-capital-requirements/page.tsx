@@ -5,7 +5,7 @@ import React from "react";
 const InitialCapitalRequirementsPage = () => {
   return (
     <CommonPage
-      pageTitle={`FCA Application / FCA Guide to Payment Services and Electronic Money Regulation / Initial capital requirements `}
+      pageTitle={`FCA Application  / Safeguarding `}
       src={InitialCapitalRequirementsImage}
       backRoute="/Chapter9-Capital-resources-and-requirements"
     />

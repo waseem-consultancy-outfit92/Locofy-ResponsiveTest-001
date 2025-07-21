@@ -30,8 +30,8 @@ export { default as img1FcaApplicationImage } from "./img1FcaApplicationImage.sv
 export { default as img2FcaApplicationImage } from "./img2FcaApplicationImage.svg";
 export { default as img3FcaApplicationImage } from "./img3FcaApplicationImage.svg";
 export { default as img4FcaApplicationImage } from "./img4FcaApplicationImage.svg";
-export { default as img1PaymentServicesNewAuthorisationRegistrationImage } from "./img1FcaApplicationImage.svg";  //del
-export { default as img2PaymentServicesNewAuthorisationRegistrationImage } from "./img1FcaApplicationImage.svg";  //del
+export { default as img1PaymentServicesNewAuthorisationRegistrationImage } from "./img1FcaApplicationImage.svg"; //del
+export { default as img2PaymentServicesNewAuthorisationRegistrationImage } from "./img1FcaApplicationImage.svg"; //del
 export { default as img3PaymentServicesNewAuthorisationRegistrationImage } from "./img1FcaApplicationImage.svg"; //dele
 export { default as img1EMoneyNewAuthorisationRegistrationImage } from "./img1EMoneyNewAuthorisationRegistrationImage.svg";
 export { default as img2EMoneyNewAuthorisationRegistrationImage } from "./img2EMoneyNewAuthorisationRegistrationImage.svg";
@@ -238,7 +238,6 @@ export { default as FACAPPlicationMainImagetwo } from "./FACAPPlicationMainImage
 export { default as FACAPPlicationMainImagethree } from "./FACAPPlicationMainImagethree.svg";
 export { default as FcaApplicationMainImagefour } from "./FcaApplicationMainImagefour.svg";
 
-
 export { default as paymentInitiationAisConfirmationAvailabilityFunds1 } from "./payment-initiation-ais-confirmation-availability-funds1.svg";
 export { default as paymentInitiationAisConfirmationAvailabilityFunds2 } from "./payment-initiation-ais-confirmation-availability-funds2.svg";
 export { default as paymentInitiationAisConfirmationAvailabilityFunds3 } from "./payment-initiation-ais-confirmation-availability-funds3.svg";
@@ -247,7 +246,6 @@ export { default as fcaAnnexes } from "./fca-annexes.svg";
 export { default as glossaryOfTermsImg } from "./glossary-of-terms.svg";
 export { default as acronymsAndAbbreviationsImg } from "./acronyms-and-abbreviations.svg";
 export { default as annexFiguresImg } from "./annex-figures.svg";
-
 
 export { default as paymentService1 } from "./payment-service1.svg";
 export { default as paymentService2 } from "./payment-service2.svg";
@@ -271,8 +269,6 @@ export { default as paymentService19 } from "./payment-service19.svg";
 export { default as paymentService20 } from "./payment-service20.svg";
 export { default as paymentService21 } from "./payment-service21.svg";
 
-
-
 export { default as AuthorisationAndRegistrationImage } from "./AuthorisationAndRegistrationImage.svg";
 export { default as FCAChapter3Authorisationandregistrationup2 } from "./FCAChapter3Authorisationandregistrationup2.svg";
 export { default as Chapter9Capitalresourcesandrequirements } from "./Chapter9Capitalresourcesandrequirements.svg";
@@ -284,6 +280,10 @@ export { default as FcaApplicationSafeguardingFigure4Image } from "./FcaApplicat
 export { default as Initialcapitalrequirementslink } from "./Initialcapitalrequirementslink.svg";
 export { default as Chapter9Capitalresourcesandrequirementsup2 } from "./Chapter9Capitalresourcesandrequirementsup2.svg";
 export { default as DiagramOverviewofOwnFunds } from "./DiagramOverviewofOwnFunds.svg";
-export { default as  DiagramCommonEquityTier1CET1Capital } from "./DiagramCommonEquityTier1CET1Capital.svg";
-export { default as  DiagramAdditionalTier1capital } from "./DiagramAdditionalTier1capital.svg";
-export { default as  DiagramBreakdownofTier2Capital } from "./DiagramBreakdownofTier2Capital.svg";
+export { default as DiagramCommonEquityTier1CET1Capital } from "./DiagramCommonEquityTier1CET1Capital.svg";
+export { default as DiagramAdditionalTier1capital } from "./DiagramAdditionalTier1capital.svg";
+export { default as DiagramBreakdownofTier2Capital } from "./DiagramBreakdownofTier2Capital.svg";
+
+export { default as SecurityPolicy12Image } from "./SecurityPolicy12.svg";
+export { default as SemiFeesAndLeviesImage } from "./SemiFeesAndLevies.svg";
+
