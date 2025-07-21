@@ -8,8 +8,14 @@ const outfit = Outfit({
   variable: "--font-outfit",
 });
 export const metadata: Metadata = {
+<<<<<<< HEAD
   title: "CQC Process Lifecycle",
   description: "This visual guide breaks down the CQC process, outlining who must register, how the registration works, and the key compliance steps involved for care providers.",
+=======
+  title: "Financial Conduct Authority",
+  description:
+    "Understand the primary goals of the Financial Conduct Authority, illustrated through a clear and concise diagram.",
+>>>>>>> 311798dbf2427fd775548e42ccba2356d29afc0f
   icons: {
     icon: [
       { rel: "icon", url: "/favicon.ico", type: "image/x-icon" },
@@ -34,8 +40,14 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
+<<<<<<< HEAD
     title: "CQC Process Lifecycle",
     description: "This visual guide breaks down the CQC process, outlining who must register, how the registration works, and the key compliance steps involved for care providers.",
+=======
+    title: "Financial Conduct Authority",
+    description:
+      "Understand the primary goals of the Financial Conduct Authority, illustrated through a clear and concise diagram.",
+>>>>>>> 311798dbf2427fd775548e42ccba2356d29afc0f
     url: "https://fcaroadmap.netlify.app/",
     type: "website",
     images: [

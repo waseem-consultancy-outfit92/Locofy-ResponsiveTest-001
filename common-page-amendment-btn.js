@@ -8,6 +8,7 @@ const assetsDir = path.join(__dirname, "src", "assets");
 // ✅ Corrected: Use "title" instead of "tile"
 const pages = [
   {
+<<<<<<< HEAD
     title: "Add a Partner",
     ButtonRoute: "/new-provider-application-breakdown",
   },
@@ -15,6 +16,10 @@ const pages = [
     title:
       "SC1 - Application for registration as a new provider of regulated activities",
     ButtonRoute: "/new-provider-application-breakdown",
+=======
+    title: "FCA Overview",
+    ButtonRoute: " Removal to and from Scotland AC",
+>>>>>>> 311798dbf2427fd775548e42ccba2356d29afc0f
   },
 ];
 
@@ -56,7 +61,11 @@ for (const page of pages) {
 
   if (!kebabBase || !pascal) {
     console.log(
+<<<<<<< HEAD
       `[SKIP] Could not generate valid names for title: '${title}'. Skipping.`
+=======
+      `[SKIP] Could not generate valid names for title: '${title}'. Skipping.`,
+>>>>>>> 311798dbf2427fd775548e42ccba2356d29afc0f
     );
     continue;
   }
@@ -78,14 +87,22 @@ for (const page of pages) {
 
   if (dirSuffix >= maxTries) {
     console.log(
+<<<<<<< HEAD
       `[ERROR] Too many duplicate directories for '${title}'. Skipping.`
+=======
+      `[ERROR] Too many duplicate directories for '${title}'. Skipping.`,
+>>>>>>> 311798dbf2427fd775548e42ccba2356d29afc0f
     );
     continue;
   }
 
   if (finalKebab !== kebabBase) {
     console.log(
+<<<<<<< HEAD
       `Directory for page '${title}' already exists. Created: ${finalKebab}`
+=======
+      `Directory for page '${title}' already exists. Created: ${finalKebab}`,
+>>>>>>> 311798dbf2427fd775548e42ccba2356d29afc0f
     );
   }
 
@@ -145,7 +162,11 @@ export default ${pascal}Page;
       if (indexContent.includes(imageExport.trim())) {
         shouldWriteExport = false;
         console.log(
+<<<<<<< HEAD
           `Export for image '${imageName}' already exists in index.tsx. Skipping export.`
+=======
+          `Export for image '${imageName}' already exists in index.tsx. Skipping export.`,
+>>>>>>> 311798dbf2427fd775548e42ccba2356d29afc0f
         );
       }
     } catch (err) {

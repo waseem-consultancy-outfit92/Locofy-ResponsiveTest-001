@@ -1,27 +1,26 @@
 "use client";
+
 import { Box, Stack, Typography, Button } from "@mui/material";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { useCallback } from "react";
 import { useRouter } from "next/navigation";
 import { CommonBackIcon } from "@/assets/common-assets";
 import { CheckboxForm } from "../checkbox-form";
 
 interface ImageItem {
-  src: any;
+  src: string | StaticImageData;
   route: string;
   alt?: string;
 }
 
 interface CommonPageProps {
-  src?: any;
+  src?: string | StaticImageData;
   images?: ImageItem[];
-  backRoute: any;
+  backRoute: string;
   pageTitle: string;
   onChange?: (selectedValue: string, page: string) => void;
   amendmentButtonRoute1?: string;
-//   amendmentButtonRoute2?: string;
   amendmentButtonTitle1?: string;
-  amendmentButtonTitle2?: string;
 }
 
 const MultiImagesAmendmentComparisonBtnOne: React.FC<CommonPageProps> = ({
@@ -31,9 +30,7 @@ const MultiImagesAmendmentComparisonBtnOne: React.FC<CommonPageProps> = ({
   pageTitle,
   onChange,
   amendmentButtonRoute1 = "/amendment-comparison-1",
-//   amendmentButtonRoute2 = "/amendment-comparison-2",
   amendmentButtonTitle1 = "Amendment Comparison 1",
-  amendmentButtonTitle2 = "Amendment Comparison 2",
 }) => {
   const router = useRouter();
 
@@ -44,10 +41,6 @@ const MultiImagesAmendmentComparisonBtnOne: React.FC<CommonPageProps> = ({
   const onAmendmentButtonClick1 = useCallback(() => {
     router.push(amendmentButtonRoute1);
   }, [router, amendmentButtonRoute1]);
-
-//   const onAmendmentButtonClick2 = useCallback(() => {
-//     router.push(amendmentButtonRoute2);
-//   }, [router, amendmentButtonRoute2]);
 
   const handleImageClick = (route: string) => {
     if (route) router.push(route);
@@ -115,68 +108,60 @@ const MultiImagesAmendmentComparisonBtnOne: React.FC<CommonPageProps> = ({
           >
             {amendmentButtonTitle1}
           </Button>
-          {/* <Button
-            variant="contained"
-            onClick={onAmendmentButtonClick2}
-            sx={{
-              backgroundColor: "#5A5867",
-              color: "#FFFFFF",
-              "&:hover": {
-                backgroundColor: "#4A4857",
-              },
-              cursor: "pointer",
-              fontSize: { xs: "0.7rem", sm: "0.9rem", md: "1rem" },
-              padding: { xs: "6px 12px", md: "8px 16px" },
-              textTransform: "capitalize",
-              fontFamily: "Outfit, inherit",
-            }}
-          >
-            {amendmentButtonTitle2}
-          </Button> */}
         </Box>
       </Box>
 
       {Array.isArray(images) && images.length > 0 ? (
-        <Stack
-          direction="column"
-          spacing={0}
-          alignItems="center"
-          useFlexGap
-        >
-          {images.map((img, idx) => (
-            <Box
-              key={img.route || idx}
-              sx={{
-                mt: 2,
-                p: 0,
-                width: "100%",
-                cursor: img.route ? "pointer" : undefined,
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center',
-              }}
-              onClick={() => img.route && handleImageClick(img.route)}
-            >
-              <Image
-                src={img.src}
-                alt={img.alt || pageTitle}
-                style={{
+        <Stack direction="column" spacing={0} alignItems="center" useFlexGap>
+          {images.map((img, idx) =>
+            img.src ? (
+              <Box
+                key={img.route || idx}
+                sx={{
+                  mt: 2,
+                  p: 0,
                   width: "100%",
-                  height: 'auto',
-                  display: 'block',
+                  cursor: img.route ? "pointer" : undefined,
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
                 }}
-              />
-            </Box>
-          ))}
+                onClick={() => handleImageClick(img.route)}
+              >
+                <Image
+                  src={img.src}
+                  alt={img.alt || pageTitle}
+                  style={{
+                    width: "100%",
+                    height: "auto",
+                    display: "block",
+                  }}
+                />
+              </Box>
+            ) : null,
+          )}
         </Stack>
       ) : (
         src && (
-          <Box sx={{ m: 0, p: 0, width: "100%", display: 'flex', justifyContent: 'center' }}>
-            <Image src={src} alt={pageTitle} style={{ width: "100%", height: 'auto', display: 'block' }} />
+          <Box
+            sx={{
+              m: 0,
+              p: 0,
+              width: "100%",
+              display: "flex",
+              justifyContent: "center",
+            }}
+          >
+            <Image
+              src={src}
+              alt={pageTitle}
+              style={{ width: "100%", height: "auto", display: "block" }}
+            />
           </Box>
         )
       )}
     </Box>
   );
 };
+
 export default MultiImagesAmendmentComparisonBtnOne;

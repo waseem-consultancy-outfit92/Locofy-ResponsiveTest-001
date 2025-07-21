@@ -3,7 +3,7 @@ import { MultiPathPage } from "@/components";
 import {
   img1ScopeOfRegistrationImage,
   img2ScopeOfRegistrationImage,
-  img3ScopeOfRegistrationImage
+  img3ScopeOfRegistrationImage,
 } from "@/assets";
 import React from "react";
 
@@ -25,7 +25,7 @@ const ScopeOfRegistrationPageData = [
     link: "/what-needs-to-be-registered",
     icon: img3ScopeOfRegistrationImage,
     title: "What Needs to Be Registered?",
-  }
+  },
 ];
 
 const ScopeOfRegistrationPage = () => {

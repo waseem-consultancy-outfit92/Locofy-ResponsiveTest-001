@@ -1,29 +1,29 @@
 "use client";
 import { Box, Stack, Typography, Button } from "@mui/material";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { useCallback } from "react";
 import { useRouter } from "next/navigation";
 import { CommonBackIcon } from "@/assets/common-assets";
 import { CheckboxForm } from "../checkbox-form";
 
 interface ImageItem {
-  src: any;
+  src: string | StaticImageData;
   route: string;
   alt?: string;
 }
 
 interface CommonPageProps {
-  src?: any;
+  src?: string | StaticImageData;
   images?: ImageItem[];
-  backRoute: any;
+  backRoute: string;
   pageTitle: string;
   onChange?: (selectedValue: string, page: string) => void;
   amendmentButtonRoute1?: string;
   amendmentButtonRoute2?: string;
   amendmentButtonTitle1?: string;
   amendmentButtonTitle2?: string;
-    downloadUrl?: string;
-    downloadFileName?: string;
+  downloadUrl?: string;
+  downloadFileName?: string;
 }
 
 const MultiImagesAmendmentComparisonBtn: React.FC<CommonPageProps> = ({
@@ -36,7 +36,7 @@ const MultiImagesAmendmentComparisonBtn: React.FC<CommonPageProps> = ({
   amendmentButtonRoute2 = "/amendment-comparison-2",
   amendmentButtonTitle1 = "Amendment Comparison 1",
   amendmentButtonTitle2 = "Amendment Comparison 2",
-   downloadUrl,
+  downloadUrl,
 }) => {
   const router = useRouter();
 
@@ -44,21 +44,18 @@ const MultiImagesAmendmentComparisonBtn: React.FC<CommonPageProps> = ({
     router.push(backRoute);
   }, [router, backRoute]);
 
-   const onAmendmentButtonClick1 = useCallback(() => {
-  const targetUrl = downloadUrl || amendmentButtonRoute1;
+  const onAmendmentButtonClick1 = useCallback(() => {
+    const targetUrl = downloadUrl || amendmentButtonRoute1;
 
-  if (targetUrl) {
-    const newTab = window.open(targetUrl, "_blank");
-    if (!newTab) {
-      alert("Popup blocked! Please allow popups for this site.");
+    if (targetUrl) {
+      const newTab = window.open(targetUrl, "_blank");
+      if (!newTab) {
+        alert("Popup blocked! Please allow popups for this site.");
+      }
+    } else {
+      console.warn("No valid URL provided.");
     }
-  } else {
-    console.warn("No valid URL provided.");
-  }
-}, [downloadUrl, amendmentButtonRoute1]);
-
-
-
+  }, [downloadUrl, amendmentButtonRoute1]);
 
   // const onAmendmentButtonClick1 = useCallback(() => {
   //   router.push(amendmentButtonRoute1);
@@ -156,12 +153,7 @@ const MultiImagesAmendmentComparisonBtn: React.FC<CommonPageProps> = ({
       </Box>
 
       {Array.isArray(images) && images.length > 0 ? (
-        <Stack
-          direction="column"
-          spacing={0}
-          alignItems="center"
-          useFlexGap
-        >
+        <Stack direction="column" spacing={0} alignItems="center" useFlexGap>
           {images.map((img, idx) => (
             <Box
               key={img.route || idx}
@@ -170,9 +162,9 @@ const MultiImagesAmendmentComparisonBtn: React.FC<CommonPageProps> = ({
                 p: 0,
                 width: "100%",
                 cursor: img.route ? "pointer" : undefined,
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center',
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
               }}
               onClick={() => img.route && handleImageClick(img.route)}
             >
@@ -181,8 +173,8 @@ const MultiImagesAmendmentComparisonBtn: React.FC<CommonPageProps> = ({
                 alt={img.alt || pageTitle}
                 style={{
                   width: "100%",
-                  height: 'auto',
-                  display: 'block',
+                  height: "auto",
+                  display: "block",
                 }}
               />
             </Box>
@@ -190,8 +182,20 @@ const MultiImagesAmendmentComparisonBtn: React.FC<CommonPageProps> = ({
         </Stack>
       ) : (
         src && (
-          <Box sx={{ m: 0, p: 0, width: "100%", display: 'flex', justifyContent: 'center' }}>
-            <Image src={src} alt={pageTitle} style={{ width: "100%", height: 'auto', display: 'block' }} />
+          <Box
+            sx={{
+              m: 0,
+              p: 0,
+              width: "100%",
+              display: "flex",
+              justifyContent: "center",
+            }}
+          >
+            <Image
+              src={src}
+              alt={pageTitle}
+              style={{ width: "100%", height: "auto", display: "block" }}
+            />
           </Box>
         )
       )}

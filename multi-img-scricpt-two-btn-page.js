@@ -71,7 +71,7 @@ for (const page of pages) {
   // Convert imageRoutes to kebab-case at runtime if not already
   const processedImageRoutes = imageRoutes.map((route) => toKebabCase(route));
   const imageNames = processedImageRoutes.map(
-    (_, i) => `${pascal}Image${i + 1}`
+    (_, i) => `${pascal}Image${i + 1}`,
   );
 
   // Convert buttonRoutes to kebab-case at runtime if not already
@@ -95,7 +95,7 @@ for (const page of pages) {
       (name, i) =>
         `        { src: ${name}, route: "/${
           processedImageRoutes[i]
-        }", alt: "Image ${i + 1}" },`
+        }", alt: "Image ${i + 1}" },`,
     )
     .join("\n");
 
@@ -104,7 +104,7 @@ for (const page of pages) {
       (route, i) =>
         `      amendmentButtonRoute${
           i + 1
-        }="/${route}"\n      amendmentButtonTitle${i + 1}="${buttonTitles[i]}"`
+        }="/${route}"\n      amendmentButtonTitle${i + 1}="${buttonTitles[i]}"`,
     )
     .join("\n");
 

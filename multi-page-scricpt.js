@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 "use client";
 
+=======
+>>>>>>> 311798dbf2427fd775548e42ccba2356d29afc0f
 const fs = require("fs");
 const path = require("path");
 
@@ -10,6 +13,7 @@ const assetsDir = path.join(__dirname, "src", "assets");
 // List of pages with pageTitle, image counts, links, and per-image titles
 const pages = [
   {
+<<<<<<< HEAD
     title: "Manager Registration",
     pageTitle: "Manager Registration",
     imageCount: 2,
@@ -17,6 +21,20 @@ const pages = [
     titles: [
       "Application for registration as a manager of regulated activity/activities",
       "Application to continue registration as a manager under a new provide",
+=======
+    title: "Scope of registration",
+    pageTitle: "Scope of registration",
+    imageCount: 3,
+    links: [
+      "/How the Process Works?",
+      "/Who Needs to Register?",
+      "What Needs to Be Registered?",
+    ],
+    titles: [
+      "How the Process Works?",
+      "Who Needs to Register?h",
+      "What Needs to Be Registered?",
+>>>>>>> 311798dbf2427fd775548e42ccba2356d29afc0f
     ],
   },
 ];
@@ -57,7 +75,11 @@ for (const {
   const pascal = toPascalCase(title.replace(/ & /g, ""));
   if (!kebabBase || !pascal) {
     console.log(
+<<<<<<< HEAD
       `[SKIP] Could not generate valid names for title: '${title}'. Skipping.`
+=======
+      `[SKIP] Could not generate valid names for title: '${title}'. Skipping.`,
+>>>>>>> 311798dbf2427fd775548e42ccba2356d29afc0f
     );
     continue;
   }
@@ -74,13 +96,21 @@ for (const {
   }
   if (dirSuffix >= maxTries) {
     console.log(
+<<<<<<< HEAD
       `[ERROR] Too many duplicate directories for '${title}'. Skipping.`
+=======
+      `[ERROR] Too many duplicate directories for '${title}'. Skipping.`,
+>>>>>>> 311798dbf2427fd775548e42ccba2356d29afc0f
     );
     continue;
   }
   if (finalKebab !== kebabBase) {
     console.log(
+<<<<<<< HEAD
       `Directory for page '${title}' already exists. Created: ${finalKebab}`
+=======
+      `Directory for page '${title}' already exists. Created: ${finalKebab}`,
+>>>>>>> 311798dbf2427fd775548e42ccba2356d29afc0f
     );
   }
   if (!fs.existsSync(dir)) {
@@ -123,7 +153,11 @@ for (const {
         if (indexContent.includes(imageExport.trim())) {
           shouldWriteExport = false;
           console.log(
+<<<<<<< HEAD
             `Export for image '${imageName}' already exists in index.tsx. Skipping export.`
+=======
+            `Export for image '${imageName}' already exists in index.tsx. Skipping export.`,
+>>>>>>> 311798dbf2427fd775548e42ccba2356d29afc0f
           );
         }
       } catch (err) {
@@ -138,7 +172,11 @@ for (const {
       } catch (err) {
         console.log(
           `[ERROR] Failed to append export to index.tsx:`,
+<<<<<<< HEAD
           err.message
+=======
+          err.message,
+>>>>>>> 311798dbf2427fd775548e42ccba2356d29afc0f
         );
       }
     }
@@ -155,15 +193,26 @@ import React from "react";
 
 const ${pascal}PageData = [
   ${arrayData
+<<<<<<< HEAD
       .map(
         (item) => `{
+=======
+    .map(
+      (item) => `{
+>>>>>>> 311798dbf2427fd775548e42ccba2356d29afc0f
     key: "${item.key}",
     link: "${item.link}",
     icon: ${item.icon},
     title: "${item.title}",
+<<<<<<< HEAD
   }`
       )
       .join(",\n  ")}
+=======
+  }`,
+    )
+    .join(",\n  ")}
+>>>>>>> 311798dbf2427fd775548e42ccba2356d29afc0f
 ];
 
 const ${pascal}Page = () => {
@@ -189,5 +238,9 @@ export default ${pascal}Page;
 }
 
 console.log(
+<<<<<<< HEAD
   "Dynamic MultiPath pages with fixed image names, titles, links, and image exports have been created."
+=======
+  "Dynamic MultiPath pages with fixed image names, titles, links, and image exports have been created.",
+>>>>>>> 311798dbf2427fd775548e42ccba2356d29afc0f
 );

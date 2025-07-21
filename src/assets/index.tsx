@@ -1,4 +1,3 @@
-
 // image onebackroute_oneImg.js
 export { default as CareQualityCommissionCqcOverviewImage } from "./CareQualityCommissionCqcOverviewImage.svg";
 
