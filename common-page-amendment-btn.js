@@ -8,14 +8,9 @@ const assetsDir = path.join(__dirname, "src", "assets");
 // ✅ Corrected: Use "title" instead of "tile"
 const pages = [
   {
-    title: "Part IV Guardians of Consent AC",
-    ButtonRoute: "Part IV Guardians of Consent",
+    title: "FCA Overview",
+    ButtonRoute: " Removal to and from Scotland AC",
   },
-  {
-    title: "Part IV Consent and Treatment Safeguards AC",
-    ButtonRoute: "Part IV Consent and Treatment Safeguards ",
-  },
- 
 ];
 
 // Convert to PascalCase
@@ -55,7 +50,9 @@ for (const page of pages) {
   const pascal = toPascalCase(title);
 
   if (!kebabBase || !pascal) {
-    console.log(`[SKIP] Could not generate valid names for title: '${title}'. Skipping.`);
+    console.log(
+      `[SKIP] Could not generate valid names for title: '${title}'. Skipping.`,
+    );
     continue;
   }
 
@@ -75,12 +72,16 @@ for (const page of pages) {
   }
 
   if (dirSuffix >= maxTries) {
-    console.log(`[ERROR] Too many duplicate directories for '${title}'. Skipping.`);
+    console.log(
+      `[ERROR] Too many duplicate directories for '${title}'. Skipping.`,
+    );
     continue;
   }
 
   if (finalKebab !== kebabBase) {
-    console.log(`Directory for page '${title}' already exists. Created: ${finalKebab}`);
+    console.log(
+      `Directory for page '${title}' already exists. Created: ${finalKebab}`,
+    );
   }
 
   if (!fs.existsSync(dir)) {
@@ -95,7 +96,9 @@ for (const page of pages) {
     console.log(`[SKIP] Directory already exists and was not created: ${dir}`);
   }
 
-  const kebabAmendmentButtonRoute = ButtonRoute ? `/${toKebabRoute(ButtonRoute)}` : "";
+  const kebabAmendmentButtonRoute = ButtonRoute
+    ? `/${toKebabRoute(ButtonRoute)}`
+    : "";
 
   // Create page.tsx
   const pageContent = `import { ${imageName} } from "@/assets";
@@ -108,7 +111,7 @@ const ${pascal}Page = () => {
     <AmendmentComparison
       pageTitle={\`Mental Health / Mental Health  Act 1983 / Part V / ${title}\`}
       src={${imageName}}
-      backRoute="/mental-health-act-1983"
+      backRoute="/"
       amendmentButtonRoute="${kebabAmendmentButtonRoute}"
     />
   );
@@ -136,7 +139,9 @@ export default ${pascal}Page;
       const indexContent = fs.readFileSync(indexTsxPath, "utf8");
       if (indexContent.includes(imageExport.trim())) {
         shouldWriteExport = false;
-        console.log(`Export for image '${imageName}' already exists in index.tsx. Skipping export.`);
+        console.log(
+          `Export for image '${imageName}' already exists in index.tsx. Skipping export.`,
+        );
       }
     } catch (err) {
       console.log(`[ERROR] Failed to read index.tsx:`, err.message);

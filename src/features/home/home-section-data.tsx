@@ -1,61 +1,59 @@
-
-
-import homeImg from "./assets/home-img.svg"
+import homeImg from "./assets/home-img.svg";
 
 export const homeData = [
   {
     title: "Overview & Purpose",
     icon: homeImg,
-    link:"/about",
+    link: "/about",
   },
   {
     title: "Identification Of Unfitness To Stand Trial",
     icon: homeImg,
-    link:"",
+    link: "",
   },
   {
     title: "Referral For Psychiatric Evaluation",
     icon: homeImg,
-    link:"",
+    link: "",
   },
   {
     title: "Psychiatric Evaluation Process",
     icon: homeImg,
-    link:"",
+    link: "",
   },
   {
     title: "Psychiatric Report And Expert Testimony",
     icon: homeImg,
-    link:"",
+    link: "",
   },
   {
     title: "Court Hearing For Fitness To Stand Trial",
     icon: homeImg,
-    link:"",
+    link: "",
   },
   {
     title: "Outcome Of Fitness Hearing",
     icon: homeImg,
-    link:"",
+    link: "",
   },
   {
     title: "Restoration Of Fitness To Stand Trial",
     icon: homeImg,
-    link:"",
+    link: "",
   },
   {
     title: "Final Outcome And Special Verdict",
     icon: homeImg,
-    link:"",
+    link: "",
   },
   {
     title: "Monitoring And Long-Term Care",
     icon: homeImg,
-    link:"",
+    link: "",
   },
   {
     title: "Psychiatric Assessment & Follow-Up",
     icon: homeImg,
-    link:"",
+    link: "",
   },
 ];

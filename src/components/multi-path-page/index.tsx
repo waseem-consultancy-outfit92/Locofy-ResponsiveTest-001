@@ -1,14 +1,16 @@
 "use client";
+
 import React, { useCallback } from "react";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { Box, Card, CardContent, Grid, Stack, Typography } from "@mui/material";
 import { useRouter } from "next/navigation";
 import { MultiBackIcon } from "@/assets/common-assets";
+import type { ResponsiveStyleValue } from "@mui/system";
 
 type MultiPathPageItem = {
   key: string;
   link?: string;
-  icon: string;
+  icon: string | StaticImageData;
   title?: string;
 };
 
@@ -16,7 +18,7 @@ type MultiPathPageProps = {
   arrayData: MultiPathPageItem[];
   pageTitle: string;
   backRoute?: string;
-  fontSize?: any;
+  fontSize?: ResponsiveStyleValue<string>;
   iconWidth?: string;
   background?: string;
 };
@@ -32,13 +34,13 @@ const MultiPathPage: React.FC<MultiPathPageProps> = ({
 
   const onBackIconClick = useCallback(() => {
     router.push(backRoute);
-  }, [router]);
+  }, [router, backRoute]);
 
   return (
     <Box p={{ md: 3, xs: 2 }}>
       <Stack
-        flexDirection={"row"}
-        alignItems={"center"}
+        flexDirection="row"
+        alignItems="center"
         mt={{ md: 2, xs: 1 }}
         mb={{ md: 5, sm: 3, xs: 2 }}
       >
@@ -64,49 +66,49 @@ const MultiPathPage: React.FC<MultiPathPageProps> = ({
         </Typography>
       </Stack>
       <Grid container spacing={2}>
-        {!!arrayData.length &&
-          arrayData.map((item) => (
-            <Grid size={{ xs: 12, sm: 6, md: 6, lg: 4, }} key={item.key}>
-              <Card
-                onClick={() => {
-                  if (item.link) {
-                    router.push(item.link);
-                  }
-                }}
-                sx={{
-                  width: "100%",
-                  height: "100%",
-                  backgroundColor: background,
-                  cursor: item.link ? "pointer" : "default",
-                  borderRadius: 6,
-                  textAlign: "center",
-                  boxShadow: "none",
-                  p: 4,
-                }}
-              >
-                <Image
-                  src={item.icon}
-                  alt={item.title ?? item.key}
-                  width={200}
-                  height={200}
-                  style={{ width: "100%", objectFit: "contain" }}
-                />
-                <CardContent>
-                  <Typography
-                    variant="h5"
-                    color="#3571b0"
-                    fontSize={{ xs: "1.2rem", sm: "18px", md: "32px" }}
-                    fontWeight={{ md: 600, xs: 500 }}
-                    sx={{
-                      fontFamily: "inherit",
-                    }}
-                  >
-                    {item.title}
-                  </Typography>
-                </CardContent>
-              </Card>
-            </Grid>
-          ))}
+        {arrayData.map((item) => (
+          <Grid size={{ xs: 12, md: 6, lg: 4 }} key={item.key}>
+            <Card
+              onClick={() => {
+                if (item.link) {
+                  router.push(item.link);
+                }
+              }}
+              sx={{
+                width: "100%",
+                height: "100%",
+                backgroundColor: background,
+                cursor: item.link ? "pointer" : "default",
+                borderRadius: 6,
+                textAlign: "center",
+                boxShadow: "none",
+                p: 4,
+                alignContent: "center",
+              }}
+            >
+              <Image
+                src={item.icon}
+                alt={item.title ?? item.key}
+                width={200}
+                height={200}
+                style={{ width: "100%", objectFit: "contain" }}
+              />
+              <CardContent>
+                <Typography
+                  variant="h5"
+                  color="#3571b0"
+                  fontSize={{ xs: "1.2rem", sm: "18px", md: "32px" }}
+                  fontWeight={{ md: 600, xs: 500 }}
+                  sx={{
+                    fontFamily: "inherit",
+                  }}
+                >
+                  {item.title}
+                </Typography>
+              </CardContent>
+            </Card>
+          </Grid>
+        ))}
       </Grid>
     </Box>
   );

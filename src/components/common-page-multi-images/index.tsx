@@ -1,4 +1,5 @@
 "use client";
+
 import { Box, Stack, Typography } from "@mui/material";
 import Image, { StaticImageData } from "next/image";
 import { useCallback } from "react";
@@ -6,8 +7,16 @@ import { useRouter } from "next/navigation";
 import { CommonBackIcon } from "@/assets/common-assets";
 import { CheckboxForm } from "../checkbox-form";
 
-interface CommonPageProps {
+interface ImageItem {
   src: string | StaticImageData;
+  route: string;
+  alt?: string;
+}
+
+interface CommonPageProps {
+  src?: string | StaticImageData;
+  images?: ImageItem[];
+  imageCount?: number;
   backRoute?: string;
   pageTitle: string;
   onChange?: (selectedValue: string, page: string) => void;
@@ -15,6 +24,8 @@ interface CommonPageProps {
 
 const CommonPage: React.FC<CommonPageProps> = ({
   src,
+  images,
+  imageCount,
   backRoute = "/",
   pageTitle,
   onChange,
@@ -24,6 +35,10 @@ const CommonPage: React.FC<CommonPageProps> = ({
   const onBackIconClick = useCallback(() => {
     router.push(backRoute);
   }, [router, backRoute]);
+
+  const handleImageClick = (route: string) => {
+    router.push(route);
+  };
 
   return (
     <Box p={{ md: 3, xs: 2 }}>
@@ -52,16 +67,46 @@ const CommonPage: React.FC<CommonPageProps> = ({
           {pageTitle}
         </Typography>
       </Stack>
+
       <Box mb={{ md: 4, sm: 3, xs: 2 }}>
         <CheckboxForm onChange={onChange} />
       </Box>
-      <Image
-        src={src}
-        alt={pageTitle}
-        width={40}
-        height={40}
-        style={{ width: "100%", height: "100%", padding: "20px" }}
-      />
+
+      {/* Render multiple images if available */}
+      {Array.isArray(images) && images.length > 0 ? (
+        <Stack direction="column" spacing={2} flexWrap="wrap">
+          {images.slice(0, imageCount || images.length).map((img, idx) => {
+            if (!img.src) return null;
+
+            return (
+              <Image
+                key={img.route || idx}
+                src={img.src}
+                alt={img.alt || pageTitle}
+                width={80}
+                height={80}
+                style={{
+                  width: 80,
+                  height: 80,
+                  cursor: img.route ? "pointer" : undefined,
+                  marginBottom: 8,
+                }}
+                onClick={() => handleImageClick(img.route)}
+              />
+            );
+          })}
+        </Stack>
+      ) : (
+        src && (
+          <Image
+            src={src}
+            alt={pageTitle}
+            width={40}
+            height={40}
+            style={{ width: "100%", height: "100%" }}
+          />
+        )
+      )}
     </Box>
   );
 };
