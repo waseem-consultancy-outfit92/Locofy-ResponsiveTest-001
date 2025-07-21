@@ -1,7 +1,7 @@
 import { Chapter10SafeguardingImage } from "@/assets";
 import { CommonPage } from "@/components";
 import React from "react";
- 
+
 const Chapter10SafeguardingPage = () => {
   return (
     <CommonPage
@@ -11,5 +11,5 @@ const Chapter10SafeguardingPage = () => {
     />
   );
 };
- 
+
 export default Chapter10SafeguardingPage;

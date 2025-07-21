@@ -1,7 +1,7 @@
 import { Chapter8ConductOfBusinessRequirementsImage } from "@/assets";
 import { CommonPage } from "@/components";
 import React from "react";
- 
+
 const Chapter8ConductOfBusinessRequirementsPage = () => {
   return (
     <CommonPage
@@ -11,5 +11,5 @@ const Chapter8ConductOfBusinessRequirementsPage = () => {
     />
   );
 };
- 
+
 export default Chapter8ConductOfBusinessRequirementsPage;

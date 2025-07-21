@@ -1,7 +1,7 @@
 import { Chapter1IntroductionImage } from "@/assets";
 import { CommonPage } from "@/components";
 import React from "react";
- 
+
 const Chapter1IntroductionPage = () => {
   return (
     <CommonPage
@@ -11,5 +11,5 @@ const Chapter1IntroductionPage = () => {
     />
   );
 };
- 
+
 export default Chapter1IntroductionPage;

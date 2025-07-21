@@ -6,16 +6,7 @@ import {
   DiagramBreakdownofTier2Capital,
   DiagramCommonEquityTier1CET1Capital,
   DiagramOverviewofOwnFunds,
-  FCAChapter3Authorisationandregistrationup1,
-  FCAChapter3Authorisationandregistrationup2,
-  FcaOverviewImage,
-  GovernanceInternalControlRiskManagement,
-  InitialCapitalRequirements,
   Initialcapitalrequirementslink,
-  LocationofOfficesandBusinessActivities,
-  ProfessionalIndemnityInsurancePII,
-  SafeguardingMeasuresforUsersFunds,
-  StructuralOrganisationandCloseLinks,
 } from "@/assets";
 import MultiImagesNoBtn from "@/components/multi-images-no-btn";
 import { Box } from "@mui/material";
