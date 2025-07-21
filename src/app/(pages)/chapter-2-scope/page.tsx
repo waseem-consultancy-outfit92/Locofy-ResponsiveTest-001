@@ -1,7 +1,7 @@
 import { Chapter2ScopeImage } from "@/assets";
 import { CommonPage } from "@/components";
 import React from "react";
- 
+
 const Chapter2ScopePage = () => {
   return (
     <CommonPage
@@ -11,5 +11,5 @@ const Chapter2ScopePage = () => {
     />
   );
 };
- 
+
 export default Chapter2ScopePage;

@@ -1,7 +1,7 @@
 import { Chapter5AppointmentOfAgentsAndUseOfDistributorsImage } from "@/assets";
 import { CommonPage } from "@/components";
 import React from "react";
- 
+
 const Chapter5AppointmentOfAgentsAndUseOfDistributorsPage = () => {
   return (
     <CommonPage
@@ -11,5 +11,5 @@ const Chapter5AppointmentOfAgentsAndUseOfDistributorsPage = () => {
     />
   );
 };
- 
+
 export default Chapter5AppointmentOfAgentsAndUseOfDistributorsPage;

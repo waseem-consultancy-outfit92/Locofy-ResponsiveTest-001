@@ -1,7 +1,7 @@
 import { Chapter7StatusDisclosureAndUseOfTheFcaLogoImage } from "@/assets";
 import { CommonPage } from "@/components";
 import React from "react";
- 
+
 const Chapter7StatusDisclosureAndUseOfTheFcaLogoPage = () => {
   return (
     <CommonPage
@@ -11,5 +11,5 @@ const Chapter7StatusDisclosureAndUseOfTheFcaLogoPage = () => {
     />
   );
 };
- 
+
 export default Chapter7StatusDisclosureAndUseOfTheFcaLogoPage;

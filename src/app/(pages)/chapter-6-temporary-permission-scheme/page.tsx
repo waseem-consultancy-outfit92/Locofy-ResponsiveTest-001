@@ -1,7 +1,7 @@
 import { Chapter6TemporaryPermissionSchemeImage } from "@/assets";
 import { CommonPage } from "@/components";
 import React from "react";
- 
+
 const Chapter6TemporaryPermissionSchemePage = () => {
   return (
     <CommonPage
@@ -11,5 +11,5 @@ const Chapter6TemporaryPermissionSchemePage = () => {
     />
   );
 };
- 
+
 export default Chapter6TemporaryPermissionSchemePage;
