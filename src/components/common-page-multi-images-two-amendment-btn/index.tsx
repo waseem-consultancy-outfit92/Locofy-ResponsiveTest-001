@@ -6,10 +6,23 @@ import { useRouter } from "next/navigation";
 import { CommonBackIcon } from "@/assets/common-assets";
 import { CheckboxForm } from "../checkbox-form";
 
+
+interface ClickableArea {
+  title: string;
+  route: string;
+  coords: {
+    left: number;
+    top: number;
+    width: number;
+    height: number;
+  };
+}
+
 interface ImageItem {
   src: any;
   route: string;
   alt?: string;
+   clickableAreas?: ClickableArea[];
 }
 
 interface CommonPageProps {
@@ -25,6 +38,8 @@ interface CommonPageProps {
     downloadUrl?: string;
     downloadFileName?: string;
 }
+const IMAGE_WIDTH = 1848; // your image original width
+const IMAGE_HEIGHT = 3143; // your image original height
 
 const MultiImagesAmendmentComparisonBtn: React.FC<CommonPageProps> = ({
   src,

@@ -1,5 +1,5 @@
 export { default as raispSpiImage } from "./raispSpiImage.svg";
-export { default as raispSpiImage1 } from "./raispSpiImage1.svg";
+export { default as raispSpiImage1 } from "./PaymentServicesRAISP.svg";
 export { default as raispSpiImage2 } from "./raispSpiImage2.svg";
 export { default as raispSpiImage3 } from "./raispSpiImage3.svg";
 export { default as raispSpiImage4 } from "./raispSpiImage4.svg";
