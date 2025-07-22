@@ -104,14 +104,12 @@ const RAISPImageMapComponent = () => {
   return (
     <Box sx={{ maxWidth: "1800px", margin: "0 auto", p: 2 }}>
       <MultiImagesAmendmentComparisonBtn
-        pageTitle="FCA Application/E-Money New Authorisation &  Registration / AEMI"
-        backRoute="/e-money-new-authorisation-registration"
-        amendmentButtonRoute1="fca-application-e-money-new-authorisation-registration-aemi"
+        pageTitle="FCA Application / Payment Services New Authorisation & Registration / RAISP"
+        amendmentButtonRoute1="https://orcalo-my.sharepoint.com/:w:/g/personal/danish_qamar_consultancyoutfit_co_uk/EekE_twl9D1FsuxD_3DSaJsBZs26-w0aPPwa8CtmEEBmLw?e=3IUlHp"
+        amendmentButtonRoute2="/terms-in-application-pack"
         amendmentButtonTitle1="Reference Doc"
-        amendmentButtonRoute2="terms-in-application-pack-sec3"
         amendmentButtonTitle2="KEY TERMS"
-        downloadUrl="https://orcalo-my.sharepoint.com/:b:/g/personal/muhammad-rutab_sohail_consultancyoutfit_co_uk/EbTYOfv4Xv9FnRSzgJnvU4UB4AbqCar-GmVjJx2NksxqTw?e=wb80Vr"
-        downloadFileName="FCA_Reference_Doc.pdf"
+        backRoute="/payment-service-new-authorisation-registration"
       />
 
       <Box sx={{ position: "relative", width: "100%" }}>

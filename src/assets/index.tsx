@@ -83,7 +83,7 @@ export { default as ThePrinciplesAndDefinitionsApplicableToTheCollectionOfStatis
 export { default as SecurityPolicyImage } from "./DecisionTreeSection.svg";
 export { default as FeesAndLeviesImage } from "./FeesAndLevies.svg";
 
-export { default as FcaApplicationEMoneyNewAuthorisationRegistrationAemiImage1 } from "./FcaApplicationEMoneyNewAuthorisationRegistrationAemiImage1.svg";
+export { default as FcaApplicationEMoneyNewAuthorisationRegistrationAemiImage1 } from "./AemiMainImage.svg";
 export { default as FcaApplicationEMoneyNewAuthorisationRegistrationAemiImage2 } from "./FcaApplicationEMoneyNewAuthorisationRegistrationAemiImage2.svg";
 export { default as FcaApplicationEMoneyNewAuthorisationRegistrationAemiImage3 } from "./FcaApplicationEMoneyNewAuthorisationRegistrationAemiImage3.svg";
 export { default as FcaApplicationEMoneyNewAuthorisationRegistrationAemiImage4 } from "./FcaApplicationEMoneyNewAuthorisationRegistrationAemiImage4.svg";
@@ -275,7 +275,7 @@ export { default as paymentService21 } from "./payment-service21.svg";
 
 export { default as AuthorisationAndRegistrationImage } from "./AuthorisationAndRegistrationImage.svg";
 export { default as FCAChapter3Authorisationandregistrationup2 } from "./FCAChapter3Authorisationandregistrationup2.svg";
-export { default as Chapter9Capitalresourcesandrequirements } from "./Chapter9Capitalresourcesandrequirements.svg";
+export { default as Chapter9Capitalresourcesandrequirements } from "./Chapter9CapitalResourcesAndRequirementsMain.svg";
 export { default as InitialCapitalRequirementsImage } from "./InitialCapitalRequirementsImage.svg";
 export { default as FcaApplicationSafeguardingFigure1Image } from "./FcaApplicationSafeguardingFigure1Image.svg";
 export { default as FcaApplicationSafeguardingFigure2Image } from "./FcaApplicationSafeguardingFigure2Image.svg";
@@ -287,3 +287,9 @@ export { default as DiagramOverviewofOwnFunds } from "./DiagramOverviewofOwnFund
 export { default as  DiagramCommonEquityTier1CET1Capital } from "./DiagramCommonEquityTier1CET1Capital.svg";
 export { default as  DiagramAdditionalTier1capital } from "./DiagramAdditionalTier1capital.svg";
 export { default as  DiagramBreakdownofTier2Capital } from "./DiagramBreakdownofTier2Capital.svg";
+export { default as InitialCapitalRequirementsImageOne } from "./InitialCapitalRequirementsImageOne.svg";
+export { default as OverViewOfOwnFunds } from "./OverviewOfOwnFunds.svg";
+export { default as CommonEqultyTiers1 } from "./CommonEqultyTiers1.svg";
+export { default as AdditionalTier1Capital } from "./AdditionalTier1Capital.svg";
+export { default as OverViewOfOwnFundsDiagramFour } from "./OverviewOfOwnFundsDiagramFour.svg";
+
