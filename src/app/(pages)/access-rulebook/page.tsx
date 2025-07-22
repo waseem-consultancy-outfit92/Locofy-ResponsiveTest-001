@@ -66,7 +66,7 @@ const AccessRulebookPageData = [
   {
     key: "access-9",
     link: "/investigations-sanctions-and-discipline",
-    icon: img9AccessRulebookImage,
+    icon: img9AccessRulebookImage, 
     title: "Investigations, Sanctions And Discipline",
   },
   {

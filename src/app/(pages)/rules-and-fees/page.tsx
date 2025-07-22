@@ -23,13 +23,13 @@ const RulesAndFeesPageData = [
   },
   {
     key: "rules-3",
-    link: "/",
+    link: "/aquis-exchange-fair-usage-policy",
     icon: img3RulesAndFeesImage,
     title: "Fair Usage Policy",
   },
   {
     key: "rules-4",
-    link: "/",
+    link: "/liquidity-provider-scheme",
     icon: img4RulesAndFeesImage,
     title: "Liquidity Provider Scheme",
   }
