@@ -40,8 +40,6 @@ const MarketDataPageData = [
     icon: MarketDataImage5,
     title: "EU Market Data Transparency Disclosure",
   },
-
-
 ];
 
 const MarketDataPage = () => {
