@@ -5,7 +5,7 @@ import React from "react";
 const FcaApplicationSafeguardingFigure3Page = () => {
   return (
     <CommonPage
-      pageTitle={`FCA Application / FCA Guide to Payment Services and Electronic Money Regulation / FCA Application / Safeguarding figure3`}
+      pageTitle={`FCA Application / Safeguarding`}
       src={FcaApplicationSafeguardingFigure3Image}
       backRoute="/Chapter9-Capital-resources-and-requirements"
     />

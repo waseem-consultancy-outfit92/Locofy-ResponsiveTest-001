@@ -1,7 +1,7 @@
 import { Chapter4ChangesInCircumstancesOfAuthorisationOrRegistrationImage } from "@/assets";
 import { CommonPage } from "@/components";
 import React from "react";
- 
+
 const Chapter4ChangesInCircumstancesOfAuthorisationOrRegistrationPage = () => {
   return (
     <CommonPage
@@ -11,5 +11,5 @@ const Chapter4ChangesInCircumstancesOfAuthorisationOrRegistrationPage = () => {
     />
   );
 };
- 
+
 export default Chapter4ChangesInCircumstancesOfAuthorisationOrRegistrationPage;

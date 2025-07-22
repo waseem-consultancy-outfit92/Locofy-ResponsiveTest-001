@@ -1,7 +1,7 @@
 import { AuthorisationAndRegistrationImage } from "@/assets";
 import { CommonPage } from "@/components";
 import React from "react";
- 
+
 const AuthorisationAndRegistrationPage = () => {
   return (
     <CommonPage
@@ -11,5 +11,5 @@ const AuthorisationAndRegistrationPage = () => {
     />
   );
 };
- 
+
 export default AuthorisationAndRegistrationPage;

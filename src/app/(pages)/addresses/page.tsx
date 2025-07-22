@@ -4,11 +4,7 @@ import React from "react";
 
 const AddressesPage = () => {
   return (
-    <CommonPage
-      pageTitle={`Addresses`}
-      src={AddressesImage}
-      backRoute="/"
-    />
+    <CommonPage pageTitle={`Addresses`} src={AddressesImage} backRoute="/" />
   );
 };
 
