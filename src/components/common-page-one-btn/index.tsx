@@ -1,36 +1,34 @@
 "use client";
 
-import { Box, Stack, Typography, Button } from "@mui/material";
+import React, { useCallback } from "react";
 import Image, { StaticImageData } from "next/image";
-import { useCallback } from "react";
+import { Box, Button, Card, CardContent, Grid, Stack, Typography } from "@mui/material";
 import { useRouter } from "next/navigation";
-import { CommonBackIcon } from "@/assets/common-assets";
-import { CheckboxForm } from "../checkbox-form";
+import { MultiBackIcon } from "@/assets/common-assets";
+import type { ResponsiveStyleValue } from "@mui/system";
 
-interface ImageItem {
-  src: string | StaticImageData;
-  route: string;
-  alt?: string;
-}
+type MultiPathPageItem = {
+  key: string;
+  link?: string;
+  icon: string | StaticImageData;
+  title?: string;
+};
 
-interface CommonPageProps {
-  src?: string | StaticImageData;
-  images?: ImageItem[];
-  backRoute: string;
+type MultiPathPageProps = {
+  arrayData: MultiPathPageItem[];
   pageTitle: string;
-  onChange?: (selectedValue: string, page: string) => void;
-  amendmentButtonRoute1?: string;
-  amendmentButtonTitle1?: string;
-}
+  backRoute?: string;
+  fontSize?: ResponsiveStyleValue<string>;
+  iconWidth?: string;
+  background?: string;
+};
 
-const MultiImagesAmendmentComparisonBtnOne: React.FC<CommonPageProps> = ({
-  src,
-  images,
-  backRoute,
+const MultiPathOnePage: React.FC<MultiPathPageProps> = ({
+  arrayData,
   pageTitle,
-  onChange,
-  amendmentButtonRoute1 = "/amendment-comparison-1",
-  amendmentButtonTitle1 = "Amendment Comparison 1",
+  backRoute = "/",
+  fontSize = { xs: "20px", sm: "30px", md: "40px" },
+  background = "#e7f0ff",
 }) => {
   const router = useRouter();
 
@@ -38,27 +36,18 @@ const MultiImagesAmendmentComparisonBtnOne: React.FC<CommonPageProps> = ({
     router.push(backRoute);
   }, [router, backRoute]);
 
-  const onAmendmentButtonClick1 = useCallback(() => {
-    router.push(amendmentButtonRoute1);
-  }, [router, amendmentButtonRoute1]);
-
-  const handleImageClick = (route: string) => {
-    if (route) router.push(route);
-  };
-
   return (
     <Box p={{ md: 3, xs: 2 }}>
       <Stack
-        flexDirection={{ xs: "column", md: "row" }}
-        alignItems={{ xs: "flex-start", md: "center" }}
-        justifyContent="space-between"
-        mt={{ md: 2, xs: 4 }}
-        mb={{ md: 4, sm: 3, xs: 4 }}
-        gap={{ xs: 2, md: 0 }}
+        flexDirection={'row'}
+        alignItems="center"
+        justifyContent='space-between'
+        mt={{ md: 2, xs: 1 }}
+        mb={{ md: 5, sm: 3, xs: 2 }}
       >
-        <Box display="flex" alignItems="center" flexWrap="wrap" flexGrow={1}>
+        <Box sx={{ display: 'flex', alignItems: 'center' }}>
           <Image
-            src={CommonBackIcon}
+            src={MultiBackIcon}
             alt={pageTitle}
             width={40}
             height={40}
@@ -67,101 +56,79 @@ const MultiImagesAmendmentComparisonBtnOne: React.FC<CommonPageProps> = ({
           />
           <Typography
             variant="h5"
-            color="#5A5867"
-            fontSize={{ xs: "0.8rem", sm: "18px", md: "22px" }}
+            color="#0246BC"
+            fontSize={fontSize}
             fontWeight={{ md: 600, xs: 500 }}
             ml={{ md: 2, xs: 1 }}
-            sx={{ fontFamily: "Outfit, inherit" }}
+            sx={{
+              fontFamily: "inherit",
+            }}
           >
             {pageTitle}
           </Typography>
+
         </Box>
+        <Typography
+          variant="h5"
+          color="#0246BC"
+          fontSize={fontSize}
+          fontWeight={{ md: 600, xs: 500 }}
+          ml={{ md: 2, xs: 1 }}
+          sx={{
+            fontFamily: "inherit",
+            textDecoration: "underline",
+            cursor: 'pointer'
+          }}
+          textAlign='end'
+        >Reference Doc</Typography>
       </Stack>
-
-      <Box
-        display="flex"
-        flexDirection={{ lg: "row", xs: "column" }}
-        alignItems={{ md: "center", xs: "left" }}
-        justifyContent="space-between"
-        marginBottom={2}
-        gap={0}
-      >
-        <Box flexGrow={1}>
-          <CheckboxForm onChange={onChange} />
-        </Box>
-        <Box sx={{ display: "flex", gap: 2, flexWrap: "wrap", ml: "auto" }}>
-          <Button
-            variant="contained"
-            onClick={onAmendmentButtonClick1}
-            sx={{
-              backgroundColor: "#5A5867",
-              color: "#FFFFFF",
-              "&:hover": {
-                backgroundColor: "#4A4857",
-              },
-              cursor: "pointer",
-              fontSize: { xs: "0.7rem", sm: "0.9rem", md: "1rem" },
-              padding: { xs: "6px 12px", md: "8px 16px" },
-              textTransform: "capitalize",
-              fontFamily: "Outfit, inherit",
-            }}
-          >
-            {amendmentButtonTitle1}
-          </Button>
-        </Box>
-      </Box>
-
-      {Array.isArray(images) && images.length > 0 ? (
-        <Stack direction="column" spacing={0} alignItems="center" useFlexGap>
-          {images.map((img, idx) =>
-            img.src ? (
-              <Box
-                key={img.route || idx}
-                sx={{
-                  mt: 2,
-                  p: 0,
-                  width: "100%",
-                  cursor: img.route ? "pointer" : undefined,
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                }}
-                onClick={() => handleImageClick(img.route)}
-              >
-                <Image
-                  src={img.src}
-                  alt={img.alt || pageTitle}
-                  style={{
-                    width: "100%",
-                    height: "auto",
-                    display: "block",
+      <Grid container spacing={2}>
+        {arrayData.map((item) => (
+          <Grid size={{ xs: 12, md: 6, lg: 4 }} key={item.key}>
+            <Card
+              onClick={() => {
+                if (item.link) {
+                  router.push(item.link);
+                }
+              }}
+              sx={{
+                width: "100%",
+                height: "100%",
+                backgroundColor: background,
+                cursor: item.link ? "pointer" : "default",
+                borderRadius: 6,
+                textAlign: "center",
+                boxShadow: "none",
+                p: 4,
+                alignContent: "center",
+              }}
+            >
+              <Image
+                src={item.icon}
+                alt={item.title ?? item.key}
+                width={200}
+                height={200}
+                style={{ width: "100%", objectFit: "contain" }}
+              />
+              <CardContent>
+                <Typography
+                  variant="h5"
+                  color="#3571b0"
+                  fontSize={{ xs: "1.2rem", sm: "18px", md: "32px" }}
+                  fontWeight={{ md: 600, xs: 500 }}
+                  sx={{
+                    fontFamily: "inherit",
                   }}
-                />
-              </Box>
-            ) : null,
-          )}
-        </Stack>
-      ) : (
-        src && (
-          <Box
-            sx={{
-              m: 0,
-              p: 0,
-              width: "100%",
-              display: "flex",
-              justifyContent: "center",
-            }}
-          >
-            <Image
-              src={src}
-              alt={pageTitle}
-              style={{ width: "100%", height: "auto", display: "block" }}
-            />
-          </Box>
-        )
-      )}
-    </Box>
+                >
+                  {item.title}
+                </Typography>
+              </CardContent>
+            </Card>
+          </Grid>
+        ))}
+      </Grid>
+    </Box >
   );
 };
 
-export default MultiImagesAmendmentComparisonBtnOne;
+export default MultiPathOnePage;

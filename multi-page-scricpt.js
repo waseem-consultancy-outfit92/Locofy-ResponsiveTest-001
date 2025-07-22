@@ -8,11 +8,11 @@ const assetsDir = path.join(__dirname, "src", "assets");
 // List of pages with pageTitle, image counts, links, and per-image titles
 const pages = [
   {
-    title: "Scope of registration",
-    pageTitle: "Scope of registration",
-    imageCount: 3,
+    title: "Technical Specifications",
+    pageTitle: "Technical Specifications",
+    imageCount: 7,
     links: [
-      "/How the Process Works?",
+      "/FIX 4.2-Protocol-technical-specification",
       "/Who Needs to Register?",
       "What Needs to Be Registered?",
     ],
