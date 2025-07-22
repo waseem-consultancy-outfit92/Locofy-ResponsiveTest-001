@@ -8,9 +8,86 @@ const assetsDir = path.join(__dirname, "src", "assets");
 // ✅ Corrected: Use "title" instead of "tile"
 const pages = [
   {
-    title: "FCA Overview",
+    title: "Aquis Market Data Technical Specification",
     ButtonRoute: " Removal to and from Scotland AC",
   },
+  {
+    title: "Data Types",
+    ButtonRoute: " aquis-market-data-technical-specification",
+  },
+  {
+    title: "Order Cancel Message ",
+    ButtonRoute: " aquis-market-data-technical-specification",
+  },
+  {
+    title: "Order Modify Message ",
+    ButtonRoute: " aquis-market-data-technical-specification",
+  },
+  {
+    title: "Trade Bust Message",
+    ButtonRoute: " aquis-market-data-technical-specification",
+  },
+  {
+    title: "Trades Bust Messages",
+    ButtonRoute: " aquis-market-data-technical-specification",
+  },
+  {
+    title: "Security Status Message ",
+    ButtonRoute: " aquis-market-data-technical-specification",
+  },
+  {
+    title: "Snapshot Start Message",
+    ButtonRoute: " aquis-market-data-technical-specification",
+  },
+  {
+    title: "Book Entry Message ",
+    ButtonRoute: " aquis-market-data-technical-specification",
+  },
+  {
+    title: "MMT Flags",
+    ButtonRoute: " aquis-market-data-technical-specification",
+  },
+  {
+    title: "Message Header and Heartbeat (Table Values)",
+    ButtonRoute: " aquis-market-data-technical-specification",
+  },
+  {
+    title: "Order Add Message ",
+    ButtonRoute: " aquis-market-data-technical-specification",
+  },
+  {
+    title: " Trade Message ",
+    ButtonRoute: " aquis-market-data-technical-specification",
+  },
+  {
+    title: "Tick Table Data Message",
+    ButtonRoute: " aquis-market-data-technical-specification",
+  },
+  {
+    title: "Security Definition Message",
+    ButtonRoute: " aquis-market-data-technical-specification",
+  },
+  {
+    title: "AoD Update Message",
+    ButtonRoute: " aquis-market-data-technical-specification",
+  },
+  {
+    title: "MaC Update Message ",
+    ButtonRoute: " aquis-market-data-technical-specification",
+  },
+  {
+    title: "Book Status Message ",
+    ButtonRoute: " aquis-market-data-technical-specification",
+  },
+  {
+    title: "MaC Book Entry Message",
+    ButtonRoute: " aquis-market-data-technical-specification",
+  },
+  {
+    title: "MdFlags ",
+    ButtonRoute: " aquis-market-data-technical-specification",
+  },
+  
 ];
 
 // Convert to PascalCase
