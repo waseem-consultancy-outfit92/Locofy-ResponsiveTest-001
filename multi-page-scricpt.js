@@ -8,18 +8,21 @@ const assetsDir = path.join(__dirname, "src", "assets");
 // List of pages with pageTitle, image counts, links, and per-image titles
 const pages = [
   {
-    title: "Scope of registration",
-    pageTitle: "Scope of registration",
-    imageCount: 3,
-    links: [
-      "/How the Process Works?",
-      "/Who Needs to Register?",
-      "What Needs to Be Registered?",
-    ],
+    title: "Access Rulebook",
+    pageTitle: "Access Rulebook",
+    imageCount: 10,
+    links: ["/", "/", "/", "/", "/", "/", "/", "/", "/", "/"],
     titles: [
-      "How the Process Works?",
-      "Who Needs to Register?h",
-      "What Needs to Be Registered?",
+      "Introduction",
+      "Definition",
+      "Application Process",
+      "Eligibility For Admission",
+      "Continuing Obligations",
+      "Disclosure And Transparency Obligations",
+      "Suspending, Cancelling And Restoring Trading And Admission",
+      "Fast-Track",
+      "Investigations, Sanctions And Discipline",
+      "Admission Document (Appendix I)",
     ],
   },
 ];
