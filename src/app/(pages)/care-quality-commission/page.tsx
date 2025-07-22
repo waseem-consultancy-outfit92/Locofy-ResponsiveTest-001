@@ -51,7 +51,7 @@ const CareQualityCommissionPageData = [
   },
   {
     key: "care-7",
-    link: "/care-quality-commission-regulated-services-14",
+    link: "/care-quality-commission-regulated-services",
     icon: img7CareQualityCommissionImage,
     title: "Regulated Activities",
   },
