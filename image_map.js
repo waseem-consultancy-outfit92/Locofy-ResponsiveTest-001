@@ -69,7 +69,7 @@ for (const page of pages) {
   console.log(`✅ Created directory: ${dir}`);
 
   // Write page.tsx
-const pageContent = `import { ${imageName} } from "@/assets";
+  const pageContent = `import { ${imageName} } from "@/assets";
 import CommonImgMapPage from "@/components/common-img-map-page";
 import React from "react";
 
