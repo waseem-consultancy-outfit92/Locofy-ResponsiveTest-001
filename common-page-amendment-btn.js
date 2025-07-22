@@ -10,6 +10,8 @@ const pages = [
   {
     title: "Aquis Market Data Technical Specification",
     ButtonRoute: " Removal to and from Scotland AC",
+    title: "Aquis Exchange Fair Usage Policy",
+    ButtonRoute: "rules-and-fees",
   },
   {
     title: "Data Types",
