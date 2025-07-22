@@ -74,3 +74,7 @@ export { default as EuMarketDataDistributedImage } from "./EuMarketDataDistribut
 export { default as EuMarketDataRevenuesImage } from "./EuMarketDataRevenuesImage.svg";
 export { default as AquisVWAPMatchImage } from "./AquisVWAPMatchImage.svg";
 export { default as HowAVMWorksImage } from "./HowAVMWorksImage.svg";
+export { default as SequenceDiagramAqseImage } from "./Sequence Diagram AQSE.svg";
+export { default as LogoImage } from "./logo.svg";
+
+
