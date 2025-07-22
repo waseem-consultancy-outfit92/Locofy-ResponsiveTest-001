@@ -6,9 +6,74 @@ const assetsDir = path.join(__dirname, "src", "assets");
 const indexTsxPath = path.join(assetsDir, "index.tsx");
 
 const pages = [
+  { name: "Member Participation Agreement", backRoute: "/Legal Agreements" },
   {
-    name: "Liquidity Provider Scheme",
-    backRoute: "/liquidity-provider-scheme",
+    name: "Applicant Information (Section 1)",
+    backRoute: "/Member Application Form",
+  },
+  { name: "Section 4: Compliance", backRoute: "/Member Application Form" },
+  { name: "Section 9: Connectivity", backRoute: "/Member Application Form" },
+  { name: "Applicant Declaration", backRoute: "/Member Application Form" },
+  {
+    name: "Section 7: Requested Markets",
+    backRoute: "/Member Application Form",
+  },
+  {
+    name: "Section 5: Contact Information",
+    backRoute: "/Member Application Form",
+  },
+  {
+    name: "Section 2: Services Required",
+    backRoute: "/Member Application Form",
+  },
+  {
+    name: "Section 3: Regulatory Status",
+    backRoute: "/Member Application Form",
+  },
+  { name: "Section 6: Billing Details", backRoute: "/Member Application Form" },
+  {
+    name: "Section 8: Clearing Arrangements",
+    backRoute: "/Member Application Form",
+  },
+  {
+    name: "Appendix 1: Trading Profile Contacts",
+    backRoute: "/Member Application Form",
+  },
+  { name: "Requested Markets", backRoute: "/Requested Markets Amendment Form" },
+  {
+    name: "Form Submission Details",
+    backRoute: "/Requested Markets Amendment Form",
+  },
+  { name: "Liquidity Provider Addendum", backRoute: "/Legal Agreements" },
+  { name: "Transaction Reporting Addendum", backRoute: "/Legal Agreements" },
+  { name: "Applicant Information", backRoute: "/MaC Order Form" },
+  { name: "Requirements & Agreements", backRoute: "/MaC Order Form" },
+  {
+    name: "Company Information 1",
+    backRoute: "/Software Vendor Application Form",
+  },
+  {
+    name: "Contact Information",
+    backRoute: "/Software Vendor Application Form",
+  },
+  {
+    name: "Connectivity Services Required",
+    backRoute: "/Software Vendor Application Form",
+  },
+  { name: "Company Information 2", backRoute: "/Connectivity Order Form" },
+  {
+    name: "Connectivity Contact Information",
+    backRoute: "/Connectivity Order Form",
+  },
+  {
+    name: "Connectivity Services Required",
+    backRoute: "/Connectivity Order Form",
+  },
+  { name: "Trading Ports Required", backRoute: "/Connectivity Order Form" },
+  { name: "Formal Agreement Process", backRoute: "/Connectivity Order Form" },
+  {
+    name: "Connectivity Services Terms and Conditions",
+    backRoute: "/Legal Agreements",
   },
 ];
 
