@@ -1,14 +1,14 @@
-'use client'
-import React from 'react';
-import Box from '@mui/material/Box';
-import Image from 'next/image';
-import Link from 'next/link';
-import Typography from '@mui/material/Typography';
-import Tooltip from '@mui/material/Tooltip';
+"use client";
+import React from "react";
+import Box from "@mui/material/Box";
+import Image from "next/image";
+import Link from "next/link";
+import Typography from "@mui/material/Typography";
+import Tooltip from "@mui/material/Tooltip";
 import { MarketDataTransparencyDisclosureImage } from "@/assets";
-import { Stack } from '@mui/material';
-import { CheckboxForm } from '@/components/checkbox-form';
-import { CommonBackIcon } from '@/assets/common-assets';
+import { Stack } from "@mui/material";
+import { CheckboxForm } from "@/components/checkbox-form";
+import { CommonBackIcon } from "@/assets/common-assets";
 import { useRouter } from "next/navigation";
 
 const MarketDataTransparencyDisclosurePage = () => {
@@ -17,8 +17,9 @@ const MarketDataTransparencyDisclosurePage = () => {
   const areas = [
     {
       id: 2,
-      title: 'Information on the content of the market data distributed by Aquis Exchange Europe SAS',
-      href: '/eu-market-data-distributed',
+      title:
+        "Information on the content of the market data distributed by Aquis Exchange Europe SAS",
+      href: "/eu-market-data-distributed",
       x: 82.48433048433048,
       y: 1491.7378917378917,
       width: 1258.3247863247864,
@@ -26,8 +27,8 @@ const MarketDataTransparencyDisclosurePage = () => {
     },
     {
       id: 3,
-      title: 'Market data revenues for Aquis Exchange Europe SAS FY 2024',
-      href: '/eu-market-data-revenues',
+      title: "Market data revenues for Aquis Exchange Europe SAS FY 2024",
+      href: "/eu-market-data-revenues",
       x: 82.48433048433048,
       y: 2676.353276353276,
       width: 877.4928774928775,
@@ -36,9 +37,16 @@ const MarketDataTransparencyDisclosurePage = () => {
   ];
 
   return (
-    <Stack px={5} py={3} gap={'40px'}>
+    <Stack px={5} py={3} gap={"40px"}>
       <Stack>
-        <Box sx={{ width: '100%', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+        <Box
+          sx={{
+            width: "100%",
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+          }}
+        >
           <Image
             src={CommonBackIcon}
             alt={"backIcon"}
@@ -49,7 +57,17 @@ const MarketDataTransparencyDisclosurePage = () => {
             }}
             style={{ cursor: "pointer" }}
           />
-          <Box component={Link} href={'/'} sx={{ color: '#0246BC', fontSize: '40px', fontWeight: '500', textDecoration: 'underline', lineHeight: '1.2' }}>
+          <Box
+            component={Link}
+            href={"/"}
+            sx={{
+              color: "#0246BC",
+              fontSize: "40px",
+              fontWeight: "500",
+              textDecoration: "underline",
+              lineHeight: "1.2",
+            }}
+          >
             Reference Doc
           </Box>
         </Box>
@@ -61,13 +79,13 @@ const MarketDataTransparencyDisclosurePage = () => {
           mt={3}
           sx={{
             fontFamily: "inherit",
-            lineHeight: '1.25',
+            lineHeight: "1.25",
           }}
         >
-          AQUIS EXCHANGE EUROPE  MARKET DATA TRANSPARENCY  DISCLOSURE 2024
+          AQUIS EXCHANGE EUROPE MARKET DATA TRANSPARENCY DISCLOSURE 2024
         </Typography>
       </Stack>
-      <Box sx={{ position: 'relative', width: '100%', height: 'auto' }}>
+      <Box sx={{ position: "relative", width: "100%", height: "auto" }}>
         <Image
           src={MarketDataTransparencyDisclosureImage}
           alt="AQUIS EXCHANGE EUROPE  MARKET DATA TRANSPARENCY  DISCLOSURE 2024"
@@ -82,7 +100,7 @@ const MarketDataTransparencyDisclosurePage = () => {
               <Box
                 component="a"
                 sx={{
-                  position: 'absolute',
+                  position: "absolute",
                   left: `${(area.x / 1848) * 100}%`,
                   top: `${(area.y / 6722) * 100}%`,
                   width: `${(area.width / 1848) * 100}%`,

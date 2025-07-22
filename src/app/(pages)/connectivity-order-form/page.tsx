@@ -19,7 +19,8 @@ const areas = [
   },
   {
     alt: "Trading Ports Required (If connecting for trading purposes, in Production)",
-    title: "Trading Ports Required (If connecting for trading purposes, in Production)",
+    title:
+      "Trading Ports Required (If connecting for trading purposes, in Production)",
     href: "/trading-ports-required",
     coords: "27,2782,1134,2871",
     shape: "rect",
@@ -32,7 +33,6 @@ const areas = [
     shape: "rect",
   },
 ];
-
 
 const ConnectivityOrderFormPage = () => {
   return (

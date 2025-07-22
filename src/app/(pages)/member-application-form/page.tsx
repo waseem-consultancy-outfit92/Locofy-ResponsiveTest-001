@@ -82,7 +82,6 @@ const areas = [
   },
 ];
 
-
 const MemberApplicationFormPage = () => {
   return (
     <CommonImgMapPage
