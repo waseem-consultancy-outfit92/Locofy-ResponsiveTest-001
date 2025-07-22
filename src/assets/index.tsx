@@ -87,3 +87,4 @@ export { default as DirectlyConnectedServersBGPCrossConnectsLocImage } from "./D
 export { default as TCPTargetsForAQXEAndAQEUMTFImage } from "./TCPTargetsForAQXEAndAQEUMTFImage.svg";
 export { default as MulticastImage } from "./MulticastImage.svg";
 export { default as MemberApplicationFormImage } from "./MemberApplicationFormImage.svg";
+export { default as ConnectivityOrderFormImage } from "./ConnectivityOrderFormImage.svg";

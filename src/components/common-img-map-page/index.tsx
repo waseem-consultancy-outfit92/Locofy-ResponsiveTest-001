@@ -175,6 +175,15 @@ const CommonImgMapPage: React.FC<CommonPageProps> = ({
               {amendmentButtonTitle3}
             </Button>
           )}
+          {/* {<Typography
+            variant="h5"
+            fontSize={{ xs: "0.8rem", sm: "18px", md: "22px" }}
+            fontWeight={{ md: 600, xs: 500 }}
+            ml={{ md: 2, xs: 1 }}
+            sx={{ fontFamily: "Outfit, inherit" }}
+          >
+            {referenceDoc}
+          </Typography>} */}
         </Box>
       </Box>
 
