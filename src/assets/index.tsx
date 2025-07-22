@@ -31,3 +31,15 @@ export { default as EuMarketDataDistributedImage } from "./EuMarketDataDistribut
 export { default as EuMarketDataRevenuesImage } from "./EuMarketDataRevenuesImage.svg";
 export { default as AquisVWAPMatchImage } from "./AquisVWAPMatchImage.svg";
 export { default as HowAVMWorksImage } from "./HowAVMWorksImage.svg";
+
+export { default as ConnectivityGuideImage } from "./ConnectivityGuideImage.svg";
+export { default as MarketDataSplitsImage } from "./MarketDataSplitsImage.svg";
+export { default as BGPCrossConnectsCircuitsDiagramDetailsImage } from "./BGPCrossConnectsCircuitsDiagramDetailsImage.svg";
+export { default as MarketAtCloseMarketDataSplitsImage } from "./MarketAtCloseMarketDataSplitsImage.svg";
+export { default as MeshedBGPCrossConnectsImage } from "./MeshedBGPCrossConnectsImage.svg";
+export { default as DirectlyConnectedServersImage } from "./DirectlyConnectedServersImage.svg";
+export { default as DirectlyAttachedServersLayer2CrossConnectImage } from "./DirectlyAttachedServersLayer2CrossConnectImage.svg";
+export { default as DirectlyConnectedServersAndBGPCrossConnectsImage } from "./DirectlyConnectedServersAndBGPCrossConnectsImage.svg";
+export { default as DirectlyConnectedServersBGPCrossConnectsLocImage } from "./DirectlyConnectedServersBGPCrossConnectsLocImage.svg";
+export { default as TCPTargetsForAQXEAndAQEUMTFImage } from "./TCPTargetsForAQXEAndAQEUMTFImage.svg";
+export { default as MulticastImage } from "./MulticastImage.svg";
