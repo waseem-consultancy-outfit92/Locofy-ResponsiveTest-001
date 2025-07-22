@@ -11,6 +11,8 @@ interface ImageMapArea {
   href: string;
   title: string;
   target?: '_blank' | '_parent';
+  type?: string
+  audioSrc?: string
 }
 
 export default function Home() {
@@ -20,24 +22,24 @@ export default function Home() {
   // Define all clickable areas
   const areas: ImageMapArea[] = [
     // Top right navigation links
-    { x: 1607.4074074074074, y: 88.31908831908832, width: 224.3304843304843, height: 35.32763532763532, href: '/aqse-overview', title: 'AQSE Overview Diagram', target: '_parent' },
-    { x: 1607.4074074074074, y: 132.47863247863248, width: 226.09686609686605, height: 35.327635327635335, href: '#', title: 'AQSE Documents', target: '_parent' },
+    { x: 1607.4074074074074, y: 88.31908831908832, width: 224.3304843304843, height: 35.32763532763532, href: '/aqse-overview', title: 'AQSE Overview Diagram', target: '_parent', type: "link" },
+    { x: 1607.4074074074074, y: 132.47863247863248, width: 226.09686609686605, height: 35.327635327635335, href: '/aqse-documents', title: 'AQSE Documents', target: '_parent' },
     { x: 1603.8746438746439, y: 173.1054131054131, width: 231.39601139601132, height: 37.09401709401709, href: 'https://www.aquis.eu/markets/join', title: 'AQSE Guides', target: '_blank' },
 
     // Right side document sections
-    { x: 1278.8603988603988, y: 492.8205128205128, width: 554.6438746438746, height: 84.78632478632483, href: '#', title: 'Rules and Fees', target: '_parent' },
-    { x: 1278.8603988603988, y: 595.2706552706553, width: 554.6438746438746, height: 77.72079772079769, href: '#', title: 'legal agreements', target: '_parent' },
-    { x: 1275.3276353276353, y: 690.6552706552707, width: 558.1766381766381, height: 81.2535612535612, href: '#', title: 'technical specifications', target: '_parent' },
-    { x: 1275.3276353276353, y: 786.039886039886, width: 559.9430199430199, height: 84.78632478632483, href: '#', title: 'market data', target: '_parent' },
-    { x: 1278.8603988603988, y: 888.4900284900285, width: 554.6438746438746, height: 79.48717948717945, href: '#', title: 'brochures', target: '_parent' },
+    { x: 1278.8603988603988, y: 492.8205128205128, width: 554.6438746438746, height: 84.78632478632483, href: '/rules-and-fees', title: 'Rules and Fees', target: '_parent' },
+    { x: 1278.8603988603988, y: 595.2706552706553, width: 554.6438746438746, height: 77.72079772079769, href: '/legal-agreements', title: 'legal agreements', target: '_parent' },
+    { x: 1275.3276353276353, y: 690.6552706552707, width: 558.1766381766381, height: 81.2535612535612, href: '/technical-specifications', title: 'technical specifications', target: '_parent' },
+    { x: 1275.3276353276353, y: 786.039886039886, width: 559.9430199430199, height: 84.78632478632483, href: '/market-data', title: 'market data', target: '_parent' },
+    { x: 1278.8603988603988, y: 888.4900284900285, width: 554.6438746438746, height: 79.48717948717945, href: '/brochures', title: 'brochures', target: '_parent' },
 
     // Audio buttons (small circular elements)
-    { x: 307.35042735042737, y: 266.7236467236467, width: 21.196581196581178, height: 21.196581196581235, href: 'https://orcalo.blob.core.windows.net/locofy/AQSE%20Audios/1.%20Initiate%20Internal%20Audit.mp4', title: 'initiate internal audit audio', target: '_parent' },
-    { x: 604.1025641025641, y: 279.0883190883191, width: 28.262108262108313, height: 26.4957264957265, href: '#', title: 'engage for legal checks audio', target: '_parent' },
-    { x: 600.5698005698006, y: 317.94871794871796, width: 28.2621082621082, height: 26.4957264957265, href: '#', title: 'complete initial checks audio', target: '_parent' },
-    { x: 339.14529914529913, y: 429.2307692307692, width: 26.4957264957265, height: 24.729344729344746, href: '#', title: 'prepare financial and business plans audio', target: '_parent' },
-    { x: 611.1680911680912, y: 469.8575498575499, width: 30.028490028489955, height: 19.430199430199423, href: '#', title: 'draft admission document audio', target: '_parent' },
-    { x: 611.1680911680912, y: 498.11965811965814, width: 35.32763532763522, height: 31.794871794871767, href: '#', title: 'validate structure and contracts audio', target: '_parent' },
+    { x: 307.35042735042737, y: 266.7236467236467, width: 21.196581196581178, height: 21.196581196581235, href: '#', title: 'initiate internal audit audio', target: '_parent', type: "audio", audioSrc: "https://orcalo.blob.core.windows.net/locofy/AQSE%20Audios/1.%20Initiate%20Internal%20Audit.mp4" },
+    { x: 604.1025641025641, y: 279.0883190883191, width: 28.262108262108313, height: 26.4957264957265, href: '#', title: 'engage for legal checks audio', target: '_parent', type:"audio",audioSrc:"https://orcalo.blob.core.windows.net/locofy/AQSE%20Audios/1.%20Engage%20for%20legal%20Checks.mp4"},
+    { x: 600.5698005698006, y: 317.94871794871796, width: 28.2621082621082, height: 26.4957264957265, href: '#', title: 'complete initial checks audio', target: '_parent',type:"audio",audioSrc:"https://orcalo.blob.core.windows.net/locofy/AQSE%20Audios/1.%20Complete%20Initial%20Checks.mp4" },
+    { x: 339.14529914529913, y: 429.2307692307692, width: 26.4957264957265, height: 24.729344729344746, href: '#', title: 'prepare financial and business plans audio', target: '_parent',type:"audio",audioSrc:"https://orcalo.blob.core.windows.net/locofy/AQSE%20Audios/5.%20Supports%20Ir%20and%20Compliance%20Announcements.mp4" },
+    { x: 611.1680911680912, y: 469.8575498575499, width: 30.028490028489955, height: 19.430199430199423, href: '#', title: 'draft admission document audio', target: '_parent',type:"audio",audioSrc:"https://orcalo.blob.core.windows.net/locofy/AQSE%20Audios/2.%20Draft%20Admission%20Document%20Access%20or%20Prospectus%20Apex.mp4" },
+    { x: 611.1680911680912, y: 498.11965811965814, width: 35.32763532763522, height: 31.794871794871767, href: '#', title: 'validate structure and contracts audio', target: '_parent',type:"audio",audioSrc:"https://orcalo.blob.core.windows.net/locofy/AQSE%20Audios/2.%20Validate%20Structure%20and%20Contracts.mp4" },
     { x: 745.4131054131054, y: 597.0370370370371, width: 24.72934472934469, height: 24.72934472934469, href: '#', title: 'submit documents audio', target: '_parent' },
     { x: 1218.8034188034187, y: 607.6353276353276, width: 26.495726495726558, height: 28.262108262108313, href: '#', title: 'review prospectus audio', target: '_parent' },
     { x: 1192.3076923076924, y: 648.2621082621083, width: 30.02849002849007, height: 24.72934472934469, href: '#', title: 'feedback on compliance audio', target: '_parent' },
