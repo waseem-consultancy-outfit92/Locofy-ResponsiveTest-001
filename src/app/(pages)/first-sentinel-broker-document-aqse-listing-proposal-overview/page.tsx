@@ -5,16 +5,7 @@ import {
 } from "@/assets";
 import { CommonBackIcon } from "@/assets/common-assets";
 import { CheckboxForm } from "@/components/checkbox-form";
-import {
-  Stack,
-  Typography,
-  Box,
-  Tooltip,
-  Link,
-  Button,
-  Dialog,
-  Modal,
-} from "@mui/material";
+import { Stack, Typography, Box, Link, Button, Modal } from "@mui/material";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import React, { useState } from "react";
@@ -161,8 +152,9 @@ const FirstSentinelBrokerDocumentPage = () => {
           />
 
           {/* Clickable areas with tooltips */}
-          {areas.map((area, index) => (
+          {areas.map((area, id) => (
             <Link
+              key={id}
               href={area.href}
               target="_parent"
               sx={{

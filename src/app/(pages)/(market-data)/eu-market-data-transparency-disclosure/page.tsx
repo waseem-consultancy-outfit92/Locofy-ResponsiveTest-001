@@ -7,7 +7,6 @@ import Typography from "@mui/material/Typography";
 import Tooltip from "@mui/material/Tooltip";
 import { MarketDataTransparencyDisclosureImage } from "@/assets";
 import { Stack } from "@mui/material";
-import { CheckboxForm } from "@/components/checkbox-form";
 import { CommonBackIcon } from "@/assets/common-assets";
 import { useRouter } from "next/navigation";
 

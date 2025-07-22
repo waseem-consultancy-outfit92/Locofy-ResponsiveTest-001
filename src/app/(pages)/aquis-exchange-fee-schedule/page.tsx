@@ -21,7 +21,6 @@ const AquisExchangeFeeSchedule: React.FC = () => {
   // Original SVG dimensions
   const originalWidth = 1848;
   const originalHeight = 6439;
-  const imageSrc = "/AQUIS EXCHANGE FEE SCHEDULE.svg";
 
   const areas: ImageMapArea[] = [
     {
@@ -142,8 +141,9 @@ const AquisExchangeFeeSchedule: React.FC = () => {
         />
 
         {/* Interactive Areas */}
-        {areas.map((area, index) => (
+        {areas.map((area, id) => (
           <Link
+            key={id}
             href={area.href}
             target="_parent"
             sx={{

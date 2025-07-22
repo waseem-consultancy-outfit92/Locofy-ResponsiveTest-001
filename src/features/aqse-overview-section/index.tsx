@@ -72,7 +72,7 @@ export const AqseOverviewSection = () => {
           />
         </Stack>
       </Stack>
-      <img
+      <Image
         src={aqseOverviewImage.src}
         alt="Aqse overview"
         width={40}
@@ -107,7 +107,7 @@ export const AqseOverviewSection = () => {
             }}
             onClick={(e) => e.stopPropagation()}
           >
-            <img
+            <Image
               src={keyAbbreviations.src}
               alt="Key Terms"
               width={40}
