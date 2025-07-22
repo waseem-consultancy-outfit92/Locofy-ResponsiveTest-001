@@ -8,8 +8,8 @@ const assetsDir = path.join(__dirname, "src", "assets");
 // ✅ Corrected: Use "title" instead of "tile"
 const pages = [
   {
-    title: "FCA Overview",
-    ButtonRoute: " Removal to and from Scotland AC",
+    title: "Aquis Exchange Fair Usage Policy",
+    ButtonRoute: "rules-and-fees",
   },
 ];
 
