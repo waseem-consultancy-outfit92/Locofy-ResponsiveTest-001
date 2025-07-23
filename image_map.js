@@ -6,8 +6,9 @@ const assetsDir = path.join(__dirname, "src", "assets");
 const indexTsxPath = path.join(assetsDir, "index.tsx");
 
 const pages = [
-  { name: "MaC Order Form", backRoute: "/Legal Agreements" },
-  { name: "Software Vendor Application Form", backRoute: "/Legal Agreements" },
+
+  { name: "SAquis Short Code Upload Specification", backRoute: "/Technical Specifications" },
+  
 ];
 
 const toPascalCase = (str) =>

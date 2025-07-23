@@ -5,7 +5,7 @@ const baseDir = path.join(__dirname, "src", "app", "(pages)");
 const assetsDir = path.join(__dirname, "src", "assets");
 
 const pages = [
-  {
+  {  
     title: "k",
     amendmentButtonRoute: "/Amen",
     amendmentButtonTitle: "View c Comparison",

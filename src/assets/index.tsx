@@ -155,3 +155,8 @@ export { default as TCPTargetsForAQXEAndAQEUMTFImage } from "./TCPTargetsForAQXE
 export { default as MulticastImage } from "./MulticastImage.svg";
 export { default as MemberApplicationFormImage } from "./MemberApplicationFormImage.svg";
 export { default as ConnectivityOrderFormImage } from "./ConnectivityOrderFormImage.svg";
+export { default as SaquisShortCodeUploadSpecificationImage } from "./SaquisShortCodeUploadSpecificationImage.svg";
+export { default as MappingFileDetailsAndFormatImage } from "./MappingFileDetailsAndFormatImage.svg";
+export { default as ShortCodeExceptionsReportImage } from "./ShortCodeExceptionsReportImage.svg";
+export { default as RegulatoryTransactionReportingServiceSpecificationImage } from "./RegulatoryTransactionReportingServiceSpecificationImage.svg";
+export { default as ErrorDescriptionsImage } from "./ErrorDescriptionsImage.svg";
