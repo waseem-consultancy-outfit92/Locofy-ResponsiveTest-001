@@ -10,13 +10,20 @@ const assetsDir = path.join(__dirname, "src", "assets");
 // List of pages with pageTitle, image counts, links, and per-image titles
 const pages = [
   {
-    title: "Manager Registration",
-    pageTitle: "Manager Registration",
-    imageCount: 2,
-    links: ["/", "/"],
+    title: "Who Needs to Register?",
+    pageTitle: "Who Needs to Register?",
+    imageCount: 4,
+    links: [
+      "/New Provider Application",
+      "/Manager Registration",
+      "/Qualifications & Certifications",
+      "/Supporting People",
+    ],
     titles: [
-      "Application for registration as a manager of regulated activity/activities",
-      "Application to continue registration as a manager under a new provide",
+      "New Provider Application Breakdown",
+      "Manager Application Breakdown",
+      "Qualifications & Certifications",
+      "Supports (People/ Building/ Plan)",
     ],
   },
 ];
@@ -155,15 +162,15 @@ import React from "react";
 
 const ${pascal}PageData = [
   ${arrayData
-      .map(
-        (item) => `{
+    .map(
+      (item) => `{
     key: "${item.key}",
     link: "${item.link}",
     icon: ${item.icon},
     title: "${item.title}",
   }`
-      )
-      .join(",\n  ")}
+    )
+    .join(",\n  ")}
 ];
 
 const ${pascal}Page = () => {

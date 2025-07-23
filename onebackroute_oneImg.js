@@ -6,9 +6,9 @@ const assetsDir = path.join(__dirname, "src", "assets");
 const indexTsxPath = path.join(assetsDir, "index.tsx");
 
 const pages = [
-  { name: "Domiciliary Dental Only-9", backRoute: "/cqc-fee-structure" },
-  
- 
+  { name: "Regulated Services", backRoute: "/What Needs to Be Registered?" },
+  { name: "Non-Regulated Services", backRoute: "/What Needs to Be Registered?" },
+  { name: " Add/Remove Condition and Notice – Process Flow", backRoute: "/What Needs to Be Registered?" },
 ];
 
 const toPascalCase = (str) =>

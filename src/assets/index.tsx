@@ -538,7 +538,7 @@ export { default as SafeguardingDbsBarsOrInvestigationsImage } from "./Safeguard
 export { default as RefereeDetailsImage } from "./RefereeDetailsImage.svg";
 export { default as SupportingNotes2Image } from "./SupportingNotes2Image.svg";
 export { default as Section2FinalDeclarationImage } from "./Section2FinalDeclarationImage.svg";
-export { default as ApplicationRegistrationAsAManager } from "./Application for registration as a manager of regulated activity - Image.svg";
+export { default as ApplicationRegistrationAsAManager } from "./ApplicationRegistrationAsAManager.svg";
 export { default as ApplicationContinueAsAManager } from "./ApplicationToContinueAsAManager.svg";
 export { default as EligibilityCriteriaImage } from "./EligibilityCriteriaImage.svg";
 export { default as ProviderDefinitionsManagerResponsibilitiesLegalBasisHealthAndSocialCareActImage } from "./ProviderDefinitionsManagerResponsibilitiesLegalBasisHealthAndSocialCareActImage.svg";
@@ -584,3 +584,22 @@ export { default as GpsAdditionalFormImage } from "./GpsAdditionalFormImage.svg"
 export { default as PurchaseOrTransferOfExistingLocationImage } from "./PurchaseOrTransferOfExistingLocationImage.svg";
 
 
+export { default as RegulatedServicesImage } from "./RegulatedServicesImage.svg";
+export { default as NonRegulatedServicesImage } from "./NonRegulatedServicesImage.svg";
+export { default as AddRemoveConditionAndNoticeProcessFlowImage } from "./AddRemoveConditionAndNoticeProcessFlowImage.svg";
+
+export { default as need1 } from "./need1.svg";
+export { default as need2 } from "./need2.svg";
+export { default as need3 } from "./need3.svg";
+export { default as need4 } from "./need4.svg";
+export { default as CQCListingProcessPng } from "./CQCListingProcess.png";
+export { default as ApplicationProcessForPersonalCarePage } from "./ApplicationProcessForPersonalCarePage.svg";
+export { default as AddRemoveConditionAndNoticeProcessFlowPage } from "./AddRemoveConditionAndNoticeProcessFlowPage.svg";
+export { default as WarningNoticeRepresentationImage } from "./WarningNoticeRepresentationImage.svg";
+export { default as NoticeOfProposalRepresentationImage } from "./NoticeOfProposalRepresentationImage.svg";
+export { default as ProviderOrManagerVaryRemoveConditionnoticeOfProposalRepresentationImage } from "./ProviderOrManagerVaryRemoveConditionnoticeOfProposalRepresentationImage.svg";
+export { default as RegisteredManagerVaryRemoveConditionImage } from "./RegisteredManagerVaryRemoveConditionImage.svg";
+export { default as img1WhoNeedsToRegisterImage } from "./img1WhoNeedsToRegisterImage.svg";
+export { default as img2WhoNeedsToRegisterImage } from "./img2WhoNeedsToRegisterImage.svg";
+export { default as img3WhoNeedsToRegisterImage } from "./img3WhoNeedsToRegisterImage.svg";
+export { default as img4WhoNeedsToRegisterImage } from "./img4WhoNeedsToRegisterImage.svg";
