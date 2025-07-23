@@ -23,7 +23,7 @@ const PaymentServicePageData = [
   },
   {
     key: "e-4",
-    link: "/add-remove-condition-and-notice",
+    link: "/addremove-condition-and-notice-process-flow",
     icon: manageConditionsAndNotice,
     title: "Manage Conditions & Notice",
   },
