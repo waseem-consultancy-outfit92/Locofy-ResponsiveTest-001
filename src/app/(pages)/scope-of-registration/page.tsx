@@ -16,9 +16,9 @@ const ScopeOfRegistrationPageData = [
   },
   {
     key: "scope-2",
-    link: "/what-needs-to-be-registered",
+    link: "/who-needs-to-register",
     icon: img2ScopeOfRegistrationImage,
-    title: "Who Needs to Register?h",
+    title: "Who Needs to Register?",
   },
   {
     key: "scope-3",

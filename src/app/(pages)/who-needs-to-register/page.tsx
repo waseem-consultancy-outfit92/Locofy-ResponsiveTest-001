@@ -1,46 +1,46 @@
 "use client";
 import { MultiPathPage } from "@/components";
 import {
-  need1,
-  need2,
-  need3,
-  need4
+  img1WhoNeedsToRegisterImage,
+  img2WhoNeedsToRegisterImage,
+  img3WhoNeedsToRegisterImage,
+  img4WhoNeedsToRegisterImage
 } from "@/assets";
 import React from "react";
 
-const NewProviderApplicationBreakdownPageData = [
+const WhoNeedsToRegisterPageData = [
   {
-    key: "new-1",
-    link: "/new-provider-application-breakdown",
-    icon: need1,
+    key: "who-1",
+    link: "/new-provider-application",
+    icon: img1WhoNeedsToRegisterImage,
     title: "New Provider Application Breakdown",
   },
   {
-    key: "new-2",
+    key: "who-2",
     link: "/manager-registration",
-    icon: need2,
+    icon: img2WhoNeedsToRegisterImage,
     title: "Manager Application Breakdown",
   },
   {
-    key: "new-3",
-    link: "/qualifications-skills-experience",
-    icon: need3,
+    key: "who-3",
+    link: "/qualifications-certifications",
+    icon: img3WhoNeedsToRegisterImage,
     title: "Qualifications & Certifications",
   },
   {
-    key: "new-4",
+    key: "who-4",
     link: "/supporting-people",
-    icon: need4,
+    icon: img4WhoNeedsToRegisterImage,
     title: "Supports (People/ Building/ Plan)",
-  },
+  }
 ];
 
 const WhoNeedsToRegisterPage = () => {
   return (
     <MultiPathPage
-      arrayData={NewProviderApplicationBreakdownPageData}
+      arrayData={WhoNeedsToRegisterPageData}
       pageTitle="Who Needs to Register?"
-       backRoute="/scope-of-registration"
+      backRoute="/who-needs-to-register"
     />
   );
 };
