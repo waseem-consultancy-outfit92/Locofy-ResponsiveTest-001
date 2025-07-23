@@ -580,11 +580,9 @@ export { default as AdditionalFormForSupportedLivingServices06Image } from "./Ad
 export { default as AdditionalFormForSupportedLivingServices07Image } from "./AdditionalFormForSupportedLivingServices07Image.svg";
 export { default as AdditionalFormForSupportedLivingServices08Image } from "./AdditionalFormForSupportedLivingServices08Image.svg";
 export { default as AdditionalFormForSupportedLivingServices09Image } from "./AdditionalFormForSupportedLivingServices09Image.svg";
-<<<<<<< HEAD
 export { default as RegulatedServicesImage } from "./RegulatedServicesImage.svg";
 export { default as NonRegulatedServicesImage } from "./NonRegulatedServicesImage.svg";
 export { default as AddRemoveConditionAndNoticeProcessFlowImage } from "./AddRemoveConditionAndNoticeProcessFlowImage.svg";
-=======
 
 export { default as need1 } from "./need1.svg";
 export { default as need2 } from "./need2.svg";
@@ -597,4 +595,7 @@ export { default as WarningNoticeRepresentationImage } from "./WarningNoticeRepr
 export { default as NoticeOfProposalRepresentationImage } from "./NoticeOfProposalRepresentationImage.svg";
 export { default as ProviderOrManagerVaryRemoveConditionnoticeOfProposalRepresentationImage } from "./ProviderOrManagerVaryRemoveConditionnoticeOfProposalRepresentationImage.svg";
 export { default as RegisteredManagerVaryRemoveConditionImage } from "./RegisteredManagerVaryRemoveConditionImage.svg";
->>>>>>> ff00ac4d0d7f0aff7464a31c0b53476f1e12737b
+export { default as img1WhoNeedsToRegisterImage } from "./img1WhoNeedsToRegisterImage.svg";
+export { default as img2WhoNeedsToRegisterImage } from "./img2WhoNeedsToRegisterImage.svg";
+export { default as img3WhoNeedsToRegisterImage } from "./img3WhoNeedsToRegisterImage.svg";
+export { default as img4WhoNeedsToRegisterImage } from "./img4WhoNeedsToRegisterImage.svg";
