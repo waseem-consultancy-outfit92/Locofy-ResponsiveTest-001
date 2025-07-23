@@ -138,3 +138,5 @@ export { default as MulticastImage } from "./MulticastImage.svg";
 export { default as MemberApplicationFormImage } from "./MemberApplicationFormImage.svg";
 export { default as ConnectivityOrderFormImage } from "./ConnectivityOrderFormImage.svg";
 export { default as ColorLegendsImage } from "./ColorLegends.svg";
+export { default as RegulatoryTransactionReportingServiceSpecificationImage } from "./RegulatoryTransactionReportingServiceSpecificationImage.svg";
+export { default as ErrorDescriptionImage } from "./ErrorDescriptionImage.svg";
