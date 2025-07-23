@@ -4,86 +4,88 @@ import Box from '@mui/material/Box';
 import Image from 'next/image';
 import Link from 'next/link';
 import Tooltip from '@mui/material/Tooltip';
-import { DentistAdditionalFormImage } from "@/assets";
+import { GpsAdditionalFormImage } from "@/assets";
 import { Stack, Typography } from '@mui/material';
 import { CheckboxForm } from '@/components/checkbox-form';
 import { CommonBackIcon } from '@/assets/common-assets';
 import { useRouter } from "next/navigation";
 
-const DentistAdditionalFormPage = () => {
+const GpsAdditionalFormPage = () => {
+
 	const router = useRouter();
+
 	const areas = [
 		{
 			id: 1,
 			title: 'Service provider details',
-			href: '/additional-form-for-dentists-02',
-			x: 77.21937321937322,
-			y: 287.8176638176638,
-			width: 338.7122507122507,
-			height: 43.87464387464388,
+			href: '/additional-form-for-gps-01',
+			x: 80.72934472934473,
+			y: 293.0826210826211,
+			width: 329.93732193732194,
+			height: 35.09971509971513,
 		},
 		{
 			id: 2,
-			title: 'Existing Provider (if you\'re restructuring business and are changing your legal entity)',
-			href: '/additional-form-for-dentists-03',
-			x: 623.019943019943,
-			y: 286.06267806267806,
-			width: 1172.3304843304843,
-			height: 57.91452991452991,
+			title: 'Existing provider',
+			href: '/additional-form-for-gps-02',
+			x: 628.2849002849002,
+			y: 294.8376068376068,
+			width: 1168.820512820513,
+			height: 38.60968660968666,
 		},
 		{
 			id: 3,
-			title: 'Sale or Transfer',
-			href: '/additional-form-for-dentists-04',
-			x: 77.21937321937322,
-			y: 786.2336182336182,
-			width: 235.16809116809117,
-			height: 52.64957264957263,
+			title: 'Legal representative',
+			href: '/additional-form-for-gps-04',
+			x: 1140.7407407407406,
+			y: 795.008547008547,
+			width: 500.1709401709402,
+			height: 38.609686609686605,
 		},
 		{
 			id: 4,
-			title: 'Legal Representative (All Providers)',
-			href: '/additional-form-for-dentists-05',
-			x: 1131.965811965812,
-			y: 793.2535612535612,
-			width: 510.70085470085473,
-			height: 43.87464387464388,
+			title: 'Sale or transfer',
+			href: '/additional-form-for-gps-03',
+			x: 77.21937321937322,
+			y: 789.7435897435897,
+			width: 228.14814814814815,
+			height: 49.139601139601155,
 		},
 		{
 			id: 5,
-			title: 'Services You Will Provide',
-			href: '/additional-form-for-dentists-06',
-			x: 77.21937321937322,
-			y: 1158.2905982905984,
-			width: 352.7521367521368,
-			height: 47.384615384615245,
+			title: 'Services you will provide',
+			href: '/additional-form-for-gps-05',
+			x: 82.48433048433048,
+			y: 1156.5356125356125,
+			width: 347.4871794871795,
+			height: 45.62962962962979,
 		},
 		{
 			id: 6,
-			title: 'Position Statement Letter',
-			href: '/additional-form-for-dentists-07',
-			x: 70.1994301994302,
-			y: 2091.94301994302,
-			width: 373.8119658119658,
-			height: 50.894586894587064,
+			title: 'Supporting documents',
+			href: '/additional-form-for-gps-07',
+			x: 619.5099715099715,
+			y: 2088.4330484330485,
+			width: 321.1623931623932,
+			height: 42.1196581196582,
 		},
 		{
 			id: 7,
-			title: 'Supporting Documents',
-			href: '/additional-form-for-dentists-08',
-			x: 593.1851851851851,
-			y: 2095.4529914529912,
-			width: 345.73219373219376,
-			height: 47.3846153846157,
+			title: 'Position statement Letter',
+			href: '/additional-form-for-gps-06',
+			x: 91.25925925925925,
+			y: 2090.188034188034,
+			width: 366.7920227920228,
+			height: 42.1196581196582,
 		},
 		{
 			id: 8,
 			title: 'Signature',
-			href: '/additional-form-for-dentists-09',
-			x: 82.48433048433048,
-			y: 2599.133903133903,
-			width: 149.17378917378917,
-			height: 45.62962962962956,
+			href: '/additional-form-for-gps-08',
+			x: 94.76923076923077,
+			y: 2458.735042735043,
+			width: 136.88888888888889,
+			height: 35.09971509971501,
 		},
 	];
 
@@ -115,10 +117,9 @@ const DentistAdditionalFormPage = () => {
 						fontFamily: "inherit",
 					}}
 				>
-					Additional form for ambulance services
+					GPs  Additional Form
 				</Typography>
 			</Stack>
-			<CheckboxForm onChange={() => { }} />
 			<Box sx={{
 				position: 'relative',
 				width: '100%',
@@ -128,10 +129,10 @@ const DentistAdditionalFormPage = () => {
 			}}>
 				{/* Replace with your actual image path */}
 				<Image
-					src={DentistAdditionalFormImage}
-					alt="Dentist Additional Form"
+					src={GpsAdditionalFormImage}
+					alt="Gps Additional Form"
 					width={1848}
-					height={3143}
+					height={2994}
 					style={{
 						width: '100%',
 						height: 'auto',
@@ -164,15 +165,10 @@ const DentistAdditionalFormPage = () => {
 								sx={{
 									position: 'absolute',
 									left: `${(area.x / 1848) * 100}%`,
-									top: `${(area.y / 3143) * 100}%`,
+									top: `${(area.y / 2994) * 100}%`,
 									width: `${(area.width / 1848) * 100}%`,
-									height: `${(area.height / 3143) * 100}%`,
+									height: `${(area.height / 2994) * 100}%`,
 									cursor: 'pointer',
-									'&:hover': {
-										outline: '2px solid white',
-										opacity: 0.2,
-										backgroundColor: 'rgba(255, 255, 255, 0.2)',
-									},
 								}}
 							/>
 						</Link>
@@ -183,4 +179,4 @@ const DentistAdditionalFormPage = () => {
 	);
 };
 
-export default DentistAdditionalFormPage;
+export default GpsAdditionalFormPage;

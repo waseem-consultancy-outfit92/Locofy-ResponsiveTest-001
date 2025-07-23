@@ -66,7 +66,7 @@ const SpecificTypeOfServicesPageData = [
 const SpecificTypeOfServices = () => {
   return (
     <MultiPathPage
-      backRoute="/"
+      backRoute="/what-needs-to-be-registered"
       arrayData={SpecificTypeOfServicesPageData}
       pageTitle="Specific type of services"
     />

@@ -580,6 +580,10 @@ export { default as AdditionalFormForSupportedLivingServices06Image } from "./Ad
 export { default as AdditionalFormForSupportedLivingServices07Image } from "./AdditionalFormForSupportedLivingServices07Image.svg";
 export { default as AdditionalFormForSupportedLivingServices08Image } from "./AdditionalFormForSupportedLivingServices08Image.svg";
 export { default as AdditionalFormForSupportedLivingServices09Image } from "./AdditionalFormForSupportedLivingServices09Image.svg";
+export { default as GpsAdditionalFormImage } from "./GpsAdditionalFormImage.svg";
+export { default as PurchaseOrTransferOfExistingLocationImage } from "./PurchaseOrTransferOfExistingLocationImage.svg";
+
+
 export { default as RegulatedServicesImage } from "./RegulatedServicesImage.svg";
 export { default as NonRegulatedServicesImage } from "./NonRegulatedServicesImage.svg";
 export { default as AddRemoveConditionAndNoticeProcessFlowImage } from "./AddRemoveConditionAndNoticeProcessFlowImage.svg";
