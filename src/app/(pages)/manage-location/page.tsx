@@ -23,13 +23,13 @@ const ManageLocationPageData = [
     },
     {
         key: "scope-5",
-        link: "/",
+        link: "/additional-location-form-for-new-provider-registration-applications",
         icon: removeLocation3,
         title: "Additional Location section For Manager application",
     },
     {
         key: "scope-3",
-        link: "/manage-location",
+        link: "/remove-a-location",
         icon: removeLocation4,
         title: "Remove Location",
     },

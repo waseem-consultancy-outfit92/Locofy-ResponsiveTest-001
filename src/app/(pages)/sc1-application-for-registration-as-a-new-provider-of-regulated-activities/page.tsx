@@ -466,7 +466,7 @@ const Sc1ApplicationForRegistrationAsANewProviderOfRegulatedActivitiesPage =
         },
       },
       {
-        href: "#",
+        // href: "",
         title: "Second partner's details",
         position: {
           left: "5.89%",
@@ -809,7 +809,7 @@ const Sc1ApplicationForRegistrationAsANewProviderOfRegulatedActivitiesPage =
             style={{ width: "100%", height: "auto" }}
           />
 
-          {links.map((link, index) => (
+          {links.filter(link => typeof link.href === "string").map((link, index) => (
             <NextLink key={index} href={link.href} passHref legacyBehavior>
               <MuiLink
                 title={link.title}

@@ -47,7 +47,7 @@ const SpecificTypeOfServicesPageData = [
     key: "s-6",
     link: "/gps-additional-form",
     icon: IconSpecificTypeOfServices6,
-    title: "GPs Addtional Form",
+    title: "GPs Additional Form",
   },
   {
     key: "s-7",

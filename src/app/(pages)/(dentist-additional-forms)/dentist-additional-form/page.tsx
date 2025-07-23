@@ -115,7 +115,7 @@ const DentistAdditionalFormPage = () => {
 						fontFamily: "inherit",
 					}}
 				>
-					Additional form for ambulance services
+					Dentist Additional Form
 				</Typography>
 			</Stack>
 			<CheckboxForm onChange={() => { }} />

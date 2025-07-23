@@ -44,6 +44,7 @@ const interactiveAreas: Area[] = [
       coords: "1356.58,91.85,1591.51,130.71",
       shape: "rect",
       type: "link",
+      audioSrc: "https://orcalo.blob.core.windows.net/locofy/CQC/2.%20Log%20in%20to%20Portal.mp4",
     },
     {
       alt: "CQC Breakdown Diagram",
@@ -126,7 +127,8 @@ const interactiveAreas: Area[] = [
       coords: "701.25,473.39,729.52,499.89",
       shape: "rect",
       type: "audio",
-      audioSrc: "https://orcalo.blob.core.windows.net/locofy/CQC/3.%20Application%20Options%20Displayed.mp4",
+      audioSrc: "https://orcalo.blob.core.windows.net/locofy/CQC/13.%20Location%20Updated.mp4",
+     
     },
     {
       alt: "Location Details Received",
@@ -509,13 +511,13 @@ export const HomeSection = () => {
   return (
     <Box sx={{ p: 3, position: "relative" }}>
       <Stack direction="row" alignItems="center" mt={{ md: 2, xs: 1 }}>
-        <img src={appLogo.src} alt="CQC Logo" width={98} height={31} />
+        <img src={appLogo.src} alt="CQC Logo" width={60} height={31} />
         <Typography
           variant="h5"
           color="#5A5867"
           fontSize={{ xs: "0.8rem", sm: "18px", md: "22px" }}
           fontWeight={{ md: 600, xs: 500 }}
-          ml={{ md: -2, xs: 1 }}
+          // ml={{ md: -2, xs: 1 }}
         >
           CQC Listing Process
         </Typography>
@@ -554,7 +556,7 @@ export const HomeSection = () => {
 
           <Box sx={{ width: "100%", overflow: "hidden", position: "relative" }}>
             <img
-              src="/CQCListingProcess.svg"
+              src="/sequenceDiagram.png"
               useMap="#image-map"
               alt="CQC Application Process Diagram"
               style={{ width: "100%", height: "auto" }}
