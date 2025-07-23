@@ -89,7 +89,6 @@ const pages = [
     title: "MdFlags ",
     ButtonRoute: " aquis-market-data-technical-specification",
   },
-  
 ];
 
 // Convert to PascalCase

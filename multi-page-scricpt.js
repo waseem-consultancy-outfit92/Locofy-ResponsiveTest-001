@@ -11,18 +11,7 @@ const pages = [
     title: "Access Rulebook",
     pageTitle: "Access Rulebook",
     imageCount: 10,
-    links: [
-      "/",
-      "/",
-      "/",
-      "/",
-       "/",
-      "/",
-      "/",
-      "/",
-      "/",
-      "/",
-    ],
+    links: ["/", "/", "/", "/", "/", "/", "/", "/", "/", "/"],
     titles: [
       "Introduction",
       "Definition",
@@ -33,7 +22,7 @@ const pages = [
       "Suspending, Cancelling And Restoring Trading And Admission",
       "Fast-Track",
       "Investigations, Sanctions And Discipline",
-      "Admission Document (Appendix I)"
+      "Admission Document (Appendix I)",
     ],
   },
 ];

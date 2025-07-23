@@ -1,22 +1,28 @@
-
-'use client'
-import React from 'react';
-import Box from '@mui/material/Box';
-import Image from 'next/image';
-import Link from 'next/link';
-import Typography from '@mui/material/Typography';
+"use client";
+import React from "react";
+import Box from "@mui/material/Box";
+import Image from "next/image";
+import Link from "next/link";
+import Typography from "@mui/material/Typography";
 import { MarketDataAuditPolicyImage } from "@/assets";
-import { Stack } from '@mui/material';
-import { CommonBackIcon } from '@/assets/common-assets';
+import { Stack } from "@mui/material";
+import { CommonBackIcon } from "@/assets/common-assets";
 import { useRouter } from "next/navigation";
 
 const MarketDataAuditPolicyPage = () => {
   const router = useRouter();
 
   return (
-    <Stack px={5} py={3} gap={'40px'}>
+    <Stack px={5} py={3} gap={"40px"}>
       <Stack>
-        <Box sx={{ width: '100%', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+        <Box
+          sx={{
+            width: "100%",
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+          }}
+        >
           <Image
             src={CommonBackIcon}
             alt={"backIcon"}
@@ -27,7 +33,17 @@ const MarketDataAuditPolicyPage = () => {
             }}
             style={{ cursor: "pointer" }}
           />
-          <Box component={Link} href={'/'} sx={{ color: '#0246BC', fontSize: '40px', fontWeight: '500', textDecoration: 'underline', lineHeight: '1.2' }}>
+          <Box
+            component={Link}
+            href={"/"}
+            sx={{
+              color: "#0246BC",
+              fontSize: "40px",
+              fontWeight: "500",
+              textDecoration: "underline",
+              lineHeight: "1.2",
+            }}
+          >
             Reference Doc
           </Box>
         </Box>
@@ -39,14 +55,14 @@ const MarketDataAuditPolicyPage = () => {
           mt={3}
           sx={{
             fontFamily: "inherit",
-            lineHeight: '1.25',
+            lineHeight: "1.25",
           }}
         >
           AQUIS MARKET DATA AUDIT
         </Typography>
       </Stack>
 
-      <Box sx={{ position: 'relative', width: '100%', height: 'auto' }}>
+      <Box sx={{ position: "relative", width: "100%", height: "auto" }}>
         <Image
           src={MarketDataAuditPolicyImage}
           alt="AQUIS MARKET DATA AUDIT"

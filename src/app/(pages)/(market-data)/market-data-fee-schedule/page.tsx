@@ -1,13 +1,13 @@
-'use client'
-import React from 'react';
-import Box from '@mui/material/Box';
-import Image from 'next/image';
-import Link from 'next/link';
-import Typography from '@mui/material/Typography';
-import Tooltip from '@mui/material/Tooltip';
+"use client";
+import React from "react";
+import Box from "@mui/material/Box";
+import Image from "next/image";
+import Link from "next/link";
+import Typography from "@mui/material/Typography";
+import Tooltip from "@mui/material/Tooltip";
 import { MarketDataFeeScheduleImage } from "@/assets";
-import { Stack } from '@mui/material';
-import { CommonBackIcon } from '@/assets/common-assets';
+import { Stack } from "@mui/material";
+import { CommonBackIcon } from "@/assets/common-assets";
 import { useRouter } from "next/navigation";
 
 const MarketDataFeeSchedulePage = () => {
@@ -16,8 +16,8 @@ const MarketDataFeeSchedulePage = () => {
   const areas = [
     {
       id: 2,
-      title: 'DATA AND LICENCE FEES',
-      href: '/fee-schedule-data-and-licence-fees',
+      title: "DATA AND LICENCE FEES",
+      href: "/fee-schedule-data-and-licence-fees",
       x: 78.97435897435898,
       y: 587.920227920228,
       width: 377.3219373219373,
@@ -25,8 +25,8 @@ const MarketDataFeeSchedulePage = () => {
     },
     {
       id: 3,
-      title: 'DISAGGREGATED DATA',
-      href: '/fee-schedule-disaggregated-data',
+      title: "DISAGGREGATED DATA",
+      href: "/fee-schedule-disaggregated-data",
       x: 71.95441595441595,
       y: 1751.4757834757834,
       width: 389.60683760683764,
@@ -35,9 +35,16 @@ const MarketDataFeeSchedulePage = () => {
   ];
 
   return (
-    <Stack px={5} py={3} gap={'40px'}>
+    <Stack px={5} py={3} gap={"40px"}>
       <Stack>
-        <Box sx={{ width: '100%', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+        <Box
+          sx={{
+            width: "100%",
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+          }}
+        >
           <Image
             src={CommonBackIcon}
             alt={"backIcon"}
@@ -48,7 +55,17 @@ const MarketDataFeeSchedulePage = () => {
             }}
             style={{ cursor: "pointer" }}
           />
-          <Box component={Link} href={'/'} sx={{ color: '#0246BC', fontSize: '40px', fontWeight: '500', textDecoration: 'underline', lineHeight: '1.2' }}>
+          <Box
+            component={Link}
+            href={"/"}
+            sx={{
+              color: "#0246BC",
+              fontSize: "40px",
+              fontWeight: "500",
+              textDecoration: "underline",
+              lineHeight: "1.2",
+            }}
+          >
             Reference Doc
           </Box>
         </Box>
@@ -60,13 +77,13 @@ const MarketDataFeeSchedulePage = () => {
           mt={3}
           sx={{
             fontFamily: "inherit",
-            lineHeight: '1.25',
+            lineHeight: "1.25",
           }}
         >
           Fee Schedule (Market Data) - Effective June 2025
         </Typography>
       </Stack>
-      <Box sx={{ position: 'relative', width: '100%', height: 'auto' }}>
+      <Box sx={{ position: "relative", width: "100%", height: "auto" }}>
         <Image
           src={MarketDataFeeScheduleImage}
           alt="Fee Schedule (Market Data) - Effective June 2025"
@@ -81,15 +98,15 @@ const MarketDataFeeSchedulePage = () => {
               <Box
                 component="a"
                 sx={{
-                  position: 'absolute',
+                  position: "absolute",
                   left: `${(area.x / 1848) * 100}%`,
                   top: `${(area.y / 2843) * 100}%`,
                   width: `${(area.width / 1848) * 100}%`,
                   height: `${(area.height / 2843) * 100}%`,
-                  '&:hover': {
-                    border: '2px solid white',
+                  "&:hover": {
+                    border: "2px solid white",
                     opacity: 0.2,
-                    backgroundColor: 'rgba(255, 255, 255, 0.2)',
+                    backgroundColor: "rgba(255, 255, 255, 0.2)",
                   },
                 }}
               />
