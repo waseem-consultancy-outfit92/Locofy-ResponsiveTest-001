@@ -138,6 +138,9 @@ export { default as EuMarketDataDistributedImage } from "./EuMarketDataDistribut
 export { default as EuMarketDataRevenuesImage } from "./EuMarketDataRevenuesImage.svg";
 export { default as AquisVWAPMatchImage } from "./AquisVWAPMatchImage.svg";
 export { default as HowAVMWorksImage } from "./HowAVMWorksImage.svg";
+export { default as SequenceDiagramAqseImage } from "./Sequence Diagram AQSE.svg";
+export { default as LogoImage } from "./logo.svg";
+
 export { default as RequestedMarketsAmendmentFormImage } from "./RequestedMarketsAmendmentFormImage.svg";
 export { default as MacOrderFormImage } from "./MacOrderFormImage.svg";
 export { default as SoftwareVendorApplicationFormImage } from "./SoftwareVendorApplicationFormImage.svg";
@@ -160,3 +163,4 @@ export { default as MappingFileDetailsAndFormatImage } from "./MappingFileDetail
 export { default as ShortCodeExceptionsReportImage } from "./ShortCodeExceptionsReportImage.svg";
 export { default as RegulatoryTransactionReportingServiceSpecificationImage } from "./RegulatoryTransactionReportingServiceSpecificationImage.svg";
 export { default as ErrorDescriptionsImage } from "./ErrorDescriptionsImage.svg";
+export { default as ColorLegendsImage } from "./ColorLegends.svg";

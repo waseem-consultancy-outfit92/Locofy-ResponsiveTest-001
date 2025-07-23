@@ -27,26 +27,26 @@ export const RegulatoryTranscation = () => {
   return (
     <Box sx={{ p: 3, position: "relative" }}>
       <Box
-  sx={{
-    display: "flex",
-    justifyContent: "flex-end",
-    width: "100%",
-  }}
->
-  <Box
-    component={Link}
-    href="/"
-    sx={{
-      color: "#0246BC",
-      fontSize: "40px",
-      fontWeight: "500",
-      textDecoration: "underline",
-      lineHeight: "1.2",
-    }}
-  >
-    Reference Doc
-  </Box>
-</Box>
+        sx={{
+          display: "flex",
+          justifyContent: "flex-end",
+          width: "100%",
+        }}
+      >
+        <Box
+          component={Link}
+          href="/"
+          sx={{
+            color: "#0246BC",
+            fontSize: "40px",
+            fontWeight: "500",
+            textDecoration: "underline",
+            lineHeight: "1.2",
+          }}
+        >
+          Reference Doc
+        </Box>
+      </Box>
 
       <Stack
         direction="row"
