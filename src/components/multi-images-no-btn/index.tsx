@@ -1,24 +1,25 @@
 "use client";
-import { Box, Stack, Typography } from "@mui/material"; // Removed Button as it's not used
-import Image from "next/image";
+
+import { Box, Stack, Typography } from "@mui/material";
+import Image, { StaticImageData } from "next/image";
 import { useCallback } from "react";
-import { useRouter, } from "next/navigation";
+import { useRouter } from "next/navigation";
 import { CommonBackIcon } from "@/assets/common-assets";
 import { CheckboxForm } from "../checkbox-form";
 
 interface ImageItem {
-  src: any;
-  route?: string; 
+  src?: string | StaticImageData;
+  route?: string;
   alt?: string;
 }
 
 interface CommonPageProps {
-  src?: any; 
-  images?: ImageItem[]; 
+  src?: string | StaticImageData;
+  images?: ImageItem[];
   backRoute: string;
   pageTitle: string;
   onChange?: (selectedValue: string, page: string) => void;
-  hideButtonsOnRoutes?: string[]; 
+  hideButtonsOnRoutes?: string[];
 }
 
 const MultiImagesNoBtn: React.FC<CommonPageProps> = ({
@@ -27,7 +28,6 @@ const MultiImagesNoBtn: React.FC<CommonPageProps> = ({
   backRoute,
   pageTitle,
   onChange,
- 
 }) => {
   const router = useRouter();
 
@@ -41,7 +41,7 @@ const MultiImagesNoBtn: React.FC<CommonPageProps> = ({
         router.push(route);
       }
     },
-    [router]
+    [router],
   );
 
   return (
@@ -57,7 +57,7 @@ const MultiImagesNoBtn: React.FC<CommonPageProps> = ({
         <Box display="flex" alignItems="center" flexWrap="wrap" flexGrow={1}>
           <Image
             src={CommonBackIcon}
-            alt="Back" 
+            alt="Back"
             width={40}
             height={40}
             onClick={onBackIconClick}
@@ -90,12 +90,7 @@ const MultiImagesNoBtn: React.FC<CommonPageProps> = ({
       </Box>
 
       {Array.isArray(images) && images.length > 0 ? (
-        <Stack
-          direction="column"
-          spacing={0}
-          alignItems="center"
-          useFlexGap
-        >
+        <Stack direction="column" spacing={0} alignItems="center" useFlexGap>
           {images.map((img, idx) => (
             <Box
               key={img.route || idx}
@@ -111,7 +106,7 @@ const MultiImagesNoBtn: React.FC<CommonPageProps> = ({
               onClick={() => img.route && handleImageClick(img.route)}
             >
               <Image
-                src={img.src}
+                src={img.src as string | StaticImageData}
                 alt={img.alt || `Image ${idx + 1}`}
                 style={{
                   width: "100%",

@@ -1,14 +1,13 @@
-// components/amendment-comparison/index.tsx
 "use client";
 import { Box, Stack, Typography, Button } from "@mui/material";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { useCallback } from "react";
 import { useRouter } from "next/navigation";
 import { CommonBackIcon } from "@/assets/common-assets";
 import { CheckboxForm } from "../checkbox-form";
 
 interface CommonPageProps {
-  src: any;
+  src: string | StaticImageData;
   backRoute?: string; // backRoute is always a string or undefined
   pageTitle: string;
   onChange?: (selectedValue: string, page: string) => void;

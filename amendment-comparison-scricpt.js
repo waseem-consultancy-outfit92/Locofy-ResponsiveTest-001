@@ -9,9 +9,8 @@ const pages = [
     title: "k",
     amendmentButtonRoute: "/Amen",
     amendmentButtonTitle: "View c Comparison",
-    backRoute: "/schedule-act-1983"
+    backRoute: "/schedule-act-1983",
   },
-  
 ];
 
 const toPascalCase = (str) =>
@@ -35,8 +34,12 @@ const toKebabRoute = (str) =>
     .toLowerCase()
     .replace(/^-+|-+$/g, "");
 
-
-for (const { title, amendmentButtonRoute, amendmentButtonTitle, backRoute } of pages) {
+for (const {
+  title,
+  amendmentButtonRoute,
+  amendmentButtonTitle,
+  backRoute,
+} of pages) {
   const kebab = toKebabCase(title);
   const pascal = toPascalCase(title);
   const imageName = `${pascal}Image`;
@@ -84,7 +87,9 @@ export default ${pascal}Page;
       fs.appendFileSync(indexTsxPath, imageExport);
       console.log(`Export for image '${imageName}' added to index.tsx.`);
     } else {
-      console.log(`Export for image '${imageName}' already exists in index.tsx. Skipping export.`);
+      console.log(
+        `Export for image '${imageName}' already exists in index.tsx. Skipping export.`,
+      );
     }
   } else {
     fs.writeFileSync(indexTsxPath, imageExport, "utf8");

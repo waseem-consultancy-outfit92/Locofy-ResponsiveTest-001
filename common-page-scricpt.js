@@ -7,8 +7,8 @@ const assetsDir = path.join(__dirname, "src", "assets");
 
 // List of pages to create
 const pages = [
- "Part 10 - Miscellaneous and Supplementary AC",
-"Part 10 -Supplementary",
+  "Part 10 - Miscellaneous and Supplementary AC",
+  "Part 10 -Supplementary",
 ];
 
 // Convert to PascalCase
@@ -36,7 +36,9 @@ for (const title of pages) {
   const kebabBase = toKebabCase(title);
   const pascal = toPascalCase(title);
   if (!kebabBase || !pascal) {
-    console.log(`[SKIP] Could not generate valid names for title: '${title}'. Skipping.`);
+    console.log(
+      `[SKIP] Could not generate valid names for title: '${title}'. Skipping.`,
+    );
     continue;
   }
   const imageName = `${pascal}Image`;
@@ -53,11 +55,15 @@ for (const title of pages) {
     dirSuffix++;
   }
   if (dirSuffix >= maxTries) {
-    console.log(`[ERROR] Too many duplicate directories for '${title}'. Skipping.`);
+    console.log(
+      `[ERROR] Too many duplicate directories for '${title}'. Skipping.`,
+    );
     continue;
   }
   if (finalKebab !== kebabBase) {
-    console.log(`Directory for page '${title}' already exists. Created: ${finalKebab}`);
+    console.log(
+      `Directory for page '${title}' already exists. Created: ${finalKebab}`,
+    );
   }
   if (!fs.existsSync(dir)) {
     try {
@@ -105,7 +111,9 @@ export default ${pascal}Page;
       const indexContent = fs.readFileSync(indexTsxPath, "utf8");
       if (indexContent.includes(imageExport.trim())) {
         shouldWriteExport = false;
-        console.log(`Export for image '${imageName}' already exists in index.tsx. Skipping export.`);
+        console.log(
+          `Export for image '${imageName}' already exists in index.tsx. Skipping export.`,
+        );
       }
     } catch (err) {
       console.log(`[ERROR] Failed to read index.tsx:`, err.message);

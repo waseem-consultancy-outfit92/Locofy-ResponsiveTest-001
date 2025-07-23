@@ -1,5 +1,3 @@
-"use client";
-
 const fs = require("fs");
 const path = require("path");
 
@@ -10,13 +8,21 @@ const assetsDir = path.join(__dirname, "src", "assets");
 // List of pages with pageTitle, image counts, links, and per-image titles
 const pages = [
   {
-    title: "Manager Registration",
-    pageTitle: "Manager Registration",
-    imageCount: 2,
-    links: ["/", "/"],
+    title: "Access Rulebook",
+    pageTitle: "Access Rulebook",
+    imageCount: 10,
+    links: ["/", "/", "/", "/", "/", "/", "/", "/", "/", "/"],
     titles: [
-      "Application for registration as a manager of regulated activity/activities",
-      "Application to continue registration as a manager under a new provide",
+      "Introduction",
+      "Definition",
+      "Application Process",
+      "Eligibility For Admission",
+      "Continuing Obligations",
+      "Disclosure And Transparency Obligations",
+      "Suspending, Cancelling And Restoring Trading And Admission",
+      "Fast-Track",
+      "Investigations, Sanctions And Discipline",
+      "Admission Document (Appendix I)",
     ],
   },
 ];
@@ -57,7 +63,7 @@ for (const {
   const pascal = toPascalCase(title.replace(/ & /g, ""));
   if (!kebabBase || !pascal) {
     console.log(
-      `[SKIP] Could not generate valid names for title: '${title}'. Skipping.`
+      `[SKIP] Could not generate valid names for title: '${title}'. Skipping.`,
     );
     continue;
   }
@@ -74,13 +80,13 @@ for (const {
   }
   if (dirSuffix >= maxTries) {
     console.log(
-      `[ERROR] Too many duplicate directories for '${title}'. Skipping.`
+      `[ERROR] Too many duplicate directories for '${title}'. Skipping.`,
     );
     continue;
   }
   if (finalKebab !== kebabBase) {
     console.log(
-      `Directory for page '${title}' already exists. Created: ${finalKebab}`
+      `Directory for page '${title}' already exists. Created: ${finalKebab}`,
     );
   }
   if (!fs.existsSync(dir)) {
@@ -123,7 +129,7 @@ for (const {
         if (indexContent.includes(imageExport.trim())) {
           shouldWriteExport = false;
           console.log(
-            `Export for image '${imageName}' already exists in index.tsx. Skipping export.`
+            `Export for image '${imageName}' already exists in index.tsx. Skipping export.`,
           );
         }
       } catch (err) {
@@ -138,7 +144,7 @@ for (const {
       } catch (err) {
         console.log(
           `[ERROR] Failed to append export to index.tsx:`,
-          err.message
+          err.message,
         );
       }
     }
@@ -155,15 +161,15 @@ import React from "react";
 
 const ${pascal}PageData = [
   ${arrayData
-      .map(
-        (item) => `{
+    .map(
+      (item) => `{
     key: "${item.key}",
     link: "${item.link}",
     icon: ${item.icon},
     title: "${item.title}",
-  }`
-      )
-      .join(",\n  ")}
+  }`,
+    )
+    .join(",\n  ")}
 ];
 
 const ${pascal}Page = () => {
@@ -189,5 +195,5 @@ export default ${pascal}Page;
 }
 
 console.log(
-  "Dynamic MultiPath pages with fixed image names, titles, links, and image exports have been created."
+  "Dynamic MultiPath pages with fixed image names, titles, links, and image exports have been created.",
 );

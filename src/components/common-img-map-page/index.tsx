@@ -6,11 +6,11 @@ import { useRouter } from "next/navigation";
 import { CommonBackIcon } from "@/assets/common-assets";
 import { CheckboxForm } from "../checkbox-form";
 
-interface ImageItem {
-  src: any;
-  route: string;
-  alt?: string;
-}
+// interface ImageItem {
+//   src: any;
+//   route: string;
+//   alt?: string;
+// }
 
 interface AreaItem {
   alt: string;
@@ -34,7 +34,6 @@ interface CommonPageProps {
   downloadUrl?: string;
   downloadFileName?: string;
   areas?: AreaItem[];
-  target?: string,
 }
 
 const CommonImgMapPage: React.FC<CommonPageProps> = ({
@@ -51,7 +50,6 @@ const CommonImgMapPage: React.FC<CommonPageProps> = ({
   downloadFileName,
   image,
   areas = [],
-  target,
 }) => {
   const router = useRouter();
 
@@ -195,7 +193,7 @@ const CommonImgMapPage: React.FC<CommonPageProps> = ({
               {areas.map((area, index) => (
                 <area
                   key={index}
-                  target={target}
+                  target="_blank"
                   alt={area.alt}
                   title={area.title}
                   href={area.href}

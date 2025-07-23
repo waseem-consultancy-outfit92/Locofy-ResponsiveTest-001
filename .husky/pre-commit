@@ -1,0 +1,33 @@
+#!/bin/sh
+
+echo "🔐 Running pre-commit checks..."
+
+# ✅ Format with Prettier
+echo "🎨 Formatting files with Prettier..."
+npx prettier --write . || {
+  echo "❌ Prettier formatting failed."
+  exit 1
+}
+
+# ✅ Lint with ESLint
+echo "🔍 Linting project with ESLint..."
+npm run lint || {
+  echo "❌ ESLint failed."
+  exit 1
+}
+
+# ✅ Check for console.log / debugger
+echo "🚫 Checking for console.log/debugger..."
+if grep -rE "console\\.log|debugger" ./src; then
+  echo "❌ console.log or debugger found! Remove before committing."
+  exit 1
+fi
+
+# ✅ Try to build the project
+echo "🏗️ Building project..."
+npm run build > /dev/null || {
+  echo "❌ Build failed. Fix before committing."
+  exit 1
+}
+
+echo "✅ All checks passed. Proceeding with commit."
