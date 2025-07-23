@@ -97,7 +97,7 @@ export default function Home() {
     { x: 84.78632478632478, y: 432.76353276353274, width: 243.76068376068378, height: 24.729344729344746, href: '/aqse-overview', title: 'prepare financial and business plans', target: '_parent',type: "link" },
     { x: 393.9031339031339, y: 443.3618233618234, width: 199.60113960113966, height: 44.15954415954411, href: '/admission-document-appendix-i', title: 'draft admission document', target: '_parent',type:"link" },
     { x: 607.6353276353276, y: 597.0370370370371, width: 132.47863247863256, height: 22.962962962962933, href: '/application-process', title: 'submit documents', target: '_parent',type: "link" },
-    { x: 575.8404558404559, y: 801.9373219373219, width: 174.8717948717948, height: 33.56125356125358, href: '#', title: 'address and follow up', target: '_parent',type: "link" },
+    { x: 575.8404558404559, y: 801.9373219373219, width: 174.8717948717948, height: 33.56125356125358, href: '/regulatory-transaction-reporting-service-specification', title: 'address and follow up', target: '_parent',type: "link" },
     { x: 176.63817663817665, y: 1103.988603988604, width: 111.2820512820513, height: 24.729344729344803, href: '/member-participation-agreement', title: 'submit reports', target: '_parent',type: "link" },
     { x: 160.74074074074073, y: 1142.8490028490028, width: 139.54415954415956, height: 24.729344729344803, href: '/member-participation-agreement', title: 'monitor compliance', target: '_parent',type: "link" }
   ];
