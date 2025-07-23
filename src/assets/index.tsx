@@ -137,3 +137,4 @@ export { default as TCPTargetsForAQXEAndAQEUMTFImage } from "./TCPTargetsForAQXE
 export { default as MulticastImage } from "./MulticastImage.svg";
 export { default as MemberApplicationFormImage } from "./MemberApplicationFormImage.svg";
 export { default as ConnectivityOrderFormImage } from "./ConnectivityOrderFormImage.svg";
+export { default as ColorLegendsImage } from "./ColorLegends.svg";

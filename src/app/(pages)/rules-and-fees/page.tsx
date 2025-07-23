@@ -40,7 +40,7 @@ const RulesAndFeesPage = () => {
     <MultiPathPage
       arrayData={RulesAndFeesPageData}
       pageTitle="Rules and Fees"
-      backRoute="/FCA Sequence Diagram"
+      backRoute="/aqse-documents"
     />
   );
 };

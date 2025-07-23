@@ -1,5 +1,5 @@
 'use client'
-import { LogoImage, SequenceDiagramAqseImage } from "@/assets";
+import { ColorLegendsImage, LogoImage, SequenceDiagramAqseImage } from "@/assets";
 import { Box, Typography, Container, Link, Stack, Button } from "@mui/material";
 import Image from "next/image";
 import ExpandCircleDownOutlinedIcon from '@mui/icons-material/ExpandCircleDownOutlined';
@@ -18,6 +18,7 @@ interface ImageMapArea {
 }
 
 export default function Home() {
+  const [open,setOpen]=useState(false)
  const imageWidth = 1860;
   const imageHeight = 1417;
 
@@ -93,14 +94,15 @@ export default function Home() {
     { x: 307.35042735042737, y: 1141.082621082621, width: 26.4957264957265, height: 30.02849002849007, href: '#', title: 'monitor compliance audio', target: '_parent',type:"audio",audioSrc:"https://orcalo.blob.core.windows.net/locofy/AQSE%20Audios/6.%20Monitor%20Compliance.mp4" },
 
     // Main process steps
-    { x: 84.78632478632478, y: 432.76353276353274, width: 243.76068376068378, height: 24.729344729344746, href: '#', title: 'prepare financial and business plans', target: '_parent',type: "link" },
-    { x: 393.9031339031339, y: 443.3618233618234, width: 199.60113960113966, height: 44.15954415954411, href: '#', title: 'draft admission document', target: '_parent' },
-    { x: 607.6353276353276, y: 597.0370370370371, width: 132.47863247863256, height: 22.962962962962933, href: '#', title: 'submit documents', target: '_parent',type: "link" },
+    { x: 84.78632478632478, y: 432.76353276353274, width: 243.76068376068378, height: 24.729344729344746, href: '/aqse-overview', title: 'prepare financial and business plans', target: '_parent',type: "link" },
+    { x: 393.9031339031339, y: 443.3618233618234, width: 199.60113960113966, height: 44.15954415954411, href: '/admission-document-appendix-i', title: 'draft admission document', target: '_parent',type:"link" },
+    { x: 607.6353276353276, y: 597.0370370370371, width: 132.47863247863256, height: 22.962962962962933, href: '/application-process', title: 'submit documents', target: '_parent',type: "link" },
     { x: 575.8404558404559, y: 801.9373219373219, width: 174.8717948717948, height: 33.56125356125358, href: '#', title: 'address and follow up', target: '_parent',type: "link" },
-    { x: 176.63817663817665, y: 1103.988603988604, width: 111.2820512820513, height: 24.729344729344803, href: '#', title: 'submit reports', target: '_parent',type: "link" },
-    { x: 160.74074074074073, y: 1142.8490028490028, width: 139.54415954415956, height: 24.729344729344803, href: '#', title: 'monitor compliance', target: '_parent',type: "link" }
+    { x: 176.63817663817665, y: 1103.988603988604, width: 111.2820512820513, height: 24.729344729344803, href: '/member-participation-agreement', title: 'submit reports', target: '_parent',type: "link" },
+    { x: 160.74074074074073, y: 1142.8490028490028, width: 139.54415954415956, height: 24.729344729344803, href: '/member-participation-agreement', title: 'monitor compliance', target: '_parent',type: "link" }
   ];
   return (
+    <>
        <Stack sx={{ px: 4, py: 5 }} spacing={4}>
       <Stack direction="row" spacing={2} alignItems="center">
         <Image src={LogoImage} alt="logo" />
@@ -132,6 +134,7 @@ export default function Home() {
               }}
             />
           }
+          onClick={()=>{setOpen(true)}}
         >
           Colour Legend
         </Button>
@@ -182,5 +185,44 @@ export default function Home() {
         ))}
       </Box>
     </Stack>
+    {open && (
+            <>
+              <Box
+                sx={{
+                  position: "fixed",
+                  top: 0,
+                  left: 0,
+                  width: "100vw",
+                  height: "100vh",
+                  background: "rgba(0,0,0,0.3)",
+                  zIndex: 1200,
+                }}
+                onClick={() => setOpen(false)}
+              />
+              <Box
+                sx={{
+                  position: "absolute",
+                  top: "150px",
+                  right: "50px",
+                  background: "#fff",
+                  borderRadius: "10px",
+                  boxShadow: 3,
+                  p: 1,
+                  zIndex: 1300,
+                  border:"dashed"
+                }}
+                onClick={(e) => e.stopPropagation()}
+              >
+                <Image src={ColorLegendsImage}
+                  alt="Color Legend"
+                  width={40}
+                  height={40}
+                  style={{ width: "100%", height: "100%" }}
+                />
+                
+              </Box>
+            </>
+          )}
+    </>
   );
 }
