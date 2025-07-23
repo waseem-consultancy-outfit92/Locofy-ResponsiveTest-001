@@ -1,13 +1,13 @@
-'use client'
-import React from 'react';
-import Box from '@mui/material/Box';
-import Image from 'next/image';
-import Link from 'next/link';
-import Typography from '@mui/material/Typography';
-import Tooltip from '@mui/material/Tooltip';
+"use client";
+import React from "react";
+import Box from "@mui/material/Box";
+import Image from "next/image";
+import Link from "next/link";
+import Typography from "@mui/material/Typography";
+import Tooltip from "@mui/material/Tooltip";
 import { AquisExchangeMarketDataImage } from "@/assets";
-import { Stack } from '@mui/material';
-import { CommonBackIcon } from '@/assets/common-assets';
+import { Stack } from "@mui/material";
+import { CommonBackIcon } from "@/assets/common-assets";
 import { useRouter } from "next/navigation";
 
 const MarketDataTermsAndConditionsPage = () => {
@@ -16,19 +16,26 @@ const MarketDataTermsAndConditionsPage = () => {
   const areas = [
     {
       id: 1,
-      title: 'Definitions and interpretation',
-      href: '/market-data-terms-and-conditions-applied',
+      title: "Definitions and interpretation",
+      href: "/market-data-terms-and-conditions-applied",
       x: 87.74928774928775,
       y: 403.6467236467237,
       width: 426.46153846153845,
       height: 36.85470085470081,
-    }
+    },
   ];
 
   return (
-    <Stack px={5} py={3} gap={'40px'}>
+    <Stack px={5} py={3} gap={"40px"}>
       <Stack>
-        <Box sx={{ width: '100%', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+        <Box
+          sx={{
+            width: "100%",
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+          }}
+        >
           <Image
             src={CommonBackIcon}
             alt={"backIcon"}
@@ -39,7 +46,17 @@ const MarketDataTermsAndConditionsPage = () => {
             }}
             style={{ cursor: "pointer" }}
           />
-          <Box component={Link} href={'/'} sx={{ color: '#0246BC', fontSize: '40px', fontWeight: '500', textDecoration: 'underline', lineHeight: '1.2' }}>
+          <Box
+            component={Link}
+            href={"/"}
+            sx={{
+              color: "#0246BC",
+              fontSize: "40px",
+              fontWeight: "500",
+              textDecoration: "underline",
+              lineHeight: "1.2",
+            }}
+          >
             Reference Doc
           </Box>
         </Box>
@@ -51,14 +68,14 @@ const MarketDataTermsAndConditionsPage = () => {
           mt={3}
           sx={{
             fontFamily: "inherit",
-            lineHeight: '1.25',
+            lineHeight: "1.25",
           }}
         >
           Aquis Exchange Market Data
         </Typography>
       </Stack>
 
-      <Box sx={{ position: 'relative', width: '100%', height: 'auto' }}>
+      <Box sx={{ position: "relative", width: "100%", height: "auto" }}>
         <Image
           src={AquisExchangeMarketDataImage}
           alt="Aquis Exchange Market Data"
@@ -73,7 +90,7 @@ const MarketDataTermsAndConditionsPage = () => {
               <Box
                 component="a"
                 sx={{
-                  position: 'absolute',
+                  position: "absolute",
                   left: `${(area.x / 1848) * 100}%`,
                   top: `${(area.y / 16892) * 100}%`,
                   width: `${(area.width / 1848) * 100}%`,

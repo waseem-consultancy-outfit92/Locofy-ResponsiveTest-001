@@ -4,7 +4,7 @@ import {
   img1RulesAndFeesImage,
   img2RulesAndFeesImage,
   img3RulesAndFeesImage,
-  img4RulesAndFeesImage
+  img4RulesAndFeesImage,
 } from "@/assets";
 import React from "react";
 
@@ -32,7 +32,7 @@ const RulesAndFeesPageData = [
     link: "/liquidity-provider-scheme",
     icon: img4RulesAndFeesImage,
     title: "Liquidity Provider Scheme",
-  }
+  },
 ];
 
 const RulesAndFeesPage = () => {
@@ -40,7 +40,7 @@ const RulesAndFeesPage = () => {
     <MultiPathPage
       arrayData={RulesAndFeesPageData}
       pageTitle="Rules and Fees"
-      backRoute="/FCA Sequence Diagram"
+      backRoute="/aqse-documents"
     />
   );
 };

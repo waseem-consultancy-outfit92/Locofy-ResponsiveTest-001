@@ -11,7 +11,7 @@ import {
   img7AccessRulebookImage,
   img8AccessRulebookImage,
   img9AccessRulebookImage,
-  img10AccessRulebookImage
+  img10AccessRulebookImage,
 } from "@/assets";
 
 const AccessRulebookPageData = [
@@ -66,7 +66,7 @@ const AccessRulebookPageData = [
   {
     key: "access-9",
     link: "/investigations-sanctions-and-discipline",
-    icon: img9AccessRulebookImage, 
+    icon: img9AccessRulebookImage,
     title: "Investigations, Sanctions And Discipline",
   },
   {
@@ -74,7 +74,7 @@ const AccessRulebookPageData = [
     link: "/admission-document-appendix-i",
     icon: img10AccessRulebookImage,
     title: "Admission Document (Appendix I)",
-  }
+  },
 ];
 
 const AccessRulebookPage = () => {
