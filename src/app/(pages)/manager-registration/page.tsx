@@ -26,7 +26,7 @@ const ManagerRegistrationPage = () => {
     <MultiPathPage
       arrayData={ManagerRegistrationPageData}
       pageTitle=" Manager Registration"
-      backRoute="/FCA Sequence Diagram"
+      backRoute="/who-needs-to-register"
     />
   );
 };

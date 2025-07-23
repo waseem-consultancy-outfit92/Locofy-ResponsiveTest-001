@@ -6,7 +6,7 @@ const assetsDir = path.join(__dirname, "src", "assets");
 const indexTsxPath = path.join(assetsDir, "index.tsx");
 
 const pages = [
-  { name: "Domiciliary Dental Only-9", backRoute: "/cqc-fee-structure" },
+  { name: "Registered Manager – Vary/Remove Condition", backRoute: "/add-remove-condition-and-notice-process-flow" },
   
  
 ];
