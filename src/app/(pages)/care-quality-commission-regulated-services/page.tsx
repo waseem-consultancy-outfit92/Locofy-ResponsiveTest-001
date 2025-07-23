@@ -110,7 +110,7 @@ const CareQualityCommissionRegulatedServices14Page = () => {
     <MultiPathPage
       arrayData={CareQualityCommissionRegulatedServices14PageData}
       pageTitle="Care Quality Commission > Regulated services 14"
-      backRoute="/FCA Sequence Diagram"
+      backRoute="/care-quality-commission"
     />
   );
 };
