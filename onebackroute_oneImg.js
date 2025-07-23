@@ -6,9 +6,9 @@ const assetsDir = path.join(__dirname, "src", "assets");
 const indexTsxPath = path.join(assetsDir, "index.tsx");
 
 const pages = [
-  { name: "Registered Manager – Vary/Remove Condition", backRoute: "/add-remove-condition-and-notice-process-flow" },
-  
- 
+  { name: "Regulated Services", backRoute: "/What Needs to Be Registered?" },
+  { name: "Non-Regulated Services", backRoute: "/What Needs to Be Registered?" },
+  { name: " Add/Remove Condition and Notice – Process Flow", backRoute: "/What Needs to Be Registered?" },
 ];
 
 const toPascalCase = (str) =>
