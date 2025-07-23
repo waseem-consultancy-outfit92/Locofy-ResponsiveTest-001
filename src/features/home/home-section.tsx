@@ -4,6 +4,7 @@ import React, { useEffect, useRef, useState, useCallback } from "react";
 import { Box, Stack, Typography } from "@mui/material";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import { colorLegends, appLogo } from "@/assets/common-assets";
+import Image from "next/image";
 
 const PlayCircleRoundedSVG = `<path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/>`;
 const StopCircleRoundedSVG = `<path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-4 14V8h8v8H8z"/>`;
@@ -223,6 +224,7 @@ export const HomeSection = () => {
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const preloadedAudiosRef = useRef<{ [id: string]: HTMLAudioElement }>({});
   useEffect(() => {
+    const placeholderAudio = preloadedAudiosRef.current;
     audioHotspots.forEach((hotspot) => {
       const audio = new Audio(hotspot.audioSrc);
       audio.preload = "auto";
@@ -231,7 +233,7 @@ export const HomeSection = () => {
 
     return () => {
       // Cleanup
-      Object.values(preloadedAudiosRef.current).forEach((audio) => {
+      Object.values(placeholderAudio).forEach((audio) => {
         audio.pause();
         audio.src = "";
       });
@@ -308,7 +310,7 @@ export const HomeSection = () => {
   return (
     <Box sx={{ p: 3, position: "relative" }}>
       <Stack flexDirection="row" alignItems="center" mt={{ md: 2, xs: 1 }}>
-        <img src={appLogo.src} alt="FCA Logo" width={98} height={31} />
+        <Image src={appLogo.src} alt="FCA Logo" width={98} height={31} />
         <Typography
           variant="h5"
           color="#5A5867"
@@ -465,7 +467,7 @@ export const HomeSection = () => {
             }}
             onClick={(e) => e.stopPropagation()}
           >
-            <img
+            <Image
               src={colorLegends.src}
               alt="Color Legend"
               width={40}
