@@ -106,14 +106,14 @@ const MultiPathPage: React.FC<MultiPathPageProps> = ({
               textTransform: "capitalize",
             }}
             onClick={onGlossaryButtonClick}
-            // endIcon={
-            //   <ArrowCircleDownOutlinedIcon
-            //     sx={{
-            //       width: 30,
-            //       height: 30,
-            //     }}
-            //   />
-            // }
+          // endIcon={
+          //   <ArrowCircleDownOutlinedIcon
+          //     sx={{
+          //       width: 30,
+          //       height: 30,
+          //     }}
+          //   />
+          // }
           >
             Glossary
           </Button>
@@ -121,7 +121,7 @@ const MultiPathPage: React.FC<MultiPathPageProps> = ({
       </Stack>
       <Grid container spacing={2}>
         {arrayData.map((item) => (
-          <Grid item xs={12} md={6} lg={4} key={item.key}>
+          <Grid size={{ xs: 12, md: 6, lg: 4 }} key={item.key}>
             <Card
               onClick={() => {
                 if (item.link) {

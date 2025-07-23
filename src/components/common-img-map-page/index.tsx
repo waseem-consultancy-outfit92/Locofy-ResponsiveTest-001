@@ -33,6 +33,7 @@ interface CommonPageProps {
   amendmentButtonTitle3?: string;
   downloadUrl?: string;
   downloadFileName?: string;
+  target?: string;
   areas?: AreaItem[];
 }
 
@@ -49,6 +50,7 @@ const CommonImgMapPage: React.FC<CommonPageProps> = ({
   downloadUrl,
   downloadFileName,
   image,
+  target = "_self",
   areas = [],
 }) => {
   const router = useRouter();
@@ -193,7 +195,7 @@ const CommonImgMapPage: React.FC<CommonPageProps> = ({
               {areas.map((area, index) => (
                 <area
                   key={index}
-                  target="_blank"
+                  target={target}
                   alt={area.alt}
                   title={area.title}
                   href={area.href}

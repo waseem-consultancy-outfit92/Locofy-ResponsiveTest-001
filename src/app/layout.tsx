@@ -8,9 +8,9 @@ const outfit = Outfit({
   variable: "--font-outfit",
 });
 export const metadata: Metadata = {
-  title: "AQSE",
+  title: "Crypto Ecosystem",
   description:
-    "Explore AQSE Sentinel Broker rules, fees, legal agreements, and technical specs.",
+    "Understand the structure of the crypto ecosystem through a professional diagram featuring key applications, services, and functional areas of Web3.",
   icons: {
     icon: [
       { rel: "icon", url: "/favicon.ico", type: "image/x-icon" },
