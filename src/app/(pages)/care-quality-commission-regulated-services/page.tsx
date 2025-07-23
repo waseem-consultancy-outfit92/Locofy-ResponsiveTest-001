@@ -21,7 +21,7 @@ import React from "react";
 const CareQualityCommissionRegulatedServices14PageData = [
   {
     key: "care-1",
-    link: "/application-process-for-personal-care-cqc-regulated-activity",
+    link: "/application-process-for-personal-care",
     icon: img1CareQualityCommissionRegulatedServices14Image,
     title: "Personal Care",
   },
@@ -109,8 +109,8 @@ const CareQualityCommissionRegulatedServices14Page = () => {
   return (
     <MultiPathPage
       arrayData={CareQualityCommissionRegulatedServices14PageData}
-      pageTitle="Care Quality Commission > Regulated services 14"
-      backRoute="/FCA Sequence Diagram"
+      pageTitle="Regulated Activities (14)"
+      backRoute="/care-quality-commission"
     />
   );
 };
