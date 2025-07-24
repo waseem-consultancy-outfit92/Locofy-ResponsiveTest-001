@@ -6,7 +6,7 @@ const assetsDir = path.join(__dirname, "src", "assets");
 const indexTsxPath = path.join(assetsDir, "index.tsx");
 
 const pages = [
-  { name: "Cross-Sector Inspections", backRoute: "/ Care Quality Commission" },
+  { name: "IG Required Memberships CSA (Cloud Security Alliance) Required Documents", backRoute: "/ig-required-memberships-csa-cloud-security-alliance" },
 ];
 
 const toPascalCase = (str) =>
