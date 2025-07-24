@@ -1,9 +1,6 @@
 "use client";
 import { MultiPathPage } from "@/components";
-import {
-  main1,
-  main2,
-} from "@/assets";
+import { main1, main2 } from "@/assets";
 import React from "react";
 
 const ScopeOfRegistrationPageData = [
@@ -19,7 +16,6 @@ const ScopeOfRegistrationPageData = [
     icon: main2,
     title: "Who Needs to Register?",
   },
- 
 ];
 
 const ScopeOfRegistrationPage = () => {
@@ -27,7 +23,6 @@ const ScopeOfRegistrationPage = () => {
     <MultiPathPage
       arrayData={ScopeOfRegistrationPageData}
       pageTitle="Pay Day Loan"
-     
     />
   );
 };

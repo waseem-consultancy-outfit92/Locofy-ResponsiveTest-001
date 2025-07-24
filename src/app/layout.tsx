@@ -9,8 +9,7 @@ const outfit = Outfit({
 });
 export const metadata: Metadata = {
   title: "Payday Loans",
-  description:
-    "",
+  description: "",
   icons: {
     icon: [
       { rel: "icon", url: "/favicon.ico", type: "image/x-icon" },
@@ -36,8 +35,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Payday Loans",
-    description:
-      "",
+    description: "",
     url: "https://fcaroadmap.netlify.app/",
     type: "website",
     images: [

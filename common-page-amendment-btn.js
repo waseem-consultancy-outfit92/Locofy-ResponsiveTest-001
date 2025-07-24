@@ -11,7 +11,7 @@ const pages = [
     title: "Pay Day Loan",
     ButtonRoute: " Pay Day Loan Ac",
   },
-   {
+  {
     title: "Earned Wage Access EWA",
     ButtonRoute: " Earned Wage Access EWA AC",
   },

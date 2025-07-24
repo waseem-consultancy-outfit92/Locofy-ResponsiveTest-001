@@ -6,10 +6,7 @@ const baseDir = path.join(__dirname, "src", "app", "(pages)");
 const assetsDir = path.join(__dirname, "src", "assets");
 
 // List of pages to create
-const pages = [
-  "earned-wage-access-ewa-ac",
-  "pay-day-loan-ac",
-];
+const pages = ["earned-wage-access-ewa-ac", "pay-day-loan-ac"];
 
 // Convert to PascalCase
 const toPascalCase = (str) =>
