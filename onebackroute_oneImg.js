@@ -7,9 +7,36 @@ const indexTsxPath = path.join(assetsDir, "index.tsx");
 
 const pages = [
   {
-    name: "ig-required-affiliation-cifas-credit-industry-fraud-avoidance-system-validity-of-the-certificate",
-    backRoute:
-      "/ig-required-affiliation-cifas-credit-industry-fraud-avoidance-system",
+    name: "IG Required License Data Protection Principles Purpose of Product Certification",
+    backRoute: "/IG Required License Data Protection Principles",
+  },
+  {
+    name: "IG Required License Data Protection Principles Required Documents",
+    backRoute: "/IG Required License Data Protection Principles",
+  },
+  {
+    name: "IG Required License Data Protection Principles Where to Apply",
+    backRoute: "/IG Required License Data Protection Principles",
+  },
+  {
+    name: "IG Required License Data Protection Principles Cost Breakdown",
+    backRoute: "/IG Required License Data Protection Principles",
+  },
+  {
+    name: "IG Required License Data Protection Principles Eligibility Criteria",
+    backRoute: "/IG Required License Data Protection Principles",
+  },
+  {
+    name: "IIG Required License Data Protection Principles Timeline for Certification",
+    backRoute: "/IG Required License Data Protection Principles",
+  },
+  {
+    name: "IG Required License Data Protection Principles Application Process",
+    backRoute: "/IG Required License Data Protection Principles",
+  },
+  {
+    name: "IG Required License Data Protection Principles Validity of the Certificate",
+    backRoute: "/IG Required License Data Protection Principles",
   },
 ];
 

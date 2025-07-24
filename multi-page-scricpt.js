@@ -9,18 +9,18 @@ const assetsDir = path.join(__dirname, "src", "assets");
 const pages = [
   {
     title:
-      "IG Required Affiliation CIFAS (Credit Industry Fraud Avoidance System)",
-    pageTitle: "CIFAS (Credit Industry Fraud Avoidance System)",
-    imageCount: 3,
+      "IG Required License AMLD (5th Anti-Money Laundering Directive)",
+    pageTitle: "AMLD (5th Anti-Money Laundering Directive)",
+    imageCount: 8,
     links: [
-      "/ig-required-affiliation-cifas-credit-industry-fraud-avoidance-system-purpose-of-product-certification",
-      "/ig-required-affiliation-cifas-credit-industry-fraud-avoidance-system-where-to-apply",
-      "/ig-required-affiliation-cifas-credit-industry-fraud-avoidance-system-eligibility-criteria",
-      "/ig-required-affiliation-cifas-credit-industry-fraud-avoidance-system-application-process  ",
-      "/ig-required-affiliation-cifas-credit-industry-fraud-avoidance-system-required-documents",
-      "/ig-required-affiliation-cifas-credit-industry-fraud-avoidance-system-cost-breakdown",
-      "/ig-required-affiliation-cifas-credit-industry-fraud-avoidance-system-timeline-for-certification",
-      "/ig-required-affiliation-cifas-credit-industry-fraud-avoidance-system-validity-of-the-certificate",
+      "/IG Required License AMLD (5th Anti-Money Laundering Directive) Purpose of Product Certification",
+      "/IG Required License AMLD (5th Anti-Money Laundering Directive) Where to Apply",
+      "/IG Required License AMLD (5th Anti-Money Laundering Directive) Eligibility Criteria",
+      "/IG Required License AMLD (5th Anti-Money Laundering Directive) Application Process",
+      "/IG Required License AMLD (5th Anti-Money Laundering Directive) Required Documents",
+      "/IG Required License AMLD (5th Anti-Money Laundering Directive) Cost Breakdown",
+      "/IG Required License AMLD (5th Anti-Money Laundering Directive) Timeline For Certification",
+      "/IG Required License AMLD (5th Anti-Money Laundering Directive) Validity of the Certificate",
     ],
     titles: [
       "Purpose of Product Certification",
