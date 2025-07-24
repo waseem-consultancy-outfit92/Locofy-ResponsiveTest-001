@@ -73,7 +73,7 @@ const interactiveAreas: Area[] = [
     {
       alt: "Choose or Modify Regulated Activities",
       title: "Choose or Modify Regulated Activities",
-      href: "/care-quality-commission-regulated-services-14",
+      href: "/application-process-for-personal-care",
       coords: "104.22,773.68,284.39,798.40",
       shape: "rect",
       type: "link",
@@ -385,13 +385,13 @@ export const HomeSection = () => {
   useEffect(() => {
     if (!isClient) return;
 
-    interactiveAreas.forEach((area) => {
-      if (area.type === "audio" && area.audioSrc && !audioRefs.current[area.href]) {
-        const audio = new Audio(area.audioSrc);
-        audio.load();
-        audioRefs.current[area.href] = audio;
-      }
-    });
+  interactiveAreas.forEach((area) => {
+  if (area.type === "audio" && area.audioSrc && !audioRefs.current[area.audioSrc]) {
+    const audio = new Audio(area.audioSrc);
+    audio.load();
+    audioRefs.current[area.audioSrc] = audio;
+  }
+});
 
     return () => {
       Object.values(audioRefs.current).forEach((audio) => {
@@ -430,8 +430,8 @@ export const HomeSection = () => {
       if (area.type === "link") {
         area.target === "_blank" ? window.open(area.href, "_blank") : router.push(area.href);
       } else if (area.type === "audio" && area.audioSrc) {
-        const id = area.href;
-        const audio = audioRefs.current[id];
+       const id = area.audioSrc;
+const audio = audioRefs.current[id];
         if (!audio) return;
 
         if (playingAudioIds.has(id)) {
