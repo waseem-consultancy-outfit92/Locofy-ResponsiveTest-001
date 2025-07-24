@@ -1,5 +1,6 @@
-import { DataTypesImage } from "@/assets";
 
+
+import { DataTypesImage1 } from "@/assets";
 import AmendmentComparison from "@/components/amendment-comparison";
 import React from "react";
 
@@ -7,7 +8,7 @@ const DataTypesPage = () => {
   return (
     <AmendmentComparison
       pageTitle={` Data Types`}
-      src={DataTypesImage}
+      src={DataTypesImage1}
       backRoute="/aquis-market-data-technical-specification"
       amendmentButtonRoute="/aquis-market-data-technical-specification"
     />

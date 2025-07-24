@@ -29,33 +29,72 @@ export default function Home() {
   const [playingIndex, setPlayingIndex] = useState<number | null>(null);
   const audioRefs = useRef<Record<number, HTMLAudioElement>>({});
 
+  // const handleAreaClick = (area: ImageMapArea, index: number) => {
+  //   if (area.type === "audio" && area.audioSrc) {
+  //     const existingAudio = audioRefs.current[index];
+
+  //     // If audio ref doesn't exist, create it
+  //     if (!existingAudio) {
+  //       const newAudio = new Audio(area.audioSrc);
+  //       newAudio.addEventListener("ended", () => {
+  //         setPlayingIndex(null);
+  //       });
+  //       audioRefs.current[index] = newAudio;
+  //       newAudio.play();
+  //       setPlayingIndex(index);
+  //     } else {
+  //       // Toggle play/pause
+  //       if (playingIndex === index) {
+  //         existingAudio.pause();
+  //         setPlayingIndex(null);
+  //       } else {
+  //         // Pause any other playing audio
+  //         if (playingIndex !== null && audioRefs.current[playingIndex]) {
+  //           audioRefs.current[playingIndex].pause();
+  //         }
+  //         existingAudio.play();
+  //         setPlayingIndex(index);
+  //       }
+  //     }
+  //   } else if (area.type === "link") {
+  //     if (area.target === "_blank") {
+  //       window.open(area.href, "_blank");
+  //     } else {
+  //       window.location.href = area.href;
+  //     }
+  //   }
+  // };
+
+  // Define all clickable areas
+  
   const handleAreaClick = (area: ImageMapArea, index: number) => {
     if (area.type === "audio" && area.audioSrc) {
-      const existingAudio = audioRefs.current[index];
+      // If the same audio is clicked again, toggle play/pause
+      if (playingIndex === index) {
+        audioRefs.current[index]?.pause();
+        setPlayingIndex(null);
+        return;
+      }
 
-      // If audio ref doesn't exist, create it
-      if (!existingAudio) {
+      // Stop any currently playing audio
+      if (playingIndex !== null && audioRefs.current[playingIndex]) {
+        audioRefs.current[playingIndex].pause();
+        audioRefs.current[playingIndex].currentTime = 0; // Reset to start
+      }
+
+      // Initialize new audio if it doesn't exist
+      if (!audioRefs.current[index]) {
         const newAudio = new Audio(area.audioSrc);
         newAudio.addEventListener("ended", () => {
           setPlayingIndex(null);
         });
         audioRefs.current[index] = newAudio;
-        newAudio.play();
-        setPlayingIndex(index);
-      } else {
-        // Toggle play/pause
-        if (playingIndex === index) {
-          existingAudio.pause();
-          setPlayingIndex(null);
-        } else {
-          // Pause any other playing audio
-          if (playingIndex !== null && audioRefs.current[playingIndex]) {
-            audioRefs.current[playingIndex].pause();
-          }
-          existingAudio.play();
-          setPlayingIndex(index);
-        }
       }
+
+      // Play the new audio
+      audioRefs.current[index].play();
+      setPlayingIndex(index);
+      
     } else if (area.type === "link") {
       if (area.target === "_blank") {
         window.open(area.href, "_blank");
@@ -64,8 +103,6 @@ export default function Home() {
       }
     }
   };
-
-  // Define all clickable areas
   const areas: ImageMapArea[] = [
     // Top right navigation links
     {
