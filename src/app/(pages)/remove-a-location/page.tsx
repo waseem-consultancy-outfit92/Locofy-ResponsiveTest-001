@@ -19,7 +19,7 @@ const RemoveLocationImageMap = () => {
         flexDirection={"row"}
         alignItems={"center"}
         mt={{ md: 2, xs: 1 }}
-        mb={{ md: 4, sm: 3, xs: 2 }} 
+        mb={{ md: 4, sm: 3, xs: 2 }}
       >
         <Image
           src={CommonBackIcon}
@@ -44,7 +44,7 @@ const RemoveLocationImageMap = () => {
           Remove a Location
         </Typography>
       </Stack>
-      <CheckboxForm onChange={() => {}} />
+      <CheckboxForm onChange={() => { }} />
       <Box position="relative" width="100%" height="auto">
         {/* Image */}
         <Image
@@ -155,11 +155,8 @@ const RemoveLocationImageMap = () => {
               top: "84.53%",
               width: "17.95%",
               height: "1.74%",
-              "&:hover": {
-                border: "2px solid white",
-                opacity: 0.2,
-                borderRadius: "4px",
-              },
+              color: 'transparent',
+              textDecoration: 'none'
             }}
           >
             <Typography variant="h6">Submission Instructions</Typography>
