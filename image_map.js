@@ -5,7 +5,7 @@ const baseDir = path.join(__dirname, "src", "app", "(pages)");
 const assetsDir = path.join(__dirname, "src", "assets");
 const indexTsxPath = path.join(assetsDir, "index.tsx");
 
-const pages = [{ name: "AQSE Overview", backRoute: "/" }];
+const pages = [{ name: "IG Required Licenses", backRoute: "/Identity Gram" }];
 
 const toPascalCase = (str) =>
   str

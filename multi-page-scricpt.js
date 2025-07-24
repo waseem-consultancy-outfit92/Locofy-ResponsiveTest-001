@@ -8,7 +8,8 @@ const assetsDir = path.join(__dirname, "src", "assets");
 // List of pages with pageTitle, image counts, links, and per-image titles
 const pages = [
   {
-    title: "IG Required Affiliation CIFAS (Credit Industry Fraud Avoidance System)",
+    title:
+      "IG Required Affiliation CIFAS (Credit Industry Fraud Avoidance System)",
     pageTitle: "CIFAS (Credit Industry Fraud Avoidance System)",
     imageCount: 3,
     links: [
@@ -19,7 +20,7 @@ const pages = [
       "/ig-required-affiliation-cifas-credit-industry-fraud-avoidance-system-required-documents",
       "/ig-required-affiliation-cifas-credit-industry-fraud-avoidance-system-cost-breakdown",
       "/ig-required-affiliation-cifas-credit-industry-fraud-avoidance-system-timeline-for-certification",
-      "/ig-required-affiliation-cifas-credit-industry-fraud-avoidance-system-validity-of-the-certificate"
+      "/ig-required-affiliation-cifas-credit-industry-fraud-avoidance-system-validity-of-the-certificate",
     ],
     titles: [
       "Purpose of Product Certification",
@@ -29,8 +30,7 @@ const pages = [
       "Required Documents",
       "Cost Breakdown",
       "Timeline for Certification",
-      "Validity of the Certificate"
-
+      "Validity of the Certificate",
     ],
   },
 ];
