@@ -44,14 +44,14 @@ const MultiPathPage: React.FC<MultiPathPageProps> = ({
         mt={{ md: 2, xs: 1 }}
         mb={{ md: 5, sm: 3, xs: 2 }}
       >
-        <Image
+        {/* <Image
           src={MultiBackIcon}
           alt={pageTitle}
           width={40}
           height={40}
           onClick={onBackIconClick}
           style={{ cursor: "pointer" }}
-        />
+        /> */}
         <Typography
           variant="h5"
           color="#0246BC"

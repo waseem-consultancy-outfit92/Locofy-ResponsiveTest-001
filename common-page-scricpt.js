@@ -7,8 +7,8 @@ const assetsDir = path.join(__dirname, "src", "assets");
 
 // List of pages to create
 const pages = [
-  "Part 10 - Miscellaneous and Supplementary AC",
-  "Part 10 -Supplementary",
+  "earned-wage-access-ewa-ac",
+  "pay-day-loan-ac",
 ];
 
 // Convert to PascalCase
@@ -87,7 +87,7 @@ const ${pascal}Page = () => {
     <CommonPage
       pageTitle="Mental Health / Criminal Procedure (Insanity) Act 1964 / ${title}"
       src={${imageName}}
-      backRoute="/schedule-act-1964"
+      backRoute="/"
     />
   );
 };
