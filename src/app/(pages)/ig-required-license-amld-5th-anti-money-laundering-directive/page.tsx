@@ -8,7 +8,7 @@ import {
   img5IgRequiredLicenseAmld5thAntiMoneyLaunderingDirectiveImage,
   img6IgRequiredLicenseAmld5thAntiMoneyLaunderingDirectiveImage,
   img7IgRequiredLicenseAmld5thAntiMoneyLaunderingDirectiveImage,
-  img8IgRequiredLicenseAmld5thAntiMoneyLaunderingDirectiveImage
+  img8IgRequiredLicenseAmld5thAntiMoneyLaunderingDirectiveImage,
 } from "@/assets";
 import React from "react";
 
@@ -60,7 +60,7 @@ const IgRequiredLicenseAmld5thAntiMoneyLaunderingDirectivePageData = [
     link: "/ig-required-license-data-protection-principles-validity-of-the-certificate",
     icon: img8IgRequiredLicenseAmld5thAntiMoneyLaunderingDirectiveImage,
     title: "Validity of the Certificate",
-  }
+  },
 ];
 
 const IgRequiredLicenseAmld5thAntiMoneyLaunderingDirectivePage = () => {

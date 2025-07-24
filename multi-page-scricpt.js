@@ -8,8 +8,7 @@ const assetsDir = path.join(__dirname, "src", "assets");
 // List of pages with pageTitle, image counts, links, and per-image titles
 const pages = [
   {
-    title:
-      "IG Required License AMLD (5th Anti-Money Laundering Directive)",
+    title: "IG Required License AMLD (5th Anti-Money Laundering Directive)",
     pageTitle: "AMLD (5th Anti-Money Laundering Directive)",
     imageCount: 8,
     links: [
