@@ -11,7 +11,7 @@ import React from "react";
 const WhoNeedsToRegisterPageData = [
   {
     key: "who-1",
-    link: "/new-provider-application",
+    link: "/new-provider-application-breakdown",
     icon: img1WhoNeedsToRegisterImage,
     title: "New Provider Application Breakdown",
   },
@@ -23,7 +23,7 @@ const WhoNeedsToRegisterPageData = [
   },
   {
     key: "who-3",
-    link: "/qualifications-certifications",
+    link: "/qualifications-skills-experience",
     icon: img3WhoNeedsToRegisterImage,
     title: "Qualifications & Certifications",
   },
@@ -40,7 +40,7 @@ const WhoNeedsToRegisterPage = () => {
     <MultiPathPage
       arrayData={WhoNeedsToRegisterPageData}
       pageTitle="Who Needs to Register?"
-      backRoute="/who-needs-to-register"
+      backRoute="/scope-of-registration"
     />
   );
 };

@@ -20,7 +20,7 @@ const CqcFeeStructureImageMap = () => {
                     <Image src={arrowLeft} alt="icon" />
                 </Box>
                 <Typography sx={{ color: '#5A5867', fontSize: '32px', fontWeight: 600 }}>
-                    Free Schedule
+                    Fee Schedule
                 </Typography>
                 <CheckboxForm />
             </Box>
@@ -46,11 +46,8 @@ const CqcFeeStructureImageMap = () => {
                             top: "24.33%",
                             width: "15.95%",
                             height: "0.8%",
-                            "&:hover": {
-                                border: "2px solid white",
-                                opacity: 0.2,
-                                borderRadius: "4px",
-                            },
+                            color: 'transparent',
+                            textDecoration: 'none'
                         }}
                     >
                         <Typography variant="h6">Hospice Services</Typography>
@@ -66,11 +63,8 @@ const CqcFeeStructureImageMap = () => {
                             top: "35.17%",
                             width: "40.07%",
                             height: "0.87%",
-                            "&:hover": {
-                                border: "2px solid white",
-                                opacity: 0.2,
-                                borderRadius: "4px",
-                            },
+                            color: 'transparent',
+                            textDecoration: 'none'
                         }}
                     >
                         <Typography variant="h6">Community Health NHS Blood and Transplant</Typography>
@@ -86,11 +80,8 @@ const CqcFeeStructureImageMap = () => {
                             top: "35.27%",
                             width: "25.74%",
                             height: "0.8%",
-                            "&:hover": {
-                                border: "2px solid white",
-                                opacity: 0.2,
-                                borderRadius: "4px",
-                            },
+                            color: 'transparent',
+                            textDecoration: 'none'
                         }}
                     >
                         <Typography variant="h6">Single Specialty Healthcare</Typography>
@@ -106,11 +97,8 @@ const CqcFeeStructureImageMap = () => {
                             top: "40.25%",
                             width: "30.1%",
                             height: "0.9%",
-                            "&:hover": {
-                                border: "2px solid white",
-                                opacity: 0.2,
-                                borderRadius: "4px",
-                            },
+                            color: 'transparent',
+                            textDecoration: 'none'
                         }}
                     >
                         <Typography variant="h6">Independent Ambulance Services</Typography>
@@ -126,11 +114,8 @@ const CqcFeeStructureImageMap = () => {
                             top: "52.0%",
                             width: "18.23%",
                             height: "0.87%",
-                            "&:hover": {
-                                border: "2px solid white",
-                                opacity: 0.2,
-                                borderRadius: "4px",
-                            },
+                            color: 'transparent',
+                            textDecoration: 'none'
                         }}
                     >
                         <Typography variant="h6">Out of Hours Walk In</Typography>
@@ -148,11 +133,8 @@ const CqcFeeStructureImageMap = () => {
                             top: "57.3%",
                             width: "20%",
                             height: "2%",
-                            "&:hover": {
-                                border: "2px solid white",
-                                opacity: 0.2,
-                                borderRadius: "4px",
-                            },
+                            color: 'transparent',
+                            textDecoration: 'none'
                         }}
                     >
                         <Typography variant="h6">Dental Service</Typography>
@@ -168,11 +150,8 @@ const CqcFeeStructureImageMap = () => {
                             top: "59.19%",
                             width: "18.42%",
                             height: "1.07%",
-                            "&:hover": {
-                                border: "2px solid white",
-                                opacity: 0.2,
-                                borderRadius: "4px",
-                            },
+                            color: 'transparent',
+                            textDecoration: 'none'
                         }}
                     >
                         <Typography variant="h6">Domiciliary Dental Only</Typography>
@@ -188,11 +167,8 @@ const CqcFeeStructureImageMap = () => {
                             top: "65.32%",
                             width: "15.48%",
                             height: "0.84%",
-                            "&:hover": {
-                                border: "2px solid white",
-                                opacity: 0.2,
-                                borderRadius: "4px",
-                            },
+                            color: 'transparent',
+                            textDecoration: 'none'
                         }}
                     >
                         <Typography variant="h6">Residential Services</Typography>
@@ -208,11 +184,8 @@ const CqcFeeStructureImageMap = () => {
                             top: "76.99%",
                             width: "17.0%",
                             height: "0.94%",
-                            "&:hover": {
-                                border: "2px solid white",
-                                opacity: 0.2,
-                                borderRadius: "4px",
-                            },
+                            color: 'transparent',
+                            textDecoration: 'none'
                         }}
                     >
                         <Typography variant="h6">Nursing Care Agencies</Typography>
