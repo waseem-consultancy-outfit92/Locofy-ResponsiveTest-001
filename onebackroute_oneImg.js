@@ -6,7 +6,11 @@ const assetsDir = path.join(__dirname, "src", "assets");
 const indexTsxPath = path.join(assetsDir, "index.tsx");
 
 const pages = [
-  { name: "ig-required-affiliation-cifas-credit-industry-fraud-avoidance-system-validity-of-the-certificate", backRoute: "/ig-required-affiliation-cifas-credit-industry-fraud-avoidance-system" },
+  {
+    name: "ig-required-affiliation-cifas-credit-industry-fraud-avoidance-system-validity-of-the-certificate",
+    backRoute:
+      "/ig-required-affiliation-cifas-credit-industry-fraud-avoidance-system",
+  },
 ];
 
 const toPascalCase = (str) =>
