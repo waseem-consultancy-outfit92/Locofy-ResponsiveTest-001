@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://paydayloansapp/og.png",
+        url: "https://paydayloansapp.netlify.app/og.png",
         type: "image/png",
         width: 1200,
         height: 630,
