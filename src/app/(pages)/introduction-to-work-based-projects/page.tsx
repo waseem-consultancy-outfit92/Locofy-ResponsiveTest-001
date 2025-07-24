@@ -32,10 +32,13 @@ const clickableAreas = [
     href: "https://access.sconul.ac.uk/",
     coords: { left: 1524, top: 9180, width: 209, height: 44 },
   },
+  {
+    title: "Employer Resources",
+    href: "https://www.mmu.ac.uk/study/apprenticeships/resources/chartered-manager",
+    coords: { left: 96, top: 8871, width: 378, height: 54 },
+  },
 ];
 
-const ORIGINAL_WIDTH = 1856; // Set this to your actual SVG width
-const ORIGINAL_HEIGHT = 12646; // Set this to your actual SVG height
 
 const IntroductionToWorkBasedProjectsPage = () => {
   return (

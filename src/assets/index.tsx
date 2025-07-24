@@ -49,13 +49,13 @@ export { default as PerformaTemplateWtd2025PerformaTemplateWtd2025Image } from "
 export { default as ApprenticeshipTrainingPlanSpecificationImage } from "./ApprenticeshipTrainingPlanSpecificationImage.svg";
 export { default as IndividualLearningPlanTemplateImage } from "./IndividualLearningPlanTemplateImage.svg";
 export { default as SkillScanImage } from "./SkillScanImage.svg";
-export { default as App3ChecklistmanagementuniversityapprenticeshipsImage } from "./App3ChecklistmanagementuniversityapprenticeshipsImage.svg";
+export { default as App3ChecklistmanagementuniversityapprenticeshipsImage } from "./App3ChecklistmanagementuniversityapprenticeshipsImageOne.svg";
 export { default as WtdLevyNonLevryAgreementv1CompatibilityModeImage } from "./WtdLevyNonLevryAgreementv1CompatibilityModeImage.svg";
 export { default as TjtEvidenceCollectionTemplate2324RulesV102Image } from "./TjtEvidenceCollectionTemplate2324RulesV102Image.svg";
 export { default as IntroductionToWorkBasedProjectsImage } from "./IntroductionToWorkMainPage.svg";
-export { default as LessonObservationSampleImage } from "./LessonObservationSampleImage.svg";
+export { default as LessonObservationSampleImage } from "./LessonObservationSampleImageOne.svg";
 export { default as ReflectiveLearningJournalRljImage } from "./ReflectiveLearningJournalRljImage.svg";
-export { default as SchemeOfWorkMortgageAdviserLevel3Image } from "./SchemeOfWorkMortgageAdviserLevel3Image.svg";
+export { default as SchemeOfWorkMortgageAdviserLevel3Image } from "./SchemeOfWorkMortgageAdviserLevel3ImageOne.svg";
 export { default as WeeklyJournalExampleImage } from "./WeeklyJournalExampleImage.svg";
 export { default as ApprenticeshipWorkplaceAssignmentsExamplesImage } from "./ApprenticeshipWorkplaceAssignmentsExamplesImage.svg";
 export { default as WayFeedbackFormImage } from "./WayFeedbackFormImage.svg";
@@ -102,7 +102,7 @@ export { default as ProgrammeEligibilityImage } from "./ProgrammeEligibilityImag
 export { default as WhatCanBeFundedImage } from "./WhatCanBeFundedImage.svg";
 export { default as PayingForAnApprenticeshipImage } from "./PayingForAnApprenticeshipImage.svg";
 export { default as ChangeOfCircumstanceImage } from "./ChangeOfCircumstanceImage.svg";
-export { default as ApprenticeshipsFundedByTransfersOfLevyFundsImage } from "./ApprenticeshipsFundedByTransfersOfLevyFundsImage.svg";
+export { default as ApprenticeshipsFundedByTransfersOfLevyFundsImage } from "./ApprenticeshipsFundedByTransfersOfLevyFundsImageOne.svg";
 export { default as DeliveryModelsImage } from "./DeliveryModelsImage.svg";
 export { default as EvidenceRequirementsImage } from "./EvidenceRequirementsImage.svg";
 export { default as AnnexAResidencyEligibilityCriteriaWhoWeFundImage } from "./AnnexAResidencyEligibilityCriteriaWhoWeFundImage.svg";
