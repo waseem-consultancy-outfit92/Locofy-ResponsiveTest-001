@@ -38,11 +38,11 @@ export const metadata: Metadata = {
     title: "Financial Conduct Authority",
     description:
       "Understand the primary goals of the Financial Conduct Authority, illustrated through a clear and concise diagram.",
-    url: "/",
+    url: "https://crypto.netlify.app",
     type: "website",
     images: [
       {
-        url: "/og.png",
+        url: "https://crypto.netlify.app/og.png",
         type: "image/png",
         width: 1200,
         height: 630,
