@@ -6,7 +6,7 @@ const assetsDir = path.join(__dirname, "src", "assets");
 const indexTsxPath = path.join(assetsDir, "index.tsx");
 
 const pages = [
-  { name: "Web3 Applications in Crypto", backRoute: "/" },
+  { name: "Wallet Providers", backRoute: "/web3-applications-in-crypto-categories" },
 ];
 
 const toPascalCase = (str) =>
@@ -75,7 +75,7 @@ import React from "react";
 const ${pascalComponent} = () => {
   return (
     <CommonPage
-      pageTitle={\`Domiciliary Dental Only\`}
+      pageTitle={\`Web 3 / Roles / Wallet Providers \`}
       src={${imageName}}
       backRoute="${backRoute}"
     />

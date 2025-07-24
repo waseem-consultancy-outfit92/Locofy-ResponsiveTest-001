@@ -48,7 +48,7 @@ const CommonPage: React.FC<CommonPageProps> = ({
           width={40}
           height={40}
           onClick={onBackIconClick}
-          style={{ cursor: "pointer" }}
+          style={{ cursor: "pointer", marginTop: 12, marginRight: 8 }}
         />
         <Typography
           variant="h5"

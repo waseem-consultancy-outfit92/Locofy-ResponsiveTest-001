@@ -5,24 +5,28 @@ import React from "react";
 
 const arrayData: any = [
   {
-    id:1,
+    id: 1,
     icon: web3Icon1,
     title: "Crypto Web3 Introduction",
+    link: "/web3-introduction",
   },
   {
-    id:2,
+    id: 2,
     icon: web3Icon2,
-    title: "Crypto Web3 Introduction",
+    title: "Categories",
+    link: "/web3-applications-in-crypto-categories"
   },
   {
-    id:3,
+    id: 3,
     icon: web3Icon3,
-    title: "Crypto Web3 Introduction",
+    title: "Hash in Crypto",
+    link: "/hash-in-crypto",
   },
   {
-    id:4,
+    id: 4,
     icon: web3Icon4,
-    title: "Crypto Web3 Introduction",
+    title: "Gas in Crypto",
+    link: "/gas-in-crypto",
   },
 ];
 

@@ -63,14 +63,13 @@ const MultiPathPage: React.FC<MultiPathPageProps> = ({
           width={40}
           height={40}
           onClick={onBackIconClick}
-          style={{ cursor: "pointer" }}
+          style={{ cursor: "pointer", marginTop: 13, marginRight: 10 }}
         />
         <Typography
           variant="h5"
           color="#0246BC"
           fontSize={fontSize}
           fontWeight={{ md: 600, xs: 500 }}
-          ml={{ md: 2, xs: 1 }}
           sx={{ fontFamily: "inherit" }}
         >
           {pageTitle}
@@ -143,7 +142,7 @@ const MultiPathPage: React.FC<MultiPathPageProps> = ({
               <Image
                 src={item.icon}
                 alt={item.title ?? item.key}
-                width={200}
+                width={100}
                 height={200}
                 style={{ width: "100%", objectFit: "contain" }}
               />
