@@ -5,9 +5,7 @@ const baseDir = path.join(__dirname, "src", "app", "(pages)");
 const assetsDir = path.join(__dirname, "src", "assets");
 const indexTsxPath = path.join(assetsDir, "index.tsx");
 
-const pages = [
-  { name: "AQSE Overview", backRoute: "/" },
-];
+const pages = [{ name: "AQSE Overview", backRoute: "/" }];
 
 const toPascalCase = (str) =>
   str
@@ -68,7 +66,7 @@ for (const page of pages) {
   console.log(`✅ Created directory: ${dir}`);
 
   // Write page.tsx
-const pageContent = `import { ${imageName} } from "@/assets";
+  const pageContent = `import { ${imageName} } from "@/assets";
 import CommonImgMapPage from "@/components/common-img-map-page";
 import React from "react";
 
