@@ -39,25 +39,25 @@ const IgRequiredMembershipsCsaCloudSecurityAlliancePageData = [
   },
   {
     key: "ig-5",
-    link: "/",
+    link: "/ig-required-memberships-csa-cloud-security-alliance-required-documents",
     icon: img5IgRequiredMembershipsCsaCloudSecurityAllianceImage,
     title: "Required Documents",
   },
   {
     key: "ig-6",
-    link: "/",
+    link: "/ig-required-memberships-csa-cloud-security-alliance-cost-breakdown",
     icon: img6IgRequiredMembershipsCsaCloudSecurityAllianceImage,
     title: "Cost Breakdown",
   },
   {
     key: "ig-7",
-    link: "/",
+    link: "/ig-required-memberships-csa-cloud-security-alliance-timeline-for-certification",
     icon: img7IgRequiredMembershipsCsaCloudSecurityAllianceImage,
     title: "Timeline for Certification",
   },
   {
     key: "ig-8",
-    link: "/",
+    link: "/ig-required-memberships-csa-cloud-security-alliance-validity-of-the-certificate",
     icon: img8IgRequiredMembershipsCsaCloudSecurityAllianceImage,
     title: "Validity of the Certificate",
   }

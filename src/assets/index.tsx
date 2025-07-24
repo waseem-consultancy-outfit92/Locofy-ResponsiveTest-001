@@ -28,3 +28,6 @@ export { default as IgRequiredMembershipsCsaCloudSecurityAllianceWhereToApplyIma
 export { default as IgRequiredMembershipsCsaCloudSecurityAllianceEligibilityCriteriaGdprImage } from "./IgRequiredMembershipsCsaCloudSecurityAllianceEligibilityCriteriaGdprImage.svg";
 export { default as IgRequiredMembershipsCsaCloudSecurityAllianceApplicationProcessImage } from "./IgRequiredMembershipsCsaCloudSecurityAllianceApplicationProcessImage.svg";
 export { default as IgRequiredMembershipsCsaCloudSecurityAllianceRequiredDocumentsImage } from "./IgRequiredMembershipsCsaCloudSecurityAllianceRequiredDocumentsImage.svg";
+export { default as IgRequiredMembershipsCsaCloudSecurityAllianceCostBreakdownImage } from "./IgRequiredMembershipsCsaCloudSecurityAllianceCostBreakdownImage.svg";
+export { default as IgRequiredMembershipsCsaCloudSecurityAllianceTimelineForCertificationImage } from "./IgRequiredMembershipsCsaCloudSecurityAllianceTimelineForCertificationImage.svg";
+export { default as IgRequiredMembershipsCsaCloudSecurityAllianceValidityOfTheCertificateImage } from "./IgRequiredMembershipsCsaCloudSecurityAllianceValidityOfTheCertificateImage.svg";
