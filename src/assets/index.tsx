@@ -6,3 +6,11 @@ export { default as CqcFundamentalStandardsImage } from "./CqcFundamentalStandar
 export { default as img1ScopeOfRegistrationImage } from "./img1ScopeOfRegistrationImage.svg";
 export { default as img2ScopeOfRegistrationImage } from "./img2ScopeOfRegistrationImage.svg";
 export { default as img3ScopeOfRegistrationImage } from "./img3ScopeOfRegistrationImage.svg";
+export { default as img1IgRequiredAffiliationCifasCreditIndustryFraudAvoidanceSystemImage } from "./img1IgRequiredAffiliationCifasCreditIndustryFraudAvoidanceSystemImage.svg";
+export { default as img2IgRequiredAffiliationCifasCreditIndustryFraudAvoidanceSystemImage } from "./img2IgRequiredAffiliationCifasCreditIndustryFraudAvoidanceSystemImage.svg";
+export { default as img3IgRequiredAffiliationCifasCreditIndustryFraudAvoidanceSystemImage } from "./img3IgRequiredAffiliationCifasCreditIndustryFraudAvoidanceSystemImage.svg";
+export { default as img4IgRequiredAffiliationCifasCreditIndustryFraudAvoidanceSystemImage } from "./img4IgRequiredAffiliationCifasCreditIndustryFraudAvoidanceSystemImage.svg";
+export { default as img5IgRequiredAffiliationCifasCreditIndustryFraudAvoidanceSystemImage } from "./img5IgRequiredAffiliationCifasCreditIndustryFraudAvoidanceSystemImage.svg";
+export { default as img6IgRequiredAffiliationCifasCreditIndustryFraudAvoidanceSystemImage } from "./img6IgRequiredAffiliationCifasCreditIndustryFraudAvoidanceSystemImage.svg";
+export { default as img7IgRequiredAffiliationCifasCreditIndustryFraudAvoidanceSystemImage } from "./img7IgRequiredAffiliationCifasCreditIndustryFraudAvoidanceSystemImage.svg";
+export { default as img8IgRequiredAffiliationCifasCreditIndustryFraudAvoidanceSystemImage } from "./img8IgRequiredAffiliationCifasCreditIndustryFraudAvoidanceSystemImage.svg";

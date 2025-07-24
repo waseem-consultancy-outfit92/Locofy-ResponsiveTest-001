@@ -8,18 +8,29 @@ const assetsDir = path.join(__dirname, "src", "assets");
 // List of pages with pageTitle, image counts, links, and per-image titles
 const pages = [
   {
-    title: "Scope of registration",
-    pageTitle: "Scope of registration",
+    title: "IG Required Affiliation CIFAS (Credit Industry Fraud Avoidance System)",
+    pageTitle: "CIFAS (Credit Industry Fraud Avoidance System)",
     imageCount: 3,
     links: [
-      "/How the Process Works?",
-      "/Who Needs to Register?",
-      "What Needs to Be Registered?",
+      "/ig-required-affiliation-cifas-credit-industry-fraud-avoidance-system-purpose-of-product-certification",
+      "/ig-required-affiliation-cifas-credit-industry-fraud-avoidance-system-where-to-apply",
+      "/ig-required-affiliation-cifas-credit-industry-fraud-avoidance-system-eligibility-criteria",
+      "/ig-required-affiliation-cifas-credit-industry-fraud-avoidance-system-application-process  ",
+      "/ig-required-affiliation-cifas-credit-industry-fraud-avoidance-system-required-documents",
+      "/ig-required-affiliation-cifas-credit-industry-fraud-avoidance-system-cost-breakdown",
+      "/ig-required-affiliation-cifas-credit-industry-fraud-avoidance-system-timeline-for-certification",
+      "/ig-required-affiliation-cifas-credit-industry-fraud-avoidance-system-validity-of-the-certificate"
     ],
     titles: [
-      "How the Process Works?",
-      "Who Needs to Register?h",
-      "What Needs to Be Registered?",
+      "Purpose of Product Certification",
+      "Where to Apply",
+      "Eligibility Criteria",
+      "Application Process",
+      "Required Documents",
+      "Cost Breakdown",
+      "Timeline for Certification",
+      "Validity of the Certificate"
+
     ],
   },
 ];
