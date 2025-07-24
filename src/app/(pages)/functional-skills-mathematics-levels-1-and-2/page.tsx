@@ -7,7 +7,7 @@ const FunctionalSkillsMathematicsLevels1And2Page = () => {
     <CommonPage
       pageTitle={`Apprenticeships / Appendix 1: subject content (published by the Department for Education)`}
       src={FunctionalSkillsMathematicsLevels1And2Image}
-      backRoute="/subject-content-functional-skills-english"
+      backRoute="/functional-skills-math"
     />
   );
 };

@@ -1,14 +1,14 @@
 "use client";
 
-import { GuidanceDocumentWitnessTestimonyExample2Image } from "@/assets";
+import { GuidanceDocumentWitnessTestimonyExample1Image } from "@/assets";
 import { CommonPage } from "@/components";
 import React from "react";
 
 const GuidanceDocumentWitnessTestimonyExample2Page = () => {
   return (
     <CommonPage
-      pageTitle={`Apprenticeships / Apprenticeship funding Rules / Guidance document Witness Testimony Example 2`}
-      src={GuidanceDocumentWitnessTestimonyExample2Image}
+      pageTitle={`Apprenticeship Journey  / Apprenticeship Documents  / Guidance document for Level 2-3 Hospitality Practical Assessment Witness Testimony/Example 3`}
+      src={GuidanceDocumentWitnessTestimonyExample1Image}
       backRoute="/guidance-document-for-level-2-3-Guidance-document"
     />
   );

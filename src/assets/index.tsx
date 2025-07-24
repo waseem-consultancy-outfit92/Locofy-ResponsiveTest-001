@@ -52,7 +52,7 @@ export { default as SkillScanImage } from "./SkillScanImage.svg";
 export { default as App3ChecklistmanagementuniversityapprenticeshipsImage } from "./App3ChecklistmanagementuniversityapprenticeshipsImage.svg";
 export { default as WtdLevyNonLevryAgreementv1CompatibilityModeImage } from "./WtdLevyNonLevryAgreementv1CompatibilityModeImage.svg";
 export { default as TjtEvidenceCollectionTemplate2324RulesV102Image } from "./TjtEvidenceCollectionTemplate2324RulesV102Image.svg";
-export { default as IntroductionToWorkBasedProjectsImage } from "./IntroductionToWorkBasedProjectsImage.svg";
+export { default as IntroductionToWorkBasedProjectsImage } from "./IntroductionToWorkMainPage.svg";
 export { default as LessonObservationSampleImage } from "./LessonObservationSampleImage.svg";
 export { default as ReflectiveLearningJournalRljImage } from "./ReflectiveLearningJournalRljImage.svg";
 export { default as SchemeOfWorkMortgageAdviserLevel3Image } from "./SchemeOfWorkMortgageAdviserLevel3Image.svg";
@@ -208,7 +208,7 @@ export { default as GuidanceDocumentRedimg2 } from "./GuidanceDocumentRedimg2.sv
 export { default as GuidanceDocumentRedimg3 } from "./GuidanceDocumentRedimg3.svg";
 export { default as GuidanceDocumentRedimg4 } from "./GuidanceDocumentRedimg4.svg";
 
-export { default as GuidanceDocumentWitnessTestimonyExample1Image } from "./GuidanceDocumentWitnessTestimonyExample1Image.svg";
+export { default as GuidanceDocumentWitnessTestimonyExample1Image } from "./RequestSectionhdn.svg";
 export { default as GuidanceDocumentWitnessTestimonyExample2Image } from "./GuidanceDocumentWitnessTestimonyExample2Image.svg";
 export { default as GuidanceDocumentWitnessTestimonyExample3Image } from "./GuidanceDocumentWitnessTestimonyExample3Image.svg";
 export { default as SkillScanDiagramImage } from "./SkillScanDiagramImage.svg";
