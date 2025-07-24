@@ -213,6 +213,7 @@ export { default as GuidanceDocumentWitnessTestimonyExample2Image } from "./Guid
 export { default as GuidanceDocumentWitnessTestimonyExample3Image } from "./GuidanceDocumentWitnessTestimonyExample3Image.svg";
 export { default as SkillScanDiagramImage } from "./SkillScanDiagramImage.svg";
 export { default as ApoListing } from "./apolistinSequence.svg";
+export { default as ApoListin2 } from "./apolistinSequence2.svg";
 export { default as PortfolioAssessmentEvidenceImage } from "./PortfolioAssessmentEvidenceImage.svg";
 export { default as PortfolioOfEvidenceMappingAndTrackingFormTqukImage } from "./PortfolioOfEvidenceMappingAndTrackingFormTqukImage.svg";
 export { default as AssessmentPlanExampleImage } from "./AssessmentPlanExampleImage.svg";
@@ -223,3 +224,5 @@ export { default as RequirementsthreeImage } from "./RequirementsthreeImage.svg"
 export { default as TrainingPlanImage1 } from "./training-plan-image-1.svg";
 export { default as TrainingPlanImage2 } from "./training-plan-image-2.svg";
 export { default as TrainingPlanImage3 } from "./training-plan-image-3.svg";
+export { default as apprenticeshipsLogo } from "./apprenticeships-logo.svg";
+

@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { colorLegends, mainSection } from "@/assets";
+import { apprenticeshipsLogo, colorLegends, mainSection } from "@/assets";
 import React, { useEffect, useRef, useState } from "react";
 import { Box, Button, Stack, Typography } from "@mui/material";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
@@ -51,14 +51,12 @@ export const HomeSection = () => {
         mt={{ md: 2, xs: 1 }}
         mb={{ md: 4, sm: 3, xs: 2 }}
       >
-        {/* <Image
-          src={CommonBackIcon}
-          alt={"Apprenticeship Journey "}
-          width={40}
-          height={40}
-          onClick={onBackIconClick}
-          style={{ cursor: "pointer" }}
-        /> */}
+        <Image
+          src={apprenticeshipsLogo}
+          alt={"Apprenticeship logo "}
+          width={180}
+          height={50}
+        />
         <Typography
           variant="h5"
           color="#5A5867"
