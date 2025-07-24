@@ -1,4 +1,3 @@
-
 import { main1, main2 } from "@/assets";
 import { MultiPathPage } from "@/components";
 const ScopeOfRegistrationPageData = [
@@ -17,8 +16,10 @@ const ScopeOfRegistrationPageData = [
 ];
 
 export default function Home() {
-  return <MultiPathPage
+  return (
+    <MultiPathPage
       arrayData={ScopeOfRegistrationPageData}
       pageTitle="Pay Day Loan"
     />
+  );
 }

@@ -36,11 +36,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Payday Loans",
     description: "",
-    url: "https://fcaroadmap.netlify.app/",
+    url: "https://paydayloansapp.netlify.app/",
     type: "website",
     images: [
       {
-        url: "https://fcaroadmap.netlify.app/og.png",
+        url: "https://paydayloansapp/og.png",
         type: "image/png",
         width: 1200,
         height: 630,
