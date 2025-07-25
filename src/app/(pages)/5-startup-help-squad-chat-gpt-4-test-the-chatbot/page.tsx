@@ -7,7 +7,7 @@ const StartupHelpSquadChatGpt4TestTheChatbotPage = () => {
     <CommonPage
       pageTitle={`Test the Chatbot`}
       src={StartupHelpSquadChatGpt4TestTheChatbotImage}
-      backRoute="/"
+      backRoute="/ig-chat-gpt-4-training"
     />
   );
 };

@@ -8,17 +8,23 @@ const assetsDir = path.join(__dirname, "src", "assets");
 // List of pages with pageTitle, image counts, links, and per-image titles
 const pages = [
   {
-    title: "Social Media Accounts",
-    pageTitle: "Social Media Accounts",
-    imageCount: 10,
-    links: ["/", "/", "/", "/", "/", "/"],
+    title: "Sector Subject Area 2 Codes",
+    pageTitle: "Sector Subject Area 2 Codes",
+    imageCount: 5,
+    links: [
+      "/",
+      "/",
+      "/",
+      "/",
+      "/",
+      
+    ],
     titles: [
-      "Twitter",
-      "Instagram",
-      "Facebook",
-      "Tiktok",
-      "Linkedln",
-      "Youtube",
+      "10-History, Philosophy and Theology",
+      "10.1-History",
+      "10.2-Archaeology and Archaeological Sciences",
+      "10.3-Philosophy",
+      "10.4-Theology and Religious Studies",
       
     ],
   },

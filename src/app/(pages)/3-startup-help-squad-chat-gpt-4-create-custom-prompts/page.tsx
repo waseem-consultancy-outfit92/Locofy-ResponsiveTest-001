@@ -7,7 +7,7 @@ const StartupHelpSquadChatGpt4CreateCustomPromptsPage = () => {
     <CommonPage
       pageTitle={`Create Custom Prompts`}
       src={StartupHelpSquadChatGpt4CreateCustomPromptsImage}
-      backRoute="/"
+      backRoute="/ig-chat-gpt-4-training"
     />
   );
 };

@@ -7,7 +7,7 @@ const StartupHelpSquadChatGpt4LeverageOpenaiSApiFineTuningPage = () => {
     <CommonPage
       pageTitle={`Leverage OpenAI’s API (Fine-Tuning)`}
       src={StartupHelpSquadChatGpt4LeverageOpenaiSApiFineTuningImage}
-      backRoute="/"
+      backRoute="/ig-chat-gpt-4-training"
     />
   );
 };

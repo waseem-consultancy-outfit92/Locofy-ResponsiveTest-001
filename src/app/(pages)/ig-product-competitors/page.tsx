@@ -6,47 +6,47 @@ import {
   img3ProductCompetitorsImage,
   img4ProductCompetitorsImage,
   img5ProductCompetitorsImage,
-  img6ProductCompetitorsImage
+  img6ProductCompetitorsImage,
 } from "@/assets";
 import React from "react";
 
 const ProductCompetitorsPageData = [
   {
     key: "product-1",
-    link: "/",
+    link: "https://www.veriff.com/",
     icon: img1ProductCompetitorsImage,
     title: "Veriff",
   },
   {
     key: "product-2",
-    link: "/",
+    link: "https://www.northrow.com/",
     icon: img2ProductCompetitorsImage,
     title: "North Row",
   },
   {
     key: "product-3",
-    link: "/",
+    link: "https://zincwork.com/",
     icon: img3ProductCompetitorsImage,
     title: "zinc Work",
   },
   {
     key: "product-4",
-    link: "/",
+    link: "https://sumsub.com/main3/",
     icon: img4ProductCompetitorsImage,
     title: "Sum Sub",
   },
   {
     key: "product-5",
-    link: "/",
+    link: "https://shuftipro.com/",
     icon: img5ProductCompetitorsImage,
     title: "Shufti Pro",
   },
   {
     key: "product-6",
-    link: "/",
+    link: "https://youverify.co/",
     icon: img6ProductCompetitorsImage,
     title: "YouVerify",
-  }
+  },
 ];
 
 const ProductCompetitorsPage = () => {

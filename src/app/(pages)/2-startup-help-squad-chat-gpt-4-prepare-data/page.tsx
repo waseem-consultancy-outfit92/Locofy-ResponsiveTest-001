@@ -7,7 +7,7 @@ const StartupHelpSquadChatGpt4PrepareDataPage = () => {
     <CommonPage
       pageTitle={`Prepare Data`}
       src={StartupHelpSquadChatGpt4PrepareDataImage}
-      backRoute="/"
+      backRoute="/ig-chat-gpt-4-training"
     />
   );
 };

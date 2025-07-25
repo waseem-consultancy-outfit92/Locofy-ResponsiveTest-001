@@ -7,7 +7,7 @@ const StartupHelpSquadChatGpt4DefineObjectivesDataCollectionPage = () => {
     <CommonPage
       pageTitle={`Define Objectives/ Data collection`}
       src={StartupHelpSquadChatGpt4DefineObjectivesDataCollectionImage}
-      backRoute="/"
+      backRoute="/ig-chat-gpt-4-training"
     />
   );
 };

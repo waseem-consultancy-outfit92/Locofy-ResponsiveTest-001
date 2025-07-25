@@ -7,7 +7,7 @@ const StartupHelpSquadChatGpt4DeployOnSalesPlatformsPage = () => {
     <CommonPage
       pageTitle={`Deploy on Sales Platforms`}
       src={StartupHelpSquadChatGpt4DeployOnSalesPlatformsImage}
-      backRoute="/"
+      backRoute="/ig-chat-gpt-4-training"
     />
   );
 };
