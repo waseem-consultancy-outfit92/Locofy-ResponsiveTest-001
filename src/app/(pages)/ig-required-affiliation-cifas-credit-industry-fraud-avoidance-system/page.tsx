@@ -68,7 +68,7 @@ const IgRequiredAffiliationCifasCreditIndustryFraudAvoidanceSystemPage = () => {
     <MultiPathPage
       arrayData={IgRequiredAffiliationCifasCreditIndustryFraudAvoidanceSystemPageData}
       pageTitle="CIFAS (Credit Industry Fraud Avoidance System)"
-      backRoute="/FCA Sequence Diagram"
+      backRoute="/ig-required-affiliation"
     />
   );
 };

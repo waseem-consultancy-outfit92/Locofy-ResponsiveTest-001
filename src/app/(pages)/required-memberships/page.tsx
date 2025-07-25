@@ -1,4 +1,5 @@
-import RequiredMembershipsSection from "@/features/home/required-memberships-section/required-memberships-section";
+import RequiredMembershipsSection from "@/features/required-memberships-section/required-memberships-section";
+
 
 
 const RequiredMembershipsPage = () => {
