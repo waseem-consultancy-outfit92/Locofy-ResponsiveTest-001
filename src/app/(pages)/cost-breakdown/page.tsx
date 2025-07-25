@@ -1,0 +1,15 @@
+import { CostBreakdownImage } from "@/assets";
+import { CommonPage } from "@/components";
+import React from "react";
+
+const CostBreakdownPage = () => {
+  return (
+    <CommonPage
+      pageTitle={`Validity of the Certificate`}
+      src={CostBreakdownImage}
+      backRoute="/ig-required-license-disclosure-and-baring-services-dbs"
+    />
+  );
+};
+
+export default CostBreakdownPage;

@@ -7,36 +7,148 @@ const indexTsxPath = path.join(assetsDir, "index.tsx");
 
 const pages = [
   {
-    name: "IG Required License Data Protection Principles Purpose of Product Certification",
-    backRoute: "/IG Required License Data Protection Principles",
+    name: "IG Required License AMLD (5th Anti-Money Laundering Directive) Where to Apply",
+    backRoute:
+      "/IG Required License AMLD (5th Anti-Money Laundering Directive)",
   },
   {
-    name: "IG Required License Data Protection Principles Required Documents",
-    backRoute: "/IG Required License Data Protection Principles",
+    name: "IG Required License AMLD (5th Anti-Money Laundering Directive) Application Process",
+    backRoute:
+      "/IG Required License AMLD (5th Anti-Money Laundering Directive)",
   },
   {
-    name: "IG Required License Data Protection Principles Where to Apply",
-    backRoute: "/IG Required License Data Protection Principles",
+    name: "IG Required License AMLD (5th Anti-Money Laundering Directive) Validity of the Certificate",
+    backRoute:
+      "/IG Required License AMLD (5th Anti-Money Laundering Directive)",
   },
   {
-    name: "IG Required License Data Protection Principles Cost Breakdown",
-    backRoute: "/IG Required License Data Protection Principles",
+    name: "IG Required License AMLD (5th Anti-Money Laundering Directive) Cost Breakdown",
+    backRoute:
+      "/IG Required License AMLD (5th Anti-Money Laundering Directive)",
   },
   {
-    name: "IG Required License Data Protection Principles Eligibility Criteria",
-    backRoute: "/IG Required License Data Protection Principles",
+    name: "IG Required License AMLD (5th Anti-Money Laundering Directive) Purpose of Product Certification",
+    backRoute:
+      "/IG Required License AMLD (5th Anti-Money Laundering Directive)",
   },
   {
-    name: "IIG Required License Data Protection Principles Timeline for Certification",
-    backRoute: "/IG Required License Data Protection Principles",
+    name: " IG Required License AMLD (5th Anti-Money Laundering Directive) Eligibility Criteria",
+    backRoute:
+      "/IG Required License AMLD (5th Anti-Money Laundering Directive)",
   },
   {
-    name: "IG Required License Data Protection Principles Application Process",
-    backRoute: "/IG Required License Data Protection Principles",
+    name: "IG Required License AMLD (5th Anti-Money Laundering Directive) Timeline For Certification",
+    backRoute:
+      "/IG Required License AMLD (5th Anti-Money Laundering Directive)",
   },
   {
-    name: "IG Required License Data Protection Principles Validity of the Certificate",
-    backRoute: "/IG Required License Data Protection Principles",
+    name: " IG Required License AMLD (5th Anti-Money Laundering Directive) Required Documents",
+    backRoute:
+      "/IG Required License AMLD (5th Anti-Money Laundering Directive)",
+  },
+  {
+    name: "Purpose of Product Certification",
+    backRoute: "/IG Required License Disclosure and Baring Services (DBS))",
+  },
+  {
+    name: "Required Documents",
+    backRoute: "/IG Required License Disclosure and Baring Services (DBS))",
+  },
+  {
+    name: "Where to Apply",
+    backRoute: "/IG Required License Disclosure and Baring Services (DBS))",
+  },
+  {
+    name: "Cost Breakdown",
+    backRoute: "/IG Required License Disclosure and Baring Services (DBS))",
+  },
+  {
+    name: "Eligibility Criteria",
+    backRoute: "/IG Required License Disclosure and Baring Services (DBS))",
+  },
+  {
+    name: "Timeline for Certification",
+    backRoute: "/IG Required License Disclosure and Baring Services (DBS))",
+  },
+  {
+    name: "Application Process",
+    backRoute: "/IG Required License Disclosure and Baring Services (DBS))",
+  },
+  {
+    name: "Validity of the Certificate",
+    backRoute: "/IG Required License Disclosure and Baring Services (DBS))",
+  },
+  {
+    name: "IG Required License FCA (Financial Conduct Authority) Where to Apply",
+    backRoute: "/IG Required License FCA (Financial Conduct Authority)",
+  },
+  {
+    name: "IG Required License FCA (Financial Conduct Authority) Application Process",
+    backRoute: "/IG Required License FCA (Financial Conduct Authority)",
+  },
+  {
+    name: "IG Required License FCA (Financial Conduct Authority) Cost Breakdown",
+    backRoute: "/IG Required License FCA (Financial Conduct Authority)",
+  },
+  {
+    name: "IG Required License FCA (Financial Conduct Authority) Validity of the Certificate",
+    backRoute: "/IG Required License FCA (Financial Conduct Authority)",
+  },
+  {
+    name: "Purpose of Product Certification",
+    backRoute: "/IG Required License FCA (Financial Conduct Authority)",
+  },
+  {
+    name: "IG Required License FCA (Financial Conduct Authority) Eligibility Criteria",
+    backRoute: "/IG Required License FCA (Financial Conduct Authority)",
+  },
+  {
+    name: "Timeline For Certification",
+    backRoute: "/IG Required License FCA (Financial Conduct Authority)",
+  },
+  {
+    name: "IG Required License FCA (Financial Conduct Authority)Required Documents",
+    backRoute: "/IG Required License FCA (Financial Conduct Authority)",
+  },
+  {
+    name: "Purpose of Product Certification",
+    backRoute:
+      "/IG Required License NIST (National Institute of Standards and Technology)",
+  },
+  {
+    name: "Required Documents",
+    backRoute:
+      "/IG Required License NIST (National Institute of Standards and Technology)",
+  },
+  {
+    name: "Where to Apply",
+    backRoute:
+      "/IG Required License NIST (National Institute of Standards and Technology)",
+  },
+  {
+    name: "Cost Breakdown",
+    backRoute:
+      "/IG Required License NIST (National Institute of Standards and Technology)",
+  },
+  {
+    name: "Eligibility Criteria",
+    backRoute:
+      "/IG Required License NIST (National Institute of Standards and Technology)",
+  },
+  {
+    name: "Timeline for Certification",
+    backRoute:
+      "/IG Required License NIST (National Institute of Standards and Technology)",
+  },
+  {
+    name: "Application Process",
+    backRoute:
+      "/IG Required License NIST (National Institute of Standards and Technology)",
+  },
+  {
+    name: "Validity of the Certificate",
+    backRoute:
+      "/IG Required License NIST (National Institute of Standards and Technology)",
   },
 ];
 
