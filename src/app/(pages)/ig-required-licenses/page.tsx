@@ -1,3 +1,4 @@
+"use client";
 import { IgRequiredLicensesImage } from "@/assets";
 import CommonImgMapPage from "@/components/common-img-map-page";
 import React from "react";

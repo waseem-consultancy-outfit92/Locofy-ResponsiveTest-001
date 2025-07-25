@@ -8,19 +8,10 @@ const assetsDir = path.join(__dirname, "src", "assets");
 // List of pages with pageTitle, image counts, links, and per-image titles
 const pages = [
   {
-    title: "IG Required License Data Protection Principles",
-    pageTitle: "Data Protection Principles",
-    imageCount: 8,
-    links: [
-      "/IG Required License Data Protection Principles Purpose of Product Certification",
-      "/IG Required License Data Protection Principles Where to Apply",
-      "/IG Required License Data Protection Principles Eligibility Criteria",
-      "/IG Required License Data Protection Principles Application Process",
-      "/IG Required License Data Protection Principles Required Documents",
-      "/IG Required License Data Protection Principles Cost Breakdown",
-      "/IG Required License Data Protection Principles Timeline for Certification",
-      "/IG Required License Data Protection Principles Validity of the Certificate",
-    ],
+    title: "IG Required Memberships BSI (British Standards Institution)",
+    pageTitle: "BSI (British Standards Institution)",
+    imageCount: 3,
+    links: ["/", "/", "/", "/", "/", "/", "/", "/"],
     titles: [
       "Purpose of Product Certification",
       "Where to Apply",
