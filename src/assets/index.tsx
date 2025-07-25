@@ -7,6 +7,39 @@ export { default as img1ScopeOfRegistrationImage } from "./img1ScopeOfRegistrati
 export { default as img2ScopeOfRegistrationImage } from "./img2ScopeOfRegistrationImage.svg";
 export { default as img3ScopeOfRegistrationImage } from "./img3ScopeOfRegistrationImage.svg";
 
+// Identity Gram
+export { default as ColorLegendsImage } from "./ColorLegendsImage.svg";
+export { default as IconIg1 } from "./icon-ig1.svg";
+export { default as IconIg2 } from "./icon-ig2.svg";
+export { default as IconIg3 } from "./icon-ig3.svg";
+export { default as IconIg4 } from "./icon-ig4.svg";
+export { default as IconIg5 } from "./icon-ig5.svg";
+export { default as IconIg6 } from "./icon-ig6.svg";
+export { default as IconIg7 } from "./icon-ig7.svg";
+export { default as IconIg8 } from "./icon-ig8.svg";
+export { default as IconIg9 } from "./icon-ig9.svg";
+export { default as IconIg10 } from "./icon-ig10.svg";
+export { default as IconIg11 } from "./icon-ig11.svg";
+export { default as IconIg12 } from "./icon-ig12.svg";
+export { default as IconIg13 } from "./icon-ig13.svg";
+export { default as IconIg14 } from "./icon-ig14.svg";
+export { default as IconIg15 } from "./icon-ig15.svg";
+export { default as IconIg16 } from "./icon-ig16.svg";
+export { default as IconIg17 } from "./icon-ig17.svg";
+export { default as IconIg18 } from "./icon-ig18.svg";
+export { default as IconIg19 } from "./icon-ig19.svg";
+export { default as IconIg20 } from "./icon-ig20.svg";
+export { default as IconIg21 } from "./icon-ig21.svg";
+export { default as IconIg22 } from "./icon-ig22.svg";
+export { default as IconIg23 } from "./icon-ig23.svg";
+export { default as IconIg24 } from "./icon-ig24.svg";
+export { default as IconIg25 } from "./icon-ig25.svg";
+export { default as IconArrowSquareLeft } from "./arrow-square-left.svg";
+export { default as ProductDiagram1 } from "./ProductDiagram1.svg";
+export { default as ProductDiagram2 } from "./ProductDiagram2.svg";
+export { default as BackIconPD } from "./BackIconPD.svg";
+
+
 // IG Release 1st
 export { default as IgProductDiagramRelease1Image } from "./IgProductDiagramRelease1Image.svg";
 export { default as IgSalesiteFrontendApplicationImage } from "./IgSalesiteFrontendApplicationImage.svg";
