@@ -1,4 +1,5 @@
-import RequiredAccreditationSection from "@/features/home/required-accreditation-section/required-accreditation-section";
+import RequiredAccreditationSection from "@/features/required-accreditation-section/required-accreditation-section";
+
 
 
 const RequiredAccreditationPage = () => {
