@@ -1,6 +1,6 @@
 "use client";
 
-import React from 'react';
+import React, { useCallback, useState } from 'react';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import {
@@ -10,8 +10,10 @@ import {
     Stack
 } from '@mui/material';
 import Link from 'next/link';
-import { CommonBackIcon } from '@/assets/common-assets';
+import { colorLegends, CommonBackIcon } from '@/assets/common-assets';
 import { IGRequiredAffiliationImage } from '@/assets';
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+
 
 const IGRequiredAffiliation = () => {
     const router = useRouter();
@@ -19,8 +21,13 @@ const IGRequiredAffiliation = () => {
     // Original image dimensions
     const imageWidth = 1844;
     const imageHeight = 1900;
+    const [isOpen, setIsOpen] = useState(false);
 
-    // All interactive areas from your SVG
+    const toggleDropdown = useCallback((e: React.MouseEvent) => {
+        e.stopPropagation();
+        setIsOpen((prev) => !prev);
+    }, []);
+
     const areas = [
         {
             id: 1,
@@ -64,33 +71,89 @@ const IGRequiredAffiliation = () => {
         <Stack px={5} py={3} gap={'40px'}>
             <Stack>
                 <Box sx={{ width: '100%', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                    <Image
-                        src={CommonBackIcon}
-                        alt={"backIcon"}
-                        width={40}
-                        height={40}
-                        onClick={() => {
-                            router.replace("/identity-gram");
-                        }}
-                        style={{ cursor: "pointer" }}
-                    />
-                    <Box component={Link} href={'/'} sx={{ color: '#0246BC', fontSize: '40px', fontWeight: '500', textDecoration: 'underline', lineHeight: '1.2' }}>
-                        Reference Doc
+                    <Box display='flex' alignItems='center' gap={2}>
+                        <Image
+                            src={CommonBackIcon}
+                            alt={"backIcon"}
+                            width={40}
+                            height={40}
+                            onClick={() => {
+                                router.replace("/identity-gram");
+                            }}
+                            style={{ cursor: "pointer" }}
+                        />
+                        <Typography
+                            variant="h5"
+                            color="#5A5867"
+                            fontSize={{ xs: "24", sm: "26px", md: "32px" }}
+                            fontWeight={{ md: 600, xs: 500 }}
+                            sx={{
+                                fontFamily: "inherit",
+                                lineHeight: '1.25',
+                            }}
+                        >
+                            IG Required Affiliation
+                        </Typography>
                     </Box>
+                    <Box display="flex" alignItems="center" mr={2}>
+                        <Typography
+                            component="span"
+                            fontSize={{ xs: "1rem", sm: "1.2rem", md: "1.8rem" }}
+                            fontWeight={600}
+                            color="#5A5867"
+                            sx={{ mr: 1 }}
+                        >
+                            Color Legend
+                        </Typography>
+                        <KeyboardArrowDownIcon
+                            onClick={toggleDropdown}
+                            sx={{
+                                fontSize: { xs: 28, md: 30 },
+                                color: "#5A5867",
+                                border: "2px solid",
+                                borderRadius: "40px",
+                                cursor: "pointer",
+                            }}
+                        />
+                    </Box>
+                    {isOpen && (
+                        <>
+                            <Box
+                                sx={{
+                                    position: "fixed",
+                                    top: 0,
+                                    left: 0,
+                                    width: "100vw",
+                                    height: "100vh",
+                                    background: "rgba(0,0,0,0.3)",
+                                    zIndex: 1200,
+                                }}
+                                onClick={() => setIsOpen(false)}
+                            />
+                            <Box
+                                sx={{
+                                    position: "absolute",
+                                    top: "150px",
+                                    right: "50px",
+                                    background: "#fff",
+                                    borderRadius: "10px",
+                                    boxShadow: 3,
+                                    p: 1,
+                                    zIndex: 1300,
+                                }}
+                                onClick={(e) => e.stopPropagation()}
+                            >
+                                <Image
+                                    src={colorLegends}
+                                    alt="Color Legend"
+                                    width={300}
+                                    height={200}
+                                    style={{ width: "100%", height: "auto" }}
+                                />
+                            </Box>
+                        </>
+                    )}
                 </Box>
-                <Typography
-                    variant="h5"
-                    color="#5A5867"
-                    fontSize={{ xs: "24", sm: "26px", md: "32px" }}
-                    fontWeight={{ md: 600, xs: 500 }}
-                    mt={3}
-                    sx={{
-                        fontFamily: "inherit",
-                        lineHeight: '1.25',
-                    }}
-                >
-                    IG Required Affiliation
-                </Typography>
             </Stack>
             <Box sx={{ position: 'relative', width: '100%', height: 'auto' }}>
                 <Image
