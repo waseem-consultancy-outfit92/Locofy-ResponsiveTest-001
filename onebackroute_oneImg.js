@@ -76,7 +76,7 @@ import React from "react";
 const ${pascalComponent} = () => {
   return (
     <CommonPage
-      pageTitle={\`${name}\`}
+      pageTitle={\`Validity of the Certificate\`}
       src={${imageName}}
       backRoute="${backRoute}"
     />
