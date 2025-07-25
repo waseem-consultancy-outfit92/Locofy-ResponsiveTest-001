@@ -4,7 +4,7 @@ import { RegulatoryTransactionReportingServiceSpecificationImage } from "@/asset
 // import { CommonPage } from "@/components";
 // import AmendmentComparison from "@/components/amendment-comparison";
 // import MultiImagesAmendmentComparisonBtn from "@/components/common-page-multi-images-two-amendment-btn";
-import { Box, Button,  Stack, Typography } from "@mui/material";
+import { Box, Button, Stack, Typography } from "@mui/material";
 import Image from "next/image";
 import { CommonBackIcon } from "@/assets/common-assets";
 import { useRouter } from "next/navigation";

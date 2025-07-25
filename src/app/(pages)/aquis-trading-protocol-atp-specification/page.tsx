@@ -41,8 +41,8 @@ const AquisTradingProtocolSpecification = () => {
   const router = useRouter();
 
   // Original image dimensions
-//   const imageWidth = 1848;
-//   const imageHeight = 6863;
+  //   const imageWidth = 1848;
+  //   const imageHeight = 6863;
 
   // All interactive areas from your SVG
   const areas = [
@@ -300,9 +300,9 @@ const AquisTradingProtocolSpecification = () => {
     },
   ];
 
-//   const navigateToPage = (url: string) => {
-//     router.push(url);
-//   };
+  //   const navigateToPage = (url: string) => {
+  //     router.push(url);
+  //   };
 
   return (
     <Stack px={5} py={3} gap={"40px"}>
