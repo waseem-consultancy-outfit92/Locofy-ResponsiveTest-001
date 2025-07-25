@@ -6,14 +6,8 @@ const assetsDir = path.join(__dirname, "src", "assets");
 const indexTsxPath = path.join(assetsDir, "index.tsx");
 
 const pages = [
-  { name: "1 Startup Help Squad  Chat GPT 4 Define Objectives/ Data collection ", backRoute: "/" },
-  { name: "2 Startup Help Squad  Chat GPT 4 Prepare Data", backRoute: "/" },
-  { name: "3 Startup Help Squad  Chat GPT 4 Create Custom Prompts", backRoute: "/" },
-  { name: "4 Startup Help Squad  Chat GPT 4 Leverage OpenAI’s API (Fine-Tuning)", backRoute: "/" },
-  { name: "5 Startup Help Squad  Chat GPT 4 Test the Chatbot", backRoute: "/" },
-  { name: "6 Startup Help Squad  Chat GPT 4 Deploy on Sales Platforms", backRoute: "/" },
-  { name: "6 Startup Help Squad  Chat GPT 4 Deploy on Sales Platforms", backRoute: "/" },
- 
+  { name: "IG Required Accrediatiuon ISO/IEC 1974 Validity of the Certificate",
+    backRoute: "/ig-required-accrediatiuon-iso-ice-1974" },
 ];
 
 const toPascalCase = (str) =>

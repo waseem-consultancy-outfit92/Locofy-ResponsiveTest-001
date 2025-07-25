@@ -8,24 +8,28 @@ const assetsDir = path.join(__dirname, "src", "assets");
 // List of pages with pageTitle, image counts, links, and per-image titles
 const pages = [
   {
-    title: "Sector Subject Area 2 Codes",
-    pageTitle: "Sector Subject Area 2 Codes",
-    imageCount: 5,
+    title: "IG Required Memberships BSI (British Standards Institution)",
+    pageTitle: "BSI (British Standards Institution)",
+    imageCount: 3,
     links: [
       "/",
       "/",
       "/",
       "/",
       "/",
-      
+      "/",
+      "/",
+      "/"
     ],
     titles: [
-      "10-History, Philosophy and Theology",
-      "10.1-History",
-      "10.2-Archaeology and Archaeological Sciences",
-      "10.3-Philosophy",
-      "10.4-Theology and Religious Studies",
-      
+      "Purpose of Product Certification",
+      "Where to Apply",
+      "Eligibility Criteria",
+      "Application Process",
+      "Required Documents",
+      "Cost Breakdown",
+      "Timeline for Certification",
+      "Validity of the Certificate"
     ],
   },
 ];
