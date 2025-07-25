@@ -8,18 +8,28 @@ const assetsDir = path.join(__dirname, "src", "assets");
 // List of pages with pageTitle, image counts, links, and per-image titles
 const pages = [
   {
-    title: "Scope of registration",
-    pageTitle: "Scope of registration",
+    title: "IG Required Memberships BSI (British Standards Institution)",
+    pageTitle: "BSI (British Standards Institution)",
     imageCount: 3,
     links: [
-      "/How the Process Works?",
-      "/Who Needs to Register?",
-      "What Needs to Be Registered?",
+      "/",
+      "/",
+      "/",
+      "/",
+      "/",
+      "/",
+      "/",
+      "/"
     ],
     titles: [
-      "How the Process Works?",
-      "Who Needs to Register?h",
-      "What Needs to Be Registered?",
+      "Purpose of Product Certification",
+      "Where to Apply",
+      "Eligibility Criteria",
+      "Application Process",
+      "Required Documents",
+      "Cost Breakdown",
+      "Timeline for Certification",
+      "Validity of the Certificate"
     ],
   },
 ];
