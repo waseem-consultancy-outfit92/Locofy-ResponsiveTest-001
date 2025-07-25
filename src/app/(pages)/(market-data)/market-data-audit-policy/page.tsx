@@ -8,6 +8,7 @@ import { MarketDataAuditPolicyImage } from "@/assets";
 import { Stack } from "@mui/material";
 import { CommonBackIcon } from "@/assets/common-assets";
 import { useRouter } from "next/navigation";
+import { CheckboxForm } from "@/components/checkbox-form";
 
 const MarketDataAuditPolicyPage = () => {
   const router = useRouter();
@@ -61,8 +62,24 @@ const MarketDataAuditPolicyPage = () => {
           AQUIS MARKET DATA AUDIT
         </Typography>
       </Stack>
+      <Stack
+        direction={"row"}
+        justifyContent="space-between"
+        alignItems="center"
+      >
+        <Box mb={{ md: 4, sm: 3, xs: 2 }}>
+          <CheckboxForm onChange={() => {}} />
+        </Box>
+      </Stack>
 
-      <Box sx={{ position: "relative", width: "100%", height: "auto" }}>
+      <Box
+        sx={{
+          position: "relative",
+          width: "100%",
+          height: "auto",
+          marginTop: "0px",
+        }}
+      >
         <Image
           src={MarketDataAuditPolicyImage}
           alt="AQUIS MARKET DATA AUDIT"

@@ -2,7 +2,7 @@
 
 import React, { useCallback } from "react";
 import Image, { StaticImageData } from "next/image";
-import { Box, Button, Card, CardContent, Grid, Stack, Typography } from "@mui/material";
+import { Box, Card, CardContent, Grid, Stack, Typography } from "@mui/material";
 import { useRouter } from "next/navigation";
 import { MultiBackIcon } from "@/assets/common-assets";
 import type { ResponsiveStyleValue } from "@mui/system";
@@ -39,13 +39,13 @@ const MultiPathOnePage: React.FC<MultiPathPageProps> = ({
   return (
     <Box p={{ md: 3, xs: 2 }}>
       <Stack
-        flexDirection={'row'}
+        flexDirection={"row"}
         alignItems="center"
-        justifyContent='space-between'
+        justifyContent="space-between"
         mt={{ md: 2, xs: 1 }}
         mb={{ md: 5, sm: 3, xs: 2 }}
       >
-        <Box sx={{ display: 'flex', alignItems: 'center' }}>
+        <Box sx={{ display: "flex", alignItems: "center" }}>
           <Image
             src={MultiBackIcon}
             alt={pageTitle}
@@ -66,7 +66,6 @@ const MultiPathOnePage: React.FC<MultiPathPageProps> = ({
           >
             {pageTitle}
           </Typography>
-
         </Box>
         <Typography
           variant="h5"
@@ -77,10 +76,12 @@ const MultiPathOnePage: React.FC<MultiPathPageProps> = ({
           sx={{
             fontFamily: "inherit",
             textDecoration: "underline",
-            cursor: 'pointer'
+            cursor: "pointer",
           }}
-          textAlign='end'
-        >Reference Doc</Typography>
+          textAlign="end"
+        >
+          Reference Doc
+        </Typography>
       </Stack>
       <Grid container spacing={2}>
         {arrayData.map((item) => (
@@ -127,7 +128,7 @@ const MultiPathOnePage: React.FC<MultiPathPageProps> = ({
           </Grid>
         ))}
       </Grid>
-    </Box >
+    </Box>
   );
 };
 

@@ -54,7 +54,7 @@ const AqseDocumentPage = () => {
     <MultiPathPage
       arrayData={ScopeOfRegistrationPageData}
       pageTitle="Aqse Document"
-      backRoute="/"
+      backRoute="/aqse-documents"
     />
   );
 };

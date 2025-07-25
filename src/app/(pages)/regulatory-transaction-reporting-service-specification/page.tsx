@@ -1,10 +1,10 @@
-'use client'
-import React, { useState } from "react";
+"use client";
+import React from "react";
 import { RegulatoryTransactionReportingServiceSpecificationImage } from "@/assets";
-import { CommonPage } from "@/components";
-import AmendmentComparison from "@/components/amendment-comparison";
-import MultiImagesAmendmentComparisonBtn from "@/components/common-page-multi-images-two-amendment-btn";
-import { Box, Button, Modal, Stack, Typography } from "@mui/material";
+// import { CommonPage } from "@/components";
+// import AmendmentComparison from "@/components/amendment-comparison";
+// import MultiImagesAmendmentComparisonBtn from "@/components/common-page-multi-images-two-amendment-btn";
+import { Box, Button,  Stack, Typography } from "@mui/material";
 import Image from "next/image";
 import { CommonBackIcon } from "@/assets/common-assets";
 import { useRouter } from "next/navigation";
@@ -12,8 +12,8 @@ import { CheckboxForm } from "@/components/checkbox-form";
 import ExpandCircleDownOutlinedIcon from "@mui/icons-material/ExpandCircleDownOutlined";
 
 const RegulatoryTransactionReportingServiceSpecificationPage = () => {
-  const router=useRouter()
-    const imageWidth = 1844;
+  const router = useRouter();
+  const imageWidth = 1844;
   const imageHeight = 5704;
   return (
     <>
@@ -47,7 +47,8 @@ const RegulatoryTransactionReportingServiceSpecificationPage = () => {
               ml={{ md: 2, xs: 1 }}
               sx={{ fontFamily: "inherit" }}
             >
-              Regulatory Transaction Reporting Service Technical Specification September 2022 Version 3.5
+              Regulatory Transaction Reporting Service Technical Specification
+              September 2022 Version 3.5
             </Typography>
           </Stack>
           <Button
@@ -88,30 +89,28 @@ const RegulatoryTransactionReportingServiceSpecificationPage = () => {
               />
             }
             onClick={() => {
-              router.push("/error-description")
+              router.push("/error-description");
             }}
           >
             Error Descriptions
           </Button>
         </Stack>
-       
-          {/* Image */}
-          <Image
-            src={RegulatoryTransactionReportingServiceSpecificationImage}
-            alt="AQSE Listing Proposal Overview"
-            width={imageWidth}
-            height={imageHeight}
-            style={{
-              width: "100%",
-              height: "auto",
-              display: "block",
-            }}
-          />
 
-          {/* Clickable areas with tooltips */}
-        
+        {/* Image */}
+        <Image
+          src={RegulatoryTransactionReportingServiceSpecificationImage}
+          alt="AQSE Listing Proposal Overview"
+          width={imageWidth}
+          height={imageHeight}
+          style={{
+            width: "100%",
+            height: "auto",
+            display: "block",
+          }}
+        />
+
+        {/* Clickable areas with tooltips */}
       </Stack>
- 
     </>
   );
 };

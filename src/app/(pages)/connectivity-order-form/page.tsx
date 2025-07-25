@@ -6,7 +6,7 @@ const areas = [
   {
     alt: "Company Information",
     title: "Company Information",
-    href: "/company-information",
+    href: "/company-information-2",
     coords: "24,421,430,495",
     shape: "rect",
   },

@@ -173,7 +173,6 @@ export { default as HowAVMWorksImage } from "./HowAVMWorksImage.svg";
 export { default as SequenceDiagramAqseImage } from "./Sequence Diagram AQSE.svg";
 export { default as LogoImage } from "./logo.svg";
 
-
 export { default as RequestedMarketsAmendmentFormImage } from "./RequestedMarketsAmendmentFormImage.svg";
 export { default as MacOrderFormImage } from "./MacOrderFormImage.svg";
 export { default as SoftwareVendorApplicationFormImage } from "./SoftwareVendorApplicationFormImage.svg";
