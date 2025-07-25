@@ -7,9 +7,127 @@ const assetsDir = path.join(__dirname, "src", "assets");
 
 // ✅ Corrected: Use "title" instead of "tile"
 const pages = [
+  
   {
-    title: "FCA Overview",
-    ButtonRoute: " Removal to and from Scotland AC",
+    title: "1 DBS Authorised User",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "1 DBS Authorised User",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "1 DBS Authorised User",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "1 DBS Authorised User",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "1 DBS Authorised User",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "1 DBS Authorised User",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "1 DBS Authorised User",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "1 DBS Authorised User",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "1 DBS Authorised User",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "1 DBS Authorised User",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "1 DBS Authorised User",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "1 DBS Authorised User",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "1 DBS Authorised User",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "1 DBS Authorised User",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "1 DBS Authorised User",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "1 DBS Authorised User",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "1 DBS Authorised User",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "1 DBS Authorised User",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "1 DBS Authorised User",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "1 DBS Authorised User",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "1 DBS Authorised User",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "1 DBS Authorised User",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "1 DBS Authorised User",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "1 DBS Authorised User",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "1 DBS Authorised User",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "1 DBS Authorised User",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "1 DBS Authorised User",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "1 DBS Authorised User",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "1 DBS Authorised User",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+
+  {
+    title: "1 DBS Authorised User",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
   },
 ];
 
