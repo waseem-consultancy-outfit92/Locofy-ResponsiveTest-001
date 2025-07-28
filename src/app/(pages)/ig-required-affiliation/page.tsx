@@ -103,7 +103,7 @@ const IGRequiredAffiliation = () => {
                             color="#5A5867"
                             sx={{ mr: 1 }}
                         >
-                            Color Legend
+                            Color Legends (key)
                         </Typography>
                         <KeyboardArrowDownIcon
                             onClick={toggleDropdown}
