@@ -203,6 +203,7 @@ const InteractiveDBSDiagram = () => {
   const areas: DiagramArea[] = [
     // ==================== ADMIN ROUTES ====================
     { id: 1, title: "Authorised User (Company Admin)", x: 300.93, y: 38.94, width: 210.65, height: 214.19, route: "/1-dbs-authorised-user" },
+
     { id: 20, title: "Create User", x: 69.04, y: 1455.09, width: 191.18, height: 130.99, route: "/admin/users/create" },
     { id: 22, title: "Manage Users", x: 1053.26, y: 1435.62, width: 210.65, height: 159.32, route: "/admin/users/manage" },
     { id: 23, title: "User List", x: 1554.22, y: 1440.93, width: 207.11, height: 141.61, route: "/admin/users/list" },
@@ -212,26 +213,33 @@ const InteractiveDBSDiagram = () => {
     { id: 103, title: "Individual User", x: 113.29, y: 7710.91, width: 215.96, height: 146.92, route: "/admin/users/individual/view" },
  
     // ==================== DASHBOARD & SETTINGS ====================
-    { id: 4, title: "Dashboard", x: 111.52, y: 876.24, width: 182.33, height: 42.48, route: "/dashboard" },
+    { id: 4, title: "Dashboard", x: 111.52, y: 876.24, width: 182.33, height: 42.48, route: "/3-1-dbs-company-admin-dashboard" },
     { id: 19, title: "Apply For", x: 116.83, y: 1391.36, width: 155.78, height: 53.11, route: "/apply" },
     { id: 21, title: "Settings", x: 543.45, y: 1433.85, width: 212.42, height: 164.63, route: "/settings" },
     { id: 90, title: "Header", x: 830.21, y: 6422.21, width: 116.83, height: 65.50, route: "/header" },
  
     // ==================== SYSTEM ROUTES ====================
     { id: 2, title: "System", x: 1166.55, y: 56.65, width: 219.50, height: 171.71, route: "/dbs-system" },
+
+
+
     { id: 3, title: "Application API's", x: 109.75, y: 293.85, width: 851.46, height: 53.11, route: "/system/apis" },
  
     // ==================== APPLICATION ROUTES ====================
-    { id: 5, title: "Create DBS Application", x: 70.81, y: 955.90, width: 201.80, height: 138.07, route: "/applications/create" },
-    { id: 6, title: "Pending Application Evidence Check", x: 320.40, y: 939.97, width: 200.03, height: 157.55, route: "/applications/pending/evidence-check" },
-    { id: 7, title: "Pay or Fix Issues with Applications", x: 577.08, y: 938.20, width: 196.49, height: 175.25, route: "/applications/fix-issues" },
-    { id: 8, title: "Incomplete DBS Applications", x: 833.75, y: 936.43, width: 208.88, height: 171.71, route: "/applications/incomplete" },
-    { id: 9, title: "Reject DBS Application", x: 1088.66, y: 929.34, width: 201.80, height: 185.87, route: "/applications/reject" },
-    { id: 10, title: "DBS Application Requiring Payment", x: 1338.26, y: 936.43, width: 215.96, height: 185.87, route: "/applications/payment-required" },
-    { id: 11, title: "DBS Application already Paid For", x: 1573.69, y: 929.34, width: 233.66, height: 187.64, route: "/applications/paid" },
-    { id: 12, title: "Create Application", x: 76.12, y: 1127.60, width: 300.93, height: 56.65, route: "/applications/create/new" },
-    { id: 13, title: "Application Pending for DBS", x: 433.69, y: 1132.92, width: 200.03, height: 200.03, route: "/applications/pending/dbs" },
-    { id: 14, title: "Completed DBS checks Certificate Posted Out", x: 699.22, y: 1148.85, width: 230.12, height: 185.87, route: "/applications/completed" },
+    { id: 5, title: "Create DBS Application", x: 70.81, y: 955.90, width: 201.80, height: 138.07, route: "/3-1-1-dbs-company-admin-create-dbs-application" },
+    { id: 6, title: "DBS Company Admin Pending Application Evidence Check", x: 320.40, y: 939.97, width: 200.03, height: 157.55, route: "/3-1-2-dbs-company-admin-pending-application-evidence-check" },
+
+
+    { id: 7, title: "DBS Company Admin Pay or Fix Issues with Applications", x: 577.08, y: 938.20, width: 196.49, height: 175.25, route: "/3-1-3-dbs-company-admin-pay-or-fix-issues-with-applications" },
+    { id: 8, title: " DBS Company Admin Incomplete DBS Applications", x: 833.75, y: 936.43, width: 208.88, height: 171.71, route: "/3-1-4-dbs-company-admin-incomplete-dbs-applications" },
+    { id: 9, title: "DBS Company Admin Reject DBS Application", x: 1088.66, y: 929.34, width: 201.80, height: 185.87, route: "/3-1-5-dbs-company-admin-reject-dbs-applications" },
+    { id: 10, title: "DBS Company Admin DBS Application Requiring Payment", x: 1338.26, y: 936.43, width: 215.96, height: 185.87, route: "/3-1-6-dbs-company-admin-dbs-application-requiring-payment" },
+    { id: 11, title: "DBS Company Admin DBS Application already Paid For", x: 1573.69, y: 929.34, width: 233.66, height: 187.64, route: "/3-1-7-dbs-company-admin-dbs-application-already-paid-for" },
+    { id: 12, title: "Create Application", x: 76.12, y: 1127.60, width: 300.93, height: 56.65, route: "/3-2-dbs-company-admin-apply-for" },
+   
+    { id: 13, title: "Application Pending for DBS", x: 433.69, y: 1132.92, width: 200.03, height: 200.03, route: "/3-1-8-dbs-company-admin-application-pending-for-dbs" },
+   
+    { id: 14, title: "Completed DBS checks Certificate Posted Out", x: 699.22, y: 1148.85, width: 230.12, height: 185.87, route: "/3-1-9-dbs-company-admin-completed-dbs-checks-certificate-posted-out" },
     { id: 15, title: "DBS Certificate Eligible for reprint(if not received)", x: 984.22, y: 1145.31, width: 231.89, height: 192.95, route: "/applications/reprint" },
     { id: 26, title: "Create DBS Application", x: 677.98, y: 1745.40, width: 240.74, height: 150.47, route: "/applications/create/dbs" },
     { id: 27, title: "Create DBS Application", x: 952.36, y: 1770.18, width: 352.27, height: 49.57, route: "/applications/create/dbs-form" },

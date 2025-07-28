@@ -1,17 +1,17 @@
-import { 312DbsCompanyAdminPendingApplicationEvidenceCheckImage } from "@/assets";
+import { DbsCompanyAdminPendingApplicationEvidenceCheckImage312 } from "@/assets";
 
-import AmendmentComparison from "@/components/amendment-comparison";
+import AmendmentComparisonNoBtn from "@/components/amendment-comparison-no-btn";
 import React from "react";
 
-const 312DbsCompanyAdminPendingApplicationEvidenceCheckPage = () => {
+const DbsCompanyAdminPendingApplicationEvidenceCheckPage312 = () => {
   return (
-    <AmendmentComparison
+    <AmendmentComparisonNoBtn
       pageTitle={`Mental Health / Mental Health  Act 1983 / Part V / 3.1.2 DBS Company Admin Pending Application Evidence Check`}
-      src={312DbsCompanyAdminPendingApplicationEvidenceCheckImage}
-      backRoute="/"
+      src={DbsCompanyAdminPendingApplicationEvidenceCheckImage312}
+      backRoute="/ig-product-diagramrelease-1-chekc-my-dbs"
       amendmentButtonRoute="/ig-product-diagramrelease-1-chekc-my-dbs"
     />
   );
 };
 
-export default 312DbsCompanyAdminPendingApplicationEvidenceCheckPage;
+export default DbsCompanyAdminPendingApplicationEvidenceCheckPage312;

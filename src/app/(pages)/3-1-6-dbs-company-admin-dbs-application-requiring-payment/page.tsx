@@ -1,17 +1,16 @@
-import { 316DbsCompanyAdminDbsApplicationRequiringPaymentImage } from "@/assets";
-
-import AmendmentComparison from "@/components/amendment-comparison";
+import { DbsCompanyAdminDbsApplicationRequiringPaymentImage316 } from "@/assets";
+import AmendmentComparisonNoBtn from "@/components/amendment-comparison-no-btn";
 import React from "react";
 
-const 316DbsCompanyAdminDbsApplicationRequiringPaymentPage = () => {
+const DbsCompanyAdminDbsApplicationRequiringPaymentPage316 = () => {
   return (
-    <AmendmentComparison
+    <AmendmentComparisonNoBtn
       pageTitle={`Mental Health / Mental Health  Act 1983 / Part V / 3.1.6 DBS Company Admin DBS Application Requiring Payment`}
-      src={316DbsCompanyAdminDbsApplicationRequiringPaymentImage}
-      backRoute="/"
+      src={DbsCompanyAdminDbsApplicationRequiringPaymentImage316}
+      backRoute="/ig-product-diagramrelease-1-chekc-my-dbs"
       amendmentButtonRoute="/ig-product-diagramrelease-1-chekc-my-dbs"
     />
   );
 };
 
-export default 316DbsCompanyAdminDbsApplicationRequiringPaymentPage;
+export default DbsCompanyAdminDbsApplicationRequiringPaymentPage316;
