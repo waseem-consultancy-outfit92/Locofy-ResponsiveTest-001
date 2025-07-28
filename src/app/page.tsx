@@ -1,9 +1,10 @@
 'use client'
-import { ColorLegendsImage, LogoImage, SequenceDiagramAqseImage } from "@/assets";
+import { ColorLegendsImage, LogoImage } from "@/assets";
 import { Box, Typography, Container, Link, Stack, Button } from "@mui/material";
 import Image from "next/image";
 import ExpandCircleDownOutlinedIcon from '@mui/icons-material/ExpandCircleDownOutlined';
 import { useRef, useState } from "react";
+import SequenceDiagramAqseImage from "@/assets/ListingProcessDiagramAQSE.png";
 
 interface ImageMapArea {
   x: number;
@@ -101,16 +102,46 @@ export default function Home() {
   };
   const areas: ImageMapArea[] = [
     // Top right navigation links
-    { x: 1607.4074074074074, y: 88.31908831908832, width: 224.3304843304843, height: 35.32763532763532, href: '/aqse-overview', title: 'AQSE Overview Diagram', target: '_parent', type: "link" },
-    { x: 1607.4074074074074, y: 132.47863247863248, width: 226.09686609686605, height: 35.327635327635335, href: '/aqse-documents', title: 'AQSE Documents', target: '_parent',type: "link" },
-    { x: 1603.8746438746439, y: 173.1054131054131, width: 231.39601139601132, height: 37.09401709401709, href: 'https://www.aquis.eu/markets/join', title: 'AQSE Guides', target: '_blank',type: "link" },
+    {
+  x: 1588.0,
+  y: 89.0,
+  width: 247.0,
+  height: 51.0,
+  href: '/aqse-access-market',
+  title: 'AQSE Market Application',
+  target: '_parent',
+  type: "link"
+},
+{
+  x: 1586.0,
+  y: 141.0,
+  width: 249.0,
+  height: 41.0,
+  href: '/aqse-access-market-one',
+  title: 'AQSE Market Application One',
+  target: '_parent',
+  type: "link"
+},
+
+    { x: 1586,
+  y: 189,
+  width: 249,
+  height: 33, href: '/aqse-overview', title: 'AQSE Overview Diagram', target: '_parent', type: "link" },
+    {  x: 1588,
+  y: 228,
+  width: 251,
+  height: 32, href: '/aqse-documents', title: 'AQSE Documents', target: '_parent',type: "link" },
+    {   x: 1595,
+  y: 266,
+  width: 240,
+  height: 40, href: 'https://www.aquis.eu/markets/join', title: 'AQSE Guides', target: '_blank',type: "link" },
 
     // Right side document sections
     { x: 1278.8603988603988, y: 492.8205128205128, width: 554.6438746438746, height: 84.78632478632483, href: '/rules-and-fees', title: 'Rules and Fees', target: '_parent',type: "link" },
     { x: 1278.8603988603988, y: 595.2706552706553, width: 554.6438746438746, height: 77.72079772079769, href: '/legal-agreements', title: 'legal agreements', target: '_parent',type: "link" },
     { x: 1275.3276353276353, y: 690.6552706552707, width: 558.1766381766381, height: 81.2535612535612, href: '/technical-specifications', title: 'technical specifications', target: '_parent',type: "link" },
     { x: 1275.3276353276353, y: 786.039886039886, width: 559.9430199430199, height: 84.78632478632483, href: '/market-data', title: 'market data', target: '_parent',type: "link" },
-    { x: 1278.8603988603988, y: 888.4900284900285, width: 554.6438746438746, height: 79.48717948717945, href: '/brochures', title: 'brochures', target: '_parent',type: "link" },
+    { x: 1278.8603988603988, y: 888.4900284900285, width: 554.6438746438746, height: 79.48717948717945, href: '/aquis-vwap-match', title: 'brochures', target: '_parent',type: "link" },
 
     // Audio buttons (small circular elements)
     { x: 307.35042735042737, y: 266.7236467236467, width: 21.196581196581178, height: 21.196581196581235, href: '#', title: 'initiate internal audit audio', target: '_parent', type: "audio", audioSrc: "https://orcalo.blob.core.windows.net/locofy/AQSE%20Audios/1.%20Initiate%20Internal%20Audit.mp4" },
@@ -211,7 +242,7 @@ export default function Home() {
               height: `${(area.height / imageHeight) * 100}%`,
               '&:hover': {
                 backgroundColor: 'rgba(255,255,255,0.2)',
-                border: '2px solid white',
+                // border: '2px solid white',
                 borderRadius:
                   area.width === area.height ? "50%" : "4px",
                 cursor: "pointer",

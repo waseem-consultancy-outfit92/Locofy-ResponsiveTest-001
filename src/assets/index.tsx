@@ -140,7 +140,7 @@ export { default as MarketAtCloseImage } from "./MarketAtCloseImage.svg";
 export { default as AquisMatchingPoolAmpConditionalOrdersImage } from "./AquisMatchingPoolAmpConditionalOrdersImage.svg";
 export { default as LiquidityProvidersLpsImage } from "./LiquidityProvidersLpsImage.svg";
 export { default as ConnectivityImage } from "./ConnectivityImage.svg";
-export { default as TransactionReportingImage } from "./TransactionReportingImage.svg";
+export { default as TransactionReportingImage } from "./TransactionReportingImageOne.svg";
 export { default as LiquidityProviderSchemeImage1 } from "./LiquidityProviderSchemeImage1.svg";
 export { default as ReferenceDocImage } from "./ReferenceDoc.svg";
 
@@ -194,3 +194,7 @@ export { default as ConnectivityOrderFormImage } from "./ConnectivityOrderFormIm
 export { default as ColorLegendsImage } from "./ColorLegends.svg";
 export { default as RegulatoryTransactionReportingServiceSpecificationImage } from "./RegulatoryTransactionReportingServiceSpecificationImage.svg";
 export { default as ErrorDescriptionImage } from "./ErrorDescriptionImage.svg";
+export { default as AQSEAccessMarketOne } from "./AqseAccessMarketOne.svg";
+export { default as AQSEAccessMarketTwo } from "./AqseAccessMarketTwo.svg";
+
+

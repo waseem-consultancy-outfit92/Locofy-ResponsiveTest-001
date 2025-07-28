@@ -21,6 +21,7 @@ type MultiPathPageProps = {
   fontSize?: ResponsiveStyleValue<string>;
   iconWidth?: string;
   background?: string;
+  referenceDocLink?: string;
 };
 
 const MultiPathOnePage: React.FC<MultiPathPageProps> = ({
@@ -29,6 +30,7 @@ const MultiPathOnePage: React.FC<MultiPathPageProps> = ({
   backRoute = "/",
   fontSize = { xs: "20px", sm: "30px", md: "40px" },
   background = "#e7f0ff",
+  referenceDocLink,
 }) => {
   const router = useRouter();
 
@@ -80,6 +82,11 @@ const MultiPathOnePage: React.FC<MultiPathPageProps> = ({
             cursor: 'pointer'
           }}
           textAlign='end'
+            onClick={() => {
+          if (referenceDocLink) {
+          router.push(referenceDocLink); 
+           }
+  }}
         >Reference Doc</Typography>
       </Stack>
       <Grid container spacing={2}>

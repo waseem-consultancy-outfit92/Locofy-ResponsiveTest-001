@@ -11,6 +11,7 @@ interface CommonPageProps {
   backRoute?: string;
   pageTitle: string;
   onChange?: (selectedValue: string, page: string) => void;
+  workStatus?: boolean;
 }
 
 const CommonPage: React.FC<CommonPageProps> = ({
@@ -18,6 +19,7 @@ const CommonPage: React.FC<CommonPageProps> = ({
   backRoute = "/",
   pageTitle,
   onChange,
+  workStatus=true
 }) => {
   const router = useRouter();
 
@@ -52,9 +54,11 @@ const CommonPage: React.FC<CommonPageProps> = ({
           {pageTitle}
         </Typography>
       </Stack>
-      <Box mb={{ md: 4, sm: 3, xs: 2 }}>
+      {workStatus && (
+       <Box mb={{ md: 4, sm: 3, xs: 2 }}>
         <CheckboxForm onChange={onChange} />
       </Box>
+      )}
       <Image
         src={src}
         alt={pageTitle}

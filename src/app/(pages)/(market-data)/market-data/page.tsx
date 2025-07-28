@@ -47,7 +47,7 @@ const MarketDataPage = () => {
     <MultiPathPage
       arrayData={MarketDataPageData}
       pageTitle="Market Data"
-      backRoute="/"
+      backRoute="/aqse-documents"
     />
   );
 };
