@@ -18,7 +18,7 @@ const SectorSubjectArea2CodesPageData = [
   },
   {
     key: "sector-2",
-    link: "/",
+    link: "/ldcs-codes",
     icon: img12LarsCoursesClassificationImage,
     title: "10.1-History",
   },
