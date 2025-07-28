@@ -1,0 +1,231 @@
+import {
+  IconIg1,
+  IconIg10,
+  IconIg11,
+  IconIg12,
+  IconIg13,
+  IconIg14,
+  IconIg15,
+  IconIg16,
+  IconIg17,
+  IconIg18,
+  IconIg19,
+  IconIg2,
+  IconIg20,
+  IconIg21,
+  IconIg22,
+  IconIg23,
+  IconIg24,
+  IconIg25,
+  IconIg3,
+  IconIg4,
+  IconIg5,
+  IconIg6,
+  IconIg7,
+  IconIg8,
+  IconIg9,
+} from "@/assets";
+
+export const cardsData: any = [
+  {
+    key: 'ig-1',
+    icon: IconIg1,
+    title: "Product Status",
+    href: "/",
+    bgLegend: '#E32017',
+    bgCard: '#E7CFCF'
+  },
+  {
+    key: 'ig-2',
+    icon: IconIg2,
+    title: "Product Features (1st Release)",
+    href: "/ig-product-diagram-release-1",
+    bgLegend: '#16853F',
+    bgCard: '#E1ECFF'
+  },
+  {
+    key: 'ig-3',
+    icon: IconIg3,
+    title: "Product Features (2nd Release)",
+    href: "/product-features-2nd-release",
+    bgLegend: '#1C3F95',
+    bgCard: '#E1ECFF'
+  },
+  {
+    key: 'ig-4',
+    icon: IconIg4,
+    title: "Product Competitors",
+    href: "/product-competitors",
+    bgLegend: '#A0A5A9',
+    bgCard: '#E1ECFF'
+  },
+  {
+    key: 'ig-5',
+    icon: IconIg5,
+    title: "Supporting Documents/ Guidelines",
+    href: "/supporting-documents-guidelines",
+    bgLegend: '#A0A5A9',
+    bgCard: '#E7CFCF'
+  },
+  {
+    key: 'ig-6',
+    icon: IconIg6,
+    title: "Third party APIs",
+    href: "/third-party-apis",
+    bgLegend: '#E32017',
+    bgCard: '#E1ECFF'
+  },
+  {
+    key: 'ig-7',
+    icon: IconIg7,
+    title: "Consultancy Outfit Tools",
+    href: "/consultancy-outfit-tools",
+    bgLegend: '#16853F',
+    bgCard: '#E1ECFF'
+  },
+  {
+    key: 'ig-8',
+    icon: IconIg8,
+    title: "Social Media Accounts",
+    href: "/social-media-accounts",
+    bgLegend: '#16853F',
+    bgCard: '#E1ECFF'
+  },
+  {
+    key: 'ig-9',
+    icon: IconIg9,
+    title: "Chat GPT 4 Training",
+    href: "/chat-gpt4-training",
+    bgLegend: '#16853F',
+    bgCard: '#E1ECFF'
+  },
+  {
+    key: 'ig-10',
+    icon: IconIg10,
+    title: "Required Licenses",
+    href: "/required-licenses",
+    bgLegend: '#1C3F95',
+    bgCard: '#E1ECFF'
+  },
+  {
+    key: 'ig-11',
+    icon: IconIg11,
+    title: "Required Accreditation",
+    href: "/required-accreditation",
+    bgLegend: '#1C3F95',
+    bgCard: '#E1ECFF'
+  },
+  {
+    key: 'ig-12',
+    icon: IconIg12,
+    title: "Required Affiliations",
+    href: "/required-affiliations",
+    bgLegend: '#1C3F95',
+    bgCard: '#E1ECFF'
+  },
+  {
+    key: 'ig-13',
+    icon: IconIg13,
+    title: "Required Memberships",
+    href: "/required-memberships",
+    bgLegend: '#1C3F95',
+    bgCard: '#E1ECFF'
+  },
+  {
+    key: 'ig-14',
+    icon: IconIg14,
+    title: "Local Authorities Data",
+    href: "/local-authorities-data",
+    bgLegend: '#16853F',
+    bgCard: '#E1ECFF'
+  },
+
+  {
+    key: 'ig-15',
+    icon: IconIg15,
+    title: "University Internships Data",
+    href: "/university-internships-data",
+    bgLegend: '#A0A5A9',
+    bgCard: '#E7CFCF'
+  },
+  {
+    key: 'ig-16',
+    icon: IconIg16,
+    title: "Subject Access Request (SAR)",
+    href: "/subject-access-request-sar",
+    bgLegend: '#E86A10',
+    bgCard: '#E1ECFF'
+  },
+  {
+    key: 'ig-17',
+    icon: IconIg17,
+    title: "",
+    href: "",
+    bgLegend: '#16853F',
+    bgCard: '#E1ECFF'
+  },
+  {
+    key: 'ig-18',
+    icon: IconIg18,
+    title: "Adhoc Tasks",
+    href: "/adhoc-tasks",
+    bgLegend: '#E86A10',
+    bgCard: '#E7CFCF'
+  },
+  {
+    key: 'ig-19',
+    icon: IconIg19,
+    title: "Misc. Tasks",
+    href: "/misc-tasks",
+    bgLegend: '#A0A5A9',
+    bgCard: '#E7CFCF'
+  },
+  {
+    key: 'ig-20',
+    icon: IconIg20,
+    title: "Required Certifications & Qualifications",
+    href: "/required-certifications-qualifications",
+    bgLegend: '#16853F',
+    bgCard: '#E1ECFF'
+  },
+  {
+    key: 'ig-21',
+    icon: IconIg21,
+    title: "Practical law",
+    href: "/practical-law",
+    bgLegend: '#A0A5A9',
+    bgCard: '#E1ECFF'
+  },
+  {
+    key: 'ig-22',
+    icon: IconIg22,
+    title: "E-Learning",
+    href: "/e-learning",
+    bgLegend: '#E86A10',
+    bgCard: '#E7CFCF'
+  },
+  {
+    key: 'ig-23',
+    icon: IconIg23,
+    title: "Chat-Bot",
+    href: "/chat-bot",
+    bgLegend: '#E86A10',
+    bgCard: '#E1ECFF'
+  },
+  {
+    key: 'ig-24',
+    icon: IconIg24,
+    title: "Agentic 007",
+    href: "/agentic-007",
+    bgLegend: '#E86A10',
+    bgCard: '#E1ECFF'
+  },
+  {
+    key: 'ig-25',
+    icon: IconIg25,
+    title: "Content Modification Date",
+    href: "/content-modification-date",
+    bgLegend: '#16853F',
+    bgCard: '#E1ECFF'
+  },
+];
