@@ -16,7 +16,7 @@ const LiquidityProviderAddendumPage = () => {
       >
         <Typography
           component="a"
-          href="https://s3.eu-west-2.amazonaws.com/aquis-public-files/pdf_assets/Liquidity-Provider-Addendum-v2.1.pdf" 
+          href="https://s3.eu-west-2.amazonaws.com/aquis-public-files/pdf_assets/Liquidity-Provider-Addendum-v2.1.pdf"
           target="_blank"
           rel="noopener noreferrer"
           sx={{
@@ -32,11 +32,11 @@ const LiquidityProviderAddendumPage = () => {
           Reference Doc
         </Typography>
       </Box>
-    <CommonPage
-      pageTitle={`Liquidity Provider Addendum`}
-      src={LiquidityProviderAddendumImage}
-      backRoute="/legal-agreements"
-    />
+      <CommonPage
+        pageTitle={`Liquidity Provider Addendum`}
+        src={LiquidityProviderAddendumImage}
+        backRoute="/legal-agreements"
+      />
     </Box>
   );
 };

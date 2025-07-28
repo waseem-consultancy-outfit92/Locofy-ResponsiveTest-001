@@ -18,7 +18,7 @@ const MemberParticipationAgreementPage = () => {
       >
         <Typography
           component="a"
-          href="https://s3.eu-west-2.amazonaws.com/aquis-public-files/pdf_assets/Aquis-Member-Participation-Agreement.pdf" 
+          href="https://s3.eu-west-2.amazonaws.com/aquis-public-files/pdf_assets/Aquis-Member-Participation-Agreement.pdf"
           target="_blank"
           rel="noopener noreferrer"
           sx={{

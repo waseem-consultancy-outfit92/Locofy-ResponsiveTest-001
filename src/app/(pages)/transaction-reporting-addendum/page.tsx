@@ -16,7 +16,7 @@ const TransactionReportingAddendumPage = () => {
       >
         <Typography
           component="a"
-          href="https://aquis-public-files.s3.eu-west-2.amazonaws.com/pdf_assets/Aquis+PLC+Transaction+Reporting+Addendum+v1.1.pdf" 
+          href="https://aquis-public-files.s3.eu-west-2.amazonaws.com/pdf_assets/Aquis+PLC+Transaction+Reporting+Addendum+v1.1.pdf"
           target="_blank"
           rel="noopener noreferrer"
           sx={{
@@ -33,11 +33,11 @@ const TransactionReportingAddendumPage = () => {
         </Typography>
       </Box>
 
-    <CommonPage
-      pageTitle={`Transaction Reporting Addendum`}
-      src={TransactionReportingAddendumImage}
-      backRoute="/legal-agreements"
-    />
+      <CommonPage
+        pageTitle={`Transaction Reporting Addendum`}
+        src={TransactionReportingAddendumImage}
+        backRoute="/legal-agreements"
+      />
     </Box>
   );
 };

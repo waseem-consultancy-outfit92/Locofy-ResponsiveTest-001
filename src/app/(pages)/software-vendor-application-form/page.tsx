@@ -29,7 +29,7 @@ const areas = [
 
 const SoftwareVendorApplicationFormPage = () => {
   return (
-     <Box position="relative">
+    <Box position="relative">
       <Box
         sx={{
           position: "absolute",
@@ -40,7 +40,7 @@ const SoftwareVendorApplicationFormPage = () => {
       >
         <Typography
           component="a"
-          href="https://s3.eu-west-2.amazonaws.com/aquis-public-files/pdf_assets/Software-Vendor-Application-Form.pdf" 
+          href="https://s3.eu-west-2.amazonaws.com/aquis-public-files/pdf_assets/Software-Vendor-Application-Form.pdf"
           target="_blank"
           rel="noopener noreferrer"
           sx={{
@@ -56,12 +56,12 @@ const SoftwareVendorApplicationFormPage = () => {
           Reference Doc
         </Typography>
       </Box>
-    <CommonImgMapPage
-      pageTitle={`Software Vendor Application Form`}
-      image={SoftwareVendorApplicationFormImage}
-      backRoute="/legal-agreements"
-      areas={areas}
-    />
+      <CommonImgMapPage
+        pageTitle={`Software Vendor Application Form`}
+        image={SoftwareVendorApplicationFormImage}
+        backRoute="/legal-agreements"
+        areas={areas}
+      />
     </Box>
   );
 };

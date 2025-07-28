@@ -22,7 +22,7 @@ const areas = [
 
 const MacOrderFormPage = () => {
   return (
-     <Box position="relative">
+    <Box position="relative">
       <Box
         sx={{
           position: "absolute",
@@ -33,7 +33,7 @@ const MacOrderFormPage = () => {
       >
         <Typography
           component="a"
-          href="https://aqx-web-prod-s3-public-read.s3.eu-west-2.amazonaws.com/Aquis_UK_Ma_C_Order_Form_v3_1_44973bc0c4.pdf" 
+          href="https://aqx-web-prod-s3-public-read.s3.eu-west-2.amazonaws.com/Aquis_UK_Ma_C_Order_Form_v3_1_44973bc0c4.pdf"
           target="_blank"
           rel="noopener noreferrer"
           sx={{
@@ -50,12 +50,12 @@ const MacOrderFormPage = () => {
         </Typography>
       </Box>
 
-    <CommonImgMapPage
-      pageTitle={`MaC Order Form`}
-      image={MacOrderFormImage}
-      backRoute="/legal-agreements"
-      areas={areas}
-    />
+      <CommonImgMapPage
+        pageTitle={`MaC Order Form`}
+        image={MacOrderFormImage}
+        backRoute="/legal-agreements"
+        areas={areas}
+      />
     </Box>
   );
 };

@@ -80,7 +80,7 @@ const AccessRulebookPageData = [
 
 const AccessRulebookPage = () => {
   return (
-      <Box position="relative">
+    <Box position="relative">
       <Box
         sx={{
           position: "absolute",
@@ -91,7 +91,7 @@ const AccessRulebookPage = () => {
       >
         <Typography
           component="a"
-          href="https://aquis-public-files.s3.eu-west-2.amazonaws.com/pdf_assets/Aquis+PLC+Transaction+Reporting+Addendum+v1.1.pdf" 
+          href="https://aquis-public-files.s3.eu-west-2.amazonaws.com/pdf_assets/Aquis+PLC+Transaction+Reporting+Addendum+v1.1.pdf"
           target="_blank"
           rel="noopener noreferrer"
           sx={{
@@ -107,11 +107,11 @@ const AccessRulebookPage = () => {
           Reference Doc
         </Typography>
       </Box>
-    <MultiPathPage
-      arrayData={AccessRulebookPageData}
-      pageTitle="Access Rulebook"
-      backRoute="/rules-and-fees"
-    />
+      <MultiPathPage
+        arrayData={AccessRulebookPageData}
+        pageTitle="Access Rulebook"
+        backRoute="/rules-and-fees"
+      />
     </Box>
   );
 };

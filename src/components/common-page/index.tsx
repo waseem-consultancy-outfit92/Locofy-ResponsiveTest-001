@@ -19,7 +19,7 @@ const CommonPage: React.FC<CommonPageProps> = ({
   backRoute = "/",
   pageTitle,
   onChange,
-  workStatus=true
+  workStatus = true,
 }) => {
   const router = useRouter();
 
@@ -55,9 +55,9 @@ const CommonPage: React.FC<CommonPageProps> = ({
         </Typography>
       </Stack>
       {workStatus && (
-       <Box mb={{ md: 4, sm: 3, xs: 2 }}>
-        <CheckboxForm onChange={onChange} />
-      </Box>
+        <Box mb={{ md: 4, sm: 3, xs: 2 }}>
+          <CheckboxForm onChange={onChange} />
+        </Box>
       )}
       <Image
         src={src}

@@ -80,13 +80,15 @@ const MultiPathOnePage: React.FC<MultiPathPageProps> = ({
             textDecoration: "underline",
             cursor: "pointer",
           }}
-          textAlign='end'
-            onClick={() => {
-          if (referenceDocLink) {
-          router.push(referenceDocLink); 
-           }
-  }}
-        >Reference Doc</Typography>
+          textAlign="end"
+          onClick={() => {
+            if (referenceDocLink) {
+              router.push(referenceDocLink);
+            }
+          }}
+        >
+          Reference Doc
+        </Typography>
       </Stack>
       <Grid container spacing={2}>
         {arrayData.map((item) => (

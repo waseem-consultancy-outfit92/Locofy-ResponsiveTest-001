@@ -1,4 +1,4 @@
-import {  AQSEAccessMarketTwo } from "@/assets";
+import { AQSEAccessMarketTwo } from "@/assets";
 import { CommonPage } from "@/components";
 import React from "react";
 
