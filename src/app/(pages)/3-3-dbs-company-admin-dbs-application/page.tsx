@@ -1,17 +1,15 @@
-import { 33DbsCompanyAdminDbsApplicationImage } from "@/assets";
-
-import AmendmentComparison from "@/components/amendment-comparison";
+import { DbsCompanyAdminDbsApplicationImage33 } from "@/assets";
+import AmendmentComparisonNoBtn from "@/components/amendment-comparison-no-btn";
 import React from "react";
 
-const 33DbsCompanyAdminDbsApplicationPage = () => {
+const DbsCompanyAdminDbsApplicationPage33 = () => {
   return (
-    <AmendmentComparison
-      pageTitle={`Mental Health / Mental Health  Act 1983 / Part V / 3.3 DBS Company Admin DBS Application`}
-      src={33DbsCompanyAdminDbsApplicationImage}
-      backRoute="/"
-      amendmentButtonRoute="/ig-product-diagramrelease-1-chekc-my-dbs"
+<AmendmentComparisonNoBtn
+      pageTitle={`Mental Health / Mental Health  Act 1983 / Part V / 3.2.2 DBS Company Admin Settings`}
+      src={DbsCompanyAdminDbsApplicationImage33}
+      backRoute="/ig-product-diagramrelease-1-chekc-my-dbs"
     />
   );
 };
 
-export default 33DbsCompanyAdminDbsApplicationPage;
+export default DbsCompanyAdminDbsApplicationPage33;

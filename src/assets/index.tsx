@@ -72,6 +72,7 @@ export { default as SelectDocument5241Image } from "./SelectDocument5241Image.sv
 export { default as ViewInformationComponents5242Image } from "./ViewInformationComponents5242Image.svg";
 export { default as Integration525Image } from "./Integration525Image.svg";
 export { default as ViewIntegration5251Image } from "./ViewIntegration5251Image.svg";
+export { default as AppPendingForEvidenceCheckImage339 } from "./AppPendingForEvidenceCheckImage339.svg";
 export { default as AddIntegration5252Image } from "./AddIntegration5252Image.svg";
 export { default as img1IgRequiredAffiliationCifasCreditIndustryFraudAvoidanceSystemImage } from "./img1IgRequiredAffiliationCifasCreditIndustryFraudAvoidanceSystemImage.svg";
 export { default as img2IgRequiredAffiliationCifasCreditIndustryFraudAvoidanceSystemImage } from "./img2IgRequiredAffiliationCifasCreditIndustryFraudAvoidanceSystemImage.svg";
@@ -182,12 +183,20 @@ export { default as DbsCompanyAdminCompletedDbsChecksCertificatePostedOutImage31
 export { default as DbsCompanyAdminDbsCertificateEligibleForReprintIfNotReceivedImage3110 } from "./DbsCompanyAdminDbsCertificateEligibleForReprintIfNotReceivedImage3110.svg";
 export { default as DbsCompanyAdminSpendHistoryForYourDbsChecksImage3111 } from "./DbsCompanyAdminSpendHistoryForYourDbsChecksImage3111.svg";
 export { default as MyAccountsImage34 } from "./MyAccountsImage34.svg";
+export { default as ViewApplicationDetailsImage3392 } from "./ViewApplicationDetailsImage3392.svg";
+export { default as ViewApplicationDetailsImage33102 } from "./ViewApplicationDetailsImage33102.svg";
+export { default as ResultsImage33103 } from "./ResultsImage33103.svg";
+export { default as ErasedApplicationsImage3382 } from "./MyAccountsImage34.svg";
+export { default as CheckDbsApplicationImage3391 } from "./CheckDbsApplicationImage3391.svg";
 export { default as InvoicesImage341 } from "./InvoicesImage341.svg";
 export { default as CreateInvoiceImage3411 } from "./CreateInvoiceImage3411.svg";
+export { default as HistoryImage3393 } from "./HistoryImage3393.svg";
+export { default as RejectDbsApplicationImage3394 } from "./RejectDbsApplicationImage3394.svg";
 export { default as InvoiceListingImage3412 } from "./InvoiceListingImage3412.svg";
 export { default as AdjustmentImage342 } from "./AdjustmentImage342.svg";
 export { default as AdjustDbsFeeToAdminFeeImage3421 } from "./AdjustDbsFeeToAdminFeeImage3421.svg";
 export { default as AdjustAdminFeeToDbsFeeImage3422 } from "./AdjustAdminFeeToDbsFeeImage3422.svg";
+export { default as ApplicationWithDbsResultImage3381 } from "./ApplicationWithDbsResultImage3381.svg";
 export { default as TransactionImage343 } from "./TransactionImage343.svg";
 export { default as PaymentsImage344 } from "./PaymentsImage344.svg";
 export { default as SpentImage345 } from "./SpentImage345.svg";
@@ -220,6 +229,7 @@ export { default as DbsApplicationsListImage433 } from "./DbsApplicationsListIma
 export { default as EvidenceCheckerImage5 } from "./EvidenceCheckerImage5.svg";
 export { default as DashboardImage51 } from "./DashboardImage51.svg";
 export { default as AssignedApplicantsForDbsImage511 } from "./AssignedApplicantsForDbsImage511.svg";
+export { default as DbsCompanyAdminSettingsImage323 } from "./DbsCompanyAdminSettingsImage323.svg";
 export { default as ApplicationPendingEvidenceCheckImage512 } from "./ApplicationPendingEvidenceCheckImage512.svg";
 export { default as FixIssuesWithApplicationsImage513 } from "./FixIssuesWithApplicationsImage513.svg";
 export { default as IncompleteDbsApplicationImage514 } from "./IncompleteDbsApplicationImage514.svg";
@@ -227,6 +237,7 @@ export { default as RejectDbsApplicationImage515 } from "./RejectDbsApplicationI
 export { default as DbsApplicationRequirementPaymentImage516 } from "./DbsApplicationRequirementPaymentImage516.svg";
 export { default as ActionAttributesImage5161 } from "./ActionAttributesImage5161.svg";
 export { default as ApplicationPendingForTheDbsImage517 } from "./ApplicationPendingForTheDbsImage517.svg";
+export { default as ReprintImage33101 } from "./ReprintImage33101.svg";
 export { default as DbsApplicationAlreadyPaidForImage518 } from "./DbsApplicationAlreadyPaidForImage518.svg";
 export { default as DbsApplicationAlreadyPaidImage5181 } from "./DbsApplicationAlreadyPaidImage5181.svg";
 export { default as CompletedDbsChecksCertificatePostedOutImage519 } from "./CompletedDbsChecksCertificatePostedOutImage519.svg";

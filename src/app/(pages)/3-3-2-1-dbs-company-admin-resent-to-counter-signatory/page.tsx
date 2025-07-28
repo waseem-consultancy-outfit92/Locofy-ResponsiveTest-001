@@ -1,17 +1,15 @@
-import { 3321DbsCompanyAdminResentToCounterSignatoryImage } from "@/assets";
-
-import AmendmentComparison from "@/components/amendment-comparison";
+import { DbsCompanyAdminResentToCounterSignatoryImage3321 } from "@/assets";
 import React from "react";
+import AmendmentComparisonNoBtn from "@/components/amendment-comparison-no-btn";
 
-const 3321DbsCompanyAdminResentToCounterSignatoryPage = () => {
+const DbsCompanyAdminResentToCounterSignatoryPage3321 = () => {
   return (
-    <AmendmentComparison
+    <AmendmentComparisonNoBtn
       pageTitle={`Mental Health / Mental Health  Act 1983 / Part V / 3.3.2.1 DBS Company Admin Resent to counter signatory`}
-      src={3321DbsCompanyAdminResentToCounterSignatoryImage}
-      backRoute="/"
-      amendmentButtonRoute="/ig-product-diagramrelease-1-chekc-my-dbs"
+      src={DbsCompanyAdminResentToCounterSignatoryImage3321}
+      backRoute="/ig-product-diagramrelease-1-chekc-my-dbs"
     />
   );
 };
 
-export default 3321DbsCompanyAdminResentToCounterSignatoryPage;
+export default DbsCompanyAdminResentToCounterSignatoryPage3321;

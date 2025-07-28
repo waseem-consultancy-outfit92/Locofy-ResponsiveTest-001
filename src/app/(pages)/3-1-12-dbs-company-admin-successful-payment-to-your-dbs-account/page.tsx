@@ -1,17 +1,15 @@
-import { 3112DbsCompanyAdminSuccessfulPaymentToYourDbsAccountImage } from "@/assets";
-
-import AmendmentComparison from "@/components/amendment-comparison";
+import { DbsCompanyAdminSuccessfulPaymentToYourDbsAccountImage3112 } from "@/assets";
+import AmendmentComparisonNoBtn from "@/components/amendment-comparison-no-btn";
 import React from "react";
 
-const 3112DbsCompanyAdminSuccessfulPaymentToYourDbsAccountPage = () => {
+const DbsCompanyAdminSuccessfulPaymentToYourDbsAccountPage3112 = () => {
   return (
-    <AmendmentComparison
+    <AmendmentComparisonNoBtn
       pageTitle={`Mental Health / Mental Health  Act 1983 / Part V / 3.1.12 DBS Company Admin Successful Payment to your DBS Account`}
-      src={3112DbsCompanyAdminSuccessfulPaymentToYourDbsAccountImage}
-      backRoute="/"
-      amendmentButtonRoute="/ig-product-diagramrelease-1-chekc-my-dbs"
+      src={DbsCompanyAdminSuccessfulPaymentToYourDbsAccountImage3112}
+      backRoute="/ig-product-diagramrelease-1-chekc-my-dbs"
     />
   );
 };
 
-export default 3112DbsCompanyAdminSuccessfulPaymentToYourDbsAccountPage;
+export default DbsCompanyAdminSuccessfulPaymentToYourDbsAccountPage3112;

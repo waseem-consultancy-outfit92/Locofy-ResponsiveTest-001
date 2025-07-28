@@ -1,17 +1,15 @@
-import { 337DbsApplicationAlreadyPaidForImage } from "@/assets";
-
-import AmendmentComparison from "@/components/amendment-comparison";
+import { DbsApplicationAlreadyPaidForImage337 } from "@/assets";
+import AmendmentComparisonNoBtn from "@/components/amendment-comparison-no-btn";
 import React from "react";
 
-const 337DbsApplicationAlreadyPaidForPage = () => {
+const DbsApplicationAlreadyPaidForPage337 = () => {
   return (
-    <AmendmentComparison
+    <AmendmentComparisonNoBtn
       pageTitle={`Mental Health / Mental Health  Act 1983 / Part V / 3.3.7 DBS Application Already Paid For`}
-      src={337DbsApplicationAlreadyPaidForImage}
-      backRoute="/"
-      amendmentButtonRoute="/ig-product-diagramrelease-1-chekc-my-dbs"
+      src={DbsApplicationAlreadyPaidForImage337}
+      backRoute="/ig-product-diagramrelease-1-chekc-my-dbs"
     />
   );
 };
 
-export default 337DbsApplicationAlreadyPaidForPage;
+export default DbsApplicationAlreadyPaidForPage337;

@@ -1,17 +1,15 @@
-import { 3331RejectDbsApplicationImage } from "@/assets";
-
-import AmendmentComparison from "@/components/amendment-comparison";
+import { RejectDbsApplicationImage3331 } from "@/assets";
+import AmendmentComparisonNoBtn from "@/components/amendment-comparison-no-btn";
 import React from "react";
 
-const 3331RejectDbsApplicationPage = () => {
+const RejectDbsApplicationPage3331 = () => {
   return (
-    <AmendmentComparison
+    <AmendmentComparisonNoBtn
       pageTitle={`Mental Health / Mental Health  Act 1983 / Part V / 3.3.3.1 Reject DBS Application`}
-      src={3331RejectDbsApplicationImage}
-      backRoute="/"
-      amendmentButtonRoute="/ig-product-diagramrelease-1-chekc-my-dbs"
+      src={RejectDbsApplicationImage3331}
+      backRoute="/ig-product-diagramrelease-1-chekc-my-dbs"
     />
   );
 };
 
-export default 3331RejectDbsApplicationPage;
+export default RejectDbsApplicationPage3331;

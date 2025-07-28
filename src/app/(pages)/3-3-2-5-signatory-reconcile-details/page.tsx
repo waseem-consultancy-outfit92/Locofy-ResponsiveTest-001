@@ -1,17 +1,15 @@
-import { 3325SignatoryReconcileDetailsImage } from "@/assets";
-
-import AmendmentComparison from "@/components/amendment-comparison";
+import { SignatoryReconcileDetailsImage3325 } from "@/assets";
+import AmendmentComparisonNoBtn from "@/components/amendment-comparison-no-btn";
 import React from "react";
 
-const 3325SignatoryReconcileDetailsPage = () => {
+const SignatoryReconcileDetailsPage3325 = () => {
   return (
-    <AmendmentComparison
+    <AmendmentComparisonNoBtn
       pageTitle={`Mental Health / Mental Health  Act 1983 / Part V / 3.3.2.5 Signatory Reconcile Details`}
-      src={3325SignatoryReconcileDetailsImage}
-      backRoute="/"
-      amendmentButtonRoute="/ig-product-diagramrelease-1-chekc-my-dbs"
+      src={SignatoryReconcileDetailsImage3325}
+      backRoute="/ig-product-diagramrelease-1-chekc-my-dbs"
     />
   );
 };
 
-export default 3325SignatoryReconcileDetailsPage;
+export default SignatoryReconcileDetailsPage3325;

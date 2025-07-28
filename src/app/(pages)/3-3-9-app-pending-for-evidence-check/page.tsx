@@ -1,17 +1,15 @@
-import { 339AppPendingForEvidenceCheckImage } from "@/assets";
-
-import AmendmentComparison from "@/components/amendment-comparison";
+import { AppPendingForEvidenceCheckImage339 } from "@/assets";
+import AmendmentComparisonNoBtn from "@/components/amendment-comparison-no-btn";
 import React from "react";
 
-const 339AppPendingForEvidenceCheckPage = () => {
+const AppPendingForEvidenceCheckPage339 = () => {
   return (
-    <AmendmentComparison
+    <AmendmentComparisonNoBtn
       pageTitle={`Mental Health / Mental Health  Act 1983 / Part V / 3.3.9 App Pending for Evidence Check`}
-      src={339AppPendingForEvidenceCheckImage}
-      backRoute="/"
-      amendmentButtonRoute="/ig-product-diagramrelease-1-chekc-my-dbs"
+      src={AppPendingForEvidenceCheckImage339}
+      backRoute="/ig-product-diagramrelease-1-chekc-my-dbs"
     />
   );
 };
 
-export default 339AppPendingForEvidenceCheckPage;
+export default AppPendingForEvidenceCheckPage339;
