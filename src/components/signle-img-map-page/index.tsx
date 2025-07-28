@@ -1,7 +1,8 @@
 "use client";
 import { Box, Button } from "@mui/material";
 import Image from "next/image";
-import { useCallback } from "react";
+import { useCallback, useEffect, useRef } from "react";
+import imageMapResize from "image-map-resizer";
 import { useRouter } from "next/navigation";
 
 interface AreaItem {
@@ -14,7 +15,6 @@ interface AreaItem {
 
 interface SinglePageProps {
     image?: string;
-    onChange?: (selectedValue: string, page: string) => void;
     amendmentButtonRoute1?: string;
     amendmentButtonRoute2?: string;
     amendmentButtonRoute3?: string;
@@ -28,8 +28,6 @@ interface SinglePageProps {
 }
 
 const SingleImgMapPage: React.FC<SinglePageProps> = ({
-
-    onChange,
     amendmentButtonRoute1,
     amendmentButtonRoute2,
     amendmentButtonRoute3,
@@ -42,7 +40,15 @@ const SingleImgMapPage: React.FC<SinglePageProps> = ({
     target = "_self",
     areas = [],
 }) => {
+
     const router = useRouter();
+
+    const mapRef = useRef<HTMLMapElement>(null);
+    useEffect(() => {
+        if (mapRef.current) {
+            imageMapResize(); // This auto-fixes all maps on the page
+        }
+    }, [areas, image]);
 
     const onAmendmentButtonClick1 = useCallback(() => {
         if (downloadUrl && downloadFileName) {
@@ -136,14 +142,14 @@ const SingleImgMapPage: React.FC<SinglePageProps> = ({
                 <>
                     <Image
                         src={image}
-                        alt="FCA Annexes"
+                        alt="crypto"
                         useMap={areas && areas.length > 0 ? "#image-map" : undefined}
                         width={200}
                         height={200}
-                        style={{ width: "100%", height: "100%" }}
+                        style={{ width: "100%", height: "auto" }}
                     />
                     {areas && areas.length > 0 && (
-                        <map name="image-map">
+                       <map name="image-map" ref={mapRef}>
                             {areas.map((area, index) => (
                                 <area
                                     key={index}
