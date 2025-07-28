@@ -37,12 +37,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Financial Conduct Authority",
     description:
-      "Understand the primary goals of the Financial Conduct Authority, illustrated through a clear and concise diagram.",
-    url: "https://crypto.netlify.app",
+      "Understand the structure of the crypto ecosystem through a professional diagram featuring key applications, services, and functional areas of Web3.",
+    url: "https://cryptow3.netlify.app",
     type: "website",
     images: [
       {
-        url: "https://crypto.netlify.app/og.png",
+        url: "https://cryptow3.netlify.app/og.png",
         type: "image/png",
         width: 1200,
         height: 630,
