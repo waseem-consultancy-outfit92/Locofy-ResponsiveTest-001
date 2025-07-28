@@ -39,7 +39,7 @@ export const cardsData: any = [
     key: 'ig-2',
     icon: IconIg2,
     title: "Product Features (1st Release)",
-    href: "/ig-product-diagram-release-1",
+    href: "/product-diagram",
     bgLegend: '#16853F',
     bgCard: '#E1ECFF'
   },
@@ -47,7 +47,7 @@ export const cardsData: any = [
     key: 'ig-3',
     icon: IconIg3,
     title: "Product Features (2nd Release)",
-    href: "/product-features-2nd-release",
+    href: "/ig-features-release-2",
     bgLegend: '#1C3F95',
     bgCard: '#E1ECFF'
   },
@@ -55,7 +55,7 @@ export const cardsData: any = [
     key: 'ig-4',
     icon: IconIg4,
     title: "Product Competitors",
-    href: "/product-competitors",
+    href: "/ig-product-competitors",
     bgLegend: '#A0A5A9',
     bgCard: '#E1ECFF'
   },
@@ -71,7 +71,7 @@ export const cardsData: any = [
     key: 'ig-6',
     icon: IconIg6,
     title: "Third party APIs",
-    href: "/third-party-apis",
+    href: "/ig-third-party-apis",
     bgLegend: '#E32017',
     bgCard: '#E1ECFF'
   },
@@ -79,7 +79,7 @@ export const cardsData: any = [
     key: 'ig-7',
     icon: IconIg7,
     title: "Consultancy Outfit Tools",
-    href: "/consultancy-outfit-tools",
+    href: "/ig-consultancy-outfit-tools",
     bgLegend: '#16853F',
     bgCard: '#E1ECFF'
   },
@@ -87,7 +87,7 @@ export const cardsData: any = [
     key: 'ig-8',
     icon: IconIg8,
     title: "Social Media Accounts",
-    href: "/social-media-accounts",
+    href: "/ig-social-media-accounts",
     bgLegend: '#16853F',
     bgCard: '#E1ECFF'
   },
@@ -95,7 +95,7 @@ export const cardsData: any = [
     key: 'ig-9',
     icon: IconIg9,
     title: "Chat GPT 4 Training",
-    href: "/chat-gpt4-training",
+    href: "/ig-chat-gpt4-training",
     bgLegend: '#16853F',
     bgCard: '#E1ECFF'
   },
@@ -103,7 +103,7 @@ export const cardsData: any = [
     key: 'ig-10',
     icon: IconIg10,
     title: "Required Licenses",
-    href: "/required-licenses",
+    href: "/ig-required-licenses",
     bgLegend: '#1C3F95',
     bgCard: '#E1ECFF'
   },
@@ -119,7 +119,7 @@ export const cardsData: any = [
     key: 'ig-12',
     icon: IconIg12,
     title: "Required Affiliations",
-    href: "/required-affiliations",
+    href: "/ig-required-affiliation",
     bgLegend: '#1C3F95',
     bgCard: '#E1ECFF'
   },
@@ -152,7 +152,7 @@ export const cardsData: any = [
     key: 'ig-16',
     icon: IconIg16,
     title: "Subject Access Request (SAR)",
-    href: "/subject-access-request-sar",
+    href: "/ig-subject-access-request",
     bgLegend: '#E86A10',
     bgCard: '#E1ECFF'
   },
@@ -160,7 +160,7 @@ export const cardsData: any = [
     key: 'ig-17',
     icon: IconIg17,
     title: "",
-    href: "",
+    href: "/ig-cobit-implementation",
     bgLegend: '#16853F',
     bgCard: '#E1ECFF'
   },
@@ -184,7 +184,7 @@ export const cardsData: any = [
     key: 'ig-20',
     icon: IconIg20,
     title: "Required Certifications & Qualifications",
-    href: "/required-certifications-qualifications",
+    href: "/ig-required-certifications-qualifications",
     bgLegend: '#16853F',
     bgCard: '#E1ECFF'
   },
@@ -200,7 +200,7 @@ export const cardsData: any = [
     key: 'ig-22',
     icon: IconIg22,
     title: "E-Learning",
-    href: "/e-learning",
+    href: "/lars-courses-classification",
     bgLegend: '#E86A10',
     bgCard: '#E7CFCF'
   },
@@ -224,7 +224,7 @@ export const cardsData: any = [
     key: 'ig-25',
     icon: IconIg25,
     title: "Content Modification Date",
-    href: "/content-modification-date",
+    href: "/onboarding-modification-date",
     bgLegend: '#16853F',
     bgCard: '#E1ECFF'
   },
