@@ -6,7 +6,8 @@ const assetsDir = path.join(__dirname, "src", "assets");
 const indexTsxPath = path.join(assetsDir, "index.tsx");
 
 const pages = [
-  { name: "Cross-Sector Inspections", backRoute: "/ Care Quality Commission" },
+  { name: "IG Required Accrediatiuon ISO/IEC 1974 Validity of the Certificate",
+    backRoute: "/ig-required-accrediatiuon-iso-ice-1974" },
 ];
 
 const toPascalCase = (str) =>
@@ -75,7 +76,7 @@ import React from "react";
 const ${pascalComponent} = () => {
   return (
     <CommonPage
-      pageTitle={\`${name}\`}
+      pageTitle={\`Validity of the Certificate\`}
       src={${imageName}}
       backRoute="${backRoute}"
     />
