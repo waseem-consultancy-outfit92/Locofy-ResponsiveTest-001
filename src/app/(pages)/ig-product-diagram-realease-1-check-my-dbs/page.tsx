@@ -15,7 +15,7 @@ interface DiagramArea {
   route: string;
 }
 
-const InteractiveDBSDiagram = () => {
+const InteractiveDBSDiagram = () => { 
   const router = useRouter();
   const [hoveredArea, setHoveredArea] = useState<number | null>(null);
   const [isMounted, setIsMounted] = useState(false);
