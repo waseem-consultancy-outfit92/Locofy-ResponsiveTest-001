@@ -1,0 +1,394 @@
+"use client";
+import React, { useState, useEffect, useCallback } from 'react';
+import { Box, Stack, Tooltip, Typography } from '@mui/material';
+import Image from 'next/image';
+import { useRouter } from 'next/navigation';
+import { IGProductDiagramRelease1ChekcMyDBSImage1 } from '@/assets';
+import { colorLegends1, CommonBackIcon } from '@/assets/common-assets';
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+
+interface DiagramArea {
+  id: number;
+  title: string;
+  x: number;
+  y: number;
+  width: number;
+  height: number;
+  route: string;
+}
+
+const InteractiveDBSDiagram = () => {
+  const router = useRouter();
+  const [hoveredArea, setHoveredArea] = useState<number | null>(null);
+  const [isMounted, setIsMounted] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  const toggleDropdown = useCallback((e: React.MouseEvent) => {
+    e.stopPropagation();
+    setIsOpen((prev) => !prev);
+  }, []);
+
+  const areas: DiagramArea[] = [
+    // ==================== ADMIN ROUTES ====================
+    { id: 1, title: "Authorised User (Company Admin)", x: 300.93, y: 38.94, width: 210.65, height: 214.19, route: "/1-dbs-authorised-user" },
+
+    { id: 20, title: "Create User", x: 69.04, y: 1455.09, width: 191.18, height: 130.99, route: "/admin/users/create" },
+    { id: 22, title: "Manage Users", x: 1053.26, y: 1435.62, width: 210.65, height: 159.32, route: "/admin/users/manage" },
+    { id: 23, title: "User List", x: 1554.22, y: 1440.93, width: 207.11, height: 141.61, route: "/admin/users/list" },
+    { id: 24, title: "User Types", x: 81.43, y: 1704.68, width: 171.71, height: 49.57, route: "/admin/users/types" },
+    { id: 25, title: "User List", x: 745.25, y: 1662.20, width: 150.47, height: 58.42, route: "/admin/users/all" },
+    { id: 100, title: "Individual User", x: 879.78, y: 7323.24, width: 169.94, height: 138.07, route: "/4-2-2-individual-user" },
+    { id: 103, title: "Individual User", x: 113.29, y: 7710.91, width: 215.96, height: 146.92, route: "/4-3-2-individual-user" },
+
+    // ==================== DASHBOARD & SETTINGS ====================
+    { id: 4, title: "Dashboard", x: 111.52, y: 876.24, width: 182.33, height: 42.48, route: "/3-1-dbs-company-admin-dashboard" },
+    { id: 19, title: "Apply For", x: 116.83, y: 1391.36, width: 155.78, height: 53.11, route: "/apply" },
+    { id: 21, title: "Settings", x: 543.45, y: 1433.85, width: 212.42, height: 164.63, route: "/settings" },
+    { id: 90, title: "Header", x: 830.21, y: 6422.21, width: 116.83, height: 65.50, route: "/3-9-header" },
+    { id: 20, title: "Create User", x: 69.04, y: 1455.09, width: 191.18, height: 130.99, route: "/3-2-1-dbs-company-admin-create-user" },
+    { id: 22, title: "Manage Users", x: 1053.26, y: 1435.62, width: 210.65, height: 159.32, route: "/3-2-3-dbs-company-admin-manage-users" },
+    { id: 23, title: "User List", x: 1554.22, y: 1440.93, width: 207.11, height: 141.61, route: "/3-2-4-dbs-company-admin-user-list" },
+    { id: 24, title: "User Types", x: 81.43, y: 1704.68, width: 171.71, height: 49.57, route: "/3-2-dbs-company-admin-apply-for" },
+    { id: 25, title: "User List", x: 745.25, y: 1662.20, width: 150.47, height: 58.42, route: "/3-2-dbs-company-admin-apply-for" },
+    { id: 100, title: "Individual User", x: 879.78, y: 7323.24, width: 169.94, height: 138.07, route: "/admin/users/individual" },
+    { id: 103, title: "Individual User", x: 113.29, y: 7710.91, width: 215.96, height: 146.92, route: "/admin/users/individual/view" },
+
+    // ==================== DASHBOARD & SETTINGS ====================
+    { id: 4, title: "Dashboard", x: 111.52, y: 876.24, width: 182.33, height: 42.48, route: "/3-1-dbs-company-admin-dashboard" },
+    { id: 19, title: "Apply For", x: 116.83, y: 1391.36, width: 155.78, height: 53.11, route: "/3-2-dbs-company-admin-apply-for" },
+    { id: 21, title: "Settings", x: 543.45, y: 1433.85, width: 212.42, height: 164.63, route: "3-2-2-dbs-company-admin-settings" },
+    { id: 90, title: "Header", x: 830.21, y: 6422.21, width: 116.83, height: 65.50, route: "/header" },
+
+    // ==================== SYSTEM ROUTES ====================
+    { id: 2, title: "System", x: 1166.55, y: 56.65, width: 219.50, height: 171.71, route: "/dbs-system" },
+
+
+
+    { id: 3, title: "Application API's", x: 109.75, y: 293.85, width: 851.46, height: 53.11, route: "/system/apis" },
+
+    // ==================== APPLICATION ROUTES ====================
+    { id: 5, title: "Create DBS Application", x: 70.81, y: 955.90, width: 201.80, height: 138.07, route: "/3-1-1-dbs-company-admin-create-dbs-application" },
+    { id: 6, title: "DBS Company Admin Pending Application Evidence Check", x: 320.40, y: 939.97, width: 200.03, height: 157.55, route: "/3-1-2-dbs-company-admin-pending-application-evidence-check" },
+
+
+    { id: 7, title: "DBS Company Admin Pay or Fix Issues with Applications", x: 577.08, y: 938.20, width: 196.49, height: 175.25, route: "/3-1-3-dbs-company-admin-pay-or-fix-issues-with-applications" },
+    { id: 8, title: " DBS Company Admin Incomplete DBS Applications", x: 833.75, y: 936.43, width: 208.88, height: 171.71, route: "/3-1-4-dbs-company-admin-incomplete-dbs-applications" },
+    { id: 9, title: "DBS Company Admin Reject DBS Application", x: 1088.66, y: 929.34, width: 201.80, height: 185.87, route: "/3-1-5-dbs-company-admin-reject-dbs-applications" },
+    { id: 10, title: "DBS Company Admin DBS Application Requiring Payment", x: 1338.26, y: 936.43, width: 215.96, height: 185.87, route: "/3-1-6-dbs-company-admin-dbs-application-requiring-payment" },
+    { id: 11, title: "DBS Company Admin DBS Application already Paid For", x: 1573.69, y: 929.34, width: 233.66, height: 187.64, route: "/3-1-7-dbs-company-admin-dbs-application-already-paid-for" },
+    { id: 12, title: "Create Application", x: 76.12, y: 1127.60, width: 300.93, height: 56.65, route: "/3-2-dbs-company-admin-apply-for" },
+    { id: 13, title: "Application Pending for DBS", x: 433.69, y: 1132.92, width: 200.03, height: 200.03, route: "/3-1-8-dbs-company-admin-application-pending-for-dbs" },
+    { id: 14, title: "Completed DBS checks Certificate Posted Out", x: 699.22, y: 1148.85, width: 230.12, height: 185.87, route: "/3-1-9-dbs-company-admin-completed-dbs-checks-certificate-posted-out" },
+    { id: 15, title: "DBS Certificate Eligible for reprint(if not received)", x: 984.22, y: 1145.31, width: 231.89, height: 192.95, route: "/3-1-10-dbs-company-admin-dbs-certificate-eligible-for-reprintif-not-received" },
+    { id: 26, title: "Create DBS Application", x: 677.98, y: 1745.40, width: 240.74, height: 150.47, route: "/3-2-4-1-dbs-company-admin-create-dbs-application" },
+    { id: 27, title: "Create DBS Application", x: 952.36, y: 1770.18, width: 352.27, height: 49.57, route: "/3-2-dbs-company-admin-apply-for" },
+    { id: 28, title: "Prepopulated DBS Application", x: 676.21, y: 1906.48, width: 242.51, height: 134.53, route: "/3-2-4-2-dbs-company-admin-prepopulated-dbs-application" },
+    { id: 29, title: "DBS Application", x: 115.06, y: 2110.06, width: 258.45, height: 46.02, route: "/3-3-dbs-company-admin-dbs-application" },
+    { id: 30, title: "List of Assigned Application", x: 146.92, y: 2173.78, width: 410.68, height: 54.88, route: "/3-3-1-dbs-company-admin-list-of-assigned-application" },
+    { id: 31, title: "Pay or Fix Issues Application", x: 787.73, y: 2180.86, width: 423.07, height: 46.02, route: "/3-3-2-dbs-company-admin-pay-or-fix-issues-application" },
+    { id: 32, title: "View Application Details", x: 65.50, y: 2274.68, width: 230.12, height: 154.01, route: "/3-3-1-1-dbs-company-admin-view-application-details" },
+    { id: 33, title: "View History", x: 414.22, y: 2251.67, width: 224.81, height: 173.48, route: "/3-3-1-2-dbs-company-admin-history-view" },
+    { id: 34, title: "Resent to Counter Signatory", x: 708.07, y: 2472.94, width: 207.11, height: 180.56, route: "/3-3-2-1-dbs-company-admin-resent-to-counter-signatory" },
+    { id: 35, title: "View Details", x: 977.14, y: 2467.63, width: 146.92, height: 173.48, route: "/3-3-2-2-dbs-company-admin-view-details" },
+    { id: 36, title: "Check DBS Application", x: 1129.38, y: 2467.63, width: 185.87, height: 177.02, route: "/3-3-2-3-check-dbs-application" },
+    { id: 37, title: "View History", x: 1352.42, y: 2449.93, width: 189.41, height: 189.41, route: "/3-3-2-4-history" },
+    { id: 38, title: "Signatory Reconcile Details", x: 1554.22, y: 2444.62, width: 228.35, height: 215.96, route: "/3-3-2-5-signatory-reconcile-details" },
+    { id: 39, title: "Incomplete DBS Application", x: 145.15, y: 2719.00, width: 423.07, height: 51.34, route: "/3-3-3-incomplete-dbs-applications" },
+    { id: 40, title: "Reject DBS Application", x: 70.81, y: 2991.60, width: 198.26, height: 173.48, route: "/3-3-3-1-reject-dbs-application" },
+    { id: 41, title: "View DBS Application Details", x: 290.31, y: 2977.44, width: 150.47, height: 226.58, route: "/3-3-3-2-dbs-application-details" },
+    { id: 42, title: "View History", x: 477.95, y: 2982.75, width: 184.10, height: 159.32, route: "/3-3-3-3-dbs-company-admin-history" },
+    { id: 43, title: "Rejected DBS Application", x: 791.27, y: 2717.23, width: 384.13, height: 46.02, route: "/3-3-4-rejected-dbs-application" },
+    { id: 44, title: "Mark Application Read", x: 716.92, y: 3018.16, width: 235.43, height: 159.32, route: "/3-3-4-1-application-read" },
+    { id: 45, title: "View Details", x: 955.90, y: 3005.77, width: 228.35, height: 169.94, route: "/3-3-4-2-details" },
+    { id: 46, title: "View Results", x: 1304.62, y: 2980.98, width: 224.81, height: 203.57, route: "/3-3-4-3-results" },
+    { id: 47, title: "View History", x: 1540.06, y: 3002.23, width: 242.51, height: 180.56, route: "/3-3-4-4-history" },
+    { id: 48, title: "Application Pending for the DBS", x: 150.47, y: 3251.82, width: 481.49, height: 51.34, route: "/3-3-5-application-pending-for-the-dbs" },
+    { id: 49, title: "DBS Application Requiring Payment", x: 1258.60, y: 3250.05, width: 527.51, height: 61.96, route: "/3-3-6-dbs-application-requiring-payment-list" },
+    { id: 50, title: "Continue DBS Application", x: 81.43, y: 3547.44, width: 226.58, height: 196.49, route: "/3-3-5-1-continue-dbd-application" },
+    { id: 51, title: "View Details", x: 327.48, y: 3543.90, width: 228.35, height: 180.56, route: "/3-3-5-2-details" },
+    { id: 52, title: "View Results", x: 631.95, y: 3524.43, width: 240.74, height: 208.88, route: "/3-3-5-3-results" },
+    { id: 53, title: "View History", x: 885.09, y: 3520.89, width: 224.81, height: 196.49, route: "/3-3-5-4-history" },
+    { id: 54, title: "DBS Application Already Paid For", x: 139.84, y: 3795.27, width: 111.52, height: 136.30, route: "/3-3-7-dbs-application-already-paid-for" },
+    { id: 55, title: "Completed DBS Checks", x: 375.28, y: 3800.58, width: 345.19, height: 46.02, route: "/3-3-8-completed-dbs-checks" },
+    { id: 56, title: "Application Pending for Evidence Check", x: 957.67, y: 3798.81, width: 591.24, height: 53.11, route: "/3-3-9-app-pending-for-evidence-check" },
+    { id: 57, title: "Reject DBS Application", x: 306.24, y: 3862.53, width: 182.33, height: 154.01, route: "/3-3-8-1-application-with-dbs-result" },
+    { id: 58, title: "Erased Applications", x: 302.70, y: 4115.67, width: 217.73, height: 180.56, route: "/3-3-8-2-erased-applications" },
+    { id: 59, title: "Continue DBS Application", x: 879.78, y: 4126.29, width: 208.88, height: 169.94, route: "/3-3-9-1-check-dbs-application" },
+    { id: 60, title: "View Details", x: 1111.67, y: 4124.52, width: 194.72, height: 162.86, route: "/3-3-9-2-view-application-details" },
+    { id: 61, title: "View Results", x: 1329.41, y: 4087.35, width: 212.42, height: 194.72, route: "/3-3-9-3-history" },
+    { id: 62, title: "Reject DBS Application", x: 1555.99, y: 4089.12, width: 212.42, height: 205.34, route: "/3-3-9-4-reject-dbs-application" },
+
+
+    { id: 63, title: "DBS Certificate Eligible for Reprint", x: 164.63, y: 4335.17, width: 511.58, height: 53.11, route: "/3-3-10-dbs-certificate-eligible-for-reprint" },
+    { id: 66, title: "Reprint", x: 69.04, y: 4609.55, width: 192.95, height: 155.78, route: "/3-3-10-1-reprint" },
+    { id: 67, title: "View Application Details", x: 265.53, y: 4618.40, width: 191.18, height: 169.94, route: "/3-3-10-2-view-application-details" },
+    { id: 68, title: "Result", x: 465.56, y: 4623.71, width: 201.80, height: 157.55, route: "/3-3-10-3-results" },
+    
+    { id: 120, title: "DBS Application", x: 130.99, y: 8744.69, width: 251.37, height: 65.50, route: "/applications/dbs" },
+    { id: 121, title: "View Assigned DBS Application", x: 164.63, y: 8820.81, width: 474.41, height: 70.81, route: "/applications/view-assigned" },
+    { id: 122, title: "Fix Issues with DBS Applications", x: 966.52, y: 8819.04, width: 485.03, height: 72.58, route: "/applications/fix-dbs" },
+    { id: 123, title: "Application Pending for DBS", x: 171.71, y: 9321.77, width: 430.15, height: 63.73, route: "/applications/pending-dbs-view" },
+    { id: 124, title: "Rejected DBS Applications", x: 1026.70, y: 9321.77, width: 396.52, height: 60.19, route: "/applications/rejected-view" },
+    { id: 125, title: "Application Pending Evidence Checker", x: 168.17, y: 9842.20, width: 587.70, height: 69.04, route: "/applications/pending-checker" },
+    { id: 126, title: "Completed DBS Checks-Certificate Posted Out", x: 975.37, y: 9836.89, width: 686.83, height: 65.50, route: "/applications/completed-checks-view" },
+    { id: 127, title: "Application with DBS Result", x: 892.17, y: 9932.48, width: 244.28, height: 189.41, route: "/applications/result-view" },
+    { id: 128, title: "Erased Applications", x: 943.51, y: 10164.38, width: 228.35, height: 145.15, route: "/applications/erased-view" },
+ 
+
+    { id: 13, title: "Application Pending for DBS", x: 433.69, y: 1132.92, width: 200.03, height: 200.03, route: "/3-1-8-dbs-company-admin-application-pending-for-dbs" },
+
+    { id: 14, title: "Completed DBS checks Certificate Posted Out", x: 699.22, y: 1148.85, width: 230.12, height: 185.87, route: "/3-1-9-dbs-company-admin-completed-dbs-checks-certificate-posted-out" },
+    { id: 15, title: "DBS Certificate Eligible for reprint(if not received)", x: 984.22, y: 1145.31, width: 231.89, height: 192.95, route: "/applications/reprint" },
+    { id: 26, title: "Create DBS Application", x: 677.98, y: 1745.40, width: 240.74, height: 150.47, route: "/3-2-4-1-dbs-company-admin-create-dbs-application" },
+    { id: 27, title: "Create DBS Application", x: 952.36, y: 1770.18, width: 352.27, height: 49.57, route: "/applications/create/dbs-form" },
+    { id: 28, title: "Prepopulated DBS Application", x: 676.21, y: 1906.48, width: 242.51, height: 134.53, route: "/3-2-4-2-dbs-company-admin-prepopulated-dbs-application" },
+    { id: 29, title: "DBS Application", x: 115.06, y: 2110.06, width: 258.45, height: 46.02, route: "/applications/view" },
+    { id: 30, title: "List of Assigned Application", x: 146.92, y: 2173.78, width: 410.68, height: 54.88, route: "/3-3-dbs-company-admin-dbs-application" },
+    { id: 31, title: "Pay or Fix Issues Application", x: 787.73, y: 2180.86, width: 423.07, height: 46.02, route: "/applications/fix" },
+    { id: 32, title: "View Application Details", x: 65.50, y: 2274.68, width: 230.12, height: 154.01, route: "/3-3-1-1-dbs-company-admin-view-application-details" },
+    { id: 33, title: "View History", x: 414.22, y: 2251.67, width: 224.81, height: 173.48, route: "/3-3-1-2-dbs-company-admin-history-view" },
+    { id: 34, title: "Resent to Counter Signatory", x: 708.07, y: 2472.94, width: 207.11, height: 180.56, route: "/3-3-2-1-dbs-company-admin-resent-to-counter-signatory" },
+    { id: 35, title: "View Details", x: 977.14, y: 2467.63, width: 146.92, height: 173.48, route: "/3-3-2-2-dbs-company-admin-view-details" },
+    { id: 36, title: "Check DBS Application", x: 1129.38, y: 2467.63, width: 185.87, height: 177.02, route: "/3-3-2-3-check-dbs-application" },
+    { id: 37, title: "View History", x: 1352.42, y: 2449.93, width: 189.41, height: 189.41, route: "/3-3-2-4-history" },
+    { id: 38, title: "Signatory Reconcile Details", x: 1554.22, y: 2444.62, width: 228.35, height: 215.96, route: "/3-3-2-5-signatory-reconcile-details" },
+    { id: 39, title: "Incomplete DBS Application", x: 145.15, y: 2719.00, width: 423.07, height: 51.34, route: "/applications/incomplete-list" },
+    { id: 40, title: "Reject DBS Application", x: 70.81, y: 2991.60, width: 198.26, height: 173.48, route: "/3-3-3-1-reject-dbs-application" },
+    { id: 41, title: "View DBS Application Details", x: 290.31, y: 2977.44, width: 150.47, height: 226.58, route: "/3-3-3-2-dbs-application-details" },
+    { id: 42, title: "View History", x: 477.95, y: 2982.75, width: 184.10, height: 159.32, route: "/3-3-3-3-dbs-company-admin-history" },
+    { id: 43, title: "Rejected DBS Application", x: 791.27, y: 2717.23, width: 384.13, height: 46.02, route: "/applications/rejected" },
+    { id: 44, title: "Mark Application Read", x: 716.92, y: 3018.16, width: 235.43, height: 159.32, route: "/3-3-4-1-application-read" },
+    { id: 45, title: "View Details", x: 955.90, y: 3005.77, width: 228.35, height: 169.94, route: "/3-3-4-2-details" },
+    { id: 46, title: "View Results", x: 1304.62, y: 2980.98, width: 224.81, height: 203.57, route: "/3-3-4-3-results" },
+    { id: 47, title: "View History", x: 1540.06, y: 3002.23, width: 242.51, height: 180.56, route: "/3-3-4-4-history" },
+    { id: 48, title: "Application Pending for the DBS", x: 150.47, y: 3251.82, width: 481.49, height: 51.34, route: "/applications/pending-dbs" },
+    { id: 49, title: "DBS Application Requiring Payment", x: 1258.60, y: 3250.05, width: 527.51, height: 61.96, route: "/applications/payment-pending" },
+    { id: 50, title: "Continue DBS Application", x: 81.43, y: 3547.44, width: 226.58, height: 196.49, route: "/3-3-5-1-continue-dbd-application" },
+    { id: 51, title: "View Details", x: 327.48, y: 3543.90, width: 228.35, height: 180.56, route: "/3-3-5-2-details" },
+    { id: 52, title: "View Results", x: 631.95, y: 3524.43, width: 240.74, height: 208.88, route: "/3-3-5-3-results" },
+    { id: 53, title: "View History", x: 885.09, y: 3520.89, width: 224.81, height: 196.49, route: "/3-3-5-4-history" },
+    { id: 54, title: "DBS Application Already Paid For", x: 139.84, y: 3795.27, width: 111.52, height: 136.30, route: "/3-3-7-dbs-application-already-paid-for" },
+    { id: 55, title: "Completed DBS Checks", x: 375.28, y: 3800.58, width: 345.19, height: 46.02, route: "/applications/completed-checks" },
+    { id: 56, title: "Application Pending for Evidence Check", x: 957.67, y: 3798.81, width: 591.24, height: 53.11, route: "/applications/evidence-pending" },
+    { id: 57, title: "Reject DBS Application", x: 306.24, y: 3862.53, width: 182.33, height: 154.01, route: "/3-3-8-1-application-with-dbs-result" },
+    { id: 58, title: "Erased Applications", x: 302.70, y: 4115.67, width: 217.73, height: 180.56, route: "/3-3-8-2-erased-applications" },
+    { id: 59, title: "Continue DBS Application", x: 879.78, y: 4126.29, width: 208.88, height: 169.94, route: "/3-3-9-1-check-dbs-application" },
+    { id: 60, title: "View Details", x: 1111.67, y: 4124.52, width: 194.72, height: 162.86, route: "/3-3-9-2-view-application-details" },
+    { id: 61, title: "View Results", x: 1329.41, y: 4087.35, width: 212.42, height: 194.72, route: "/3-3-9-3-history" },
+    { id: 62, title: "Reject DBS Application", x: 1555.99, y: 4089.12, width: 212.42, height: 205.34, route: "/3-3-9-4-reject-dbs-application" },
+    { id: 63, title: "DBS Certificate Eligible for Reprint", x: 164.63, y: 4335.17, width: 511.58, height: 53.11, route: "/applications/reprint-eligible" },
+    { id: 66, title: "Reprint", x: 69.04, y: 4609.55, width: 192.95, height: 155.78, route: "/3-3-10-1-reprint" },
+    { id: 67, title: "View Application Details", x: 265.53, y: 4618.40, width: 191.18, height: 169.94, route: "/3-3-10-2-view-application-details" },
+    { id: 68, title: "Result", x: 465.56, y: 4623.71, width: 201.80, height: 157.55, route: "/3-3-10-3-results" },
+    { id: 120, title: "DBS Application", x: 130.99, y: 8744.69, width: 251.37, height: 65.50, route: "/5-2-dbs-application" },
+    { id: 121, title: "View Assigned DBS Application", x: 164.63, y: 8820.81, width: 474.41, height: 70.81, route: "/5-2-1-view-assigned-dbs-application" },
+    { id: 122, title: "Fix Issues with DBS Applications", x: 966.52, y: 8819.04, width: 485.03, height: 72.58, route: "/5-2-2-fix-issues-with-applications" },
+    { id: 123, title: "Application Pending for DBS", x: 171.71, y: 9321.77, width: 430.15, height: 63.73, route: "/5-2-3-application-pending-for-dbs" },
+    { id: 124, title: "Rejected DBS Applications", x: 1026.70, y: 9321.77, width: 396.52, height: 60.19, route: "/5-2-4-rejected-dbs-application" },
+    { id: 125, title: "Application Pending Evidence Checker", x: 168.17, y: 9842.20, width: 587.70, height: 69.04, route: "/5-2-5-application-pending-evidence-checker" },
+    { id: 126, title: "Completed DBS Checks-Certificate Posted Out", x: 975.37, y: 9836.89, width: 686.83, height: 65.50, route: "/5-2-6-completed-dbs-checks-certificate-posted-out" },
+    { id: 127, title: "Application with DBS Result", x: 892.17, y: 9932.48, width: 244.28, height: 189.41, route: "/5-2-6-1-application-with-dbs-result" },
+    { id: 128, title: "Erased Applications", x: 943.51, y: 10164.38, width: 228.35, height: 145.15, route: "/5-2-6-2-erased-applications" },
+
+    // ==================== FINANCE ROUTES ====================
+    { id: 17, title: "Spend History for your DBS Checks", x: 1290.46, y: 1159.47, width: 228.35, height: 162.86, route: "/3-1-11-dbs-company-admin-spend-history-for-your-dbs-checks" },
+    { id: 18, title: "Successful Payment to your DBS Account", x: 1570.15, y: 1147.08, width: 228.35, height: 182.33, route: "/3-1-12-dbs-company-admin-successful-payment-to-your-dbs-account" },
+    { id: 64, title: "Spend History For your DBS Checks", x: 816.05, y: 4331.63, width: 426.61, height: 63.73, route: "/finance/spend-history-full" },
+    { id: 65, title: "Successful Payment to your DBS Account", x: 1359.50, y: 4333.40, width: 424.84, height: 61.96, route: "/finance/payments/success" },
+    { id: 69, title: "My Accounts", x: 116.83, y: 4885.70, width: 196.49, height: 61.96, route: "/3-4-my-accounts" },
+    { id: 70, title: "Invoices", x: 148.70, y: 4951.19, width: 136.30, height: 65.50, route: "/3-4-1-invoices" },
+    { id: 71, title: "Transaction", x: 1233.82, y: 4954.74, width: 198.26, height: 65.50, route: "/3-4-3-transaction" },
+    { id: 72, title: "Payments", x: 1566.61, y: 4954.74, width: 168.17, height: 54.88, route: "/3-4-4-payments" },
+    { id: 73, title: "Spent", x: 1235.59, y: 5218.49, width: 104.44, height: 53.11, route: "/3-4-5-spent" },
+    { id: 74, title: "User Spent", x: 1571.92, y: 5218.49, width: 173.48, height: 56.65, route: "/3-4-7-user-spent" },
+    { id: 75, title: "Create Invoice", x: 118.60, y: 5029.08, width: 185.87, height: 145.15, route: "/3-4-1-1-create-invoice" },
+    { id: 76, title: "Invoice Listing", x: 481.49, y: 5004.30, width: 201.80, height: 159.32, route: "/3-4-1-2-invoice-listing" },
+    { id: 77, title: "Invoices", x: 145.15, y: 5491.10, width: 141.61, height: 61.96, route: "/3-4-2-adjustment" },
+    { id: 78, title: "Adjust DBS Fee to Admin Fee", x: 354.04, y: 5484.02, width: 221.27, height: 164.63, route: "/3-4-2-1-adjust-dbs-fee-to-admin-fee" },
+    { id: 79, title: "Adjust Admin Fee to DBS Fee", x: 720.46, y: 5482.25, width: 253.14, height: 164.63, route: "/3-4-2-2-adjust-admin-fee-to-dbs-fee" },
+    { id: 80, title: "Refund", x: 1106.36, y: 5492.87, width: 118.60, height: 61.96, route: "/3-4-6-refund" },
+    { id: 81, title: "Create Refund", x: 1124.06, y: 5563.68, width: 235.43, height: 150.47, route: "/3-4-6-1-create-refund" },
+    { id: 82, title: "List of Refunded Amounts", x: 1472.79, y: 5553.06, width: 283.23, height: 161.09, route: "/3-4-6-2-list-of-refunded-amounts" },
+    { id: 83, title: "Balance Details", x: 1109.90, y: 5749.55, width: 235.43, height: 54.88, route: "/3-4-8-balance-details" },
+    { id: 84, title: "Funds Deposited", x: 1109.90, y: 5807.96, width: 251.37, height: 157.55, route: "/3-4-8-1-funds-deposited" },
+    { id: 85, title: "Funds Remaining", x: 1488.72, y: 5788.49, width: 258.45, height: 177.02, route: "/3-4-8-2-funds-remaining" },
+
+    // ==================== TRAINING & SUPPORT ROUTES ====================
+    { id: 86, title: "Trainings", x: 118.60, y: 6043.40, width: 143.38, height: 65.50, route: "/3-5-trainings" },
+    { id: 87, title: "Report", x: 902.79, y: 6043.40, width: 123.91, height: 61.96, route: "/3-6-report" },
+    { id: 88, title: "Notifications", x: 1416.14, y: 6045.17, width: 203.57, height: 61.96, route: "/3-7-notifications" },
+    { id: 89, title: "Support", x: 115.06, y: 6423.98, width: 157.55, height: 63.73, route: "/3-8-support" },
+    { id: 91, title: "Help (FAQs)", x: 116.83, y: 6567.37, width: 212.42, height: 168.17, route: "/3-8-1-help" },
+    { id: 92, title: "User Manual", x: 423.07, y: 6570.91, width: 223.04, height: 162.86, route: "/3-8-2-user-manual" },
+
+    // ==================== COUNTER SIGNATURE ROUTES ====================
+    { id: 93, title: "Counter Signature", x: 90.28, y: 6930.26, width: 277.92, height: 65.50, route: "/4-counter-signatory" },
+    { id: 94, title: "Dashboard", x: 130.99, y: 7008.14, width: 175.25, height: 74.35, route: "/4-1-dashboard" },
+    { id: 95, title: "Actions", x: 435.46, y: 7043.55, width: 130.99, height: 47.79, route: "/4-1-3-dbs-app-list" },
+    { id: 96, title: "DBS Applications List", x: 69.04, y: 7160.38, width: 214.19, height: 185.87, route: "/4-1-1-dbs-application-to-be-reviewed" },
+    { id: 97, title: "Post Comment on Applications", x: 630.18, y: 7110.81, width: 157.55, height: 150.47, route: "/4-1-2-post-comment-on-applications" },
+    { id: 98, title: "View Assigned Applications", x: 920.49, y: 7013.45, width: 407.14, height: 60.19, route: "/4-2-view-assigned-applications" },
+    { id: 99, title: "Companies", x: 870.93, y: 7071.87, width: 201.80, height: 152.24, route: "/4-2-1-companies" },
+    { id: 101, title: "Post Comment on Application", x: 129.22, y: 7470.16, width: 456.71, height: 67.27, route: "/4-3-post-comment-on-application" },
+    { id: 102, title: "Companies", x: 129.22, y: 7546.28, width: 189.41, height: 155.78, route: "/4-3-1-companies" },
+    { id: 104, title: "DBS Applications List", x: 414.22, y: 7599.38, width: 231.89, height: 201.80, route: "/4-3-3-dbs-applications-list" },
+
+    // ==================== EVIDENCE CHECKER ROUTES ====================
+    { id: 105, title: "Evidence checker", x: 99.13, y: 8056.09, width: 269.07, height: 67.27, route: "/5-evidence-checker" },
+    { id: 106, title: "Dashboard", x: 116.83, y: 8130.44, width: 184.10, height: 70.81, route: "/5-1-dashboard" },
+    { id: 107, title: "Assigned Applicants for DBS", x: 81.43, y: 8210.10, width: 217.73, height: 168.17, route: "/5-1-1-assigned-applicants-for-dbs" },
+    { id: 108, title: "Incomplete DBS Application", x: 361.12, y: 8183.54, width: 217.73, height: 205.34, route: "/5-1-4-incomplete-dbs-application" },
+    { id: 109, title: "Application Pending for the DBS", x: 660.28, y: 8194.17, width: 231.89, height: 210.65, route: "/5-1-7-application-pending-for-the-dbs" },
+    { id: 110, title: "DBS Application already Paid For", x: 952.36, y: 8194.17, width: 230.12, height: 208.88, route: "/5-1-8-dbs-application-already-paid-for" },
+    { id: 111, title: "Completed DBS checks Certificate Posted Out", x: 1244.44, y: 8192.40, width: 233.66, height: 200.03, route: "/5-1-9-completed-dbs-checks-certificate-posted-out" },
+    { id: 112, title: "DBS Certificate Eligible for reprint (if not received)", x: 1520.58, y: 8190.62, width: 260.22, height: 194.72, route: "/5-1-10-dbs-certificate-eligible-for-reprintif-not-received" },
+    { id: 113, title: "Application Pending Evidence Check", x: 74.35, y: 8378.26, width: 198.26, height: 157.55, route: "/5-1-2-application-pending-evidence-check" },
+    { id: 114, title: "Reject DBS Application", x: 318.63, y: 8381.80, width: 231.89, height: 157.55, route: "/5-1-5-reject-dbs-application" },
+
+    { id: 115, title: "Fix Issues with Applications", x: 65.50, y: 8532.27, width: 205.34, height: 166.40, route: "/5-1-3-fix-issues-with-applications" },
+    { id: 116, title: "DBS application requirement payment", x: 308.01, y: 8537.58, width: 215.96, height: 169.94, route: "/5-1-6-dbs-application-requirement-payment" },
+    { id: 117, title: "Attributes", x: 639.04, y: 8441.99, width: 159.32, height: 72.58, route: "/5-1-6-1-action-attributes" },
+    { id: 118, title: "DBS Application Already Paid for", x: 939.97, y: 8450.84, width: 247.83, height: 54.88, route: "/5-1-8-1-dbs-application-already-paid" },
+    { id: 119, title: "DBS Certificate Eligible for Reprint (If Not Received)", x: 1332.95, y: 8440.22, width: 440.77, height: 72.58, route: "/5-1-10-1-dbs-certificate-eligible-for-reprintif-not-received" }
+  ];
+
+  const handleAreaClick = (route: string) => {
+    if (isMounted) {
+      router.push(route);
+    }
+  };
+
+  if (!isMounted) {
+    return <div>Loading...</div>;
+  }
+
+  return (
+    <Box sx={{ position: 'relative', width: '100%', height: 'auto' }}>
+      <Stack px={5} py={3} gap={'40px'}>
+        <Box sx={{ width: '100%', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+          <Box display='flex' alignItems='center' gap={2}>
+            <Image
+              src={CommonBackIcon}
+              alt={"backIcon"}
+              width={40}
+              height={40}
+              onClick={() => {
+                router.replace("/dbs-features");
+              }}
+              style={{ cursor: "pointer" }}
+            />
+            <Typography
+              variant="h5"
+              color="#5A5867"
+              fontSize={{ xs: "24", sm: "26px", md: "32px" }}
+              fontWeight={{ md: 600, xs: 500 }}
+              sx={{
+                fontFamily: "inherit",
+                lineHeight: '1.25',
+              }}
+            >
+              Check My DBS
+            </Typography>
+          </Box>
+          <Box display="flex" alignItems="center" mr={2}>
+            <Typography
+              component="span"
+              fontSize={{ xs: "1rem", sm: "1.2rem", md: "1.8rem" }}
+              fontWeight={600}
+              color="#5A5867"
+              sx={{ mr: 1 }}
+            >
+              Color Legend
+            </Typography>
+            <KeyboardArrowDownIcon
+              onClick={toggleDropdown}
+              sx={{
+                fontSize: { xs: 28, md: 30 },
+                color: "#5A5867",
+                border: "2px solid",
+                borderRadius: "40px",
+                cursor: "pointer",
+              }}
+            />
+          </Box>
+          {isOpen && (
+            <>
+              <Box
+                sx={{
+                  position: "fixed",
+                  top: 0,
+                  left: 0,
+                  width: "100vw",
+                  height: "100vh",
+                  background: "rgba(0,0,0,0.3)",
+                  zIndex: 1200,
+                }}
+                onClick={() => setIsOpen(false)}
+              />
+              <Box
+                sx={{
+                  position: "absolute",
+                  top: "150px",
+                  right: "50px",
+                  background: "#fff",
+                  borderRadius: "10px",
+                  boxShadow: 3,
+                  p: 1,
+                  zIndex: 1300,
+                }}
+                onClick={(e) => e.stopPropagation()}
+              >
+                <Image
+                  src={colorLegends1}
+                  alt="Color Legend"
+                  width={300}
+                  height={200}
+                  style={{ width: "100%", height: "auto" }}
+                />
+              </Box>
+            </>
+          )}
+        </Box>
+      </Stack>
+      <Image
+        src={IGProductDiagramRelease1ChekcMyDBSImage1}
+        alt="DBS Product Diagram"
+        width={1864}
+        height={12953}
+        style={{ width: '100%', height: 'auto' }}
+      />
+
+      {areas.map((area) => (
+        <Tooltip key={area.id} title={area.title} arrow>
+          <Box
+            component="div"
+            sx={{
+              position: 'absolute',
+              left: `${(area.x / 1864) * 100}%`,
+              top: `${(area.y / 12953) * 100}%`,
+              width: `${(area.width / 1864) * 100}%`,
+              height: `${(area.height / 12953) * 100}%`,
+              backgroundColor: hoveredArea === area.id ? 'rgba(255, 255, 255, 0.2)' : 'transparent',
+              border: hoveredArea === area.id ? '2px solid white' : 'none',
+              cursor: 'pointer',
+              transition: 'all 0.2s ease',
+              '&:hover': {
+                backgroundColor: 'rgba(255, 255, 255, 0.2)',
+                border: '2px solid white',
+              },
+            }}
+            onMouseEnter={() => setHoveredArea(area.id)}
+            onMouseLeave={() => setHoveredArea(null)}
+            onClick={() => handleAreaClick(area.route)}
+          />
+        </Tooltip>
+      ))}
+    </Box>
+  );
+};
+
+export default InteractiveDBSDiagram;

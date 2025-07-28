@@ -7,9 +7,343 @@ const assetsDir = path.join(__dirname, "src", "assets");
 
 // ✅ Corrected: Use "title" instead of "tile"
 const pages = [
+  
   {
-    title: "FCA Overview",
-    ButtonRoute: " Removal to and from Scotland AC",
+    title: "3.3.4.2 Details",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "3.3.4.3 Results",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "3.3.4.4 History",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "3.3.5 Application Pending for the DBS",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "3.3.5.1 Continue DBD Application",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "3.3.5.2 Details",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "3.3.5.3 Results",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "3.3.5.4 History",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "3.3.6 DBS Application Requiring Payment List",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "3.3.7 DBS Application Already Paid For",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "3.3.8 Completed DBS Checks",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "3.3.8.1 Application with DBS Result",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "3.3.8.2 Erased Applications",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "3.3.9 App Pending for Evidence Check",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "3.3.9.1   Check DBS - Application",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "3.3.9.2  View Application Details",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "3.3.9.3 History",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "3.3.9.4 Reject DBS Application",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "3.3.10 DBS Certificate Eligible for Reprint",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "3.3.10.1  Reprint",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "3.3.10.2 View Application Details",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "3.3.10.3 Results",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "3.3.11 DBS Company Admin Spend History for your DBS Checks",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "3.3.12 DBS Company Admin Successful Payments to Your DBS Accounts",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "3.4 My Accounts",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "3.4.1 Invoices",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: " 3.4.1.1 Create Invoice",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "3.4.1.2  Invoice Listing",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "3.4.2 Adjustment",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+
+  {
+    title: "3.4.2.1 Adjust DBS Fee to Admin Fee",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "3.4.2.2 Adjust Admin Fee to DBS Fee",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "3.4.3 Transaction",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "3.4.4 Payments",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "3.4.5 Spent",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "3.4.6 Refund",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "3.4.6.1 Create Refund",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "3.4.6.2 List of Refunded Amounts",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "3.4.7 User Spent",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "3.4.8 Balance Details",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "3.4.8.1 Funds Deposited",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "3.4.8.2 Funds Remaining",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "3.5 Trainings",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "3.6 Report",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "3.7 Notifications",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "3.8 Support",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "3.8.1 Help",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "3.8.2 User Manual",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "3.9 Header",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "4. Counter Signatory",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "4.1 Dashboard",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "4.1.1 DBS Application To Be Reviewed",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "4 .1.2 Post Comment on Applications",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "4.1.3 DBS App List",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "4.2 View Assigned Applications",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "4.2.1 Companies",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "4.2.2 Individual User",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "4.3 Post Comment on Application",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "4.3.1 Companies",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "4.3.2  Individual User",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "4.3.3  DBS Applications List",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "5. Evidence Checker",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "5.1 Dashboard",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "5.1.1 Assigned Applicants for DBS",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "5.1.2 Application Pending Evidence Check",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "5.1.3 Fix issues with Applications",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "5.1.4 Incomplete DBS Application",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "5.1.5 Reject DBS Application",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "5.1.6 DBS Application requirement payment",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "5.1.6.1 Action Attributes",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "5.1.7 Application Pending for the DBS",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "5.1.8 DBS Application already Paid For",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "5.1.8.1 DBS Application already Paid",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "5.1.9 Completed DBS checks Certificate posted out",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "5.1.10 DBS Certificate Eligible for reprint(if not received)",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "5.1.10.1 DBS Certificate Eligible for reprint(if not received)",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "5.2 DBS Application",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "5.2.1 View Assigned DBS Application",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "5.2.2 Fix Issues with Applications",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "5.2.3 Application Pending for DBS",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "5.2.4 Rejected DBS Application",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "5.2.5 Application Pending Evidence Checker",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "5.2.6 Completed DBS Checks-Certificate Posted Out",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "5.2.6.1 Application with DBS Result",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
+  },
+  {
+    title: "5.2.6.2 Erased Applications",
+    ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",
   },
 ];
 
