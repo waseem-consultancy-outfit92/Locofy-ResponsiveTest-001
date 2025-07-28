@@ -206,7 +206,7 @@ const InteractiveDBSDiagram = () => {
               width={40}
               height={40}
               onClick={() => {
-                router.replace("/bs-features");
+                router.replace("/dbs-features");
               }}
               style={{ cursor: "pointer" }}
             />
