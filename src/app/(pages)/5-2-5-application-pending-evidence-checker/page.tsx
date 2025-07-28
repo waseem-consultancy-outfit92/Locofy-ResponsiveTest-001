@@ -1,17 +1,17 @@
-import { 525ApplicationPendingEvidenceCheckerImage } from "@/assets";
+import { ApplicationPendingEvidenceCheckerImage525 } from "@/assets";
 
 import AmendmentComparison from "@/components/amendment-comparison";
 import React from "react";
 
-const 525ApplicationPendingEvidenceCheckerPage = () => {
+const ApplicationPendingEvidenceCheckerPage525 = () => {
   return (
     <AmendmentComparison
       pageTitle={`Mental Health / Mental Health  Act 1983 / Part V / 5.2.5 Application Pending Evidence Checker`}
-      src={525ApplicationPendingEvidenceCheckerImage}
-      backRoute="/"
+      src={ApplicationPendingEvidenceCheckerImage525}
+      backRoute="/ig-product-diagramrelease-1-chekc-my-dbs"
       amendmentButtonRoute="/ig-product-diagramrelease-1-chekc-my-dbs"
     />
   );
 };
 
-export default 525ApplicationPendingEvidenceCheckerPage;
+export default ApplicationPendingEvidenceCheckerPage525;

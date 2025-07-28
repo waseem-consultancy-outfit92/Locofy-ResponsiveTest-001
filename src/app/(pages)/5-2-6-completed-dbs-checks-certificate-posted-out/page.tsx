@@ -1,17 +1,17 @@
-import { 526CompletedDbsChecksCertificatePostedOutImage } from "@/assets";
+import { CompletedDbsChecksCertificatePostedOutImage526 } from "@/assets";
 
 import AmendmentComparison from "@/components/amendment-comparison";
 import React from "react";
 
-const 526CompletedDbsChecksCertificatePostedOutPage = () => {
+const CompletedDbsChecksCertificatePostedOutPage526 = () => {
   return (
     <AmendmentComparison
       pageTitle={`Mental Health / Mental Health  Act 1983 / Part V / 5.2.6 Completed DBS Checks-Certificate Posted Out`}
-      src={526CompletedDbsChecksCertificatePostedOutImage}
-      backRoute="/"
+      src={CompletedDbsChecksCertificatePostedOutImage526}
+      backRoute="/ig-product-diagramrelease-1-chekc-my-dbs"
       amendmentButtonRoute="/ig-product-diagramrelease-1-chekc-my-dbs"
     />
   );
 };
 
-export default 526CompletedDbsChecksCertificatePostedOutPage;
+export default CompletedDbsChecksCertificatePostedOutPage526;

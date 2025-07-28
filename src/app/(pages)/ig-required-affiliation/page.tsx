@@ -10,7 +10,7 @@ import {
     Stack
 } from '@mui/material';
 import Link from 'next/link';
-import { colorLegends, CommonBackIcon } from '@/assets/common-assets';
+import { colorLegends1, CommonBackIcon } from '@/assets/common-assets';
 import { IGRequiredAffiliationImage } from '@/assets';
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
@@ -103,7 +103,7 @@ const IGRequiredAffiliation = () => {
                             color="#5A5867"
                             sx={{ mr: 1 }}
                         >
-                            Color Legend
+                            Color Legends (key)
                         </Typography>
                         <KeyboardArrowDownIcon
                             onClick={toggleDropdown}
@@ -144,7 +144,7 @@ const IGRequiredAffiliation = () => {
                                 onClick={(e) => e.stopPropagation()}
                             >
                                 <Image
-                                    src={colorLegends}
+                                    src={colorLegends1}
                                     alt="Color Legend"
                                     width={300}
                                     height={200}

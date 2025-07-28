@@ -1,17 +1,17 @@
-import { 517ApplicationPendingForTheDbsImage } from "@/assets";
+import { ApplicationPendingForTheDbsImage517 } from "@/assets";
 
 import AmendmentComparison from "@/components/amendment-comparison";
 import React from "react";
 
-const 517ApplicationPendingForTheDbsPage = () => {
+const ApplicationPendingForTheDbsPage517 = () => {
   return (
     <AmendmentComparison
       pageTitle={`Mental Health / Mental Health  Act 1983 / Part V / 5.1.7 Application Pending for the DBS`}
-      src={517ApplicationPendingForTheDbsImage}
-      backRoute="/"
+      src={ApplicationPendingForTheDbsImage517}
+      backRoute="/ig-product-diagramrelease-1-chekc-my-dbs"
       amendmentButtonRoute="/ig-product-diagramrelease-1-chekc-my-dbs"
     />
   );
 };
 
-export default 517ApplicationPendingForTheDbsPage;
+export default ApplicationPendingForTheDbsPage517;
