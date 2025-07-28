@@ -1,13 +1,13 @@
 "use client";
 import { Box, Stack, Typography } from "@mui/material";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { useCallback } from "react";
 import { useRouter } from "next/navigation";
 import { CommonBackIcon } from "@/assets/common-assets";
 import { CheckboxForm } from "../checkbox-form";
 
 interface CommonPageProps {
-  src: any[]; // Now expects an array of images
+src: StaticImageData[]; // Now expects an array of images
   backRoute?: string;
   pageTitle: string;
   onChange?: (selectedValue: string, page: string) => void;

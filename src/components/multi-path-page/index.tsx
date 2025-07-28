@@ -140,7 +140,7 @@ const MultiPathPage: React.FC<MultiPathPageProps> = ({
               }}
             >
               <Image
-                src={item.icon}
+                src={item.icon as StaticImageData}
                 alt={item.title ?? item.key}
                 width={100}
                 height={200}

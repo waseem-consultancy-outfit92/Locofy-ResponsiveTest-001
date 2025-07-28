@@ -3,7 +3,6 @@ import { Box, Button } from "@mui/material";
 import Image from "next/image";
 import { useCallback } from "react";
 import { useRouter } from "next/navigation";
-import { CheckboxForm } from "../checkbox-form";
 
 interface AreaItem {
     alt: string;

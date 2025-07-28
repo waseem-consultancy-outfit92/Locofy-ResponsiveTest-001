@@ -4,7 +4,7 @@ import React from "react";
 import { web3CryptoCategories1, web3CryptoCategories10, web3CryptoCategories11, web3CryptoCategories12, web3CryptoCategories13, web3CryptoCategories14, web3CryptoCategories15, web3CryptoCategories16, web3CryptoCategories2, web3CryptoCategories3, web3CryptoCategories4, web3CryptoCategories5, web3CryptoCategories6, web3CryptoCategories7, web3CryptoCategories8, web3CryptoCategories9, } from "@/assets";
 import { MultiPathPage } from "@/components";
 
-const arrayData: any = [
+const arrayData = [
   {
     key: "1",
     icon: web3CryptoCategories1,

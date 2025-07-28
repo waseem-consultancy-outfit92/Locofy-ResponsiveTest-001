@@ -1,29 +1,30 @@
 
 import { web3Icon1, web3Icon2, web3Icon3, web3Icon4 } from "@/assets";
-import { CommonPage, MultiPathPage } from "@/components";
+import { MultiPathPage } from "@/components";
 import React from "react";
 
-const arrayData: any = [
+
+const arrayData = [
   {
-    id: 1,
+    key: "1",
     icon: web3Icon1,
     title: "Crypto Web3 Introduction",
     link: "/web3-introduction",
   },
   {
-    id: 2,
+    key: "2",
     icon: web3Icon2,
     title: "Categories",
     link: "/web3-applications-in-crypto-categories"
   },
   {
-    id: 3,
+    key: "3",
     icon: web3Icon3,
     title: "Hash in Crypto",
     link: "/hash-in-crypto",
   },
   {
-    id: 4,
+    key: "4",
     icon: web3Icon4,
     title: "Gas in Crypto",
     link: "/gas-in-crypto",
