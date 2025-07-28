@@ -60,13 +60,14 @@ const ScopeOfRegistrationPageData = [
 ];
 
 const ScopeOfRegistrationPage = () => {
-  return (
-    <MultiPathOnePage
-      arrayData={ScopeOfRegistrationPageData}
-      pageTitle="Scope of registration"
-      backRoute="/"
-    />
-  );
+    return (
+        <MultiPathOnePage
+            arrayData={ScopeOfRegistrationPageData}
+            pageTitle="Technical Specifications"
+            backRoute="/aqse-documents"
+            referenceDocLink="/http://extension//peoambfhpepnhlnjdljaicnliicigcpc/content-script/index.html?file=https%253A%252F%252Forcalo-my.sharepoint.com%252Fpersonal%252Fshanulhaq_consultancyoutfit_co_uk%252FDocuments%252FMicrosoft%252520Teams%252520Chat%252520Files%252FAccess_Rulebook_v1_2_April_2023_3936b48356.pdf"
+        />
+    );
 };
 
 export default ScopeOfRegistrationPage;

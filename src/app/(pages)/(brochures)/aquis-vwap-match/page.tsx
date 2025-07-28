@@ -41,13 +41,13 @@ const AquisVWAPMatchPage = () => {
             width={40}
             height={40}
             onClick={() => {
-              router.replace("/market-data");
+              router.replace("/aqse-documents");
             }}
             style={{ cursor: "pointer" }}
           />
           <Box
             component={Link}
-            href={"/"}
+            href={"https://aqx-web-prod-s3-public-read.s3.eu-west-2.amazonaws.com/AVM_Brochure_3_035fdfff9d.pdf"}
             sx={{
               color: "#0246BC",
               fontSize: "40px",
