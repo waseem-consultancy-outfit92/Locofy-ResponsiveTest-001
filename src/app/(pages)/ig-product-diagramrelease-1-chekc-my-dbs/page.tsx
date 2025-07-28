@@ -206,7 +206,7 @@ const InteractiveDBSDiagram = () => {
               width={40}
               height={40}
               onClick={() => {
-                router.replace("/identity-gram");
+                router.replace("/bs-features");
               }}
               style={{ cursor: "pointer" }}
             />
