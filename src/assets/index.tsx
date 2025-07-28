@@ -237,6 +237,9 @@ export { default as DashboardImage41 } from "./41DashboardImage.svg";
 
 
 export { default as DbsApplicationToBeReviewedImage411 } from "./411DbsApplicationToBeReviewedImage.svg";
+
+
+
 export { default as PostCommentOnApplicationsImage412 } from "./412PostCommentOnApplicationsImage.svg";
 export { default as DbsAppListImage413 } from "./413DbsAppListImage.svg";
 export { default as ViewAssignedApplicationsImage42 } from "./42ViewAssignedApplicationsImage.svg";
@@ -263,6 +266,12 @@ export { default as DbsCertificateEligibleForReprintIfNotReceivedImage5110 } fro
 export { default as DbsCertificateEligibleForReprintIfNotReceivedImage51101 } from "./51101DbsCertificateEligibleForReprintIfNotReceivedImage.svg";
 export { default as DbsApplicationImage52 } from "./52DbsApplicationImage.svg";
 export { default as ViewAssignedDbsApplicationImage521 } from "./521ViewAssignedDbsApplicationImage.svg";
+
+
+
+
+
+
 export { default as FixIssuesWithApplicationsImage522 } from "./522FixIssuesWithApplicationsImage.svg";
 export { default as ApplicationPendingForDbsImage523 } from "./523ApplicationPendingForDbsImage.svg";
 export { default as RejectedDbsApplicationImage524 } from "./524RejectedDbsApplicationImage.svg";
