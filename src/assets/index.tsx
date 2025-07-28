@@ -603,3 +603,5 @@ export { default as img1WhoNeedsToRegisterImage } from "./img1WhoNeedsToRegister
 export { default as img2WhoNeedsToRegisterImage } from "./img2WhoNeedsToRegisterImage.svg";
 export { default as img3WhoNeedsToRegisterImage } from "./img3WhoNeedsToRegisterImage.svg";
 export { default as img4WhoNeedsToRegisterImage } from "./img4WhoNeedsToRegisterImage.svg";
+export { default as sequenceDiagram } from "./sequenceDiagram.png";
+export { default as sequenceDiagramSvg } from "./sequenceDiagram.svg";
