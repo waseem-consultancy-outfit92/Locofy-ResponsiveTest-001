@@ -75,7 +75,7 @@ const LegalAgreementsPage = () => {
     <MultiPathPage
       arrayData={LegalAgreementsPageData}
       pageTitle="Legal Agreements"
-      backRoute="/FCA Sequence Diagram"
+      backRoute="/aqse-documents"
     />
   );
 };

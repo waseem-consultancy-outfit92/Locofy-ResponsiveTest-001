@@ -41,7 +41,7 @@ const AquisVWAPMatchPage = () => {
             width={40}
             height={40}
             onClick={() => {
-              router.replace("/market-data");
+              router.replace("/aqse-documents");
             }}
             style={{ cursor: "pointer" }}
           />

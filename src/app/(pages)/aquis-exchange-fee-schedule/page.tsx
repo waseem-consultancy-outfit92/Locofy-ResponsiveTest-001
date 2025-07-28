@@ -105,7 +105,7 @@ const AquisExchangeFeeSchedule: React.FC = () => {
             textDecoration: "underline",
             color: "#0246BC",
             fontWeight: "semi-bold",
-            fontSize: 40,
+            fontSize: 20,
           }}
           onClick={() => {
             window.open(
