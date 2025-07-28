@@ -1,7 +1,7 @@
 "use client";
 import { Box, Stack, Typography, Button } from "@mui/material";
 import Image, { StaticImageData } from "next/image";
-import { useCallback } from "react";
+import { useCallback, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { CommonBackIcon } from "@/assets/common-assets";
 import { CheckboxForm } from "../checkbox-form";
@@ -44,18 +44,26 @@ const MultiImagesAmendmentComparisonBtn: React.FC<CommonPageProps> = ({
     router.push(backRoute);
   }, [router, backRoute]);
 
-  const onAmendmentButtonClick1 = useCallback(() => {
-    const targetUrl = downloadUrl || amendmentButtonRoute1;
-
-    if (targetUrl) {
-      const newTab = window.open(targetUrl, "_blank");
-      if (!newTab) {
-        alert("Popup blocked! Please allow popups for this site.");
-      }
-    } else {
-      console.warn("No valid URL provided.");
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      console.log(window.innerWidth);
     }
-  }, [downloadUrl, amendmentButtonRoute1]);
+  }, []);
+
+
+const onAmendmentButtonClick1 = useCallback(() => {
+  const targetUrl = downloadUrl || amendmentButtonRoute1;
+
+  if (typeof window !== "undefined" && targetUrl) {
+    const newTab = window.open(targetUrl, "_blank");
+    if (!newTab) {
+      alert("Popup blocked! Please allow popups for this site.");
+    }
+  } else {
+    console.warn("No valid URL provided or running on server.");
+  }
+}, [downloadUrl, amendmentButtonRoute1]);
+
 
   // const onAmendmentButtonClick1 = useCallback(() => {
   //   router.push(amendmentButtonRoute1);
