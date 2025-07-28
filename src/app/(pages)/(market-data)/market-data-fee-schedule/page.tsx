@@ -9,6 +9,7 @@ import { MarketDataFeeScheduleImage } from "@/assets";
 import { Stack } from "@mui/material";
 import { CommonBackIcon } from "@/assets/common-assets";
 import { useRouter } from "next/navigation";
+import { CheckboxForm } from "@/components/checkbox-form";
 
 const MarketDataFeeSchedulePage = () => {
   const router = useRouter();
@@ -83,7 +84,23 @@ const MarketDataFeeSchedulePage = () => {
           Fee Schedule (Market Data) - Effective June 2025
         </Typography>
       </Stack>
-      <Box sx={{ position: "relative", width: "100%", height: "auto" }}>
+      <Stack
+        direction={"row"}
+        justifyContent="space-between"
+        alignItems="center"
+      >
+        <Box mb={{ md: 4, sm: 3, xs: 2 }}>
+          <CheckboxForm onChange={() => {}} />
+        </Box>
+      </Stack>
+      <Box
+        sx={{
+          position: "relative",
+          width: "100%",
+          height: "auto",
+          marginTop: "0px",
+        }}
+      >
         <Image
           src={MarketDataFeeScheduleImage}
           alt="Fee Schedule (Market Data) - Effective June 2025"

@@ -9,6 +9,7 @@ import { MarketDataTransparencyDisclosureImage } from "@/assets";
 import { Stack } from "@mui/material";
 import { CommonBackIcon } from "@/assets/common-assets";
 import { useRouter } from "next/navigation";
+import { CheckboxForm } from "@/components/checkbox-form";
 
 const MarketDataTransparencyDisclosurePage = () => {
   const router = useRouter();
@@ -84,7 +85,23 @@ const MarketDataTransparencyDisclosurePage = () => {
           AQUIS EXCHANGE EUROPE MARKET DATA TRANSPARENCY DISCLOSURE 2024
         </Typography>
       </Stack>
-      <Box sx={{ position: "relative", width: "100%", height: "auto" }}>
+      <Stack
+        direction={"row"}
+        justifyContent="space-between"
+        alignItems="center"
+      >
+        <Box mb={{ md: 4, sm: 3, xs: 2 }}>
+          <CheckboxForm onChange={() => {}} />
+        </Box>
+      </Stack>
+      <Box
+        sx={{
+          position: "relative",
+          width: "100%",
+          height: "auto",
+          marginTop: "0px",
+        }}
+      >
         <Image
           src={MarketDataTransparencyDisclosureImage}
           alt="AQUIS EXCHANGE EUROPE  MARKET DATA TRANSPARENCY  DISCLOSURE 2024"
