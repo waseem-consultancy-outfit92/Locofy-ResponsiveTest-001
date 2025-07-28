@@ -70,7 +70,7 @@ for (const {
   const pascal = toPascalCase(title.replace(/ & /g, ""));
   if (!kebabBase || !pascal) {
     console.log(
-      `[SKIP] Could not generate valid names for title: '${title}'. Skipping.`,
+      `[SKIP] Could not generate valid names for title: '${title}'. Skipping.`
     );
     continue;
   }
@@ -87,13 +87,13 @@ for (const {
   }
   if (dirSuffix >= maxTries) {
     console.log(
-      `[ERROR] Too many duplicate directories for '${title}'. Skipping.`,
+      `[ERROR] Too many duplicate directories for '${title}'. Skipping.`
     );
     continue;
   }
   if (finalKebab !== kebabBase) {
     console.log(
-      `Directory for page '${title}' already exists. Created: ${finalKebab}`,
+      `Directory for page '${title}' already exists. Created: ${finalKebab}`
     );
   }
   if (!fs.existsSync(dir)) {
@@ -136,7 +136,7 @@ for (const {
         if (indexContent.includes(imageExport.trim())) {
           shouldWriteExport = false;
           console.log(
-            `Export for image '${imageName}' already exists in index.tsx. Skipping export.`,
+            `Export for image '${imageName}' already exists in index.tsx. Skipping export.`
           );
         }
       } catch (err) {
@@ -151,7 +151,7 @@ for (const {
       } catch (err) {
         console.log(
           `[ERROR] Failed to append export to index.tsx:`,
-          err.message,
+          err.message
         );
       }
     }
@@ -174,7 +174,7 @@ const ${pascal}PageData = [
     link: "${item.link}",
     icon: ${item.icon},
     title: "${item.title}",
-  }`,
+  }`
     )
     .join(",\n  ")}
 ];
@@ -202,5 +202,5 @@ export default ${pascal}Page;
 }
 
 console.log(
-  "Dynamic MultiPath pages with fixed image names, titles, links, and image exports have been created.",
+  "Dynamic MultiPath pages with fixed image names, titles, links, and image exports have been created."
 );
