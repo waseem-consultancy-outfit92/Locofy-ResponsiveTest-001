@@ -1,17 +1,18 @@
-import { 411DbsApplicationToBeReviewedImage } from "@/assets";
+import { DbsApplicationToBeReviewedImage411 } from "@/assets";
 
 import AmendmentComparison from "@/components/amendment-comparison";
+import AmendmentComparisonNoBtn from "@/components/amendment-comparison-no-btn";
 import React from "react";
 
-const 411DbsApplicationToBeReviewedPage = () => {
+const DbsApplicationToBeReviewedPage411 = () => {
   return (
-    <AmendmentComparison
+    <AmendmentComparisonNoBtn
       pageTitle={`Mental Health / Mental Health  Act 1983 / Part V / 4.1.1 DBS Application To Be Reviewed`}
-      src={411DbsApplicationToBeReviewedImage}
-      backRoute="/"
+      src={DbsApplicationToBeReviewedImage411}
+      backRoute="/ig-product-diagramrelease-1-chekc-my-dbs"
       amendmentButtonRoute="/ig-product-diagramrelease-1-chekc-my-dbs"
     />
   );
 };
 
-export default 411DbsApplicationToBeReviewedPage;
+export default DbsApplicationToBeReviewedPage411;

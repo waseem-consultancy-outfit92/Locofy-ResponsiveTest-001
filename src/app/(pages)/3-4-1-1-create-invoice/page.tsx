@@ -1,17 +1,17 @@
-import { 3411CreateInvoiceImage } from "@/assets";
+import { CreateInvoiceImage3411 } from "@/assets";
 
-import AmendmentComparison from "@/components/amendment-comparison";
+import AmendmentComparisonNoBtn from "@/components/amendment-comparison-no-btn";
 import React from "react";
 
-const 3411CreateInvoicePage = () => {
+const CreateInvoicePage3411 = () => {
   return (
-    <AmendmentComparison
+    <AmendmentComparisonNoBtn
       pageTitle={`Mental Health / Mental Health  Act 1983 / Part V /  3.4.1.1 Create Invoice`}
-      src={3411CreateInvoiceImage}
+      src={CreateInvoiceImage3411}
       backRoute="/"
       amendmentButtonRoute="/ig-product-diagramrelease-1-chekc-my-dbs"
     />
   );
 };
 
-export default 3411CreateInvoicePage;
+export default CreateInvoicePage3411;

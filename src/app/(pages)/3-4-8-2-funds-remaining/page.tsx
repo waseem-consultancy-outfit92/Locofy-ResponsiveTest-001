@@ -1,17 +1,18 @@
-import { 3482FundsRemainingImage } from "@/assets";
+import { FundsRemainingImage3482 } from "@/assets";
 
 import AmendmentComparison from "@/components/amendment-comparison";
+import AmendmentComparisonNoBtn from "@/components/amendment-comparison-no-btn";
 import React from "react";
 
-const 3482FundsRemainingPage = () => {
+const FundsRemainingPage3482 = () => {
   return (
-    <AmendmentComparison
+    <AmendmentComparisonNoBtn
       pageTitle={`Mental Health / Mental Health  Act 1983 / Part V / 3.4.8.2 Funds Remaining`}
-      src={3482FundsRemainingImage}
-      backRoute="/"
+      src={FundsRemainingImage3482}
+      backRoute="/ig-product-diagramrelease-1-chekc-my-dbs"
       amendmentButtonRoute="/ig-product-diagramrelease-1-chekc-my-dbs"
     />
   );
 };
 
-export default 3482FundsRemainingPage;
+export default FundsRemainingPage3482;

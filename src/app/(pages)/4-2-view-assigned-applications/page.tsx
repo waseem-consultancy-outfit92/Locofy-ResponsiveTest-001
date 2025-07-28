@@ -1,17 +1,16 @@
-import { 42ViewAssignedApplicationsImage } from "@/assets";
-
-import AmendmentComparison from "@/components/amendment-comparison";
+import { ViewAssignedApplicationsImage42 } from "@/assets";
+import AmendmentComparisonNoBtn from "@/components/amendment-comparison-no-btn";
 import React from "react";
 
-const 42ViewAssignedApplicationsPage = () => {
+const ViewAssignedApplicationsPage42 = () => {
   return (
-    <AmendmentComparison
+    <AmendmentComparisonNoBtn
       pageTitle={`Mental Health / Mental Health  Act 1983 / Part V / 4.2 View Assigned Applications`}
-      src={42ViewAssignedApplicationsImage}
-      backRoute="/"
+      src={ViewAssignedApplicationsImage42}
+      backRoute="/ig-product-diagramrelease-1-chekc-my-dbs"
       amendmentButtonRoute="/ig-product-diagramrelease-1-chekc-my-dbs"
     />
   );
 };
 
-export default 42ViewAssignedApplicationsPage;
+export default ViewAssignedApplicationsPage42;

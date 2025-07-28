@@ -1,17 +1,17 @@
-import { 413DbsAppListImage } from "@/assets";
+import { DbsAppListImage413 } from "@/assets";
 
-import AmendmentComparison from "@/components/amendment-comparison";
+import AmendmentComparisonNoBtn from "@/components/amendment-comparison-no-btn";
 import React from "react";
 
-const 413DbsAppListPage = () => {
+const DbsAppListPage413 = () => {
   return (
-    <AmendmentComparison
+    <AmendmentComparisonNoBtn
       pageTitle={`Mental Health / Mental Health  Act 1983 / Part V / 4.1.3 DBS App List`}
-      src={413DbsAppListImage}
-      backRoute="/"
+      src={DbsAppListImage413}
+      backRoute="/ig-product-diagramrelease-1-chekc-my-dbs"
       amendmentButtonRoute="/ig-product-diagramrelease-1-chekc-my-dbs"
     />
   );
 };
 
-export default 413DbsAppListPage;
+export default DbsAppListPage413;

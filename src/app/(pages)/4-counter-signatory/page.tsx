@@ -1,17 +1,18 @@
-import { 4CounterSignatoryImage } from "@/assets";
+import { CounterSignatoryImage4 } from "@/assets";
 
 import AmendmentComparison from "@/components/amendment-comparison";
+import AmendmentComparisonNoBtn from "@/components/amendment-comparison-no-btn";
 import React from "react";
 
-const 4CounterSignatoryPage = () => {
+const CounterSignatoryPage4 = () => {
   return (
-    <AmendmentComparison
+    <AmendmentComparisonNoBtn
       pageTitle={`Mental Health / Mental Health  Act 1983 / Part V / 4. Counter Signatory`}
-      src={4CounterSignatoryImage}
-      backRoute="/"
+      src={CounterSignatoryImage4}
+      backRoute="/ig-product-diagramrelease-1-chekc-my-dbs"
       amendmentButtonRoute="/ig-product-diagramrelease-1-chekc-my-dbs"
     />
   );
 };
 
-export default 4CounterSignatoryPage;
+export default CounterSignatoryPage4;

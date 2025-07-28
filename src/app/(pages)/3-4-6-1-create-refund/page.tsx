@@ -1,17 +1,16 @@
-import { 3461CreateRefundImage } from "@/assets";
-
-import AmendmentComparison from "@/components/amendment-comparison";
+import { CreateRefundImage3461 } from "@/assets";
+import AmendmentComparisonNoBtn from "@/components/amendment-comparison-no-btn";
 import React from "react";
 
-const 3461CreateRefundPage = () => {
+const CreateRefundPage3461 = () => {
   return (
-    <AmendmentComparison
+    <AmendmentComparisonNoBtn
       pageTitle={`Mental Health / Mental Health  Act 1983 / Part V / 3.4.6.1 Create Refund`}
-      src={3461CreateRefundImage}
-      backRoute="/"
+      src={CreateRefundImage3461}
+      backRoute="/ig-product-diagramrelease-1-chekc-my-dbs"
       amendmentButtonRoute="/ig-product-diagramrelease-1-chekc-my-dbs"
     />
   );
 };
 
-export default 3461CreateRefundPage;
+export default CreateRefundPage3461;

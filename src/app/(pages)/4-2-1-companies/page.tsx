@@ -1,17 +1,18 @@
-import { 421CompaniesImage } from "@/assets";
+import { CompaniesImage421 } from "@/assets";
 
 import AmendmentComparison from "@/components/amendment-comparison";
+import AmendmentComparisonNoBtn from "@/components/amendment-comparison-no-btn";
 import React from "react";
 
-const 421CompaniesPage = () => {
+const CompaniesPage421 = () => {
   return (
-    <AmendmentComparison
+    <AmendmentComparisonNoBtn
       pageTitle={`Mental Health / Mental Health  Act 1983 / Part V / 4.2.1 Companies`}
-      src={421CompaniesImage}
-      backRoute="/"
+      src={CompaniesImage421}
+      backRoute="/ig-product-diagramrelease-1-chekc-my-dbs"
       amendmentButtonRoute="/ig-product-diagramrelease-1-chekc-my-dbs"
     />
   );
 };
 
-export default 421CompaniesPage;
+export default CompaniesPage421;

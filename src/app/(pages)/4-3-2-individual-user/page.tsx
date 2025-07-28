@@ -1,17 +1,17 @@
-import { 432IndividualUserImage } from "@/assets";
+import { IndividualUserImage432 } from "@/assets";
 
-import AmendmentComparison from "@/components/amendment-comparison";
+import AmendmentComparisonNoBtn from "@/components/amendment-comparison-no-btn";
 import React from "react";
 
-const 432IndividualUserPage = () => {
+const IndividualUserPage432 = () => {
   return (
-    <AmendmentComparison
+    <AmendmentComparisonNoBtn
       pageTitle={`Mental Health / Mental Health  Act 1983 / Part V / 4.3.2  Individual User`}
-      src={432IndividualUserImage}
-      backRoute="/"
+      src={IndividualUserImage432}
+      backRoute="/ig-product-diagramrelease-1-chekc-my-dbs"
       amendmentButtonRoute="/ig-product-diagramrelease-1-chekc-my-dbs"
     />
   );
 };
 
-export default 432IndividualUserPage;
+export default IndividualUserPage432;
