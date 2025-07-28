@@ -1,17 +1,15 @@
-import { 3311DbsCompanyAdminSpendHistoryForYourDbsChecksImage } from "@/assets";
-
-import AmendmentComparison from "@/components/amendment-comparison";
+import { DbsCompanyAdminViewApplicationDetailsImage3311 } from "@/assets";
 import React from "react";
+import AmendmentComparisonNoBtn from "@/components/amendment-comparison-no-btn";
 
-const 3311DbsCompanyAdminSpendHistoryForYourDbsChecksPage = () => {
+const DbsCompanyAdminSpendHistoryForYourDbsChecksPage3311 = () => {
   return (
-    <AmendmentComparison
+    <AmendmentComparisonNoBtn
       pageTitle={`Mental Health / Mental Health  Act 1983 / Part V / 3.3.11 DBS Company Admin Spend History for your DBS Checks`}
-      src={3311DbsCompanyAdminSpendHistoryForYourDbsChecksImage}
-      backRoute="/"
-      amendmentButtonRoute="/ig-product-diagramrelease-1-chekc-my-dbs"
+      src={DbsCompanyAdminViewApplicationDetailsImage3311}
+      backRoute="/ig-product-diagramrelease-1-chekc-my-dbs"
     />
   );
 };
 
-export default 3311DbsCompanyAdminSpendHistoryForYourDbsChecksPage;
+export default DbsCompanyAdminSpendHistoryForYourDbsChecksPage3311;

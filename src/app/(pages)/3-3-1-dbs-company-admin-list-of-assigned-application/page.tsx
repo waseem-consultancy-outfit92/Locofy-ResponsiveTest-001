@@ -1,17 +1,15 @@
-import { 331DbsCompanyAdminListOfAssignedApplicationImage } from "@/assets";
-
-import AmendmentComparison from "@/components/amendment-comparison";
+import { DbsCompanyAdminListOfAssignedApplicationImage331 } from "@/assets";
+import AmendmentComparisonNoBtn from "@/components/amendment-comparison-no-btn";
 import React from "react";
 
-const 331DbsCompanyAdminListOfAssignedApplicationPage = () => {
+const DbsCompanyAdminListOfAssignedApplicationPage331 = () => {
   return (
-    <AmendmentComparison
+    <AmendmentComparisonNoBtn
       pageTitle={`Mental Health / Mental Health  Act 1983 / Part V / 3.3.1 DBS Company Admin List of Assigned Application`}
-      src={331DbsCompanyAdminListOfAssignedApplicationImage}
-      backRoute="/"
-      amendmentButtonRoute="/ig-product-diagramrelease-1-chekc-my-dbs"
+      src={DbsCompanyAdminListOfAssignedApplicationImage331}
+      backRoute="/ig-product-diagramrelease-1-chekc-my-dbs"
     />
   );
 };
 
-export default 331DbsCompanyAdminListOfAssignedApplicationPage;
+export default DbsCompanyAdminListOfAssignedApplicationPage331;
