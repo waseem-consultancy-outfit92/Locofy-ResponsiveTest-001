@@ -97,7 +97,9 @@ const MarketDataOrderFormPage = () => {
           />
           <Box
             component={Link}
-            href={"/"}
+            href={
+              "https://aqx-web-prod-s3-public-read.s3.eu-west-2.amazonaws.com/Aquis_Market_Data_Fee_Schedule_effective_1_April_2025_8d1ca3a638.pdf"
+            }
             sx={{
               color: "#0246BC",
               fontSize: "40px",

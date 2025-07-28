@@ -327,7 +327,9 @@ const AquisTradingProtocolSpecification = () => {
           />
           <Box
             component={Link}
-            href={"/"}
+            href={
+              "https://aqx-web-prod-s3-public-read.s3.eu-west-2.amazonaws.com/Market_Data_Terms_and_Conditions_Final_1_January_2025_bcf874de3e.pdf"
+            }
             sx={{
               color: "#0246BC",
               fontSize: "40px",

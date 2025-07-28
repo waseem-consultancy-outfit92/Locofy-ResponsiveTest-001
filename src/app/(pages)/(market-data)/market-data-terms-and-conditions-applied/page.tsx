@@ -5,7 +5,7 @@ import React from "react";
 const MarketDataTermsAppliedPage = () => {
   return (
     <CommonPage
-      pageTitle={`In these terms and conditions, the following definitions apply:`}
+      pageTitle={`IPO High Level Timeline:`}
       src={MarketDataTermsAppliedImage}
       backRoute="/market-data-terms-and-conditions"
     />

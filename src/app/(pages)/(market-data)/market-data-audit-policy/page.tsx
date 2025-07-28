@@ -36,7 +36,9 @@ const MarketDataAuditPolicyPage = () => {
           />
           <Box
             component={Link}
-            href={"/"}
+            href={
+              "https://aqx-web-prod-s3-public-read.s3.eu-west-2.amazonaws.com/Market_Data_Audit_Policy_Final_1_June_2024_4d015c5ec6.pdf"
+            }
             sx={{
               color: "#0246BC",
               fontSize: "40px",

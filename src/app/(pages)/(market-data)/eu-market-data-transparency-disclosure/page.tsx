@@ -59,7 +59,9 @@ const MarketDataTransparencyDisclosurePage = () => {
           />
           <Box
             component={Link}
-            href={"/"}
+            href={
+              "https://aqx-web-prod-s3-public-read.s3.eu-west-2.amazonaws.com/Aquis_Exchange_Europe_Market_Data_Transparency_Disclosure_2024_54822f3966.pdf"
+            }
             sx={{
               color: "#0246BC",
               fontSize: "40px",
