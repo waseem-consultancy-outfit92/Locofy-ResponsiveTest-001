@@ -8,7 +8,7 @@ const DbsSystemPage = () => {
     <AmendmentComparison
       pageTitle={`Mental Health / Mental Health  Act 1983 / Part V / DBS System`}
       src={DbsSystemImage}
-      backRoute="/"
+      backRoute="/ig-product-diagramrelease-1-chekc-my-dbs"
       amendmentButtonRoute="/ig-product-diagramrelease-1-chekc-my-dbs"
     />
   );

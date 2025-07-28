@@ -1,17 +1,17 @@
-import { 1DbsAuthorisedUserImage } from "@/assets";
+import { DbsAuthorisedUserImage1 } from "@/assets";
 
 import AmendmentComparison from "@/components/amendment-comparison";
 import React from "react";
 
-const 1DbsAuthorisedUserPage = () => {
+const DbsAuthorisedUserPage = () => {
   return (
     <AmendmentComparison
       pageTitle={`Mental Health / Mental Health  Act 1983 / Part V / 1 DBS Authorised User`}
-      src={1DbsAuthorisedUserImage}
-      backRoute="/"
+      src={DbsAuthorisedUserImage1}
+      backRoute="/ig-product-diagramrelease-1-chekc-my-dbs"
       amendmentButtonRoute="/ig-product-diagramrelease-1-chekc-my-dbs"
     />
   );
 };
 
-export default 1DbsAuthorisedUserPage;
+export default DbsAuthorisedUserPage;
