@@ -1,17 +1,17 @@
-import { 51DashboardImage } from "@/assets";
+import { DashboardImage51 } from "@/assets";
 
 import AmendmentComparison from "@/components/amendment-comparison";
 import React from "react";
 
-const 51DashboardPage = () => {
+const DashboardPage51 = () => {
   return (
     <AmendmentComparison
       pageTitle={`Mental Health / Mental Health  Act 1983 / Part V / 5.1 Dashboard`}
-      src={51DashboardImage}
-      backRoute="/"
+      src={DashboardImage51}
+      backRoute="/ig-product-diagramrelease-1-chekc-my-dbs"
       amendmentButtonRoute="/ig-product-diagramrelease-1-chekc-my-dbs"
     />
   );
 };
 
-export default 51DashboardPage;
+export default DashboardPage51;

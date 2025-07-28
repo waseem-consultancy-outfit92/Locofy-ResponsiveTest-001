@@ -114,15 +114,15 @@ const InteractiveDBSDiagram = () => {
     { id: 66, title: "Reprint", x: 69.04, y: 4609.55, width: 192.95, height: 155.78, route: "/applications/reprint-action" },
     { id: 67, title: "View Application Details", x: 265.53, y: 4618.40, width: 191.18, height: 169.94, route: "/applications/reprint-details" },
     { id: 68, title: "Result", x: 465.56, y: 4623.71, width: 201.80, height: 157.55, route: "/applications/reprint-result" },
-    { id: 120, title: "DBS Application", x: 130.99, y: 8744.69, width: 251.37, height: 65.50, route: "/applications/dbs" },
-    { id: 121, title: "View Assigned DBS Application", x: 164.63, y: 8820.81, width: 474.41, height: 70.81, route: "/applications/view-assigned" },
-    { id: 122, title: "Fix Issues with DBS Applications", x: 966.52, y: 8819.04, width: 485.03, height: 72.58, route: "/applications/fix-dbs" },
-    { id: 123, title: "Application Pending for DBS", x: 171.71, y: 9321.77, width: 430.15, height: 63.73, route: "/applications/pending-dbs-view" },
-    { id: 124, title: "Rejected DBS Applications", x: 1026.70, y: 9321.77, width: 396.52, height: 60.19, route: "/applications/rejected-view" },
-    { id: 125, title: "Application Pending Evidence Checker", x: 168.17, y: 9842.20, width: 587.70, height: 69.04, route: "/applications/pending-checker" },
-    { id: 126, title: "Completed DBS Checks-Certificate Posted Out", x: 975.37, y: 9836.89, width: 686.83, height: 65.50, route: "/applications/completed-checks-view" },
-    { id: 127, title: "Application with DBS Result", x: 892.17, y: 9932.48, width: 244.28, height: 189.41, route: "/applications/result-view" },
-    { id: 128, title: "Erased Applications", x: 943.51, y: 10164.38, width: 228.35, height: 145.15, route: "/applications/erased-view" },
+    { id: 120, title: "DBS Application", x: 130.99, y: 8744.69, width: 251.37, height: 65.50, route: "/5-2-dbs-application" },
+    { id: 121, title: "View Assigned DBS Application", x: 164.63, y: 8820.81, width: 474.41, height: 70.81, route: "/5-2-1-view-assigned-dbs-application" },
+    { id: 122, title: "Fix Issues with DBS Applications", x: 966.52, y: 8819.04, width: 485.03, height: 72.58, route: "/5-2-2-fix-issues-with-applications" },
+    { id: 123, title: "Application Pending for DBS", x: 171.71, y: 9321.77, width: 430.15, height: 63.73, route: "/5-2-3-application-pending-for-dbs" },
+    { id: 124, title: "Rejected DBS Applications", x: 1026.70, y: 9321.77, width: 396.52, height: 60.19, route: "/5-2-4-rejected-dbs-application" },
+    { id: 125, title: "Application Pending Evidence Checker", x: 168.17, y: 9842.20, width: 587.70, height: 69.04, route: "/5-2-5-application-pending-evidence-checker" },
+    { id: 126, title: "Completed DBS Checks-Certificate Posted Out", x: 975.37, y: 9836.89, width: 686.83, height: 65.50, route: "/5-2-6-completed-dbs-checks-certificate-posted-out" },
+    { id: 127, title: "Application with DBS Result", x: 892.17, y: 9932.48, width: 244.28, height: 189.41, route: "/5-2-6-1-application-with-dbs-result" },
+    { id: 128, title: "Erased Applications", x: 943.51, y: 10164.38, width: 228.35, height: 145.15, route: "/5-2-6-2-erased-applications" },
 
     // ==================== FINANCE ROUTES ====================
     { id: 17, title: "Spend History for your DBS Checks", x: 1290.46, y: 1159.47, width: 228.35, height: 162.86, route: "/finance/spend-history" },
@@ -168,21 +168,22 @@ const InteractiveDBSDiagram = () => {
     { id: 104, title: "DBS Applications List", x: 414.22, y: 7599.38, width: 231.89, height: 201.80, route: "/counter-signature/applications-list" },
 
     // ==================== EVIDENCE CHECKER ROUTES ====================
-    { id: 105, title: "Evidence checker", x: 99.13, y: 8056.09, width: 269.07, height: 67.27, route: "/evidence-checker" },
-    { id: 106, title: "Dashboard", x: 116.83, y: 8130.44, width: 184.10, height: 70.81, route: "/evidence-checker/dashboard" },
-    { id: 107, title: "Assigned Applicants for DBS", x: 81.43, y: 8210.10, width: 217.73, height: 168.17, route: "/evidence-checker/assigned" },
-    { id: 108, title: "Incomplete DBS Application", x: 361.12, y: 8183.54, width: 217.73, height: 205.34, route: "/evidence-checker/incomplete" },
-    { id: 109, title: "Application Pending for the DBS", x: 660.28, y: 8194.17, width: 231.89, height: 210.65, route: "/evidence-checker/pending" },
-    { id: 110, title: "DBS Application already Paid For", x: 952.36, y: 8194.17, width: 230.12, height: 208.88, route: "/evidence-checker/paid" },
-    { id: 111, title: "Completed DBS checks Certificate Posted Out", x: 1244.44, y: 8192.40, width: 233.66, height: 200.03, route: "/evidence-checker/completed" },
-    { id: 112, title: "DBS Certificate Eligible for reprint (if not received)", x: 1520.58, y: 8190.62, width: 260.22, height: 194.72, route: "/evidence-checker/reprint" },
-    { id: 113, title: "Application Pending Evidence Check", x: 74.35, y: 8378.26, width: 198.26, height: 157.55, route: "/evidence-checker/pending-evidence" },
-    { id: 114, title: "Reject DBS Application", x: 318.63, y: 8381.80, width: 231.89, height: 157.55, route: "/evidence-checker/reject" },
-    { id: 115, title: "Fix Issues with Applications", x: 65.50, y: 8532.27, width: 205.34, height: 166.40, route: "/evidence-checker/fix-issues" },
-    { id: 116, title: "DBS application requirement payment", x: 308.01, y: 8537.58, width: 215.96, height: 169.94, route: "/evidence-checker/payment-required" },
-    { id: 117, title: "Attributes", x: 639.04, y: 8441.99, width: 159.32, height: 72.58, route: "/evidence-checker/attributes" },
-    { id: 118, title: "DBS Application Already Paid for", x: 939.97, y: 8450.84, width: 247.83, height: 54.88, route: "/evidence-checker/already-paid" },
-    { id: 119, title: "DBS Certificate Eligible for Reprint (If Not Received)", x: 1332.95, y: 8440.22, width: 440.77, height: 72.58, route: "/evidence-checker/eligible-reprint" }
+    { id: 105, title: "Evidence checker", x: 99.13, y: 8056.09, width: 269.07, height: 67.27, route: "/5-evidence-checker" },
+    { id: 106, title: "Dashboard", x: 116.83, y: 8130.44, width: 184.10, height: 70.81, route: "/5-1-dashboard" },
+    { id: 107, title: "Assigned Applicants for DBS", x: 81.43, y: 8210.10, width: 217.73, height: 168.17, route: "/5-1-1-assigned-applicants-for-dbs" },
+    { id: 108, title: "Incomplete DBS Application", x: 361.12, y: 8183.54, width: 217.73, height: 205.34, route: "/5-1-4-incomplete-dbs-application" },
+    { id: 109, title: "Application Pending for the DBS", x: 660.28, y: 8194.17, width: 231.89, height: 210.65, route: "/5-1-7-application-pending-for-the-dbs" },
+    { id: 110, title: "DBS Application already Paid For", x: 952.36, y: 8194.17, width: 230.12, height: 208.88, route: "/5-1-8-dbs-application-already-paid-for" },
+    { id: 111, title: "Completed DBS checks Certificate Posted Out", x: 1244.44, y: 8192.40, width: 233.66, height: 200.03, route: "/5-1-9-completed-dbs-checks-certificate-posted-out" },
+    { id: 112, title: "DBS Certificate Eligible for reprint (if not received)", x: 1520.58, y: 8190.62, width: 260.22, height: 194.72, route: "/5-1-10-dbs-certificate-eligible-for-reprintif-not-received" },
+    { id: 113, title: "Application Pending Evidence Check", x: 74.35, y: 8378.26, width: 198.26, height: 157.55, route: "/5-1-2-application-pending-evidence-check" },
+    { id: 114, title: "Reject DBS Application", x: 318.63, y: 8381.80, width: 231.89, height: 157.55, route: "/5-1-5-reject-dbs-application" },
+
+    { id: 115, title: "Fix Issues with Applications", x: 65.50, y: 8532.27, width: 205.34, height: 166.40, route: "/5-1-3-fix-issues-with-applications" },
+    { id: 116, title: "DBS application requirement payment", x: 308.01, y: 8537.58, width: 215.96, height: 169.94, route: "/5-1-6-dbs-application-requirement-payment" },
+    { id: 117, title: "Attributes", x: 639.04, y: 8441.99, width: 159.32, height: 72.58, route: "/5-1-6-1-action-attributes" },
+    { id: 118, title: "DBS Application Already Paid for", x: 939.97, y: 8450.84, width: 247.83, height: 54.88, route: "/5-1-8-1-dbs-application-already-paid" },
+    { id: 119, title: "DBS Certificate Eligible for Reprint (If Not Received)", x: 1332.95, y: 8440.22, width: 440.77, height: 72.58, route: "/5-1-10-1-dbs-certificate-eligible-for-reprintif-not-received" }
   ];
 
   const handleAreaClick = (route: string) => {

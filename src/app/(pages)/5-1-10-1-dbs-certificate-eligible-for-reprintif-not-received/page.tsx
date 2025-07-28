@@ -1,17 +1,17 @@
-import { 51101DbsCertificateEligibleForReprintIfNotReceivedImage } from "@/assets";
+import { DbsCertificateEligibleForReprintIfNotReceivedImage51101 } from "@/assets";
 
 import AmendmentComparison from "@/components/amendment-comparison";
 import React from "react";
 
-const 51101DbsCertificateEligibleForReprintIfNotReceivedPage = () => {
+const DbsCertificateEligibleForReprintIfNotReceivedPage51101 = () => {
   return (
     <AmendmentComparison
       pageTitle={`Mental Health / Mental Health  Act 1983 / Part V / 5.1.10.1 DBS Certificate Eligible for reprint(if not received)`}
-      src={51101DbsCertificateEligibleForReprintIfNotReceivedImage}
-      backRoute="/"
+      src={DbsCertificateEligibleForReprintIfNotReceivedImage51101}
+      backRoute="/ig-product-diagramrelease-1-chekc-my-dbs"
       amendmentButtonRoute="/ig-product-diagramrelease-1-chekc-my-dbs"
     />
   );
 };
 
-export default 51101DbsCertificateEligibleForReprintIfNotReceivedPage;
+export default DbsCertificateEligibleForReprintIfNotReceivedPage51101;

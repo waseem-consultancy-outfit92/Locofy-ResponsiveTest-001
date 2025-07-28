@@ -1,17 +1,17 @@
-import { 5161ActionAttributesImage } from "@/assets";
+import { ActionAttributesImage5161 } from "@/assets";
 
 import AmendmentComparison from "@/components/amendment-comparison";
 import React from "react";
 
-const 5161ActionAttributesPage = () => {
+const ActionAttributesPage5161 = () => {
   return (
     <AmendmentComparison
       pageTitle={`Mental Health / Mental Health  Act 1983 / Part V / 5.1.6.1 Action Attributes`}
-      src={5161ActionAttributesImage}
-      backRoute="/"
+      src={ActionAttributesImage5161}
+      backRoute="/ig-product-diagramrelease-1-chekc-my-dbs"
       amendmentButtonRoute="/ig-product-diagramrelease-1-chekc-my-dbs"
     />
   );
 };
 
-export default 5161ActionAttributesPage;
+export default ActionAttributesPage5161;
