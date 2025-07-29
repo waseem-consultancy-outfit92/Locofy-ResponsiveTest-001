@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import { Box, Typography, Link } from "@mui/material";
+import { Box, Typography, Link, Stack } from "@mui/material";
 import { arrowLeft, CqcFeeStructureImage } from "@/assets";
 import { useRouter } from "next/navigation";
 import { CheckboxForm } from "@/components/checkbox-form";
@@ -14,17 +14,18 @@ const CqcFeeStructureImageMap = () => {
     };
 
     return (
-        <>
-            <Box sx={{ ml: 2, my: 2 }}>
+        <Box p={{ md: 3, xs: 2 }}>
+            <Stack flexDirection={"row"} alignItems={"center"} sx={{ my: 2 }}>
                 <Box sx={{ cursor: 'pointer' }} onClick={() => router.push('/care-quality-commission')}>
-                    <Image src={arrowLeft} alt="icon" />
+                    <Image src={arrowLeft} width={40} height={40} alt="icon" />
                 </Box>
-                <Typography sx={{ color: '#5A5867', fontSize: '32px', fontWeight: 600 }}>
+                <Typography sx={{ color: '#5A5867', fontSize: '32px', ml: 2, fontWeight: 600 }}>
                     Fee Schedule
                 </Typography>
-                <CheckboxForm />
-            </Box>
-            <Box position="relative" width="100%" height="auto">
+
+            </Stack>
+            <CheckboxForm />
+            <Box position="relative" width="100%" height="auto" mt={2}>
                 {/* Image */}
                 <Image
                     src={CqcFeeStructureImage}
@@ -35,7 +36,7 @@ const CqcFeeStructureImageMap = () => {
                 />
 
                 {/* Hotspots */}
-                <Box position="absolute" top={0} left={0} width="100%" height="100%">
+                <Box position="absolute" top={0} left={0} width="100%" height="100%" >
                     {/* HOSPICE SERVICES */}
                     <Link
                         component="button"
@@ -192,7 +193,7 @@ const CqcFeeStructureImageMap = () => {
                     </Link>
                 </Box>
             </Box>
-        </>
+        </Box>
 
     );
 };

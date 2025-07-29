@@ -5,7 +5,7 @@ import React from "react";
 const RegulatedServicesPage = () => {
   return (
     <CommonPage
-      pageTitle={`Domiciliary Dental Only`}
+      pageTitle={`Reaulated Services`}
       src={RegulatedServicesImage}
       backRoute="/what-needs-to-be-registered"
     />

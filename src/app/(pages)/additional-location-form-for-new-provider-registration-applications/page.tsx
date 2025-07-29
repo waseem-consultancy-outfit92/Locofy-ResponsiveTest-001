@@ -5,6 +5,7 @@ import { Box, Typography, Link, Stack } from "@mui/material";
 import { AdditionalLocationFormForNew } from "@/assets";
 import { useRouter } from "next/navigation";
 import { CommonBackIcon } from "@/assets/common-assets";
+import { CheckboxForm } from "@/components/checkbox-form";
 
 const AdditionalLocationForm = () => {
   const router = useRouter();
@@ -44,6 +45,8 @@ const AdditionalLocationForm = () => {
           Additional section for information about an additional location – Manager application
         </Typography>
       </Stack>
+
+      <CheckboxForm onChange={() => { }} />
       <Box position="relative" width="100%" height="auto">
         {/* Image */}
         <Image

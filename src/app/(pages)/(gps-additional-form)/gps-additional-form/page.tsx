@@ -120,6 +120,7 @@ const GpsAdditionalFormPage = () => {
 					GPs  Additional Form
 				</Typography>
 			</Stack>
+			 <CheckboxForm onChange={() => { }} />
 			<Box sx={{
 				position: 'relative',
 				width: '100%',

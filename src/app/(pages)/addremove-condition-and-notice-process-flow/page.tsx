@@ -5,7 +5,7 @@ import React from "react";
 const AddRemoveConditionAndNoticeProcessFlowPage = () => {
   return (
     <CommonPage
-      pageTitle={`Domiciliary Dental Only`}
+        pageTitle={`Manage Condition and Notice`}
       src={AddRemoveConditionAndNoticeProcessFlowImage}
       backRoute="/what-needs-to-be-registered"
     />
