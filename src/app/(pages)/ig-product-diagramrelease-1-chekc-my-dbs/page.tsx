@@ -265,7 +265,7 @@ const InteractiveDBSDiagram = () => {
       y: 293.85,
       width: 851.46,
       height: 53.11,
-      route: "/system/apis",
+      route: "/3-3-2-dbs-company-admin-pay-or-fix-issues-application",
     },
 
     // ==================== APPLICATION ROUTES ====================
@@ -887,7 +887,7 @@ const InteractiveDBSDiagram = () => {
       y: 2110.06,
       width: 258.45,
       height: 46.02,
-      route: "/applications/view",
+      route: "/3-3-dbs-company-admin-dbs-application",
     },
     {
       id: 30,
@@ -896,7 +896,7 @@ const InteractiveDBSDiagram = () => {
       y: 2173.78,
       width: 410.68,
       height: 54.88,
-      route: "/3-3-dbs-company-admin-dbs-application",
+      route: "/3-3-1-dbs-company-admin-list-of-assigned-application",
     },
     {
       id: 31,
@@ -905,7 +905,7 @@ const InteractiveDBSDiagram = () => {
       y: 2180.86,
       width: 423.07,
       height: 46.02,
-      route: "/applications/fix",
+      route: "/3-3-2-dbs-company-admin-pay-or-fix-issues-application",
     },
     {
       id: 32,
@@ -977,7 +977,7 @@ const InteractiveDBSDiagram = () => {
       y: 2719.0,
       width: 423.07,
       height: 51.34,
-      route: "/applications/incomplete-list",
+      route: "/3-3-3-incomplete-dbs-applications",
     },
     {
       id: 40,
@@ -1013,7 +1013,7 @@ const InteractiveDBSDiagram = () => {
       y: 2717.23,
       width: 384.13,
       height: 46.02,
-      route: "/applications/rejected",
+      route: "/3-3-4-rejected-dbs-application",
     },
     {
       id: 44,
@@ -1058,7 +1058,7 @@ const InteractiveDBSDiagram = () => {
       y: 3251.82,
       width: 481.49,
       height: 51.34,
-      route: "/applications/pending-dbs",
+      route: "/3-3-5-application-pending-for-the-dbs",
     },
     {
       id: 49,
@@ -1067,7 +1067,7 @@ const InteractiveDBSDiagram = () => {
       y: 3250.05,
       width: 527.51,
       height: 61.96,
-      route: "/applications/payment-pending",
+      route: "3-3-6-dbs-application-requiring-payment-list",
     },
     {
       id: 50,
@@ -1121,7 +1121,7 @@ const InteractiveDBSDiagram = () => {
       y: 3800.58,
       width: 345.19,
       height: 46.02,
-      route: "/applications/completed-checks",
+      route: "/3-3-8-completed-dbs-checks",
     },
     {
       id: 56,
@@ -1130,7 +1130,7 @@ const InteractiveDBSDiagram = () => {
       y: 3798.81,
       width: 591.24,
       height: 53.11,
-      route: "/applications/evidence-pending",
+      route: "/3-3-9-app-pending-for-evidence-check",
     },
     {
       id: 57,
@@ -1193,7 +1193,7 @@ const InteractiveDBSDiagram = () => {
       y: 4335.17,
       width: 511.58,
       height: 53.11,
-      route: "/applications/reprint-eligible",
+      route: "/3-3-10-dbs-certificate-eligible-for-reprint",
     },
     {
       id: 66,
@@ -1330,7 +1330,7 @@ const InteractiveDBSDiagram = () => {
       y: 4331.63,
       width: 426.61,
       height: 63.73,
-      route: "/finance/spend-history-full",
+      route: "3-1-11-dbs-company-admin-spend-history-for-your-dbs-checks",
     },
     {
       id: 65,
@@ -1339,7 +1339,7 @@ const InteractiveDBSDiagram = () => {
       y: 4333.4,
       width: 424.84,
       height: 61.96,
-      route: "/finance/payments/success",
+      route: "3-1-12-dbs-company-admin-successful-payment-to-your-dbs-account",
     },
     {
       id: 69,
