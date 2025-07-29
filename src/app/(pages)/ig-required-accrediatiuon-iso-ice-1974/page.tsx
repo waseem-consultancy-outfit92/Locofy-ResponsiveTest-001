@@ -1,7 +1,15 @@
-
 "use client";
 import { MultiPathPage } from "@/components";
-import { img1IgRequiredMembershipsCsaCloudSecurityAllianceImage, img2IgRequiredMembershipsCsaCloudSecurityAllianceImage, img3IgRequiredMembershipsCsaCloudSecurityAllianceImage, img4IgRequiredMembershipsCsaCloudSecurityAllianceImage, img5IgRequiredMembershipsCsaCloudSecurityAllianceImage, img6IgRequiredMembershipsCsaCloudSecurityAllianceImage, img7IgRequiredMembershipsCsaCloudSecurityAllianceImage, img8IgRequiredMembershipsCsaCloudSecurityAllianceImage } from "@/assets";
+import {
+  img1IgRequiredMembershipsCsaCloudSecurityAllianceImage,
+  img2IgRequiredMembershipsCsaCloudSecurityAllianceImage,
+  img3IgRequiredMembershipsCsaCloudSecurityAllianceImage,
+  img4IgRequiredMembershipsCsaCloudSecurityAllianceImage,
+  img5IgRequiredMembershipsCsaCloudSecurityAllianceImage,
+  img6IgRequiredMembershipsCsaCloudSecurityAllianceImage,
+  img7IgRequiredMembershipsCsaCloudSecurityAllianceImage,
+  img8IgRequiredMembershipsCsaCloudSecurityAllianceImage,
+} from "@/assets";
 import React from "react";
 
 const IgRequiredAccrediatiuonIsoIce1974PageData = [
@@ -52,7 +60,7 @@ const IgRequiredAccrediatiuonIsoIce1974PageData = [
     link: "/ig-required-accrediatiuon-isoiec-1974-validity-of-the-certificate",
     icon: img8IgRequiredMembershipsCsaCloudSecurityAllianceImage,
     title: "Validity of the Certificate",
-  }
+  },
 ];
 
 const IgRequiredAccrediatiuonIsoIce1974Page = () => {

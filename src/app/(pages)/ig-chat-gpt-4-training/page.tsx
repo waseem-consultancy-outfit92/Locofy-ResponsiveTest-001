@@ -33,7 +33,6 @@ export default function IGChatGPTTrainingImageMap() {
 
   const originalImageWidth = 1889;
   const originalImageHeight = 1236;
-  const imageSrc = "/IG Chat GPT 4 Training.svg";
 
   const areas: ImageMapArea[] = [
     {
@@ -100,10 +99,6 @@ export default function IGChatGPTTrainingImageMap() {
       target: "_parent",
     },
   ];
-
-  const toggleLegend = () => {
-    setIsLegendOpen(!isLegendOpen);
-  };
 
   const handleAreaClick = (href: string, target?: string) => {
     if (target === "_blank") {

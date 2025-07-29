@@ -1,5 +1,5 @@
-import React from 'react'
-import { Box, Button, Menu, Typography } from '@mui/material'
+import React from "react";
+import { Box, Button, Menu, Typography } from "@mui/material";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import Image from "next/image";
 import { ColorLegendsImage } from "@/assets";
@@ -15,16 +15,16 @@ export default function ColorLegends() {
   };
 
   return (
-    <Box sx={{ position: 'relative' }}>
+    <Box sx={{ position: "relative" }}>
       <Button
-        id='color-legends-button'
-        aria-controls={open ? 'color-legends-button' : undefined}
+        id="color-legends-button"
+        aria-controls={open ? "color-legends-button" : undefined}
         aria-haspopup="true"
-        aria-expanded={open ? 'true' : undefined}
+        aria-expanded={open ? "true" : undefined}
         sx={{
-          display: 'flex',
-          alignItems: 'center',
-          minWidth: '0'
+          display: "flex",
+          alignItems: "center",
+          minWidth: "0",
         }}
         onClick={handleClick}
         disableElevation
@@ -54,39 +54,44 @@ export default function ColorLegends() {
         open={open}
         onClose={handleClose}
         anchorOrigin={{
-          vertical: 'bottom',
-          horizontal: 'right',
+          vertical: "bottom",
+          horizontal: "right",
         }}
         transformOrigin={{
-          vertical: 'top',
-          horizontal: 'right',
+          vertical: "top",
+          horizontal: "right",
         }}
         slotProps={{
           list: {
-            'aria-labelledby': 'color-legends-button',
+            "aria-labelledby": "color-legends-button",
           },
         }}
         sx={{
-          '& .MuiPaper-root': {
-            borderRadius: '0',
-            boxShadow: 'none',
+          "& .MuiPaper-root": {
+            borderRadius: "0",
+            boxShadow: "none",
 
-            '& .MuiMenu-list': {
-              padding: '0',
+            "& .MuiMenu-list": {
+              padding: "0",
             },
-          }
+          },
         }}
       >
-        <Box sx={{ maxWidth: '396px', minWidth: '396px' }}>
+        <Box sx={{ maxWidth: "396px", minWidth: "396px" }}>
           <Image
             src={ColorLegendsImage}
             alt="Color Legend"
             width={396}
             height={492}
-            style={{ width: "100%", height: "auto", maxWidth: '100%', display: 'block' }}
+            style={{
+              width: "100%",
+              height: "auto",
+              maxWidth: "100%",
+              display: "block",
+            }}
           />
         </Box>
       </Menu>
     </Box>
-  )
+  );
 }

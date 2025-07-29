@@ -149,7 +149,6 @@ export { default as ProductDiagram1 } from "./ProductDiagram1.svg";
 export { default as ProductDiagram2 } from "./ProductDiagram2.svg";
 export { default as BackIconPD } from "./BackIconPD.svg";
 
-
 // IG Release 1st
 export { default as IgProductDiagramRelease1Image } from "./IgProductDiagramRelease1Image.svg";
 export { default as IgSalesiteFrontendApplicationImage } from "./IgSalesiteFrontendApplicationImage.svg";
@@ -363,34 +362,6 @@ export { default as CompletedDbsChecksCertificatePostedOutImage526 } from "./Com
 export { default as ApplicationWithDbsResultImage5261 } from "./ApplicationWithDbsResultImage5261.svg";
 export { default as ErasedApplicationsImage5262 } from "./ErasedApplicationsImage5262.svg";
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 export { default as IGProductDiagramRelease1ChekcMyDBSImage1 } from "./IGProductDiagramRelease1ChekcMyDBSImage1.svg";
 export { default as RequiredMembershipsImage } from "./RequiredMembershipsImage.svg";
 export { default as colorLegends } from "./colorLegends.svg";
@@ -401,7 +372,8 @@ export { default as img4IgRequiredMembershipsCsaCloudSecurityAllianceImage } fro
 export { default as img5IgRequiredMembershipsCsaCloudSecurityAllianceImage } from "./img5IgRequiredMembershipsCsaCloudSecurityAllianceImage.svg";
 export { default as img6IgRequiredMembershipsCsaCloudSecurityAllianceImage } from "./img6IgRequiredMembershipsCsaCloudSecurityAllianceImage.svg";
 export { default as img7IgRequiredMembershipsCsaCloudSecurityAllianceImage } from "./img7IgRequiredMembershipsCsaCloudSecurityAllianceImage.svg";
-export { default as img8IgRequiredMembershipsCsaCloudSecurityAllianceImage } from "./img8IgRequiredMembershipsCsaCloudSecurityAllianceImage.svg"; export { default as PurposeOfProductCertificationImage } from "./PurposeOfProductCertificationImage.svg";
+export { default as img8IgRequiredMembershipsCsaCloudSecurityAllianceImage } from "./img8IgRequiredMembershipsCsaCloudSecurityAllianceImage.svg";
+export { default as PurposeOfProductCertificationImage } from "./PurposeOfProductCertificationImage.svg";
 export { default as IgRequiredMembershipsCsaCloudSecurityAllianceWhereToApplyImage } from "./IgRequiredMembershipsCsaCloudSecurityAllianceWhereToApplyImage.svg";
 export { default as IgRequiredMembershipsCsaCloudSecurityAllianceEligibilityCriteriaGdprImage } from "./IgRequiredMembershipsCsaCloudSecurityAllianceEligibilityCriteriaGdprImage.svg";
 export { default as IgRequiredMembershipsCsaCloudSecurityAllianceApplicationProcessImage } from "./IgRequiredMembershipsCsaCloudSecurityAllianceApplicationProcessImage.svg";

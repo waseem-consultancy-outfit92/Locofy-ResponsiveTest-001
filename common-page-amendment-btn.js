@@ -7,7 +7,6 @@ const assetsDir = path.join(__dirname, "src", "assets");
 
 // ✅ Corrected: Use "title" instead of "tile"
 const pages = [
-  
   {
     title: "3.3.4.2 Details",
     ButtonRoute: "ig-product-diagramrelease-1-chekc-my-dbs",

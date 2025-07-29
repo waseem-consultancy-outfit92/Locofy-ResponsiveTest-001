@@ -1,5 +1,5 @@
 "use client";
-import { Box, Stack, Typography, Button } from "@mui/material";
+import { Box, Stack, Typography } from "@mui/material";
 import Image, { StaticImageData } from "next/image";
 import { useCallback } from "react";
 import { useRouter } from "next/navigation";
@@ -20,7 +20,6 @@ const AmendmentComparisonNoBtn: React.FC<CommonPageProps> = ({
   backRoute,
   pageTitle,
   onChange,
- 
 }) => {
   const router = useRouter();
 
@@ -31,8 +30,6 @@ const AmendmentComparisonNoBtn: React.FC<CommonPageProps> = ({
       router.back();
     }
   }, [router, backRoute]);
-
-
 
   return (
     <Box p={{ md: 3, xs: 2 }}>
@@ -78,7 +75,6 @@ const AmendmentComparisonNoBtn: React.FC<CommonPageProps> = ({
         <Box flexGrow={1}>
           <CheckboxForm onChange={onChange} />
         </Box>
-       
       </Box>
       <Image
         src={src}

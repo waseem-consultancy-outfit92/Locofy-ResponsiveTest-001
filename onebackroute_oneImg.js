@@ -6,8 +6,10 @@ const assetsDir = path.join(__dirname, "src", "assets");
 const indexTsxPath = path.join(assetsDir, "index.tsx");
 
 const pages = [
-  { name: "IG Required Accrediatiuon ISO/IEC 1974 Validity of the Certificate",
-    backRoute: "/ig-required-accrediatiuon-iso-ice-1974" },
+  {
+    name: "IG Required Accrediatiuon ISO/IEC 1974 Validity of the Certificate",
+    backRoute: "/ig-required-accrediatiuon-iso-ice-1974",
+  },
 ];
 
 const toPascalCase = (str) =>

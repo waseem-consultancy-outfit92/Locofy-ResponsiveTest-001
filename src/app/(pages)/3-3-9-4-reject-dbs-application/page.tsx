@@ -1,4 +1,3 @@
-
 import { RejectDbsApplicationImage3394 } from "@/assets";
 import AmendmentComparisonNoBtn from "@/components/amendment-comparison-no-btn";
 import React from "react";

@@ -1,6 +1,5 @@
 import React from "react";
 import { ApplicationPendingForDbsImage523 } from "@/assets";
-import AmendmentComparison from "@/components/amendment-comparison";
 import AmendmentComparisonNoBtn from "@/components/amendment-comparison-no-btn";
 
 const ApplicationPendingForDbsPage523 = () => {

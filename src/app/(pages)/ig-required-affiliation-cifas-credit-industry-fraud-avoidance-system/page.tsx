@@ -8,7 +8,7 @@ import {
   img5IgRequiredAffiliationCifasCreditIndustryFraudAvoidanceSystemImage,
   img6IgRequiredAffiliationCifasCreditIndustryFraudAvoidanceSystemImage,
   img7IgRequiredAffiliationCifasCreditIndustryFraudAvoidanceSystemImage,
-  img8IgRequiredAffiliationCifasCreditIndustryFraudAvoidanceSystemImage
+  img8IgRequiredAffiliationCifasCreditIndustryFraudAvoidanceSystemImage,
 } from "@/assets";
 import React from "react";
 
@@ -60,13 +60,15 @@ const IgRequiredAffiliationCifasCreditIndustryFraudAvoidanceSystemPageData = [
     link: "/ig-required-affiliation-cifas-credit-industry-fraud-avoidance-system-validity-of-the-certificate",
     icon: img8IgRequiredAffiliationCifasCreditIndustryFraudAvoidanceSystemImage,
     title: "Validity of the Certificate",
-  }
+  },
 ];
 
 const IgRequiredAffiliationCifasCreditIndustryFraudAvoidanceSystemPage = () => {
   return (
     <MultiPathPage
-      arrayData={IgRequiredAffiliationCifasCreditIndustryFraudAvoidanceSystemPageData}
+      arrayData={
+        IgRequiredAffiliationCifasCreditIndustryFraudAvoidanceSystemPageData
+      }
       pageTitle="CIFAS (Credit Industry Fraud Avoidance System)"
       backRoute="/ig-required-affiliation"
     />

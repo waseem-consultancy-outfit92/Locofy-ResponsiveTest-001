@@ -8,7 +8,7 @@ import {
   img5IgRequiredMembershipsCsaCloudSecurityAllianceImage,
   img6IgRequiredMembershipsCsaCloudSecurityAllianceImage,
   img7IgRequiredMembershipsCsaCloudSecurityAllianceImage,
-  img8IgRequiredMembershipsCsaCloudSecurityAllianceImage
+  img8IgRequiredMembershipsCsaCloudSecurityAllianceImage,
 } from "@/assets";
 import React from "react";
 
@@ -60,7 +60,7 @@ const IgRequiredMembershipsCsaCloudSecurityAlliancePageData = [
     link: "/ig-required-memberships-csa-cloud-security-alliance-validity-of-the-certificate",
     icon: img8IgRequiredMembershipsCsaCloudSecurityAllianceImage,
     title: "Validity of the Certificate",
-  }
+  },
 ];
 
 const IgRequiredMembershipsCsaCloudSecurityAlliancePage = () => {

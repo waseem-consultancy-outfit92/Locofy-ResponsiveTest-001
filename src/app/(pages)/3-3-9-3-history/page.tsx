@@ -1,4 +1,3 @@
-
 import { HistoryImage3393 } from "@/assets";
 import AmendmentComparisonNoBtn from "@/components/amendment-comparison-no-btn";
 import React from "react";

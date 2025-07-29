@@ -1,4 +1,3 @@
-
 import { ApplicationWithDbsResultImage3381 } from "@/assets";
 import AmendmentComparisonNoBtn from "@/components/amendment-comparison-no-btn";
 import React from "react";

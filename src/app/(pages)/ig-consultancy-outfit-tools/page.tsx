@@ -10,7 +10,7 @@ import {
   img7ConsultancyOutfitToolsImage,
   img8ConsultancyOutfitToolsImage,
   img9ConsultancyOutfitToolsImage,
-  img10ConsultancyOutfitToolsImage
+  img10ConsultancyOutfitToolsImage,
 } from "@/assets";
 import React from "react";
 
@@ -74,7 +74,7 @@ const ConsultancyOutfitToolsPageData = [
     link: "/",
     icon: img10ConsultancyOutfitToolsImage,
     title: "Time Doctor",
-  }
+  },
 ];
 
 const ConsultancyOutfitToolsPage = () => {

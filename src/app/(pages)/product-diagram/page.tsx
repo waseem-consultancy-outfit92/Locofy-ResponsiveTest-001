@@ -1,9 +1,7 @@
 import ProductDiagramFeature from "@/features/product-diagram";
 
 const ProductDiagramPage = () => {
-  return (
-    <ProductDiagramFeature />
-  );
+  return <ProductDiagramFeature />;
 };
 
 export default ProductDiagramPage;

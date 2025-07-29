@@ -1,4 +1,3 @@
-
 import React from "react";
 import AmendmentComparisonNoBtn from "@/components/amendment-comparison-no-btn";
 import { DbsCompanyAdminSettingsImage323 } from "@/assets";

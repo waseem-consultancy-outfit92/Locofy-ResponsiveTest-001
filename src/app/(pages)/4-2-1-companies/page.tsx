@@ -1,6 +1,4 @@
 import { CompaniesImage421 } from "@/assets";
-
-import AmendmentComparison from "@/components/amendment-comparison";
 import AmendmentComparisonNoBtn from "@/components/amendment-comparison-no-btn";
 import React from "react";
 

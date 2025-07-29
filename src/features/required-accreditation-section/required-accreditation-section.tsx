@@ -1,4 +1,3 @@
-
 "use client";
 
 import { Box, Stack, Typography } from "@mui/material";
@@ -10,7 +9,6 @@ import { useCallback, useState } from "react";
 import { CommonBackIcon } from "@/assets/common-assets";
 import { useRouter } from "next/navigation";
 import { areas } from "./required-accreditation-section-data";
-
 
 const RequiredAccreditationSection = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,7 +25,13 @@ const RequiredAccreditationSection = () => {
   }, [router]);
   return (
     <Box p={3} position="relative">
-      <Stack flexDirection="row" justifyContent={{ xs: "center", md: "space-between" }} flexWrap={"wrap"} alignItems="center" mt={4}>
+      <Stack
+        flexDirection="row"
+        justifyContent={{ xs: "center", md: "space-between" }}
+        flexWrap={"wrap"}
+        alignItems="center"
+        mt={4}
+      >
         <Box display="flex" alignItems="center" mr={2}>
           <Image
             src={CommonBackIcon}
@@ -113,7 +117,7 @@ const RequiredAccreditationSection = () => {
         <SingleImgMapPage image={RequiredAccreditationImage} areas={areas} />
       </Box>
     </Box>
-  )
-}
+  );
+};
 
-export default RequiredAccreditationSection
+export default RequiredAccreditationSection;

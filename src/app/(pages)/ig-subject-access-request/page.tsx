@@ -1,6 +1,13 @@
 "use client";
 import { CommonBackIcon } from "@/assets/common-assets";
-import { Box, Button, IconButton, Modal, Stack, Typography } from "@mui/material";
+import {
+  Box,
+  Button,
+  IconButton,
+  Modal,
+  Stack,
+  Typography,
+} from "@mui/material";
 import Image from "next/image";
 import React, { useState } from "react";
 import ExpandCircleDownOutlinedIcon from "@mui/icons-material/ExpandCircleDownOutlined";
@@ -12,54 +19,58 @@ const IGSubjectAccessRequestPage = () => {
   const originalImageHeight = 1236;
   return (
     <>
-    <Stack spacing={2} px={3} py={2}>
-      <Stack direction="row" justifyContent="space-between" alignItems="center">
-        <IconButton>
-          <Image src={CommonBackIcon} alt="backBTn" />
-        </IconButton>
-        <Button
-          endIcon={
-            <ExpandCircleDownOutlinedIcon sx={{ width: 40, height: 40 }} />
-          }
+      <Stack spacing={2} px={3} py={2}>
+        <Stack
+          direction="row"
+          justifyContent="space-between"
+          alignItems="center"
+        >
+          <IconButton>
+            <Image src={CommonBackIcon} alt="backBTn" />
+          </IconButton>
+          <Button
+            endIcon={
+              <ExpandCircleDownOutlinedIcon sx={{ width: 40, height: 40 }} />
+            }
+            sx={{
+              color: "#5A5867",
+              fontWeight: "semi-bold",
+              fontSize: 32,
+              fontFamily: "Outfit",
+            }}
+            onClick={() => {
+              setIsLegendOpen(true);
+            }}
+          >
+            Color Legends (Key)
+          </Button>
+        </Stack>
+        <Typography
           sx={{
             color: "#5A5867",
-            fontWeight: "semi-bold",
+            fontWeight: 600,
             fontSize: 32,
             fontFamily: "Outfit",
           }}
-          onClick={() => {
-            setIsLegendOpen(true);
-          }}
         >
-          Color Legends (Key)
-        </Button>
+          Subject Access Request{" "}
+        </Typography>
+        <Box>
+          <Image
+            src={SubjectAccessRequestImage}
+            alt="SubjectAccessRequestImage"
+            width={originalImageWidth}
+            height={originalImageHeight}
+            style={{
+              width: "100%",
+              height: "auto",
+              display: "block",
+            }}
+            priority
+          />
+        </Box>
       </Stack>
-      <Typography
-        sx={{
-          color: "#5A5867",
-          fontWeight: 600,
-          fontSize: 32,
-          fontFamily: "Outfit",
-        }}
-      >
-        Subject Access Request{" "}
-      </Typography>
-      <Box>
-        <Image
-          src={SubjectAccessRequestImage}
-          alt="SubjectAccessRequestImage"
-          width={originalImageWidth}
-          height={originalImageHeight}
-          style={{
-            width: "100%",
-            height: "auto",
-            display: "block",
-          }}
-          priority
-        />
-      </Box>
-    </Stack>
-     <Modal
+      <Modal
         open={isLegendOpen}
         onClose={() => {
           setIsLegendOpen(false);

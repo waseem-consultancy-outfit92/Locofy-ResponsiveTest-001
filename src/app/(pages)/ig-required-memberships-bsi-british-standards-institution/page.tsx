@@ -8,12 +8,12 @@ import {
   img5IgRequiredMembershipsCsaCloudSecurityAllianceImage,
   img6IgRequiredMembershipsCsaCloudSecurityAllianceImage,
   img7IgRequiredMembershipsCsaCloudSecurityAllianceImage,
-  img8IgRequiredMembershipsCsaCloudSecurityAllianceImage
+  img8IgRequiredMembershipsCsaCloudSecurityAllianceImage,
 } from "@/assets";
 import React from "react";
 
 const IgRequiredMembershipsBsiBritishStandardsInstitutionPageData = [
-    {
+  {
     key: "ig-1",
     link: "/ig-required-memberships-bsi-british-standards-institution-purpose-of-product-certification",
     icon: img1IgRequiredMembershipsCsaCloudSecurityAllianceImage,
@@ -60,7 +60,7 @@ const IgRequiredMembershipsBsiBritishStandardsInstitutionPageData = [
     link: "/ig-required-memberships-bsi-british-standards-institution-validity-of-the-certificate",
     icon: img8IgRequiredMembershipsCsaCloudSecurityAllianceImage,
     title: "Validity of the Certificate",
-  }
+  },
 ];
 
 const IgRequiredMembershipsBsiBritishStandardsInstitutionPage = () => {

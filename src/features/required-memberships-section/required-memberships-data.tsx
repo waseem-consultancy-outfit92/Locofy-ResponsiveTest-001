@@ -1,5 +1,13 @@
-export const areas:any = [
-{
+export type Area = {
+  alt: string;
+  title: string;
+  href: string;
+  coords: string;
+  shape: "rect" | "circle" | "poly";
+};
+
+export const areas: Area[] = [
+  {
     alt: "CSA (Cloud Security Alliance)",
     title: "CSA (Cloud Security Alliance)",
     href: "/ig-required-memberships-csa-cloud-security-alliance",
@@ -28,4 +36,3 @@ export const areas:any = [
     shape: "rect",
   },
 ];
-

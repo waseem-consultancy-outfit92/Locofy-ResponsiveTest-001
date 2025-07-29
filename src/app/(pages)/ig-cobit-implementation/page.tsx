@@ -1,9 +1,5 @@
 "use client";
-import {
-  SubjectAccessRequestImage,
-  ColorLegendsKeyImage,
-  COBITImplementationImage,
-} from "@/assets";
+import { ColorLegendsKeyImage, COBITImplementationImage } from "@/assets";
 import { CommonBackIcon } from "@/assets/common-assets";
 import {
   Stack,

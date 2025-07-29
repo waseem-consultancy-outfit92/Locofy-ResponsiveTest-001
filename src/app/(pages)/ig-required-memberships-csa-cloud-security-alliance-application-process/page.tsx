@@ -2,14 +2,17 @@ import { IgRequiredMembershipsCsaCloudSecurityAllianceApplicationProcessImage } 
 import { CommonPage } from "@/components";
 import React from "react";
 
-const IgRequiredMembershipsCsaCloudSecurityAllianceApplicationProcessPage = () => {
-  return (
-    <CommonPage
-      pageTitle={`Application Process`}
-      src={IgRequiredMembershipsCsaCloudSecurityAllianceApplicationProcessImage}
-      backRoute="/ig-required-memberships-csa-cloud-security-alliance"
-    />
-  );
-};
+const IgRequiredMembershipsCsaCloudSecurityAllianceApplicationProcessPage =
+  () => {
+    return (
+      <CommonPage
+        pageTitle={`Application Process`}
+        src={
+          IgRequiredMembershipsCsaCloudSecurityAllianceApplicationProcessImage
+        }
+        backRoute="/ig-required-memberships-csa-cloud-security-alliance"
+      />
+    );
+  };
 
 export default IgRequiredMembershipsCsaCloudSecurityAllianceApplicationProcessPage;

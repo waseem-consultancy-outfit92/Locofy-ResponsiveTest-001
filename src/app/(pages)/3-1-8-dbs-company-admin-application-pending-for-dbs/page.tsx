@@ -8,7 +8,6 @@ const DbsCompanyAdminApplicationPendingForDbsPage = () => {
       pageTitle={`Mental Health / Mental Health  Act 1983 / Part V / 3.1.8 DBS Company Admin Application Pending for DBS`}
       src={DbsCompanyAdminApplicationPendingForDbsImage318}
       backRoute="/ig-product-diagramrelease-1-chekc-my-dbs"
-      
     />
   );
 };

@@ -8,7 +8,6 @@ const DbsCompanyAdminCompletedDbsChecksCertificatePostedOutPage319 = () => {
       pageTitle={`Mental Health / Mental Health  Act 1983 / Part V / 3.1.9 DBS Company Admin Completed DBS checks Certificate Posted Out`}
       src={DbsCompanyAdminCompletedDbsChecksCertificatePostedOutImage319}
       backRoute="/ig-product-diagramrelease-1-chekc-my-dbs"
-     
     />
   );
 };

@@ -1,14 +1,9 @@
-
 "use client";
 
 import LDcsCodes from "@/features/ldcs-codes";
 
-
-
 const LDcsCodesPage = () => {
-    return (
-        <LDcsCodes />
-    );
+  return <LDcsCodes />;
 };
 
 export default LDcsCodesPage;

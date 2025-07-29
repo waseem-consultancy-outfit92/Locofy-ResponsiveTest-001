@@ -1,9 +1,7 @@
 import IdentityGramFeature from "@/features/identity-gram";
 
 const IdentityGramPage = () => {
-  return (
-    <IdentityGramFeature />
-  );
+  return <IdentityGramFeature />;
 };
 
 export default IdentityGramPage;

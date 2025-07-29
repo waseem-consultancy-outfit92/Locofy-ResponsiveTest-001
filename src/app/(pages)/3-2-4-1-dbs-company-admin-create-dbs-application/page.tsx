@@ -1,8 +1,6 @@
-
 import React from "react";
 import AmendmentComparisonNoBtn from "@/components/amendment-comparison-no-btn";
 import { DbsCompanyAdminCreateDbsApplicationImage3241 } from "@/assets";
-
 
 const DbsCompanyAdminSettingsPage3241 = () => {
   return (

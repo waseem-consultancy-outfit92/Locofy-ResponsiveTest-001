@@ -1,5 +1,13 @@
-export const areas: any = [
-{
+export type Area = {
+  alt: string;
+  title: string;
+  href: string;
+  coords: string;
+  shape: "rect" | "circle" | "poly";
+};
+
+export const areas: Area[] = [
+  {
     alt: "UKAS (United Kingdom Accreditation Service)",
     title: "UKAS (United Kingdom Accreditation Service)",
     href: "/ig-required-accrediatiuon-ukas",
@@ -21,7 +29,7 @@ export const areas: any = [
     shape: "rect",
   },
   {
-    alt: " SOC 2 Compliance",
+    alt: "SOC 2 Compliance",
     title: "SOC 2 Compliance",
     href: "/ig-required-accrediatiuon-soc-2-compliance",
     coords: "84,1929,471,1999",
@@ -35,4 +43,3 @@ export const areas: any = [
     shape: "rect",
   },
 ];
-
