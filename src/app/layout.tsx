@@ -8,9 +8,9 @@ const outfit = Outfit({
   variable: "--font-outfit",
 });
 export const metadata: Metadata = {
-  title: "Financial Conduct Authority",
+  title: "Operational Banking ",
   description:
-    "Understand the primary goals of the Financial Conduct Authority, illustrated through a clear and concise diagram.",
+    "Understand the primary goals of the Operational Banking , illustrated through a clear and concise diagram.",
   icons: {
     icon: [
       { rel: "icon", url: "/favicon.ico", type: "image/x-icon" },
@@ -35,9 +35,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Financial Conduct Authority",
+    title: "Operational Banking ",
     description:
-      "Understand the primary goals of the Financial Conduct Authority, illustrated through a clear and concise diagram.",
+      "Understand the primary goals of the Operational Banking , illustrated through a clear and concise diagram.",
     url: "/",
     type: "website",
     images: [
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
         type: "image/png",
         width: 1200,
         height: 630,
-        alt: "Financial Conduct Authority",
+        alt: "Operational Banking ",
       },
     ],
   },
