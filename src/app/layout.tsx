@@ -8,15 +8,9 @@ const outfit = Outfit({
   variable: "--font-outfit",
 });
 export const metadata: Metadata = {
-<<<<<<< HEAD
-  title: "Financial Conduct Authority",
-  description:
-    "Understand the primary goals of the Financial Conduct Authority, illustrated through a clear and concise diagram.",
-=======
   title: "Operational Banking ",
   description:
     "Understand the primary goals of the Operational Banking , illustrated through a clear and concise diagram.",
->>>>>>> 314f96c83fb30d68d2a996ae5cdb0dc0e1e691c1
   icons: {
     icon: [
       { rel: "icon", url: "/favicon.ico", type: "image/x-icon" },
@@ -41,20 +35,6 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-<<<<<<< HEAD
-    title: "Financial Conduct Authority",
-    description:
-      "Understand the primary goals of the Financial Conduct Authority, illustrated through a clear and concise diagram.",
-    url: "https://fcaroadmap.netlify.app/",
-    type: "website",
-    images: [
-      {
-        url: "https://fcaroadmap.netlify.app/og.png",
-        type: "image/png",
-        width: 1200,
-        height: 630,
-        alt: "Financial Conduct Authority",
-=======
     title: "Operational Banking ",
     description:
       "Understand the primary goals of the Operational Banking , illustrated through a clear and concise diagram.",
@@ -67,7 +47,6 @@ export const metadata: Metadata = {
         width: 1200,
         height: 630,
         alt: "Operational Banking ",
->>>>>>> 314f96c83fb30d68d2a996ae5cdb0dc0e1e691c1
       },
     ],
   },
