@@ -1,5 +1,5 @@
 {
-  "name": "Mental Health Act 1983",
+  "name": "Operational Banking",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -16,21 +16,26 @@
     "@mui/icons-material": "^7.1.2",
     "@mui/material": "^7.1.2",
     "@netlify/plugin-nextjs": "^5.11.5",
+    "f": "^1.4.0",
+    "image-map-resizer": "^1.0.10",
     "next": "15.3.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^18.6.1",
-    "@commitlint/config-conventional": "^18.6.3",
+    "@eslint/eslintrc": "^3",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "eslint": "9.31.0",
-    "eslint-config-next": "15.4.2",
+    "eslint": "^9",
+    "eslint-config-next": "^15.3.0",
+    "eslint-config-prettier": "^10.1.1",
+    "eslint-config-react": "^1.1.7",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^5.2.0",
     "husky": "^9.1.7",
-    "lint-staged": "^15.5.2",
-    "prettier": "^3.6.2",
+    "lint-staged": "^15.5.0",
+    "prettier": "^3.5.3",
     "typescript": "^5"
   },
   "lint-staged": {
