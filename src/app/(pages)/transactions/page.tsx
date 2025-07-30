@@ -48,7 +48,6 @@ const TransactionImageMap = () => {
   });
 
   const handleAreaClick = (href: string) => {
-    console.log("Navigating to:", href);
     if (href && href !== "#") {
       router.push(href);
     }
