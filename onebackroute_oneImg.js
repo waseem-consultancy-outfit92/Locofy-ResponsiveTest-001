@@ -7,6 +7,103 @@ const indexTsxPath = path.join(assetsDir, "index.tsx");
 
 const pages = [
   { name: "Cross-Sector Inspections", backRoute: "/ Care Quality Commission" },
+  { name: "Statements Read", backRoute: "/statement" },
+  { name: "Statement Bad request", backRoute: "/statement" },
+  { name: "Statement Forbidden", backRoute: "/statement" },
+  { name: "Statement Internal Server Error", backRoute: "/statement" },
+
+  { name: "Statements Read", backRoute: "/statement" },
+  { name: "Statement Bad request", backRoute: "/statement" },
+  { name: "Statement Forbidden", backRoute: "/statement" },
+  { name: "Statement Internal Server Error", backRoute: "/statement" },
+
+  { name: "Statement Bad request", backRoute: "/statement" },
+  { name: "Statement Forbidden", backRoute: "/statement" },
+  { name: "Statement Internal Server Error", backRoute: "/statement" },
+
+  { name: "Statements Read", backRoute: "/statement" },
+  { name: "Statement Bad request", backRoute: "/statement" },
+  { name: "Statement Forbidden", backRoute: "/statement" },
+  { name: "Statement Internal Server Error", backRoute: "/statement" },
+
+  { name: "Statements Read", backRoute: "/statement" },
+  { name: "Statement Bad request", backRoute: "/statement" },
+  { name: "Statement Forbidden", backRoute: "/statement" },
+  { name: "Statement Internal Server Error", backRoute: "/statement" },
+
+  { name: "Statement Bad request", backRoute: "/" },
+  { name: "Statement Forbidden", backRoute: "/" },
+  { name: "Statement Internal Server Error", backRoute: "/" },
+
+  { name: "Statements Read", backRoute: "/statement" },
+  { name: "Statement Bad request", backRoute: "/statement" },
+  { name: "Statement Forbidden", backRoute: "/statement" },
+  { name: "Statement Internal Server Error", backRoute: "/statement" },
+
+  { name: "Statements Read", backRoute: "/statement" },
+  { name: "Statement Bad request", backRoute: "/statement" },
+  { name: "Statement Forbidden", backRoute: "/statement" },
+  { name: "Statement Internal Server Error", backRoute: "/statement" },
+
+  { name: "Statement Bad request", backRoute: "/statement" },
+  { name: "Statement Forbidden", backRoute: "/statement" },
+  { name: "Statement Internal Server Error", backRoute: "/statement" },
+
+  { name: "Statements Read", backRoute: "/statement" },
+  { name: "Statement Bad request", backRoute: "/statement" },
+  { name: "Statement Forbidden", backRoute: "/statement" },
+  { name: "Statement Internal Server Error", backRoute: "/statement" },
+
+  { name: "Statements Read", backRoute: "/statement" },
+  { name: "Statement Bad request", backRoute: "/statement" },
+  { name: "Statement Forbidden", backRoute: "/statement" },
+  { name: "Statement Internal Server Error", backRoute: "/statement" },
+
+  { name: "Statement Bad request", backRoute: "/statement" },
+  { name: "Statement Forbidden", backRoute: "/statement" },
+  { name: "Statement Internal Server Error", backRoute: "/statement" },
+
+  { name: "Transactions Read", backRoute: "/transactions" },
+  { name: "Transactions Bad request", backRoute: "/transactions" },
+  { name: "Transactions Forbidden", backRoute: "/transactions" },
+  { name: "Transactions Internal Server Error", backRoute: "/transactions" },
+
+  { name: "Transactions Read", backRoute: "/transactions" },
+  { name: "Transactions Bad request", backRoute: "/transactions" },
+  { name: "Transactions Forbidden", backRoute: "/transactions" },
+  { name: "Transactions Internal Server Error", backRoute: "/transactions" },
+
+  { name: "Transactions Bad request", backRoute: "/transactions" },
+  { name: "Transactions Forbidden", backRoute: "/transactions" },
+  { name: "Transactions Internal Server Error", backRoute: "/transactions" },
+
+  { name: "Transactions Read", backRoute: "/transactions" },
+  { name: "Transactions Bad request", backRoute: "/transactions" },
+  { name: "Transactions Forbidden", backRoute: "/transactions" },
+  { name: "Transactions Internal Server Error", backRoute: "/transactions" },
+
+  { name: "Transactions Read", backRoute: "/transactions" },
+  { name: "Transactions Bad request", backRoute: "/transactions" },
+  { name: "Transactions Forbidden", backRoute: "/transactions" },
+  { name: "Transactions Internal Server Error", backRoute: "/transactions" },
+
+  { name: "Transactions Bad request", backRoute: "/transactions" },
+  { name: "Transactions Forbidden", backRoute: "/transactions" },
+  { name: "Transactions Internal Server Error", backRoute: "/transactions" },
+
+  { name: "Transactions Read", backRoute: "/transactions" },
+  { name: "Transactions Bad request", backRoute: "/transactions" },
+  { name: "Transactions Forbidden", backRoute: "/transactions" },
+  { name: "Transactions Internal Server Error", backRoute: "/transactions" },
+
+  { name: "Transactions Read", backRoute: "/transactions" },
+  { name: "Transactions Bad request", backRoute: "/transactions" },
+  { name: "Transactions Forbidden", backRoute: "/transactions" },
+  { name: "Transactions Internal Server Error", backRoute: "/transactions" },
+
+  { name: "Transactions Bad request", backRoute: "/transactions" },
+  { name: "Transactions Forbidden", backRoute: "/transactions" },
+  { name: "Transactions Internal Server Error", backRoute: "/transactions" },
 ];
 
 const toPascalCase = (str) =>
