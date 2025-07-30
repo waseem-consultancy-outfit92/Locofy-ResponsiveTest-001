@@ -6,7 +6,6 @@ export { default as CqcFundamentalStandardsImage } from "./CqcFundamentalStandar
 export { default as img1ScopeOfRegistrationImage } from "./img1ScopeOfRegistrationImage.svg";
 export { default as img2ScopeOfRegistrationImage } from "./img2ScopeOfRegistrationImage.svg";
 export { default as img3ScopeOfRegistrationImage } from "./img3ScopeOfRegistrationImage.svg";
-<<<<<<< HEAD
 export { default as CrossSectorInspectionsImage } from "./CrossSectorInspectionsImage.svg";
 export { default as glossary } from "./glossary.svg";
 export { default as transactions } from "./transactions.svg";
@@ -95,5 +94,3 @@ export { default as TransactionsInternalServerErrorImage7 } from "./Transactions
 export { default as TransactionsBadRequestImage8 } from "./TransactionsBadRequestImage.svg";
 export { default as TransactionsForbiddenImage8 } from "./TransactionsForbiddenImage.svg";
 export { default as TransactionsInternalServerErrorImage8 } from "./TransactionsInternalServerErrorImage.svg";
-=======
->>>>>>> 314f96c83fb30d68d2a996ae5cdb0dc0e1e691c1
