@@ -94,3 +94,4 @@ export { default as TransactionsInternalServerErrorImage7 } from "./Transactions
 export { default as TransactionsBadRequestImage8 } from "./TransactionsBadRequestImage.svg";
 export { default as TransactionsForbiddenImage8 } from "./TransactionsForbiddenImage.svg";
 export { default as TransactionsInternalServerErrorImage8 } from "./TransactionsInternalServerErrorImage.svg";
+export { default as CrossSectorInspectionsImage1 } from "./TransactionsInternalServerErrorImage.svg";
