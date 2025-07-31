@@ -52,8 +52,6 @@ const TransactionImageMap = () => {
       router.push(href);
     }
   };
-
-  // Sample clickable area (add the rest as needed)
   const clickableAreas = [
     {
       href: "/transactions-read",
