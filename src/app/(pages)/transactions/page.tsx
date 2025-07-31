@@ -15,7 +15,7 @@ import { transactions } from "@/assets";
 import { CommonBackIcon } from "@/assets/common-assets";
 import { glossary } from "@/assets";
 
-// Styled components
+
 const ClickableArea = styled(Box)(() => ({
   position: "absolute",
   backgroundColor: "transparent",
