@@ -28,7 +28,7 @@ interface CommonPageProps {
   downloadUrl?: string;
   downloadFileName?: string;
   areas?: AreaItem[];
-  target?: string,
+  target?: string;
 }
 
 const CommonImgMapPage: React.FC<CommonPageProps> = ({

@@ -1,4 +1,4 @@
-declare module 'image-map-resizer' {
+declare module "image-map-resizer" {
   const imageMapResize: () => void;
   export default imageMapResize;
 }
